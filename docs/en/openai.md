@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/openai.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/openai
+  ja: https://mimirwiki.com/ja/wiki/openai
+  zh: https://mimirwiki.com/zh/wiki/openai
 ---
 
 # OpenAI

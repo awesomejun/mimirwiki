@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/grok.jsonld
 translations:
   en: https://mimirwiki.com/wiki/grok
+  ja: https://mimirwiki.com/ja/wiki/grok
+  zh: https://mimirwiki.com/zh/wiki/grok
 ---
 
 # 그록 (Grok)

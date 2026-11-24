@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/gpt-6-2.jsonld
 translations:
   en: https://mimirwiki.com/wiki/gpt-6-2
+  ja: https://mimirwiki.com/ja/wiki/gpt-6-2
+  zh: https://mimirwiki.com/zh/wiki/gpt-6-2
 ---
 
 # GPT-6.2

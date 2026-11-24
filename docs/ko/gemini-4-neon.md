@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/gemini-4-neon.jsonld
 translations:
   en: https://mimirwiki.com/wiki/gemini-4-neon
+  ja: https://mimirwiki.com/ja/wiki/gemini-4-neon
+  zh: https://mimirwiki.com/zh/wiki/gemini-4-neon
 ---
 
 # Gemini 4 Neon

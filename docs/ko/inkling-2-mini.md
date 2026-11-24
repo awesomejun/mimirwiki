@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/inkling-2-mini.jsonld
 translations:
   en: https://mimirwiki.com/wiki/inkling-2-mini
+  ja: https://mimirwiki.com/ja/wiki/inkling-2-mini
+  zh: https://mimirwiki.com/zh/wiki/inkling-2-mini
 ---
 
 # 인클링 2 미니 (Inkling 2 Mini)

@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/claude.jsonld
 translations:
   en: https://mimirwiki.com/wiki/claude
+  ja: https://mimirwiki.com/ja/wiki/claude
+  zh: https://mimirwiki.com/zh/wiki/claude
 ---
 
 # Claude

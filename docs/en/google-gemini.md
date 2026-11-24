@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/google-gemini.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/google-gemini
+  ja: https://mimirwiki.com/ja/wiki/google-gemini
+  zh: https://mimirwiki.com/zh/wiki/google-gemini
 ---
 
 # Google Gemini

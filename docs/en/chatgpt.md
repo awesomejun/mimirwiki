@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/chatgpt.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/chatgpt
+  ja: https://mimirwiki.com/ja/wiki/chatgpt
+  zh: https://mimirwiki.com/zh/wiki/chatgpt
 ---
 
 # ChatGPT
