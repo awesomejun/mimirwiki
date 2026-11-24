@@ -8,6 +8,7 @@
 
 [![Website](https://img.shields.io/badge/website-mimirwiki.com-2e4bff?style=for-the-badge)](https://mimirwiki.com)
 [![llms.txt](https://img.shields.io/badge/llms.txt-available-0c0c10?style=for-the-badge)](https://mimirwiki.com/llms.txt)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-0c0c10?style=for-the-badge)](LICENSE)
 [![Languages](https://img.shields.io/badge/languages-English%20%C2%B7%20%ED%95%9C%EA%B5%AD%EC%96%B4-0c0c10?style=for-the-badge)](https://mimirwiki.com/ko)
 
 [Website](https://mimirwiki.com) · [All pages](https://mimirwiki.com/wiki) · [한국어](https://mimirwiki.com/ko) · [Check your website](https://mimirwiki.com/check)
@@ -56,6 +57,17 @@ curl -H "Accept: text/markdown" https://mimirwiki.com/wiki/json-rpc
 
 See [all pages](https://mimirwiki.com/wiki).
 
+## In this repository
+
+| Path | Contents |
+|---|---|
+| [docs/en](docs/en) | All pages in English, as Markdown |
+| [docs/ko](docs/ko) | All pages in Korean, as Markdown |
+| [docs/README.md](docs/README.md) | The list of pages |
+| [FORMAT.md](FORMAT.md) | The page format |
+
+The files in `docs/` are updated when pages are published on mimirwiki.com.
+
 ## For AI agents
 
 - [llms.txt](https://mimirwiki.com/llms.txt): a list of all pages with their Markdown addresses
@@ -66,6 +78,12 @@ See [all pages](https://mimirwiki.com/wiki).
 ## Check your website
 
 Enter a website address at [mimirwiki.com/check](https://mimirwiki.com/check) to see how AI systems read it. The check is free and needs no sign-up.
+
+## License
+
+The pages in `docs/` are licensed under [CC BY 4.0](LICENSE). You can copy and adapt them if you credit Mimirwiki and link to the page on mimirwiki.com.
+
+The Mimirwiki name and the image in `assets/` are not covered by this license.
 
 ---
 
