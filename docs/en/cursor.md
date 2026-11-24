@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/cursor.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/cursor
+  ja: https://mimirwiki.com/ja/wiki/cursor
+  zh: https://mimirwiki.com/zh/wiki/cursor
 ---
 
 # Cursor

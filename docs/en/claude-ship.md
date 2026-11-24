@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/claude-ship.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/claude-ship
+  ja: https://mimirwiki.com/ja/wiki/claude-ship
+  zh: https://mimirwiki.com/zh/wiki/claude-ship
 ---
 
 # Claude Ship

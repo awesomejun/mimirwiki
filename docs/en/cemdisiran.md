@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/cemdisiran.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/cemdisiran
+  ja: https://mimirwiki.com/ja/wiki/cemdisiran
+  zh: https://mimirwiki.com/zh/wiki/cemdisiran
 ---
 
 # Cemdisiran (Livsayis)

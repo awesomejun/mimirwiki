@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/escapade.jsonld
 translations:
   en: https://mimirwiki.com/wiki/escapade
+  ja: https://mimirwiki.com/ja/wiki/escapade
+  zh: https://mimirwiki.com/zh/wiki/escapade
 ---
 
 # ESCAPADE

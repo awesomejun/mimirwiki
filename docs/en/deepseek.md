@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/deepseek.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/deepseek
+  ja: https://mimirwiki.com/ja/wiki/deepseek
+  zh: https://mimirwiki.com/zh/wiki/deepseek
 ---
 
 # DeepSeek

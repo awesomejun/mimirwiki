@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/content-delivery-network.jsonld
 translations:
   en: https://mimirwiki.com/wiki/content-delivery-network
+  ja: https://mimirwiki.com/ja/wiki/content-delivery-network
+  zh: https://mimirwiki.com/zh/wiki/content-delivery-network
 ---
 
 # 콘텐츠 전송 네트워크

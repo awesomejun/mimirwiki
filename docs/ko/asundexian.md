@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/asundexian.jsonld
 translations:
   en: https://mimirwiki.com/wiki/asundexian
+  ja: https://mimirwiki.com/ja/wiki/asundexian
+  zh: https://mimirwiki.com/zh/wiki/asundexian
 ---
 
 # 아순덱시안

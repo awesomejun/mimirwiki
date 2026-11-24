@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/claudebot.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/claudebot
+  ja: https://mimirwiki.com/ja/wiki/claudebot
+  zh: https://mimirwiki.com/zh/wiki/claudebot
 ---
 
 # ClaudeBot

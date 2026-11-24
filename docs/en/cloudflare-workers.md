@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/cloudflare-workers.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/cloudflare-workers
+  ja: https://mimirwiki.com/ja/wiki/cloudflare-workers
+  zh: https://mimirwiki.com/zh/wiki/cloudflare-workers
 ---
 
 # Cloudflare Workers

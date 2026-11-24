@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/anthropic.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/anthropic
+  ja: https://mimirwiki.com/ja/wiki/anthropic
+  zh: https://mimirwiki.com/zh/wiki/anthropic
 ---
 
 # Anthropic
