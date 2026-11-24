@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://mimirwiki.com"><img src="assets/hero.png" alt="Mimirwiki home page: Your next reader is not human." width="100%"></a>
+<a href="https://mimirwiki.com"><img src="assets/banner.jpg" alt="Mimirwiki. Your next reader is not human. The fountain of wisdom, for AI." width="100%"></a>
 
 # Mimirwiki
 
@@ -14,11 +14,39 @@
 
 </div>
 
-## What is Mimirwiki?
+## Why Mimirwiki exists
 
-[Mimirwiki](https://mimirwiki.com) is a wiki for AI answer engines and agents. Each page covers one subject, such as a company, an AI model, a web standard or a medicine, and lists its sources.
+People now ask AI when they want to know something. They ask ChatGPT, Claude, Gemini or Perplexity which clinic to visit, which product to buy and what a company does, and many of them read the answer without opening a website.
 
-People now ask ChatGPT, Claude, Gemini or Perplexity when they want to know something. Mimirwiki publishes pages in formats that these systems can read easily.
+An AI answer is built from the sources the AI can read. When a company, a clinic or a product has no source that AI can read easily, AI answers from old reviews and from what other people wrote, or it leaves the subject out.
+
+> **Unknown to AI. Unknown to everyone.**
+
+Wikipedia covers well-known subjects. Most companies, clinics, professionals and new products do not have a Wikipedia page. Mimirwiki is a wiki where these subjects can have a page that AI reads and cites.
+
+## What we believe
+
+**1. AI is a reader, and pages should be written for it.**
+Every page is available as HTML, Markdown, plain text, JSON and JSON-LD at the same address. An AI system can take the format it reads best.
+
+**2. A fact needs a source.**
+Every fact on a page has a numbered source. Government records, public registries and standards documents come first, and each source shows the date it was checked.
+
+**3. A page shows how it was made.**
+Each page states how it was written and whether an expert has reviewed it. Each revision has a SHA-256 hash, so a reader can tell which version it read.
+
+**4. One page covers one subject.**
+A page describes a company, a person, a product, a standard or a medicine. An event is recorded as a dated fact on the page of its subject.
+
+**5. Facts change, so pages carry dates.**
+A fact that can change is written with the date it was true, and the page shows when it was last modified.
+
+**6. Knowledge for AI should be open.**
+AI crawlers are allowed on every page. The pages are licensed under CC BY 4.0, and all of them are in this repository.
+
+## The name
+
+In Norse mythology, Mímir guards a well, and those who drink from it gain wisdom. Odin gave one of his eyes for a drink. Mimirwiki takes its name from that well.
 
 ## Five formats for every page
 
@@ -56,6 +84,12 @@ curl -H "Accept: text/markdown" https://mimirwiki.com/wiki/json-rpc
 
 See [all pages](https://mimirwiki.com/wiki).
 
+## The website
+
+<a href="https://mimirwiki.com"><img src="assets/hero.png" alt="Mimirwiki home page" width="100%"></a>
+
+Enter a website address at [mimirwiki.com/check](https://mimirwiki.com/check) to see how AI systems read it. The check is free and needs no sign-up.
+
 ## In this repository
 
 | Path | Contents |
@@ -74,15 +108,11 @@ The files in `docs/` are updated when pages are published on mimirwiki.com.
 - [sitemap.xml](https://mimirwiki.com/sitemap.xml)
 - [robots.txt](https://mimirwiki.com/robots.txt): AI crawlers are allowed
 
-## Check your website
-
-Enter a website address at [mimirwiki.com/check](https://mimirwiki.com/check) to see how AI systems read it. The check is free and needs no sign-up.
-
 ## License
 
 The pages in `docs/` are licensed under [CC BY 4.0](LICENSE). You can copy and adapt them if you credit Mimirwiki and link to the page on mimirwiki.com.
 
-The Mimirwiki name and the image in `assets/` are not covered by this license.
+The Mimirwiki name and the images in `assets/` are not covered by this license.
 
 ---
 
