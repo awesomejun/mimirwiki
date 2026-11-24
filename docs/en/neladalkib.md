@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/neladalkib.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/neladalkib
+  ja: https://mimirwiki.com/ja/wiki/neladalkib
+  zh: https://mimirwiki.com/zh/wiki/neladalkib
 ---
 
 # Neladalkib (Nelkarmi)

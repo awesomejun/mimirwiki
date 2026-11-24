@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/well-known-uri.jsonld
 translations:
   en: https://mimirwiki.com/wiki/well-known-uri
+  ja: https://mimirwiki.com/ja/wiki/well-known-uri
+  zh: https://mimirwiki.com/zh/wiki/well-known-uri
 ---
 
 # 웰노운 URI

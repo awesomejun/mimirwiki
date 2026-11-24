@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/neladalkib.jsonld
 translations:
   en: https://mimirwiki.com/wiki/neladalkib
+  ja: https://mimirwiki.com/ja/wiki/neladalkib
+  zh: https://mimirwiki.com/zh/wiki/neladalkib
 ---
 
 # 넬라달킵 (Neladalkib, 상품명 넬카미/Nelkarmi)

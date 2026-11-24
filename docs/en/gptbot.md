@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/gptbot.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/gptbot
+  ja: https://mimirwiki.com/ja/wiki/gptbot
+  zh: https://mimirwiki.com/zh/wiki/gptbot
 ---
 
 # GPTBot

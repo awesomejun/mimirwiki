@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/lux-supercomputer.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/lux-supercomputer
+  ja: https://mimirwiki.com/ja/wiki/lux-supercomputer
+  zh: https://mimirwiki.com/zh/wiki/lux-supercomputer
 ---
 
 # Lux Supercomputer

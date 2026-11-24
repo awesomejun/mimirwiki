@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/spacex-starship.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/spacex-starship
+  ja: https://mimirwiki.com/ja/wiki/spacex-starship
+  zh: https://mimirwiki.com/zh/wiki/spacex-starship
 ---
 
 # SpaceX Starship

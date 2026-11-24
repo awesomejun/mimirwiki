@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/oauth.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/oauth
+  ja: https://mimirwiki.com/ja/wiki/oauth
+  zh: https://mimirwiki.com/zh/wiki/oauth
 ---
 
 # OAuth

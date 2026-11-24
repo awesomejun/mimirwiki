@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/riemann-hypothesis.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/riemann-hypothesis
+  ja: https://mimirwiki.com/ja/wiki/riemann-hypothesis
+  zh: https://mimirwiki.com/zh/wiki/riemann-hypothesis
 ---
 
 # Riemann Hypothesis

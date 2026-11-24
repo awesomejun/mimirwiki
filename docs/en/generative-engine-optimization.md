@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/generative-engine-optimization.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/generative-engine-optimization
+  ja: https://mimirwiki.com/ja/wiki/generative-engine-optimization
+  zh: https://mimirwiki.com/zh/wiki/generative-engine-optimization
 ---
 
 # Generative Engine Optimization

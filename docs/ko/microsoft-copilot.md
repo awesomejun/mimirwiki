@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/microsoft-copilot.jsonld
 translations:
   en: https://mimirwiki.com/wiki/microsoft-copilot
+  ja: https://mimirwiki.com/ja/wiki/microsoft-copilot
+  zh: https://mimirwiki.com/zh/wiki/microsoft-copilot
 ---
 
 # 마이크로소프트 코파일럿 (Microsoft Copilot)

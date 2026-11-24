@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/sec-edgar.jsonld
 translations:
   en: https://mimirwiki.com/wiki/sec-edgar
+  ja: https://mimirwiki.com/ja/wiki/sec-edgar
+  zh: https://mimirwiki.com/zh/wiki/sec-edgar
 ---
 
 # SEC EDGAR

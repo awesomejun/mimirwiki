@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/sitemaps.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/sitemaps
+  ja: https://mimirwiki.com/ja/wiki/sitemaps
+  zh: https://mimirwiki.com/zh/wiki/sitemaps
 ---
 
 # Sitemaps

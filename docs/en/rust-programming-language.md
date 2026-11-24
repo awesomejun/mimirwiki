@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/rust-programming-language.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/rust-programming-language
+  ja: https://mimirwiki.com/ja/wiki/rust-programming-language
+  zh: https://mimirwiki.com/zh/wiki/rust-programming-language
 ---
 
 # Rust (Programming Language)

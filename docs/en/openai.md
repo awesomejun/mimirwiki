@@ -4,10 +4,10 @@ subtitle: "Artificial intelligence research and deployment organization consisti
 canonical_url: https://mimirwiki.com/wiki/openai
 language: en
 page_class: entity
-revision_sha256: 337ca7188671b3be8c026a7bb36eb8008d508ee9a9cecfc86bf7632cd472b0ff
-date_modified: 2026-11-23
+revision_sha256: b4ebbcfb3275ff2706e7ba77a91f04b1fbd935e520ce86c488ceca1680b0b23a
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 9
+source_count: 10
 alternates:
   md: https://mimirwiki.com/wiki/openai.md
   txt: https://mimirwiki.com/wiki/openai.txt
@@ -146,7 +146,7 @@ OpenAI separates its web crawlers by function so site owners can set independent
 - 2019: OpenAI establishes a for-profit subsidiary governed and controlled by the parent nonprofit to raise capital and scale compute. [2]
 - 2025-10-28: OpenAI completes its recapitalization into the OpenAI Foundation (holding 26% equity worth ~$130B plus a warrant) and OpenAI Group PBC (with Microsoft holding ~27%), announcing a $25B Foundation commitment to health and AI resilience. [3]
 - 2025-12-09: OpenAI co-founds the Linux Foundation's Agentic AI Foundation (AAIF) as a Platinum member and contributes the AGENTS.md standard. [9]
-- 2026-11-17: OpenAI releases GPT-6.2 Astra and GPT-6.2 Sol as its new flagship models on the Responses API and launches Astra for Law. [3]
+- 2026-11-17: OpenAI releases GPT-6.2 Astra and GPT-6.2 Sol as its new flagship models on the Responses API, alongside the Astra for Law legal configuration. [10]
 
 ## Sources
 
@@ -159,7 +159,8 @@ OpenAI separates its web crawlers by function so site owners can set independent
 7. Rate Limits and Overview of OpenAI Crawlers - OpenAI Developer Documentation. OpenAI. https://developers.openai.com/api/docs/guides/rate-limits.md (checked 2026-11-23; tier 3: official site)
 8. OpenAI GitHub Organization Profile (github.com/openai). GitHub. https://api.github.com/orgs/openai (checked 2026-11-23; tier 3: official site)
 9. Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md. The Linux Foundation. published 2025-12-09. https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation (checked 2026-11-23; tier 3: official site)
+10. Introducing GPT-6.2 Astra and Sol | OpenAI. OpenAI. published 2026-11-17. https://openai.com/index/introducing-gpt-6-2-astra-sol/ (checked 2026-11-24; tier 3: official site)
 
 ## Cite this page
 
-Mimirwiki. "OpenAI." Version 337ca718, 2026-11-23. https://mimirwiki.com/wiki/openai
+Mimirwiki. "OpenAI." Version b4ebbcfb, 2026-11-24. https://mimirwiki.com/wiki/openai

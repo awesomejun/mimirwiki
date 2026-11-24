@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/json-rpc.jsonld
 translations:
   en: https://mimirwiki.com/wiki/json-rpc
+  ja: https://mimirwiki.com/ja/wiki/json-rpc
+  zh: https://mimirwiki.com/zh/wiki/json-rpc
 ---
 
 # JSON-RPC

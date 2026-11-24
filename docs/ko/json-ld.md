@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/json-ld.jsonld
 translations:
   en: https://mimirwiki.com/wiki/json-ld
+  ja: https://mimirwiki.com/ja/wiki/json-ld
+  zh: https://mimirwiki.com/zh/wiki/json-ld
 ---
 
 # JSON-LD

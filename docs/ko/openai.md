@@ -4,10 +4,10 @@ subtitle: "비영리 오픈AI 재단과 산하 공익법인 오픈AI 그룹 PBC�
 canonical_url: https://mimirwiki.com/ko/wiki/openai
 language: ko
 page_class: entity
-revision_sha256: 8e2a079870ed988a99a3cb1c1bf2c33310bda7e07832f0f827b6481cf43d6979
-date_modified: 2026-11-23
+revision_sha256: abe8b3abcce8b0e6fcdb8a898eba35d9f82f79bdf60ff43cd23b458ca19ebe3b
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 9
+source_count: 10
 alternates:
   md: https://mimirwiki.com/ko/wiki/openai.md
   txt: https://mimirwiki.com/ko/wiki/openai.txt
@@ -146,7 +146,7 @@ API 호출 속도 제한(RPM, RPD, TPM, TPD, IPM 및 벡터 스토어당 분당 
 - 2019: 대규모 연산 자원과 연구 확장을 위해 비영리 모법인이 통제하는 영리 자회사를 설립. [2]
 - 2025-10-28: 오픈AI 재단(지분 26%, 약 1,300억 달러 및 워런트 보유)과 오픈AI 그룹 PBC(마이크로소프트 약 27% 보유) 체제로 자본 재조정을 완료하고 250억 달러 공익 출연 계획을 발표. [3]
 - 2025-12-09: 리눅스 재단 산하 에이전틱 AI 재단(AAIF)에 플래티넘 창립 회원으로 참여해 AGENTS.md 표준을 기증. [9]
-- 2026-11-17: 신규 플래그십 모델인 GPT-6.2 아스트라와 GPT-6.2 솔 및 법률 특화 서비스 Astra for Law를 출시. [3]
+- 2026-11-17: 리스폰스 API의 신규 플래그십 모델인 GPT-6.2 아스트라와 GPT-6.2 솔을 출시하고 법률 특화 구성인 Astra for Law를 함께 선보임. [10]
 
 ## 출처
 
@@ -159,7 +159,8 @@ API 호출 속도 제한(RPM, RPD, TPM, TPD, IPM 및 벡터 스토어당 분당 
 7. Rate Limits and Overview of OpenAI Crawlers - OpenAI Developer Documentation. OpenAI. https://developers.openai.com/api/docs/guides/rate-limits.md (확인일 2026-11-23; tier 3: official site)
 8. OpenAI GitHub Organization Profile (github.com/openai). GitHub. https://api.github.com/orgs/openai (확인일 2026-11-23; tier 3: official site)
 9. Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md. The Linux Foundation. 게시일 2025-12-09. https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation (확인일 2026-11-23; tier 3: official site)
+10. Introducing GPT-6.2 Astra and Sol | OpenAI. OpenAI. 게시일 2026-11-17. https://openai.com/index/introducing-gpt-6-2-astra-sol/ (확인일 2026-11-24; tier 3: official site)
 
 ## 이 문서 인용하기
 
-Mimirwiki. "오픈AI (OpenAI)." 버전 8e2a0798, 2026-11-23. https://mimirwiki.com/ko/wiki/openai
+Mimirwiki. "오픈AI (OpenAI)." 버전 abe8b3ab, 2026-11-24. https://mimirwiki.com/ko/wiki/openai

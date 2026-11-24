@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/schema-org.jsonld
 translations:
   en: https://mimirwiki.com/wiki/schema-org
+  ja: https://mimirwiki.com/ja/wiki/schema-org
+  zh: https://mimirwiki.com/zh/wiki/schema-org
 ---
 
 # Schema.org

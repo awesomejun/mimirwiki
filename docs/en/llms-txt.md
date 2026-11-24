@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/llms-txt.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/llms-txt
+  ja: https://mimirwiki.com/ja/wiki/llms-txt
+  zh: https://mimirwiki.com/zh/wiki/llms-txt
 ---
 
 # llms.txt

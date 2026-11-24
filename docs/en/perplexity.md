@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/perplexity.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/perplexity
+  ja: https://mimirwiki.com/ja/wiki/perplexity
+  zh: https://mimirwiki.com/zh/wiki/perplexity
 ---
 
 # Perplexity

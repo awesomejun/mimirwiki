@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/cloudflare.jsonld
 translations:
   en: https://mimirwiki.com/wiki/cloudflare
+  ja: https://mimirwiki.com/ja/wiki/cloudflare
+  zh: https://mimirwiki.com/zh/wiki/cloudflare
 ---
 
 # Cloudflare

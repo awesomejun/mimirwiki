@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/hreflang.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/hreflang
+  ja: https://mimirwiki.com/ja/wiki/hreflang
+  zh: https://mimirwiki.com/zh/wiki/hreflang
 ---
 
 # hreflang

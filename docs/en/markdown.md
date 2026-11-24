@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/markdown.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/markdown
+  ja: https://mimirwiki.com/ja/wiki/markdown
+  zh: https://mimirwiki.com/zh/wiki/markdown
 ---
 
 # Markdown

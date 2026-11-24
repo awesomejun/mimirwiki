@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/indexnow.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/indexnow
+  ja: https://mimirwiki.com/ja/wiki/indexnow
+  zh: https://mimirwiki.com/zh/wiki/indexnow
 ---
 
 # IndexNow

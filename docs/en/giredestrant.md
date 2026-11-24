@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/giredestrant.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/giredestrant
+  ja: https://mimirwiki.com/ja/wiki/giredestrant
+  zh: https://mimirwiki.com/zh/wiki/giredestrant
 ---
 
 # Giredestrant (Wilserdly)

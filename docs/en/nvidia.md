@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/nvidia.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/nvidia
+  ja: https://mimirwiki.com/ja/wiki/nvidia
+  zh: https://mimirwiki.com/zh/wiki/nvidia
 ---
 
 # NVIDIA

@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/nginx.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/nginx
+  ja: https://mimirwiki.com/ja/wiki/nginx
+  zh: https://mimirwiki.com/zh/wiki/nginx
 ---
 
 # nginx

@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/web-bot-auth.jsonld
 translations:
   en: https://mimirwiki.com/wiki/web-bot-auth
+  ja: https://mimirwiki.com/ja/wiki/web-bot-auth
+  zh: https://mimirwiki.com/zh/wiki/web-bot-auth
 ---
 
 # Web Bot Auth

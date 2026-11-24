@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/github-copilot.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/github-copilot
+  ja: https://mimirwiki.com/ja/wiki/github-copilot
+  zh: https://mimirwiki.com/zh/wiki/github-copilot
 ---
 
 # GitHub Copilot
