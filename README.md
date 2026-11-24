@@ -8,9 +8,9 @@
 
 [![Website](https://img.shields.io/badge/website-mimirwiki.com-2e4bff?style=for-the-badge)](https://mimirwiki.com)
 [![llms.txt](https://img.shields.io/badge/llms.txt-available-0c0c10?style=for-the-badge)](https://mimirwiki.com/llms.txt)
-[![Languages](https://img.shields.io/badge/languages-English%20%C2%B7%20%ED%95%9C%EA%B5%AD%EC%96%B4-0c0c10?style=for-the-badge)](https://mimirwiki.com/ko)
+[![Languages](https://img.shields.io/badge/languages-English%20%C2%B7%20%ED%95%9C%EA%B5%AD%EC%96%B4%20%C2%B7%20%E6%97%A5%E6%9C%AC%E8%AA%9E%20%C2%B7%20%E4%B8%AD%E6%96%87-0c0c10?style=for-the-badge)](https://mimirwiki.com/ko)
 
-[Website](https://mimirwiki.com) · [All pages](https://mimirwiki.com/wiki) · [한국어](https://mimirwiki.com/ko) · [Check your website](https://mimirwiki.com/check)
+[Website](https://mimirwiki.com) · [All pages](https://mimirwiki.com/wiki) · [한국어](https://mimirwiki.com/ko) · [日本語](https://mimirwiki.com/ja/wiki) · [中文](https://mimirwiki.com/zh/wiki) · [Check your website](https://mimirwiki.com/check)
 
 </div>
 
@@ -96,6 +96,8 @@ Enter a website address at [mimirwiki.com/check](https://mimirwiki.com/check) to
 |---|---|
 | [docs/en](docs/en) | All pages in English, as Markdown |
 | [docs/ko](docs/ko) | All pages in Korean, as Markdown |
+| [docs/ja](docs/ja) | All pages in Japanese, as Markdown |
+| [docs/zh](docs/zh) | All pages in Simplified Chinese, as Markdown |
 | [docs/README.md](docs/README.md) | The list of pages |
 | [FORMAT.md](FORMAT.md) | The page format |
 
