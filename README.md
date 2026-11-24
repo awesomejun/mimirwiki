@@ -8,7 +8,6 @@
 
 [![Website](https://img.shields.io/badge/website-mimirwiki.com-2e4bff?style=for-the-badge)](https://mimirwiki.com)
 [![llms.txt](https://img.shields.io/badge/llms.txt-available-0c0c10?style=for-the-badge)](https://mimirwiki.com/llms.txt)
-[![License](https://img.shields.io/badge/pages-CC_BY_4.0-0c0c10?style=for-the-badge)](LICENSE)
 [![Languages](https://img.shields.io/badge/languages-English%20%C2%B7%20%ED%95%9C%EA%B5%AD%EC%96%B4-0c0c10?style=for-the-badge)](https://mimirwiki.com/ko)
 
 [Website](https://mimirwiki.com) · [All pages](https://mimirwiki.com/wiki) · [한국어](https://mimirwiki.com/ko) · [Check your website](https://mimirwiki.com/check)
