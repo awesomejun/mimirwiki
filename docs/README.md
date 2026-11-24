@@ -1,6 +1,6 @@
 # Mimirwiki pages
 
-48 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
+51 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
 
 | Subject | English | 한국어 | Website |
 |---|---|---|---|
@@ -10,12 +10,14 @@
 | ChatGPT<br><sub>Conversational AI application developed by OpenAI for chat, work tasks, web search, and software development</sub> | [en/chatgpt.md](en/chatgpt.md) | [ko/chatgpt.md](ko/chatgpt.md) | [Open](https://mimirwiki.com/wiki/chatgpt) |
 | Claude<br><sub>AI assistant and family of large language models developed by Anthropic, PBC</sub> | [en/claude.md](en/claude.md) | [ko/claude.md](ko/claude.md) | [Open](https://mimirwiki.com/wiki/claude) |
 | Claude Fable 5.2<br><sub>Anthropic frontier large language model for demanding reasoning, long-horizon coding, and scientific discovery, released alongside the domain-permissive Claude Mythos 5.2 configuration</sub> | [en/claude-fable-5-2.md](en/claude-fable-5-2.md) | [ko/claude-fable-5-2.md](ko/claude-fable-5-2.md) | [Open](https://mimirwiki.com/wiki/claude-fable-5-2) |
+| Claude Ship<br><sub>Suite of Anthropic agents for reviewing, fixing, and approving GitHub pull requests</sub> | [en/claude-ship.md](en/claude-ship.md) | [ko/claude-ship.md](ko/claude-ship.md) | [Open](https://mimirwiki.com/wiki/claude-ship) |
 | ClaudeBot<br><sub>Web crawler operated by Anthropic to collect public web content for AI model training</sub> | [en/claudebot.md](en/claudebot.md) | [ko/claudebot.md](ko/claudebot.md) | [Open](https://mimirwiki.com/wiki/claudebot) |
 | Cloudflare<br><sub>US technology company (NYSE: NET) operating a global network for web security, performance and developer services</sub> | [en/cloudflare.md](en/cloudflare.md) | [ko/cloudflare.md](ko/cloudflare.md) | [Open](https://mimirwiki.com/wiki/cloudflare) |
 | Cloudflare Workers<br><sub>Serverless execution platform by Cloudflare running JavaScript, TypeScript, Python, Rust, and WebAssembly across V8 isolates and the workerd runtime</sub> | [en/cloudflare-workers.md](en/cloudflare-workers.md) | [ko/cloudflare-workers.md](ko/cloudflare-workers.md) | [Open](https://mimirwiki.com/wiki/cloudflare-workers) |
 | Content Delivery Network<br><sub>Geographically distributed network of caching servers that delivers web content from locations close to end users</sub> | [en/content-delivery-network.md](en/content-delivery-network.md) | [ko/content-delivery-network.md](ko/content-delivery-network.md) | [Open](https://mimirwiki.com/wiki/content-delivery-network) |
 | Cursor<br><sub>AI coding agent and software development environment created by Anysphere, Inc. and bundled in The X Subscription</sub> | [en/cursor.md](en/cursor.md) | [ko/cursor.md](ko/cursor.md) | [Open](https://mimirwiki.com/wiki/cursor) |
 | DeepSeek<br><sub>Chinese artificial intelligence research laboratory developing the DeepSeek-V4, DeepSeek-R1, and DeepSeek-V3 foundation models</sub> | [en/deepseek.md](en/deepseek.md) | [ko/deepseek.md](ko/deepseek.md) | [Open](https://mimirwiki.com/wiki/deepseek) |
+| ESCAPADE<br><sub>NASA and UC Berkeley twin-orbiter heliophysics mission studying Mars's magnetosphere and atmospheric loss</sub> | [en/escapade.md](en/escapade.md) | [ko/escapade.md](ko/escapade.md) | [Open](https://mimirwiki.com/wiki/escapade) |
 | Gemini 4 Neon<br><sub>Google DeepMind multimodal reasoning model released in November 2026 for coding, science, and enterprise workflows</sub> | [en/gemini-4-neon.md](en/gemini-4-neon.md) | [ko/gemini-4-neon.md](ko/gemini-4-neon.md) | [Open](https://mimirwiki.com/wiki/gemini-4-neon) |
 | Generative Engine Optimization<br><sub>Methods and metrics for improving web content visibility and citation in generative AI search responses</sub> | [en/generative-engine-optimization.md](en/generative-engine-optimization.md) | [ko/generative-engine-optimization.md](ko/generative-engine-optimization.md) | [Open](https://mimirwiki.com/wiki/generative-engine-optimization) |
 | Giredestrant (Wilserdly)<br><sub>Next-generation oral selective estrogen receptor degrader (SERD) for ER-positive, HER2-negative, ESR1-mutated advanced breast cancer</sub> | [en/giredestrant.md](en/giredestrant.md) | [ko/giredestrant.md](ko/giredestrant.md) | [Open](https://mimirwiki.com/wiki/giredestrant) |
@@ -31,6 +33,7 @@
 | Java4Shell (CVE-2026-114938)<br><sub>Critical heap buffer overflow in the OpenJDK HotSpot C2 JIT x86-64 AVX-512 VBMI Base64 decoder intrinsic</sub> | [en/java4shell.md](en/java4shell.md) | [ko/java4shell.md](ko/java4shell.md) | [Open](https://mimirwiki.com/wiki/java4shell) |
 | JSON-LD<br><sub>W3C standard format for serializing Linked Data in JSON</sub> | [en/json-ld.md](en/json-ld.md) | [ko/json-ld.md](ko/json-ld.md) | [Open](https://mimirwiki.com/wiki/json-ld) |
 | JSON-RPC<br><sub>Stateless, transport-agnostic remote procedure call protocol encoded in JSON</sub> | [en/json-rpc.md](en/json-rpc.md) | [ko/json-rpc.md](ko/json-rpc.md) | [Open](https://mimirwiki.com/wiki/json-rpc) |
+| Lean (Theorem Prover)<br><sub>Open-source functional programming language and interactive proof assistant (Lean 4)</sub> | [en/lean-theorem-prover.md](en/lean-theorem-prover.md) | [ko/lean-theorem-prover.md](ko/lean-theorem-prover.md) | [Open](https://mimirwiki.com/wiki/lean-theorem-prover) |
 | llms.txt<br><sub>Proposed Markdown file that guides AI agents to a website's key content</sub> | [en/llms-txt.md](en/llms-txt.md) | [ko/llms-txt.md](ko/llms-txt.md) | [Open](https://mimirwiki.com/wiki/llms-txt) |
 | Lux Supercomputer<br><sub>AMD-powered artificial intelligence and high-performance computing supercomputer at Oak Ridge National Laboratory</sub> | [en/lux-supercomputer.md](en/lux-supercomputer.md) | [ko/lux-supercomputer.md](ko/lux-supercomputer.md) | [Open](https://mimirwiki.com/wiki/lux-supercomputer) |
 | Markdown<br><sub>Lightweight plain-text markup language, text/markdown media type, and standardized specifications including CommonMark and GFM</sub> | [en/markdown.md](en/markdown.md) | [ko/markdown.md](ko/markdown.md) | [Open](https://mimirwiki.com/wiki/markdown) |
