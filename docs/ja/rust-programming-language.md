@@ -4,8 +4,8 @@ subtitle: "ガベージコレクタなしでコンパイル時のメモリ安全
 canonical_url: https://mimirwiki.com/ja/wiki/rust-programming-language
 language: ja
 page_class: entity
-revision_sha256: 894635c578b8be19a5f3ac4df9f57871c46c2d10cff29668f738ff660fe8ee0d
-date_modified: 2026-11-23
+revision_sha256: 857456ae7810b5b0cca4586995f4be9e551dc97ceeed5156503321a8988c8fde
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -127,4 +127,4 @@ Rustエディション（2015、2018、2021、2024）は、Cargo.tomlでクレ�
 
 ## このページを引用する
 
-Mimirwiki. "Rust（プログラミング言語）." 版 894635c5, 2026-11-23. https://mimirwiki.com/ja/wiki/rust-programming-language
+Mimirwiki. "Rust（プログラミング言語）." 版 857456ae, 2026-11-24. https://mimirwiki.com/ja/wiki/rust-programming-language

@@ -4,8 +4,8 @@ subtitle: "検索エンジンやその他のアプリケーション向けにウ
 canonical_url: https://mimirwiki.com/ja/wiki/schema-org
 language: ja
 page_class: anchor
-revision_sha256: 1e32e3211d0296332a50490377c1d6bff6226cf4a9e473ca4145e64bead55b9d
-date_modified: 2026-11-23
+revision_sha256: 6014dedc379bf290d5621bdae36ad9207fb6fba2d5c87c5364e3a5faf2c40cec
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 10
 alternates:
@@ -96,7 +96,7 @@ Schema.orgは当初、`http://schema.org/` のURLをRDF用語識別子とする 
 
 ## Schema.orgのガバナンス、リポジトリ、ライセンス
 
-Schema.orgは、運営委員会（Steering Group）とW3C Schema.org コミュニティグループから成る二層構造で統治されている。[1] 運営委員会は全体的な監督、運営上の意思決定、および正式リリースの承認を担う。[1] GoogleでSchema.orgを立ち上げた共同設立者のR.V. Guhaが個人の資格で運営委員会の議長を務めており（2026年11月23日時点）、設立企業のGoogle、Microsoft、Yahoo、Yandexの各代表、W3C代表、および主要なコミュニティ貢献者が参加している。[1] 2015年4月、運営委員会は全会一致でメンバーを拡大し、Stéphane Corlosquet、Martin Hepp（GoodRelationsの作者、2014年から2017年まで運営委員会に在籍）、およびW3Cの議席を追加した。[1] 運営委員会の議論は公開されており、議事録はGitHubに投稿されイシュー#1からリンクされている。[1]
+Schema.orgは、運営委員会（Steering Group）とW3C Schema.org コミュニティグループから成る二層構造で統治されている。[1] 運営委員会は全体的な監督、運営上の意思決定、および正式リリースの承認を担う。[1] GoogleでSchema.orgを立ち上げた共同設立者のR.V. Guhaが個人の資格で運営委員会の議長を務めており（2026年11月23日時点）、設立企業のGoogle、Microsoft、Yahoo、Yandexの各代表、W3C代表、および主要なコミュニティ貢献者が参加している。[1] 2015年4月、運営委員会は全会一致でメンバーを拡大し、Stéphane Corlosquet、Martin Hepp（GoodRelationsの作者）、およびW3Cの議席を追加した。[1] 運営委員会の議論は公開されており、議事録はGitHubに投稿されイシュー#1からリンクされている。[1]
 
 W3C Schema.org コミュニティグループはDan Brickleyによって提案され2015年3月31日に発足し、2015年4月に日々のスキーマ議論、提案作成、拡張レビューのための主要な公開フォーラムとなった。[1][7] W3Cアカウントを持ち、W3C Community Contributor License Agreementに署名すれば誰でも参加でき、W3CはグループのホスティングがW3C会員やスタッフによる承認を意味しないことを明示している。[1][7] 2026年11月23日時点で、コミュニティグループには510名の参加者がおり、Dan Brickley、Dan Scott、Stéphane Corlosquet、Phil Barker、Phil Archer、Ryan Leveringの6名が議長として名を連ねている。[7] Dan Brickleyは日常運営とプロジェクトのウェブマスターも務めており、運営委員会におけるGoogle代表としての役割とは独立して、Schema.orgを代表しコミュニティグループの議長を務めている。[1] 議論はメーリングリスト `public-schemaorg@w3.org` とGitHub上で行われており、健康・医療、スポーツ、アーカイブ、書誌、自動車などの分野における関連W3Cコミュニティグループが専門領域の作業を調整している。[1][7]
 
@@ -204,4 +204,4 @@ Schema.orgのスキーマ、サイトドキュメント、ブログ記事、マ�
 
 ## このページを引用する
 
-Mimirwiki. "Schema.org." 版 1e32e321, 2026-11-23. https://mimirwiki.com/ja/wiki/schema-org
+Mimirwiki. "Schema.org." 版 6014dedc, 2026-11-24. https://mimirwiki.com/ja/wiki/schema-org

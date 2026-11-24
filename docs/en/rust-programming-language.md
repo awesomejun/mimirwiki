@@ -4,8 +4,8 @@ subtitle: "Multi-paradigm systems programming language enforcing compile-time me
 canonical_url: https://mimirwiki.com/wiki/rust-programming-language
 language: en
 page_class: entity
-revision_sha256: 50f11e7e8875fc0b9e4c3fca60bd64b47276a58721fa2d467dae0e7437590aa2
-date_modified: 2026-11-23
+revision_sha256: b2420d8be826996efd0b7c3647753689b52be5f26fc8628c072327f6b429f900
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -63,7 +63,7 @@ On **November 12, 2026**, the Rust Release Team published **Rust 1.100.0** (bran
 
 | Feature / Component | Summary of Stabilization in Rust 1.100.0 |
 | --- | --- |
-| **The Never Type (`!`)** | Stabilized after 10 years and 5 prior attempts. `!` is the canonical uninhabited type for diverging computations (`return`, `break`, `panic!`, `std::process::exit`) with automatic never-to-any coercion. `!’ can now be named in arbitrary type positions (e.g., `Result<T, !>`), `core::convert::Infallible` is now a type alias for `!`, and the never-type fallback is unified to `!` across all editions (2015, 2018, 2021, and 2024) [4][5][7]. |
+| **The Never Type (`!`)** | Stabilized after 10 years and 5 prior attempts. `!` is the canonical uninhabited type for diverging computations (`return`, `break`, `panic!`, `std::process::exit`) with automatic never-to-any coercion. `!` can now be named in arbitrary type positions (e.g., `Result<T, !>`), `core::convert::Infallible` is now a type alias for `!`, and the never-type fallback is unified to `!` across all editions (2015, 2018, 2021, and 2024) [4][5][7]. |
 | **Custom Allocator API (`std::alloc::Allocator`)** | Stabilizes the core `Allocator` trait alongside `Global`, `System`, and custom-allocator constructors/accessors for `Box` (`Box::new_in`, `Box::from_raw_in`, `Box::allocator`) and `Vec` (`Vec::new_in`, `Vec::with_capacity_in`, `Vec::from_raw_parts_in`), establishing the foundation for the Allocators 1.0 goal [4][5]. |
 | **`core::mem::DropGuard`** | New RAII helper wrapping a value and a closure (`DropGuard::new(val, | v | ...)`), implementing `Deref`/`DerefMut` and running the cleanup closure on every scope exit unless explicitly disarmed via `DropGuard::dismiss(guard)` for transactional rollback patterns [4][5]. |
 | **`core::mem::conjure_zst`** | Dedicated `unsafe fn conjure_zst<T>() -> T` for safely materializing inhabited zero-sized types (ZSTs) without ad-hoc `transmute(())` or `MaybeUninit` patterns [4][5]. |
@@ -127,4 +127,4 @@ Rust Editions (2015, 2018, 2021, and 2024) are opt-in per-crate configurations i
 
 ## Cite this page
 
-Mimirwiki. "Rust (Programming Language)." Version 50f11e7e, 2026-11-23. https://mimirwiki.com/wiki/rust-programming-language
+Mimirwiki. "Rust (Programming Language)." Version b2420d8b, 2026-11-24. https://mimirwiki.com/wiki/rust-programming-language

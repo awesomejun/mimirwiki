@@ -4,8 +4,8 @@ subtitle: "가비지 컬렉터 없이 컴파일 타임에 메모리 안전성과
 canonical_url: https://mimirwiki.com/ko/wiki/rust-programming-language
 language: ko
 page_class: entity
-revision_sha256: b9081f798d45e8b718de58917ce1a59ec0611d0bcc8c568546941890f8c86846
-date_modified: 2026-11-23
+revision_sha256: 1a6792fcbaa4040895fe633299b00d1ca47c907c65d1fb4f17f4900e135cad14
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -127,4 +127,4 @@ translations:
 
 ## 이 문서 인용하기
 
-Mimirwiki. "러스트 (Rust 프로그래밍 언어)." 버전 b9081f79, 2026-11-23. https://mimirwiki.com/ko/wiki/rust-programming-language
+Mimirwiki. "러스트 (Rust 프로그래밍 언어)." 버전 1a6792fc, 2026-11-24. https://mimirwiki.com/ko/wiki/rust-programming-language

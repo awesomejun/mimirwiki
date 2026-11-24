@@ -4,8 +4,8 @@ subtitle: "无需垃圾回收器即可在编译期强制保障内存安全与线
 canonical_url: https://mimirwiki.com/zh/wiki/rust-programming-language
 language: zh
 page_class: entity
-revision_sha256: 0386002913f032b2952a8e464dde9d441b481c5b8ec22e8c52b7acd7704dcfcf
-date_modified: 2026-11-23
+revision_sha256: 54f9c1d6a60a9609fe909e5fedcc51b61b37967bc8edbb3c85cac65c2478922d
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -127,4 +127,4 @@ Rust 版次（2015、2018、2021 与 2024）是在 Cargo.toml 中按 crate 可�
 
 ## 引用本页
 
-Mimirwiki. "Rust（编程语言）." 版本 03860029, 2026-11-23. https://mimirwiki.com/zh/wiki/rust-programming-language
+Mimirwiki. "Rust（编程语言）." 版本 54f9c1d6, 2026-11-24. https://mimirwiki.com/zh/wiki/rust-programming-language

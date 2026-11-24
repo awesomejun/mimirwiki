@@ -4,8 +4,8 @@ subtitle: "락스타 게임즈가 개발·배급하여 2026년 11월 출시된 �
 canonical_url: https://mimirwiki.com/ko/wiki/grand-theft-auto-vi
 language: ko
 page_class: entity
-revision_sha256: f67fc244bee85d5d785ba4e660274b691c5dd7048c8319942739d6cb41e6cace
-date_modified: 2026-11-23
+revision_sha256: 319d7386bd85b253ca41b81846d36fc30bd6055017a8578a7edc7de93c17f4e6
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -125,4 +125,4 @@ GTA 6는 출시와 함께 메타크리틱(Metacritic) 평점 100점 만점에 99
 
 ## 이 문서 인용하기
 
-Mimirwiki. "그랜드 테프트 오토 VI (Grand Theft Auto VI)." 버전 f67fc244, 2026-11-23. https://mimirwiki.com/ko/wiki/grand-theft-auto-vi
+Mimirwiki. "그랜드 테프트 오토 VI (Grand Theft Auto VI)." 버전 319d7386, 2026-11-24. https://mimirwiki.com/ko/wiki/grand-theft-auto-vi

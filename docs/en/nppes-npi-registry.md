@@ -4,8 +4,8 @@ subtitle: "U.S. federal system that assigns 10-digit identifiers to health care 
 canonical_url: https://mimirwiki.com/wiki/nppes-npi-registry
 language: en
 page_class: anchor
-revision_sha256: fe118a5fb6aa81f653fff94966e806b8a3a7a0a24340a9953ca7c5ab1d6c8d5c
-date_modified: 2026-11-21
+revision_sha256: 57c01873ab6f4f967ee752582976f4c4540161d41ae98d1edbb02508fda5bbcb
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 12
 alternates:
@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/nppes-npi-registry.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/nppes-npi-registry
+  ja: https://mimirwiki.com/ja/wiki/nppes-npi-registry
+  zh: https://mimirwiki.com/zh/wiki/nppes-npi-registry
 ---
 
 # NPPES and the National Provider Identifier (NPI)
@@ -175,9 +177,9 @@ CMS describes the NPI Registry as updated daily, and the API retrieves data from
 8. Data Dissemination | CMS. Centers for Medicare & Medicaid Services. https://www.cms.gov/medicare/regulations-guidance/administrative-simplification/data-dissemination (checked 2026-11-21; tier 1: government or public registry)
 9. HIPAA Administrative Simplification: National Plan and Provider Enumeration System Data Dissemination. Federal Register, Centers for Medicare & Medicaid Services. published 2007-05-30. https://www.federalregister.gov/documents/2007/05/30/07-2651/hipaa-administrative-simplification-national-plan-and-provider-enumeration-system-data-dissemination (checked 2026-11-21; tier 1: government or public registry)
 10. CMS-10114 National Provider Identifier (NPI) Application/Update Form. Centers for Medicare & Medicaid Services. https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/downloads/CMS10114.pdf (checked 2026-11-21; tier 1: government or public registry)
-11. National Uniform Claim Committee - Provider Taxonomy. National Uniform Claim Committee. https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40 (checked 2026-11-21; tier 1: government or public registry)
+11. National Uniform Claim Committee - Provider Taxonomy. National Uniform Claim Committee. https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40 (checked 2026-11-21; tier 3: official site)
 12. How to Apply | CMS. Centers for Medicare & Medicaid Services. https://www.cms.gov/medicare/regulations-guidance/administrative-simplification/how-apply (checked 2026-11-21; tier 1: government or public registry)
 
 ## Cite this page
 
-Mimirwiki. "NPPES and the National Provider Identifier (NPI)." Version fe118a5f, 2026-11-21. https://mimirwiki.com/wiki/nppes-npi-registry
+Mimirwiki. "NPPES and the National Provider Identifier (NPI)." Version 57c01873, 2026-11-24. https://mimirwiki.com/wiki/nppes-npi-registry

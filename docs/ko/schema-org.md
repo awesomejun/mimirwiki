@@ -4,8 +4,8 @@ subtitle: "검색 엔진과 여러 애플리케이션을 위해 웹 페이지의
 canonical_url: https://mimirwiki.com/ko/wiki/schema-org
 language: ko
 page_class: anchor
-revision_sha256: d615078fea7000c9801f0e5a814ddc01e0d51c1708eb773f4b2ea5066b599ca7
-date_modified: 2026-11-23
+revision_sha256: 0641d8e408da30db9d7e41bf839605d50d93b5aa4ce39a57e54222840a5268f3
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 10
 alternates:
@@ -96,7 +96,7 @@ Schema.org는 출범 당시 `http:` 기반 웹사이트로 운영되며 RDF 용�
 
 ## Schema.org의 거버넌스, 저장소, 라이선스
 
-Schema.org는 운영 위원회(Steering Group)와 W3C Schema.org 커뮤니티 그룹(Community Group)의 이원 거버넌스 구조로 운영된다.[1] 운영 위원회는 프로젝트 전반의 감독, 일상 운영 결정, 정식 릴리스 승인을 맡는다.[1] Google에서 Schema.org를 발의한 공동 설립자 R.V. 구하(R.V. Guha)가 개인 자격으로 운영 위원회 의장을 맡고 있으며(2026-11-23 기준), 설립 참여사인 Google, Microsoft, Yahoo, Yandex 대표와 W3C 대표, 주요 커뮤니티 기여자가 참여한다.[1] 2015년 4월 운영 위원회는 만장일치로 구성을 확대해 스테판 코를로스케(Stéphane Corlosquet), GoodRelations 작성자인 마르틴 헤프(Martin Hepp, 2014년부터 2017년까지 재임), W3C 대표 자리를 추가했다.[1] 운영 위원회의 논의는 공개되며, 회의록은 GitHub에 게시되어 이슈 #1에 연결된다.[1]
+Schema.org는 운영 위원회(Steering Group)와 W3C Schema.org 커뮤니티 그룹(Community Group)의 이원 거버넌스 구조로 운영된다.[1] 운영 위원회는 프로젝트 전반의 감독, 일상 운영 결정, 정식 릴리스 승인을 맡는다.[1] Google에서 Schema.org를 발의한 공동 설립자 R.V. 구하(R.V. Guha)가 개인 자격으로 운영 위원회 의장을 맡고 있으며(2026-11-23 기준), 설립 참여사인 Google, Microsoft, Yahoo, Yandex 대표와 W3C 대표, 주요 커뮤니티 기여자가 참여한다.[1] 2015년 4월 운영 위원회는 만장일치로 구성을 확대해 스테판 코를로스케(Stéphane Corlosquet), GoodRelations 작성자인 마르틴 헤프(Martin Hepp), W3C 대표 자리를 추가했다.[1] 운영 위원회의 논의는 공개되며, 회의록은 GitHub에 게시되어 이슈 #1에 연결된다.[1]
 
 W3C Schema.org 커뮤니티 그룹은 댄 브릭리가 제안해 2015년 3월 31일 출범했으며, 2015년 4월부터 일상적인 스키마 논의, 제안 작성, 확장 검토의 주된 공개 포럼 역할을 맡고 있다.[1][7] W3C 계정을 갖고 W3C 커뮤니티 기여자 라이선스 계약(W3C Community Contributor License Agreement)에 동의하면 누구나 참여할 수 있으며, W3C는 그룹 호스팅이 W3C 회원사나 직원의 공식 승인을 뜻하지 않는다고 명시한다.[1][7] 2026-11-23 기준 커뮤니티 그룹 참여자는 510명이고, 의장은 댄 브릭리, 댄 스콧(Dan Scott), 스테판 코를로스케, 필 바커(Phil Barker), 필 아처(Phil Archer), 라이언 레버링(Ryan Levering) 등 6명이다.[7] 댄 브릭리는 일상 운영과 프로젝트 웹마스터 역할도 수행하며, 운영 위원회의 Google 대표 자격과는 별개로 Schema.org 프로젝트 측 의장으로 커뮤니티 그룹을 이끈다.[1] 논의는 `public-schemaorg@w3.org` 메일링 리스트와 GitHub에서 이루어지며, 보건 및 의료, 스포츠, 아카이브, 서지, 자동차 분야의 관련 W3C 커뮤니티 그룹들도 메인 커뮤니티 그룹과 GitHub 저장소를 통해 조율한다.[1][7]
 
@@ -204,4 +204,4 @@ Schema.org의 스키마, 사이트 문서, 블로그 글, 마크업 예제는 �
 
 ## 이 문서 인용하기
 
-Mimirwiki. "Schema.org." 버전 d615078f, 2026-11-23. https://mimirwiki.com/ko/wiki/schema-org
+Mimirwiki. "Schema.org." 버전 0641d8e4, 2026-11-24. https://mimirwiki.com/ko/wiki/schema-org

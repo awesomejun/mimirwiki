@@ -4,8 +4,8 @@ subtitle: "Shared structured data vocabulary for marking up web pages for search
 canonical_url: https://mimirwiki.com/wiki/schema-org
 language: en
 page_class: anchor
-revision_sha256: 25550caa03ed91f57deadc8c6d139e973d07080b7fe18656b0d6a32f7c59b67c
-date_modified: 2026-11-23
+revision_sha256: 991456cc61cbcf701004643a4420d9c86051b24e9fbb2c185298cfbafe973973
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 10
 alternates:
@@ -96,7 +96,7 @@ Schema.org launched on an `http:` website with RDF term identifiers using `http:
 
 ## Schema.org governance, repository, and licensing
 
-Schema.org is governed through a two-tier structure consisting of a Steering Group and the W3C Schema.org Community Group.[1] The Steering Group provides high-level oversight, manages operational decisions, and approves formal releases.[1] Co-founder R.V. Guha, who initiated Schema.org at Google, chairs the Steering Group in an individual capacity (as of 2026-11-23), alongside representatives from founding companies Google, Microsoft, Yahoo, and Yandex, a W3C representative, and substantial community contributors.[1] In April 2015, the Steering Group unanimously expanded its membership to add Stéphane Corlosquet, Martin Hepp (author of GoodRelations, who served on the Steering Group from 2014 to 2017), and a seat for the W3C.[1] Steering Group discussions are public, with meeting notes posted on GitHub and linked from issue #1.[1]
+Schema.org is governed through a two-tier structure consisting of a Steering Group and the W3C Schema.org Community Group.[1] The Steering Group provides high-level oversight, manages operational decisions, and approves formal releases.[1] Co-founder R.V. Guha, who initiated Schema.org at Google, chairs the Steering Group in an individual capacity (as of 2026-11-23), alongside representatives from founding companies Google, Microsoft, Yahoo, and Yandex, a W3C representative, and substantial community contributors.[1] In April 2015, the Steering Group unanimously expanded its membership to add Stéphane Corlosquet, Martin Hepp (author of GoodRelations), and a seat for the W3C.[1] Steering Group discussions are public, with meeting notes posted on GitHub and linked from issue #1.[1]
 
 The W3C Schema.org Community Group was proposed by Dan Brickley and launched on 2015-03-31, becoming the main public forum for day-to-day schema discussion, proposal preparation, and extension review in April 2015.[1][7] Participation is open to anyone with a W3C account who signs the W3C Community Contributor License Agreement, and W3C notes that its hosting of the group does not imply endorsement by W3C Membership or staff.[1][7] As of 2026-11-23, the Community Group has 510 participants and six listed chairs: Dan Brickley, Dan Scott, Stéphane Corlosquet, Phil Barker, Phil Archer, and Ryan Levering.[7] Dan Brickley also runs daily operations and serves as project webmaster, chairing the Community Group on behalf of Schema.org independently of his role as Google's representative on the Steering Group.[1] Discussions take place on the `public-schemaorg@w3.org` mailing list and on GitHub, with related W3C Community Groups coordinating domain work in areas including health and medicine, sports, archives, bibliography, and automotive.[1][7]
 
@@ -204,4 +204,4 @@ No. According to the Schema.org FAQ, search engines do not surface every type of
 
 ## Cite this page
 
-Mimirwiki. "Schema.org." Version 25550caa, 2026-11-23. https://mimirwiki.com/wiki/schema-org
+Mimirwiki. "Schema.org." Version 991456cc, 2026-11-24. https://mimirwiki.com/wiki/schema-org

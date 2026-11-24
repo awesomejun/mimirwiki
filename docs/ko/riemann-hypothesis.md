@@ -4,8 +4,8 @@ subtitle: "리만 제타 함수의 비자명 영점에 관한 1859년 수학 난
 canonical_url: https://mimirwiki.com/ko/wiki/riemann-hypothesis
 language: ko
 page_class: concept
-revision_sha256: 730ca5ae5117c78bb1cfde9be8f553a263b4670478631ad7208a4832fa657d43
-date_modified: 2026-11-23
+revision_sha256: bc303f05d6c9eaa262e2a50ce171c5772366428f0a4f9b37162c5ed9a1a5a66d
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 9
 alternates:
@@ -135,4 +135,4 @@ AI가 생성에 관여한 대규모 Lean 코드가 실제로 정리를 증명했
 
 ## 이 문서 인용하기
 
-Mimirwiki. "리만 가설 (Riemann Hypothesis)." 버전 730ca5ae, 2026-11-23. https://mimirwiki.com/ko/wiki/riemann-hypothesis
+Mimirwiki. "리만 가설 (Riemann Hypothesis)." 버전 bc303f05, 2026-11-24. https://mimirwiki.com/ko/wiki/riemann-hypothesis

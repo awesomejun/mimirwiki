@@ -4,8 +4,8 @@ subtitle: "面向搜索引擎及其他应用程序的网页结构化数据标记
 canonical_url: https://mimirwiki.com/zh/wiki/schema-org
 language: zh
 page_class: anchor
-revision_sha256: 1c2c407541345bedcfa697d3f90e81cd397006b4e880d105775292a2f8ca03bb
-date_modified: 2026-11-23
+revision_sha256: 30e936144a6958c753afb7b2c13f69916fbb20506d41212078314edb64582fc9
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 10
 alternates:
@@ -96,7 +96,7 @@ Schema.org 最初部署在 `http:` 网站上，使用 `http://schema.org/` URL �
 
 ## Schema.org 治理架构、代码仓库与许可协议
 
-Schema.org 采用由指导委员会（Steering Group）与 W3C Schema.org 社区组构成的双层治理结构。[1] 指导委员会负责高层监督、管理运营决策并批准正式版本发布。[1] 在 Google 发起 Schema.org 的联合创始人 R.V. Guha 以个人身份担任指导委员会主席（截至 2026 年 11 月 23 日），成员还包括创始企业 Google、Microsoft、Yahoo 和 Yandex 的代表、一名 W3C 代表以及重要社区贡献者。[1] 2015 年 4 月，指导委员会一致同意扩大成员规模，增补了 Stéphane Corlosquet、Martin Hepp（GoodRelations 的作者，2014 年至 2017 年在指导委员会任职）以及一个 W3C 席位。[1] 指导委员会的讨论全部公开，会议纪要发布在 GitHub 上并链接至议题 #1。[1]
+Schema.org 采用由指导委员会（Steering Group）与 W3C Schema.org 社区组构成的双层治理结构。[1] 指导委员会负责高层监督、管理运营决策并批准正式版本发布。[1] 在 Google 发起 Schema.org 的联合创始人 R.V. Guha 以个人身份担任指导委员会主席（截至 2026 年 11 月 23 日），成员还包括创始企业 Google、Microsoft、Yahoo 和 Yandex 的代表、一名 W3C 代表以及重要社区贡献者。[1] 2015 年 4 月，指导委员会一致同意扩大成员规模，增补了 Stéphane Corlosquet、Martin Hepp（GoodRelations 的作者）以及一个 W3C 席位。[1] 指导委员会的讨论全部公开，会议纪要发布在 GitHub 上并链接至议题 #1。[1]
 
 W3C Schema.org 社区组由 Dan Brickley 提议并于 2015 年 3 月 31 日成立，自 2015 年 4 月起成为日常模式讨论、提案起草和扩展评审的主要公开论坛。[1][7] 任何拥有 W3C 账号并签署《W3C 社区贡献者许可协议》（W3C Community Contributor License Agreement）的人士均可参与，W3C 同时声明其托管该小组并不意味着获得 W3C 会员或工作人员的官方背书。[1][7] 截至 2026 年 11 月 23 日，该社区组共有 510 名参与者及六位列名主席：Dan Brickley、Dan Scott、Stéphane Corlosquet、Phil Barker、Phil Archer 和 Ryan Levering。[7] Dan Brickley 还负责日常运营并担任项目网站管理员，独立于其在指导委员会中作为 Google 代表的身份，代表 Schema.org 主持社区组工作。[1] 相关讨论在 `public-schemaorg@w3.org` 邮件列表及 GitHub 上开展，其他相关 W3C 社区组则负责协调健康医疗、体育、档案、书目和汽车等领域的专业工作。[1][7]
 
@@ -204,4 +204,4 @@ Schema.org 的模式定义、网站文档、博客内容和标记示例采用知
 
 ## 引用本页
 
-Mimirwiki. "Schema.org." 版本 1c2c4075, 2026-11-23. https://mimirwiki.com/zh/wiki/schema-org
+Mimirwiki. "Schema.org." 版本 30e93614, 2026-11-24. https://mimirwiki.com/zh/wiki/schema-org

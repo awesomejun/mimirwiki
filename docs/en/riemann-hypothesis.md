@@ -4,8 +4,8 @@ subtitle: "1859 conjecture on the nontrivial zeros of the Riemann zeta function,
 canonical_url: https://mimirwiki.com/wiki/riemann-hypothesis
 language: en
 page_class: concept
-revision_sha256: b8ffcefeff93a6cb73e679bf7088d5b82589d442994fc0f2f37b858f533f743a
-date_modified: 2026-11-23
+revision_sha256: 03fd6d9ec670be9adb7f24b91a5d92a696a57bccdb10fc5b4ed26e9219310d4c
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 9
 alternates:
@@ -48,7 +48,7 @@ The Riemann Hypothesis (RH), formulated by German mathematician Bernhard Riemann
 
 The **Riemann zeta function** $\zeta(s)$ is defined for complex numbers $s = \sigma + it$ with real part $\text{Re}(s) = \sigma > 1$ by the convergent Dirichlet series and Euler product over all prime numbers $p$ [1]: $$\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}$$ In his 1859 paper presented to the Berlin Academy of Sciences, **Georg Friedrich Bernhard Riemann** (1826-1866) extended $\zeta(s)$ by analytic continuation to a meromorphic function on the entire complex plane $\mathbb{C}$ with a single simple pole at $s = 1$, satisfying a symmetric functional equation relating $\zeta(s)$ and $\zeta(1-s)$ [1].
 
-Because of the gamma factors in the functional equation, $\zeta(s)$ vanishes at the negative even integers $s = -2, -4, -6, \dots$, known as the **trivial zeros** [1][5]. All other zeros - the **nontrivial zeros** - lie inside the critical strip $0 < \text{Re}(s) < 1$ [1][5]. The **Riemann Hypothesis (RH)** asserts that every nontrivial zero of $\zeta(s)$ lies on the vertical **critical line** $\text{Re}(s) = 1/2$ [1]. Equivalently, in in terms of the prime-counting function $\pi(x)$ and the logarithmic integral $\text{Li}(x)$, RH provides the optimal square-root error bound $\pi(x) = \text{Li}(x) + O(\sqrt{x} \log x)$ [1][3].
+Because of the gamma factors in the functional equation, $\zeta(s)$ vanishes at the negative even integers $s = -2, -4, -6, \dots$, known as the **trivial zeros** [1][5]. All other zeros - the **nontrivial zeros** - lie inside the critical strip $0 < \text{Re}(s) < 1$ [1][5]. The **Riemann Hypothesis (RH)** asserts that every nontrivial zero of $\zeta(s)$ lies on the vertical **critical line** $\text{Re}(s) = 1/2$ [1]. Equivalently, in terms of the prime-counting function $\pi(x)$ and the logarithmic integral $\text{Li}(x)$, RH provides the optimal square-root error bound $\pi(x) = \text{Li}(x) + O(\sqrt{x} \log x)$ [1][3].
 
 David Hilbert included the Riemann Hypothesis as the eighth of his 23 problems at the Paris International Congress of Mathematicians on August 9, 1900, and on **May 24, 2000**, the **Clay Mathematics Institute (CMI)** named it one of the seven **Millennium Prize Problems**, allocating a $1 million prize for a verified proof [1][2]. Prior to November 2026, numerical computations had verified that the first $10^{13}$ (10 trillion) nontrivial zeros lie on the critical line, while the **Generalized Riemann Hypothesis (GRH)** extended the conjecture to all Dirichlet $L$-functions $L(\chi, s)$ [1][5].
 
@@ -135,4 +135,4 @@ On November 20, 2026, Stanford professor Ravi Vakil posted a mid-revision manusc
 
 ## Cite this page
 
-Mimirwiki. "Riemann Hypothesis." Version b8ffcefe, 2026-11-23. https://mimirwiki.com/wiki/riemann-hypothesis
+Mimirwiki. "Riemann Hypothesis." Version 03fd6d9e, 2026-11-24. https://mimirwiki.com/wiki/riemann-hypothesis

@@ -4,8 +4,8 @@ subtitle: "OpenAI's automated web crawler used to collect training data for gene
 canonical_url: https://mimirwiki.com/wiki/gptbot
 language: en
 page_class: entity
-revision_sha256: 103a9e90b01bc37f0f58970c706356df5ac7f39009e522fa9935a1685cf0213f
-date_modified: 2026-11-23
+revision_sha256: 4b87986e04282fbdf1350e2fa7538d4810a7fad113d3da13ca822a9982d17179
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 8
 alternates:
@@ -79,7 +79,7 @@ Beyond IP allowlisting, edge security providers such as Cloudflare and the **IET
 
 The rapid expansion of AI training crawlers led to significant debate over whether `robots.txt` - originally designed in 1994 to prevent search crawlers from overloading servers while conferring reciprocal search traffic - is adequate for expressing copyright and machine-learning usage policies [5][6].
 
-To address this gap, the **IETF AI Preferences (`aipref`) Working Group** was chartered to standardize machine-readable vocabulary and attachment mechanisms for expressing how digital content may or may not be used by AI systems [6]. The working group's active specifications, including `draft-ietf-aipref-vocab` (A Vocabulary For Expressing AI Usage Preferences) and `draft-ietf-aipref-attach` (mechanisms for attaching preferences via `robots.txt` extensions and HTTP `Content-Usage` headers), distinguish between general automated processing, foundation model training (`train-ai` / `ai`), and search or inference grounding [6]. Meanwhile, network telemetry from Cloudflare's AI traffic reports indicates that `GPTBot` consistently ranks among the highest-volume AI crawlers globally alongside bytespider, ClaudeBot, and Google-Extended, driving widespread adoption of managed AI crawl controls and pay-per-crawl architectures [8].
+To address this gap, the **IETF AI Preferences (`aipref`) Working Group** was chartered to standardize machine-readable vocabulary and attachment mechanisms for expressing how digital content may or may not be used by AI systems [6]. The working group's active specifications, including `draft-ietf-aipref-vocab` (A Vocabulary For Expressing AI Usage Preferences) and `draft-ietf-aipref-attach` (mechanisms for attaching preferences via `robots.txt` extensions and HTTP `Content-Usage` headers), distinguish between general automated processing, foundation model training (`train-ai` / `ai`), and search or inference grounding [6]. Meanwhile, network telemetry from Cloudflare's AI traffic reports indicates that `GPTBot` consistently ranks among the highest-volume AI crawlers globally alongside Bytespider, ClaudeBot, and Google-Extended, driving widespread adoption of managed AI crawl controls and pay-per-crawl architectures [8].
 
 ## Frequently asked questions
 
@@ -133,4 +133,4 @@ GPTBot's robots.txt compliance is governed by IETF RFC 9309 (Robots Exclusion Pr
 
 ## Cite this page
 
-Mimirwiki. "GPTBot." Version 103a9e90, 2026-11-23. https://mimirwiki.com/wiki/gptbot
+Mimirwiki. "GPTBot." Version 4b87986e, 2026-11-24. https://mimirwiki.com/wiki/gptbot

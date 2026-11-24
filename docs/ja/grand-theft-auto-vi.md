@@ -4,8 +4,8 @@ subtitle: "ロックスター・ゲームスが開発・販売する2026年の�
 canonical_url: https://mimirwiki.com/ja/wiki/grand-theft-auto-vi
 language: ja
 page_class: entity
-revision_sha256: de5d08e1b57593576020219eee7c590adefda022259976139b6fda1488e759dc
-date_modified: 2026-11-23
+revision_sha256: 0adc729a299ded384521ebc0ea5358d4a1e8628a3dc6508613040b9e67d5c4b2
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -125,4 +125,4 @@ translations:
 
 ## このページを引用する
 
-Mimirwiki. "グランド・セフト・オートVI." 版 de5d08e1, 2026-11-23. https://mimirwiki.com/ja/wiki/grand-theft-auto-vi
+Mimirwiki. "グランド・セフト・オートVI." 版 0adc729a, 2026-11-24. https://mimirwiki.com/ja/wiki/grand-theft-auto-vi

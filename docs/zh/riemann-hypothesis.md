@@ -4,8 +4,8 @@ subtitle: "1859 年提出的关于黎曼 ζ 函数非平凡零点的猜想，已
 canonical_url: https://mimirwiki.com/zh/wiki/riemann-hypothesis
 language: zh
 page_class: concept
-revision_sha256: 73e72e0cfbe98d2fb4dbd1ec434a0299ffd18f1c42c0429f2392b6b111eab604
-date_modified: 2026-11-23
+revision_sha256: 72c57dfe729e9094e21d55abf7972bc7fcec9bdca3da081e4f6421a8e08f1782
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 9
 alternates:
@@ -135,4 +135,4 @@ translations:
 
 ## 引用本页
 
-Mimirwiki. "黎曼猜想." 版本 73e72e0c, 2026-11-23. https://mimirwiki.com/zh/wiki/riemann-hypothesis
+Mimirwiki. "黎曼猜想." 版本 72c57dfe, 2026-11-24. https://mimirwiki.com/zh/wiki/riemann-hypothesis

@@ -4,8 +4,8 @@ subtitle: "생성형 AI 파운데이션 모델 학습 데이터를 수집하는 
 canonical_url: https://mimirwiki.com/ko/wiki/gptbot
 language: ko
 page_class: entity
-revision_sha256: 54dc4daa5b64e9cf91565167089a39a8a2f14b65988d56c57efab2882e0d5062
-date_modified: 2026-11-23
+revision_sha256: 1ce108e8aec3f9e1b43a51e8ec4b2892c72c04b9a43270fdac5303aa971ddd3f
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 8
 alternates:
@@ -133,4 +133,4 @@ ChatGPT-User(ChatGPT-User/1.0)는 실제 사용자가 챗GPT 대화창이나 커
 
 ## 이 문서 인용하기
 
-Mimirwiki. "GPTBot." 버전 54dc4daa, 2026-11-23. https://mimirwiki.com/ko/wiki/gptbot
+Mimirwiki. "GPTBot." 버전 1ce108e8, 2026-11-24. https://mimirwiki.com/ko/wiki/gptbot

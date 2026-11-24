@@ -4,8 +4,8 @@ subtitle: "由 Rockstar Games 开发并于 2026 年发行的开放世界动作�
 canonical_url: https://mimirwiki.com/zh/wiki/grand-theft-auto-vi
 language: zh
 page_class: entity
-revision_sha256: 6b6649713001a2779fc43e4fa1ba463dd55e0b6faf800b306248bee97f9fd284
-date_modified: 2026-11-23
+revision_sha256: 5006bdd4641516cdc475876ddeaa520f1b9061c70b9eaeea013b83509df8ef25
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -125,4 +125,4 @@ Take-Two 与 Rockstar Games 同时披露，《*侠盗猎车手 VI*》在发售�
 
 ## 引用本页
 
-Mimirwiki. "侠盗猎车手 VI." 版本 6b664971, 2026-11-23. https://mimirwiki.com/zh/wiki/grand-theft-auto-vi
+Mimirwiki. "侠盗猎车手 VI." 版本 5006bdd4, 2026-11-24. https://mimirwiki.com/zh/wiki/grand-theft-auto-vi

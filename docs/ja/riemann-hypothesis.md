@@ -4,8 +4,8 @@ subtitle: "リーマンゼータ関数の非自明な零点に関する1859年�
 canonical_url: https://mimirwiki.com/ja/wiki/riemann-hypothesis
 language: ja
 page_class: concept
-revision_sha256: f759e2c22128b9a87727659566acb7ca89c73d88be196fce911307a177ce5e85
-date_modified: 2026-11-23
+revision_sha256: 03ec4cee093f25c99f21a3ab21a0a16525bb899aafdd5306aae3db512ec61df4
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 9
 alternates:
@@ -135,4 +135,4 @@ AI支援による数学コードベースでは、形式化された定理の主
 
 ## このページを引用する
 
-Mimirwiki. "リーマン予想." 版 f759e2c2, 2026-11-23. https://mimirwiki.com/ja/wiki/riemann-hypothesis
+Mimirwiki. "リーマン予想." 版 03ec4cee, 2026-11-24. https://mimirwiki.com/ja/wiki/riemann-hypothesis

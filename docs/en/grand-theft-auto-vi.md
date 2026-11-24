@@ -4,8 +4,8 @@ subtitle: "2026 open-world action-adventure video game developed and published b
 canonical_url: https://mimirwiki.com/wiki/grand-theft-auto-vi
 language: en
 page_class: entity
-revision_sha256: 373202518f9509be4cb083de78ccc6dd5aad09e6e66e4c605da6e76c7c29c112
-date_modified: 2026-11-23
+revision_sha256: 9edd57ada0137aea678aea58fc7664303c94271e9b0b3ef5f3978250a6518a86
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -49,7 +49,7 @@ Grand Theft Auto VI (commonly abbreviated as GTA VI or GTA 6) is an open-world a
 
 **Grand Theft Auto VI** is the eighth main entry and sixteenth overall installment in the *Grand Theft Auto* franchise created by **Rockstar Games**, a subsidiary of **Take-Two Interactive Software, Inc.** (NASDAQ: `TTWO`, SEC CIK `0000946581`) [1][2]. Succeeding *Grand Theft Auto V* (2013), which had sold-in nearly 235 million units prior to *GTA VI*'s launch and helped push cumulative franchise sales to nearly 480 million units, *Grand Theft Auto VI* was released globally on **November 19, 2026** [2][3].
 
-The game takes place in the fictional U.S. state of **Leonida**, a satirical open-world rendition of Florida anchored by a modern-day **Vice City** [2][5]. The single-player narrative centers on two playable criminal partners, **Jason** and **Lucia** [2][6]. According to Rockstar Games' official synopsis, after an seemingly easy score goes wrong, Jason and Lucia are drawn into the darkest side of America's sunniest state, caught in the middle of a criminal conspiracy stretching across Leonida and forced to rely on each other to survive [2][5].
+The game takes place in the fictional U.S. state of **Leonida**, a satirical open-world rendition of Florida anchored by a modern-day **Vice City** [2][5]. The single-player narrative centers on two playable criminal partners, **Jason** and **Lucia** [2][6]. According to Rockstar Games' official synopsis, after a seemingly easy score goes wrong, Jason and Lucia are drawn into the darkest side of America's sunniest state, caught in the middle of a criminal conspiracy stretching across Leonida and forced to rely on each other to survive [2][5].
 
 ## Pre-Release Timeline, Netflix Showcase, and Launch Rollout
 
@@ -125,4 +125,4 @@ Grand Theft Auto VI is set in Vice City and across the fictional U.S. state of L
 
 ## Cite this page
 
-Mimirwiki. "Grand Theft Auto VI." Version 37320251, 2026-11-23. https://mimirwiki.com/wiki/grand-theft-auto-vi
+Mimirwiki. "Grand Theft Auto VI." Version 9edd57ad, 2026-11-24. https://mimirwiki.com/wiki/grand-theft-auto-vi

@@ -4,8 +4,8 @@ subtitle: "生成AI基盤モデルの学習データ収集に用いられるOpen
 canonical_url: https://mimirwiki.com/ja/wiki/gptbot
 language: ja
 page_class: entity
-revision_sha256: f94adbac3abb5ca76e0a55caea69e5260aabb6a7eb8150b4a1626c71237286f0
-date_modified: 2026-11-23
+revision_sha256: 3bedd1a4924f279a5a839146a778669ef3ffa0e6ab019ecb6c516d62c1c799bf
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 8
 alternates:
@@ -133,4 +133,4 @@ GPTBotのrobots.txt準拠はIETF RFC 9309（Robots Exclusion Protocol）によ�
 
 ## このページを引用する
 
-Mimirwiki. "GPTBot." 版 f94adbac, 2026-11-23. https://mimirwiki.com/ja/wiki/gptbot
+Mimirwiki. "GPTBot." 版 3bedd1a4, 2026-11-24. https://mimirwiki.com/ja/wiki/gptbot

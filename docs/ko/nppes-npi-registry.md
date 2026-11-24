@@ -4,8 +4,8 @@ subtitle: "미국 의료 제공자에게 10자리 식별번호를 부여하고 N
 canonical_url: https://mimirwiki.com/ko/wiki/nppes-npi-registry
 language: ko
 page_class: anchor
-revision_sha256: 6c8e222bc8a4e4a80aca52782a6b680e985b227d3339fcec3fd4d3b1ed76e7f1
-date_modified: 2026-11-21
+revision_sha256: 9e3927210fe14a2d1a7ef5b97f57cb1efbbd985dfb432021aa42f8bead9552d2
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 12
 alternates:
@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/nppes-npi-registry.jsonld
 translations:
   en: https://mimirwiki.com/wiki/nppes-npi-registry
+  ja: https://mimirwiki.com/ja/wiki/nppes-npi-registry
+  zh: https://mimirwiki.com/zh/wiki/nppes-npi-registry
 ---
 
 # NPPES와 국가 의료 제공자 식별번호(NPI)
@@ -175,9 +177,9 @@ CMS는 NPI 레지스트리가 매일 갱신된다고 설명하며, API도 NPPES�
 8. Data Dissemination | CMS. Centers for Medicare & Medicaid Services. https://www.cms.gov/medicare/regulations-guidance/administrative-simplification/data-dissemination (확인일 2026-11-21; tier 1: government or public registry)
 9. HIPAA Administrative Simplification: National Plan and Provider Enumeration System Data Dissemination. Federal Register, Centers for Medicare & Medicaid Services. 게시일 2007-05-30. https://www.federalregister.gov/documents/2007/05/30/07-2651/hipaa-administrative-simplification-national-plan-and-provider-enumeration-system-data-dissemination (확인일 2026-11-21; tier 1: government or public registry)
 10. CMS-10114 National Provider Identifier (NPI) Application/Update Form. Centers for Medicare & Medicaid Services. https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/downloads/CMS10114.pdf (확인일 2026-11-21; tier 1: government or public registry)
-11. National Uniform Claim Committee - Provider Taxonomy. National Uniform Claim Committee. https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40 (확인일 2026-11-21; tier 1: government or public registry)
+11. National Uniform Claim Committee - Provider Taxonomy. National Uniform Claim Committee. https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40 (확인일 2026-11-21; tier 3: official site)
 12. How to Apply | CMS. Centers for Medicare & Medicaid Services. https://www.cms.gov/medicare/regulations-guidance/administrative-simplification/how-apply (확인일 2026-11-21; tier 1: government or public registry)
 
 ## 이 문서 인용하기
 
-Mimirwiki. "NPPES와 국가 의료 제공자 식별번호(NPI)." 버전 6c8e222b, 2026-11-21. https://mimirwiki.com/ko/wiki/nppes-npi-registry
+Mimirwiki. "NPPES와 국가 의료 제공자 식별번호(NPI)." 버전 9e392721, 2026-11-24. https://mimirwiki.com/ko/wiki/nppes-npi-registry

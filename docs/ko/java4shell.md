@@ -4,8 +4,8 @@ subtitle: "OpenJDK HotSpot C2 JIT 컴파일러의 x86-64 AVX-512 VBMI Base64 디
 canonical_url: https://mimirwiki.com/ko/wiki/java4shell
 language: ko
 page_class: concept
-revision_sha256: 32d6af0df297b0fd552d2006204f693b32e9104c3bae062c3574ce829b425a08
-date_modified: 2026-11-23
+revision_sha256: f651d59eff0c5ce3271f35b34b76df25ccd79edff10ce1daf344838992aec0b3
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 7
 alternates:
@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/java4shell.jsonld
 translations:
   en: https://mimirwiki.com/wiki/java4shell
+  ja: https://mimirwiki.com/ja/wiki/java4shell
+  zh: https://mimirwiki.com/zh/wiki/java4shell
 ---
 
 # 자바포셸 (Java4Shell, CVE-2026-114938)
@@ -68,13 +70,13 @@ Calif.io가 공개한 JDK 버전별 최소 재현 페이로드(PoC)는 다음과
 
 스레드 로컬 할당 버퍼(TLAB) 내에서 발생한 62바이트 힙 오버플로는 바로 뒤에 할당된 객체의 마크 워드(mark word), 압축 클래스 포인터(`_klass`), 배열 길이 필드 또는 불리언(boolean)·참조 필드를 변조할 수 있다 [4]. 공격자는 이를 이용해 인접한 인증 객체의 권한 플래그를 덮어쓰거나 인접한 `byte[]` 배열의 길이를 비정상적으로 늘려 JVM 프로세스 전체 메모리에 대한 임의 읽기·쓰기(arbitrary R/W) 및 원격 코드 실행(RCE)을 달성할 수 있다 [4]. Calif.io와 보안 업계는 **키클록(Keycloak)**, **아틀라시안 지라(Jira) 및 컨플루언스(Confluence)**, **JFrog 아티팩토리(Artifactory)**, **젠킨스(Jenkins)**, **핑페더레이트(PingFederate)** 등 다수의 엔터프라이즈 자바 솔루션에서 사전 인증(Pre-auth) 공격이 가능함을 입증했다 [4][7].
 
-## 보안 패치 버전, JVM 플래그 우회 및 웹 방화벽(WAF) 완화 조치
+## 패치 릴리스, JVM 플래그 우회 조치 및 CISA 권고
 
 2026년 11월 17일 OpenJDK 프로젝트, 오라클, 레드햇(`RHSB-2026-018`), 아마존 코레토(Corretto), 이클립스 테무린(Temurin), 아줄(Azul) 등은 AVX-512 VBMI 마스크 연산 오류를 수정한 긴급 대역 외(Out-of-band) 패치 빌드를 일제히 배포했다 [1][2][5]: - **OpenJDK 17.0.21.0.3** - **OpenJDK 21.0.13.0.3** - **OpenJDK 25.0.5.0.3** - **OpenJDK 27.0.1.0.3**
 
 **JVM 실행 플래그를 통한 즉각적 우회(Workaround)**: 운영 중인 프로덕션 환경에서 JDK 바이너리를 즉시 업그레이드하기 어려운 경우, `JAVA_OPTS` 등 JVM 실행 인자에 아래 플래그 중 하나를 추가하고 프로세스를 재시작하면 취약한 Base64 어셈블리 인트린식을 완전히 비활성화할 수 있다 [4][5]: ```text -XX:+UnlockDiagnosticVMOptions -XX:-UseBASE64Intrinsics ``` 또는 JVM의 AVX 사용 수준을 AVX2 이하로 제한할 수도 있다: ```text -XX:UseAVX=2 ```
 
-**WAF 및 네트워크 계층 필터링**: 마이크로소프트 애저 웹 방화벽(Azure WAF) 등 주요 클라우드 보안 벤더는 HTTP 헤더, 쿼리 파라미터 및 본문에서 64자 이상의 Base64 문자열 중간이나 SIMD 경계 오프셋에 비정상적인 패딩 문자(`'='`)가 포함된 요청을 차단하는 관리형 정규식 규칙을 배포했다 [6]. 다만 마이크로소프트와 레드햇은 암호화된 페이로드나 다중 인코딩된 입력은 WAF만으로 완벽히 필터링할 수 없으므로 반드시 JDK 패치 또는 JVM 플래그 적용을 병행해야 한다고 권고했다 [5][6].
+**CISA 경보 및 경계 완화 조치**: 2026년 11월 17일 미국 사이버보안 및 인프라 보안국(CISA)은 캐나다 사이버보안센터(Canadian Centre for Cyber Security)의 협력을 받아 경보를 발표하고, 서드파티 애플리케이션·컨테이너 이미지·어플라이언스에 내장된 버전을 포함한 모든 JDK 및 자바 런타임 자산을 점검한 뒤 인터넷 노출 시스템부터 우선 패치할 것을 권고했다 [6]. 즉각적인 패치가 어려운 경우 애플리케이션 경계에서의 Base64 입력 제한·검증, 입력 크기 제한, 비인증 접근 제한 등 임시 보완 통제를 적용하고, 비인가 런타임·예기치 않은 JVM 충돌·의심스러운 자바 프로세스 여부를 모니터링할 것을 당부했다 [6].
 
 ## 자주 묻는 질문
 
@@ -108,8 +110,8 @@ JVM 시작 옵션에 '-XX:+UnlockDiagnosticVMOptions -XX:-UseBASE64Intrinsics' (
 ## 연표
 
 - 2023-01: OpenJDK 17.0.6에 AVX-512 VBMI Base64 디코더 C2 JIT 인트린식이 백포트되며 잠재적 마스크 언더플로 버그가 포함됨. [1][4]
-- 2026-11-17: OpenJDK 보안 권고(2026/11/17) 및 오라클 긴급 보안 패치를 통해 CVE-2026-114938 공식 공개; OpenJDK 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3 패치 릴리스. [1][2]
-- 2026-11-18: Calif.io의 꽝 루옹이 상세 기술 분석('Java4Shell')을 공개하고 레드햇이 보안 게시판 RHSB-2026-018을 발행했으며 마이크로소프트가 Azure WAF 완화 규칙을 배포함. [4][5][6]
+- 2026-11-17: OpenJDK가 2026/11/17 보안 권고문을 발행하고 오라클이 긴급 보안 패치 업데이트(CSPU)를 배포했으며 CISA가 즉각적인 패치를 촉구하는 경보를 발표함. OpenJDK 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3이 출시됨. [1][2][6]
+- 2026-11-18: Calif.io의 꽝 루옹이 상세 기술 분석('Java4Shell')을 공개하고 레드햇이 보안 게시판 RHSB-2026-018을 발행함. [4][5]
 
 ## 출처
 
@@ -118,9 +120,9 @@ JVM 시작 옵션에 '-XX:+UnlockDiagnosticVMOptions -XX:-UseBASE64Intrinsics' (
 3. NVD Detail for CVE-2026-114938: OpenJDK HotSpot VM AVX-512 Base64 Decoder Heap-Based Buffer Overflow. National Vulnerability Database (NIST). 게시일 2026-11-17. https://nvd.nist.gov/vuln/detail/CVE-2026-114938 (확인일 2026-11-23; tier 1: government or public registry)
 4. Java4Shell: Write once, RCE everywhere. Calif.io (Quang Luong). 게시일 2026-11-18. https://calif.io/java4shell (확인일 2026-11-23; tier 3: official site)
 5. Red Hat Security Bulletin RHSB-2026-018: OpenJDK AVX-512 Base64 Heap Overflow (CVE-2026-114938). Red Hat, Inc.. 게시일 2026-11-18. https://access.redhat.com/security/vulnerabilities/RHSB-2026-018 (확인일 2026-11-23; tier 3: official site)
-6. Addressing Java4Shell CVE-2026-114938: upgrade guidance and Azure WAF mitigations | Microsoft Community Hub. Microsoft Tech Community. 게시일 2026-11-17. https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/addressing-java4shell-cve-2026-114938-upgrade-guidance-and-azure-waf-mitigations/4574305 (확인일 2026-11-23; tier 3: official site)
+6. Critical Java Vulnerability Requires Immediate Patching | CISA. Cybersecurity and Infrastructure Security Agency (CISA). 게시일 2026-11-17. https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching (확인일 2026-11-24; tier 1: government or public registry)
 7. Java4Shell (CVE-2026-114938): OpenJDK RCE Vulnerability FAQ. Tenable Research. 게시일 2026-11-17. https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability (확인일 2026-11-23; tier 3: official site)
 
 ## 이 문서 인용하기
 
-Mimirwiki. "자바포셸 (Java4Shell, CVE-2026-114938)." 버전 32d6af0d, 2026-11-23. https://mimirwiki.com/ko/wiki/java4shell
+Mimirwiki. "자바포셸 (Java4Shell, CVE-2026-114938)." 버전 f651d59e, 2026-11-24. https://mimirwiki.com/ko/wiki/java4shell

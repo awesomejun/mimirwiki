@@ -4,8 +4,8 @@ subtitle: "OpenAI 用于采集生成式 AI 基础模型训练数据的自动化�
 canonical_url: https://mimirwiki.com/zh/wiki/gptbot
 language: zh
 page_class: entity
-revision_sha256: 4b6f0783f684580c2ea3e7e0b76ae77bad7654eedb8ec069c8f0c6f9db999701
-date_modified: 2026-11-23
+revision_sha256: 1702107d37c007b456552a9998b4cb78a5b2659848638875bf3483d1513c38d9
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 8
 alternates:
@@ -133,4 +133,4 @@ GPTBot 对 robots.txt 的遵循受 IETF RFC 9309（机器人排除协议）规�
 
 ## 引用本页
 
-Mimirwiki. "GPTBot." 版本 4b6f0783, 2026-11-23. https://mimirwiki.com/zh/wiki/gptbot
+Mimirwiki. "GPTBot." 版本 1702107d, 2026-11-24. https://mimirwiki.com/zh/wiki/gptbot

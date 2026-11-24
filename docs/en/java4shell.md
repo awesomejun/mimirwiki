@@ -4,8 +4,8 @@ subtitle: "Critical heap buffer overflow in the OpenJDK HotSpot C2 JIT x86-64 AV
 canonical_url: https://mimirwiki.com/wiki/java4shell
 language: en
 page_class: concept
-revision_sha256: 87cf5bc1c5d39d2e5694fa83a732bc15dcadab1b9f0b28821cbeac16052efa36
-date_modified: 2026-11-23
+revision_sha256: c4188de0c9b6c463ac7dd61811de4607c909195453780bf5d254e340c4a3be78
+date_modified: 2026-11-24
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 7
 alternates:
@@ -15,6 +15,8 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/java4shell.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/java4shell
+  ja: https://mimirwiki.com/ja/wiki/java4shell
+  zh: https://mimirwiki.com/zh/wiki/java4shell
 ---
 
 # Java4Shell (CVE-2026-114938)
@@ -68,13 +70,13 @@ Exploitation of `CVE-2026-114938` requires two simultaneous conditions: an affec
 
 Because the 62-byte heap overflow overwrites the mark word, compressed klass pointer (`_klass`), array length field, or boolean/reference fields of the next object in the Thread-Local Allocation Buffer (TLAB), an attacker can corrupt adjacent security tokens or inflate an adjacent `byte[]` array's length field to construct arbitrary read/write primitives inside the JVM process [4]. Calif.io and enterprise vendors demonstrated or confirmed pre-authentication impact across major Java middleware and applications, including **Keycloak**, **Atlassian Jira and Confluence**, **JFrog Artifactory**, **Jenkins**, and **PingFederate** [4][7].
 
-## Patched Releases, JVM Flag Workarounds, and WAF Mitigations
+## Patched Releases, JVM Flag Workarounds, and CISA Guidance
 
 On November 17, 2026, the OpenJDK Project, Oracle, Red Hat (`RHSB-2026-018`), Amazon Corretto, Eclipse Temurin, and Azul released emergency out-of-band builds disabling or bounds-fixing the faulty AVX-512 VBMI mask generation [1][2][5]: - **OpenJDK 17.0.21.0.3** - **OpenJDK 21.0.13.0.3** - **OpenJDK 25.0.5.0.3** - **OpenJDK 27.0.1.0.3**
 
 **JVM Command-Line Workarounds**: For production systems that cannot immediately upgrade the JDK binary, administrators can disable the Base64 C2 intrinsic or restrict AVX-512 execution by adding one of the following flags to `JAVA_OPTS` and restarting the JVM [4][5]: ```text -XX:+UnlockDiagnosticVMOptions -XX:-UseBASE64Intrinsics ``` or alternatively cap AVX level below AVX-512: ```text -XX:UseAVX=2 ```
 
-**WAF and Edge Filtering**: Microsoft Azure Web Application Firewall (WAF) and other cloud providers deployed managed rule updates inspecting incoming HTTP headers, query parameters, and bodies for non-canonical Base64 strings where `'='` padding characters appear at non-terminal or SIMD-boundary-triggering positions (such as regex patterns matching 64+ Base64 alphabet characters followed by abnormal `'='` placement) [6]. Microsoft and Red Hat cautioned, however, that WAF regex rules cannot inspect encrypted payloads or nested encodings and must be treated only as defense-in-depth alongside JDK patching [5][6].
+**CISA Alert and Boundary Mitigations**: On November 17, 2026, the U.S. Cybersecurity and Infrastructure Security Agency (CISA), with contributions from the Canadian Centre for Cyber Security, issued an alert urging organizations to inventory JDKs and Java runtimes (including those bundled in third-party applications, container images, and appliances) and prioritize patching internet-facing systems [6]. Where immediate patching is not feasible, CISA recommends temporary compensating controls such as restricting and validating Base64 input at the application boundary, enforcing input-size limits, and limiting unauthenticated access, while monitoring for rogue runtimes, unexpected JVM crashes, and suspicious Java processes [6].
 
 ## Frequently asked questions
 
@@ -108,8 +110,8 @@ Administrators can completely disable the vulnerable assembly intrinsic by passi
 ## Timeline
 
 - 2023-01: OpenJDK 17.0.6 backports the AVX-512 VBMI Base64 decoder C2 JIT intrinsic containing the latent mask underflow bug. [1][4]
-- 2026-11-17: OpenJDK publishes Vulnerability Advisory 2026/11/17 and Oracle releases an out-of-band Critical Security Patch Update for CVE-2026-114938; OpenJDK 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, and 27.0.1.0.3 are released. [1][2]
-- 2026-11-18: Quang Luong of Calif.io publishes the technical root-cause analysis ('Java4Shell'), Red Hat issues Security Bulletin RHSB-2026-018, and Microsoft deploys Azure WAF mitigation rules. [4][5][6]
+- 2026-11-17: OpenJDK publishes Vulnerability Advisory 2026/11/17, Oracle releases an out-of-band Critical Security Patch Update, and CISA issues an alert urging immediate patching for CVE-2026-114938; OpenJDK 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, and 27.0.1.0.3 are released. [1][2][6]
+- 2026-11-18: Quang Luong of Calif.io publishes the technical root-cause analysis ('Java4Shell'), and Red Hat issues Security Bulletin RHSB-2026-018. [4][5]
 
 ## Sources
 
@@ -118,9 +120,9 @@ Administrators can completely disable the vulnerable assembly intrinsic by passi
 3. NVD Detail for CVE-2026-114938: OpenJDK HotSpot VM AVX-512 Base64 Decoder Heap-Based Buffer Overflow. National Vulnerability Database (NIST). published 2026-11-17. https://nvd.nist.gov/vuln/detail/CVE-2026-114938 (checked 2026-11-23; tier 1: government or public registry)
 4. Java4Shell: Write once, RCE everywhere. Calif.io (Quang Luong). published 2026-11-18. https://calif.io/java4shell (checked 2026-11-23; tier 3: official site)
 5. Red Hat Security Bulletin RHSB-2026-018: OpenJDK AVX-512 Base64 Heap Overflow (CVE-2026-114938). Red Hat, Inc.. published 2026-11-18. https://access.redhat.com/security/vulnerabilities/RHSB-2026-018 (checked 2026-11-23; tier 3: official site)
-6. Addressing Java4Shell CVE-2026-114938: upgrade guidance and Azure WAF mitigations | Microsoft Community Hub. Microsoft Tech Community. published 2026-11-17. https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/addressing-java4shell-cve-2026-114938-upgrade-guidance-and-azure-waf-mitigations/4574305 (checked 2026-11-23; tier 3: official site)
+6. Critical Java Vulnerability Requires Immediate Patching | CISA. Cybersecurity and Infrastructure Security Agency (CISA). published 2026-11-17. https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching (checked 2026-11-24; tier 1: government or public registry)
 7. Java4Shell (CVE-2026-114938): OpenJDK RCE Vulnerability FAQ. Tenable Research. published 2026-11-17. https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability (checked 2026-11-23; tier 3: official site)
 
 ## Cite this page
 
-Mimirwiki. "Java4Shell (CVE-2026-114938)." Version 87cf5bc1, 2026-11-23. https://mimirwiki.com/wiki/java4shell
+Mimirwiki. "Java4Shell (CVE-2026-114938)." Version c4188de0, 2026-11-24. https://mimirwiki.com/wiki/java4shell
