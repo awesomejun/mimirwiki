@@ -1,6 +1,6 @@
 # Mimirwiki pages
 
-51 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
+54 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
 
 | Subject | English | 한국어 | 日本語 | 中文 | Website |
 |---|---|---|---|---|---|
@@ -30,6 +30,8 @@
 | hreflang<br><sub>HTML attribute and link parameter specifying the language and target region of linked web resources</sub> | [en](en/hreflang.md) | [ko](ko/hreflang.md) | [ja](ja/hreflang.md) | [zh](zh/hreflang.md) | [Open](https://mimirwiki.com/wiki/hreflang) |
 | IndexNow<br><sub>Open HTTP protocol for websites to notify search engines of URL additions, updates, and deletions</sub> | [en](en/indexnow.md) | [ko](ko/indexnow.md) | [ja](ja/indexnow.md) | [zh](zh/indexnow.md) | [Open](https://mimirwiki.com/wiki/indexnow) |
 | Inkling 2 Mini<br><sub>Thinking Machines Lab open-weight looped Mixture-of-Experts vision-language model engineered for local laptop and workstation inference</sub> | [en](en/inkling-2-mini.md) | [ko](ko/inkling-2-mini.md) | [ja](ja/inkling-2-mini.md) | [zh](zh/inkling-2-mini.md) | [Open](https://mimirwiki.com/wiki/inkling-2-mini) |
+| Insmed Incorporated<br><sub>U.S. biopharmaceutical company with two approved respiratory medicines, subject to a pending merger agreement with Sanofi</sub> | [en](en/insmed.md) | [ko](ko/insmed.md) |  |  | [Open](https://mimirwiki.com/wiki/insmed) |
+| J1504+6252 (Dún Aonghasa)<br><sub>Early-Universe quasar at redshift z = 8.13 discovered in ESA Euclid Wide Survey data</sub> | [en](en/j1504-6252.md) | [ko](ko/j1504-6252.md) |  |  | [Open](https://mimirwiki.com/wiki/j1504-6252) |
 | Java4Shell (CVE-2026-114938)<br><sub>Critical heap buffer overflow in the OpenJDK HotSpot C2 JIT x86-64 AVX-512 VBMI Base64 decoder intrinsic</sub> | [en](en/java4shell.md) | [ko](ko/java4shell.md) | [ja](ja/java4shell.md) | [zh](zh/java4shell.md) | [Open](https://mimirwiki.com/wiki/java4shell) |
 | JSON-LD<br><sub>W3C standard format for serializing Linked Data in JSON</sub> | [en](en/json-ld.md) | [ko](ko/json-ld.md) | [ja](ja/json-ld.md) | [zh](zh/json-ld.md) | [Open](https://mimirwiki.com/wiki/json-ld) |
 | JSON-RPC<br><sub>Stateless, transport-agnostic remote procedure call protocol encoded in JSON</sub> | [en](en/json-rpc.md) | [ko](ko/json-rpc.md) | [ja](ja/json-rpc.md) | [zh](zh/json-rpc.md) | [Open](https://mimirwiki.com/wiki/json-rpc) |
@@ -53,6 +55,7 @@
 | SEC EDGAR<br><sub>Electronic filing and public disclosure system of the U.S. Securities and Exchange Commission</sub> | [en](en/sec-edgar.md) | [ko](ko/sec-edgar.md) | [ja](ja/sec-edgar.md) | [zh](zh/sec-edgar.md) | [Open](https://mimirwiki.com/wiki/sec-edgar) |
 | Sitemaps<br><sub>XML-based protocol for listing website URLs and metadata for search engine crawlers</sub> | [en](en/sitemaps.md) | [ko](ko/sitemaps.md) | [ja](ja/sitemaps.md) | [zh](zh/sitemaps.md) | [Open](https://mimirwiki.com/wiki/sitemaps) |
 | SpaceX Starship<br><sub>Fully reusable two-stage super heavy-lift orbital launch vehicle and spacecraft developed by SpaceX</sub> | [en](en/spacex-starship.md) | [ko](ko/spacex-starship.md) | [ja](ja/spacex-starship.md) | [zh](zh/spacex-starship.md) | [Open](https://mimirwiki.com/wiki/spacex-starship) |
+| Voyager 1<br><sub>NASA interstellar space probe that reached one light-day from Earth in November 2026</sub> | [en](en/voyager-1.md) | [ko](ko/voyager-1.md) |  |  | [Open](https://mimirwiki.com/wiki/voyager-1) |
 | Web Bot Auth<br><sub>Cryptographic authentication protocol for automated HTTP clients and AI agents based on RFC 9421 HTTP Message Signatures</sub> | [en](en/web-bot-auth.md) | [ko](ko/web-bot-auth.md) | [ja](ja/web-bot-auth.md) | [zh](zh/web-bot-auth.md) | [Open](https://mimirwiki.com/wiki/web-bot-auth) |
 | Well-Known URIs<br><sub>IETF standard reserving the /.well-known/ path prefix for origin-wide metadata and service discovery</sub> | [en](en/well-known-uri.md) | [ko](ko/well-known-uri.md) | [ja](ja/well-known-uri.md) | [zh](zh/well-known-uri.md) | [Open](https://mimirwiki.com/wiki/well-known-uri) |
 
