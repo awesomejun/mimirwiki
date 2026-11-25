@@ -4,8 +4,8 @@ subtitle: "Anysphere, Inc.가 개발하고 The X Subscription에 통합된 AI �
 canonical_url: https://mimirwiki.com/ko/wiki/cursor
 language: ko
 page_class: entity
-revision_sha256: 35e1ceeb8fbfe9a66c8a60ac248f570f5586983ed4a22cb467ef3ec33c5e7cd7
-date_modified: 2026-11-23
+revision_sha256: bfcedd36bc2517f0e66e49b75ae58c20a135503c84cbe4eff1bc07e44ab84123
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 9
 alternates:
@@ -58,13 +58,13 @@ Cursor의 Agent 인터페이스는 데스크톱 통합 개발 환경(IDE), 전�
 
 Cursor는 작업 흐름 사용자 지정 기능을 Plugins, Rules, Skills, Subagents, Hooks, [모델 컨텍스트 프로토콜](https://mimirwiki.com/ko/wiki/model-context-protocol)(Model Context Protocol, MCP) 서버 여섯 가지로 구분해 문서화한다.[3] Teams 및 Enterprise 요금제에서는 내부 규칙, 스킬, 플러그인을 배포하는 팀 마켓플레이스(team marketplace)를 추가로 제공한다.[4][5]
 
-Cursor 공식 문서는 소스 관리, IDE, 협업 및 이슈 추적 도구와의 연동 목록으로 GitHub, GitLab, Azure DevOps, Bitbucket, JetBrains, Xcode, Slack, Microsoft Teams, Jira, Linear, Notion, Tailscale, Deeplinks를 기재한다.[3]
+Cursor 공식 문서의 연동(Integrations) 항목에는 GitHub, GitLab, Azure DevOps, Bitbucket, JetBrains, Xcode, Slack, Microsoft Teams, Jira, Linear, Notion, Tailscale, Deeplinks가 있다.[3]
 
 ## Cursor Cloud Agents, Origin, Agent SDK, Voice Chat
 
 Cursor는 Premium 등급부터 Cloud Agents, Automations, Origin 코드 호스팅, Bugbot AI 코드 리뷰 기능을 제공한다.[4][5] 2026-11-23 기준 Cloud Agents 문서에는 환경 설정(Setup), 빌드(Builds), 앱(Apps), 자동화(Automations), Bugbot, 보안 검토(Security Review), 취약점 수정(Vulnerability Remediation), 풀 리퀘스트 라우팅 및 승인(PR Routing & Approval), 롤아웃(Rollouts), 모바일, 자체 호스팅 머신(Self-Hosted Machines), API가 포함되어 있다.[3] Origin은 CLI, GitHub 미러링, CI용 CloneKit, 풀 리퀘스트, Code Tours, 저장소 탐색 및 검색, 접근 정책을 갖춘 코드 호스팅 서비스이다.[3]
 
-2026년 10월과 11월 사이 Cursor는 변경 이력(Changelog)을 통해 네 가지 주요 플랫폼 기능을 공개했다.[7]
+2026년 10월과 11월 사이 Cursor는 변경 이력(Changelog)을 통해 다음 플랫폼 기능을 공개했다.[7]
 
 - **Origin App Marketplace(2026년 10월 13일)**: 20개가 넘는 연동 앱과 함께 공개 제출을 개시했다. 배포([Cloudflare](https://mimirwiki.com/ko/wiki/cloudflare), Netlify, Render, Spacelift, Vercel), 지속적 통합(Buildkite, CircleCI, CloudBees, Depot, EngFlow, Namespace, RWX), 코드 리뷰(CodeRabbit, Greptile, Tenki), 보안(Artemis Security, Semgrep, Socket Security, Upwind), 모니터링(Sentry), 프로젝트 관리(Linear) 분야의 파트너 앱이 포함된다. Origin 앱은 앱 JWT와 설치 액세스 토큰으로 인증하고 웹훅 이벤트를 수신해 체크 실행, 풀 리퀘스트 댓글, 리뷰를 회신한다.[7]
 - **Cloud Agent Canvases 및 Environments API(2026년 10월 16일)**: 클라우드 에이전트가 생성해 링크로 공유할 수 있는 대화형 캔버스(Canvases)와 에이전트 클라우드 환경을 프로그래밍 방식으로 생성하고 관리하는 Environments API 베타를 도입했다. 클라우드 에이전트 환경당 지원 저장소 수는 최대 300개로 늘었고 대규모 환경의 로딩 속도는 5배 빨라졌다.[7]
@@ -75,7 +75,7 @@ Cursor는 Premium 등급부터 Cloud Agents, Automations, Origin 코드 호스�
 
 ## Cursor 지원 모델과 Cursor Router
 
-Cursor는 SpaceXSI, [OpenAI](https://mimirwiki.com/ko/wiki/openai), [Anthropic](https://mimirwiki.com/ko/wiki/anthropic), Google, Muse의 모델을 지원하며 2026-11-23 기준 구독의 주간 사용량 풀에 포함되는 자체 Cursor 모델과 선불 크레딧에서 API 정가로 과금되는 서드파티 모델로 구분한다.[3][5] 대상 모델에서 지역 데이터 레지던시(regional data residency) 옵션을 선택하면 모델 가격에 10%가 가산된다.[5]
+Cursor는 [OpenAI](https://mimirwiki.com/ko/wiki/openai), [Anthropic](https://mimirwiki.com/ko/wiki/anthropic), Google, SpaceXSI 등의 모델을 지원하며 2026-11-23 기준 구독의 주간 사용량 풀에 포함되는 자체 Cursor 모델과 선불 크레딧에서 API 정가로 과금되는 서드파티 모델로 구분한다.[3][5] 대상 모델에서 지역 데이터 레지던시(regional data residency) 옵션을 선택하면 모델 가격에 10%가 가산된다.[5]
 
 Cursor 자체 모델 풀에는 [Grok](https://mimirwiki.com/ko/wiki/grok) 4.7, Grok 4.6, Grok 4.5, Composer 2.5가 포함된다.[5] 주간 풀을 초과해 추가 사용량을 구매할 때는 2026-11-23 기준 다음의 100만 토큰당 요율이 적용된다.[3][5]
 
@@ -105,7 +105,7 @@ Cursor 자체 모델 풀에는 [Grok](https://mimirwiki.com/ko/wiki/grok) 4.7, G
 | Gemini 3.8 Flash | 200k / 1M | 0.75달러 | - | 0.075달러 | 3.75달러 | 지원 |
 | Muse Wonder | 300k / 1M | 4달러 | - | 0.2달러 | 20달러 | 미지원 |
 
-Cursor의 Auto 기능은 Cursor Router를 통해 Cost, Balance, Intelligence 세 가지 모드로 나뉜다.[5][6] 개인 요금제는 기존 Auto 모드의 후속인 Cost 모드만 지원하며, 어떤 모델이 응답을 처리하든 Cursor 모델 요청으로 계산되어 주간 사용량 풀에서 차감된다.[5][6] Balance와 Intelligence 모드는 Teams 및 Enterprise 요금제를 대상으로 Agents Window, 에디터, CLI, Cursor SDK, iOS 앱에 제공되며 Enterprise 팀은 관리자가 옵트인하기 전까지 기본 비활성 상태이다. Cursor 모델로 라우팅된 요청은 주간 풀에서 차감되고, 서드파티 모델로 라우팅된 요청은 선불 크레딧에서 API 정가와 해당 시 Cursor Token Rate가 함께 과금된다.[5][6]
+Cursor의 Auto 기능은 Cursor Router를 통해 Cost, Balance, Intelligence 세 가지 모드로 나뉜다.[5][6] 개인 요금제는 기존 Auto 모드의 후속인 Cost 모드만 지원하며, 어떤 모델이 응답을 처리하든 Cursor 모델 요청으로 계산되어 주간 사용량 풀에서 차감된다.[5][6] Cursor는 Balance와 Intelligence 모드를 제공하는 Cursor Router를 Teams 및 Enterprise 요금제에 출시할 예정이라고 밝혔으며, Agents Window, 에디터, CLI, Cursor SDK, iOS 앱에서 쓸 수 있고 Enterprise 팀은 관리자가 옵트인하기 전까지 꺼진 상태로 시작한다. Cursor 모델로 라우팅된 요청은 주간 풀에서 차감되고, 서드파티 모델로 라우팅된 요청은 선불 크레딧에서 API 정가와 해당 시 Cursor Token Rate가 함께 과금된다.[5][6]
 
 ## Cursor 요금제, The X Subscription, 레거시 요금 체계
 
@@ -139,11 +139,11 @@ Cursor는 The X Subscription 출시 전에 판매한 레거시 요금제도 기�
 
 ## Cursor 보안, 컴플라이언스, 개인정보 보호 제어
 
-Cursor는 `cursor.com/security`(2026년 8월 25일 최종 갱신)에 보안 체계를, `cursor.com/privacy`(2026년 11월 6일 최종 갱신)에 개인정보 처리방침을 게시한다.[8][9] 2026-11-23 기준 Cursor는 AIUC-1, ISO/IEC 27001:2022, ISO/IEC 42001:2023 인증과 SOC 2 Type II 검증을 보유하고 있으며, 인증서와 감사 보고서, 침투 테스트 요약 보고서, 위탁 처리업체(subprocessor) 목록을 `trust.cursor.com`에서 요청에 따라 제공한다.[4][8][9] Cursor는 신뢰할 수 있는 제3자를 통해 최소 연 1회 침투 테스트를 수행한다고 밝힌다.[8]
+Cursor는 `cursor.com/security`(2026년 8월 25일 최종 갱신)에 보안 체계를, `cursor.com/privacy`(2026년 11월 6일 최종 갱신)에 개인정보 처리방침을 게시한다.[8][9] 2026-11-23 기준 Cursor는 AIUC-1, ISO/IEC 27001:2022, ISO/IEC 42001:2023 인증과 SOC 2 Type II 검증을 보유하고 있으며, 인증서와 보고서, 침투 테스트 요약 보고서를 `trust.cursor.com`에서 요청에 따라 제공하고, 위탁 처리업체(subprocessor) 목록은 같은 신뢰 포털에 게시한다.[4][8][9] Cursor는 신뢰할 수 있는 제3자를 통해 최소 연 1회 침투 테스트를 수행한다고 밝힌다.[8]
 
 Cursor는 모든 위탁 처리업체를 벤더 위험 관리 프로그램에 따라 평가하고 매년 재검토하며, 최소 권한 원칙, 다중 인증(Multi-Factor Authentication, MFA), 시스템 로그 모니터링으로 인프라 접근을 통제하고, 차단 목록(blocklist)에 오른 모델로는 요청을 보내지 않는다고 밝힌다.[8] Cursor는 중국 내에 인프라를 사용하거나 유지하지 않으며 중국에 본사를 둔 기업을 위탁 처리업체로 쓰지 않는다고 명시한다.[8] `security-reports@cursor.com`으로 접수된 보안 취약점 제보는 영업일 기준 5일 이내에 접수 확인을 회신하며, 중대한 보안 사고는 영향을 받는 사용자에게 이메일로 통지한다.[8] Cursor는 자사 코드베이스 보안에도 Bugbot과 Cloud Agent 자동화를 활용한다.[8]
 
-Privacy Mode는 Free, 개인, Teams, Enterprise 요금제 전체에서 제공되며 사용자가 설정에서 켜거나 팀 및 엔터프라이즈 관리자가 조직 전체에 적용할 수 있고, 신규 팀원은 팀의 Privacy Mode 설정을 그대로 승계한다.[4][8] Privacy Mode를 켜면 Cursor와 모델 제공사 모두 사용자 코드 데이터를 모델 학습에 사용하지 않으며, 기술적 통제와 모델 제공사와의 계약상 요건이 적용되고 Voice Chat도 데이터 무보존으로 동작한다.[4][7][8] 개인정보 처리방침은 Anysphere, Inc.의 개인 이용자 계정에 적용되며, 고용주가 지급하는 등 Anysphere가 데이터 처리자(data processor)로 동작하는 상업용 계정은 고객 계약의 적용을 받는다.[9] Anysphere는 입력(Inputs)과 제안(Suggestions)이 보안 검토 대상으로 표시되거나 사용자가 피드백으로 직접 신고하거나 학습 사용에 명시적으로 동의한 경우를 제외하고 모델 학습에 쓰이지 않는다고 밝히며, 유전, 생체, 건강, 종교 정보 같은 민감 정보를 고의로 수집하지 않고 만 18세 미만 이용자를 대상으로 서비스를 제공하지 않는다고 명시한다.[9] 사용자는 설정 대시보드에서 언제든 계정을 삭제할 수 있다.[8]
+Cursor는 Privacy Mode를 무료 사용자를 포함해 누구나 쓸 수 있다고 밝히며, 사용자가 설정에서 켜거나 팀 및 엔터프라이즈 관리자가 켤 수 있고, 신규 팀원은 팀의 Privacy Mode 설정을 그대로 승계한다.[4][8] Privacy Mode를 켜면 Cursor와 모델 제공사 모두 사용자 코드 데이터를 모델 학습에 사용하지 않으며, 기술적 통제와 모델 제공사와의 계약상 요건이 적용되고 Voice Chat도 데이터 무보존으로 동작한다.[4][7][8] 개인정보 처리방침은 Anysphere, Inc.의 개인 이용자 계정에 적용되며, 고용주가 지급하는 등 Anysphere가 데이터 처리자(data processor)로 동작하는 상업용 계정은 고객 계약의 적용을 받는다.[9] Anysphere는 입력(Inputs)과 제안(Suggestions)이 보안 검토 대상으로 표시되거나 사용자가 피드백으로 직접 신고하거나 학습 사용에 명시적으로 동의한 경우를 제외하고 모델 학습에 쓰이지 않는다고 밝히며, 유전, 생체, 건강, 종교 정보 같은 민감 정보를 고의로 수집하지 않고 만 18세 미만 이용자를 대상으로 서비스를 제공하지 않는다고 명시한다.[9] 사용자는 설정 대시보드에서 언제든 계정을 삭제할 수 있다.[8]
 
 조직 배포용 보안 제어 기능으로 Cursor는 SAML/OIDC SSO, SCIM 프로비저닝, 컴플라이언스 및 감사 로깅, 서비스 계정, 모바일 기기 관리(MDM) 배포, 데이터 암호화 및 고객 관리 암호화 키(Customer-Managed Encryption Keys, CMEK), 자동 실행·브라우저·네트워크 제어, 그리고 저장소·모델·MCP 서버·Grok Bot 접근 제어를 문서화하고 있다.[4][8]
 
@@ -151,7 +151,7 @@ Privacy Mode는 Free, 개인, Teams, Enterprise 요금제 전체에서 제공되
 
 Cursor는 2022년 설립되어 2024년 [OpenAI](https://mimirwiki.com/ko/wiki/openai) 스타트업 액셀러레이터 과정을 거친 Anysphere, Inc.가 개발했다.[1][9] Anysphere는 2024년 말 투자 전 기업가치(pre-money valuation) 25억 달러로 1억 달러를 조달했다.[2] 2025년 초에는 OpenAI를 비롯한 잠재 인수 후보들로부터 인수 제안을 받았으나 이를 거절했다.[2]
 
-TechCrunch 보도에 따르면 Anysphere의 연간 반복 매출(Annualized Recurring Revenue, ARR)은 2025년 4월 중순 3억 달러에 도달했고, Bloomberg와 TechCrunch가 인용한 관계자에 따르면 2025년 6월 5일 기준 5억 달러를 넘어섰다.[2] 2025년 6월 5일 TechCrunch는 Anysphere가 기존 투자자인 Thrive Capital 주도 아래 Andreessen Horowitz, Accel, DST Global이 참여한 시리즈 C 라운드에서 기업가치 99억 달러로 9억 달러를 유치했으며 이는 1년 이내 세 번째 투자 유치였다고 보도했다.[1][2] 당시 Cursor는 2주 무료 체험 후 월 20달러 Pro 요금제와 월 40달러 비즈니스 구독을 제공했고 새로 엔터프라이즈 라이선스를 도입하고 있었다.[2] Anysphere는 2025년 말 23억 달러를 추가로 유치해 기업가치가 약 290억 달러에 이르렀다.[1]
+TechCrunch 보도에 따르면 Anysphere의 연간 반복 매출(Annualized Recurring Revenue, ARR)은 2025년 4월 중순 3억 달러에 도달했고, Bloomberg와 TechCrunch가 인용한 관계자에 따르면 2025년 6월 5일 기준 5억 달러를 넘어섰다.[2] 2025년 6월 5일 TechCrunch는 Anysphere가 기존 투자자인 Thrive Capital 주도 아래 Andreessen Horowitz, Accel, DST Global이 참여한 시리즈 C 라운드에서 기업가치 99억 달러로 9억 달러를 유치했으며 이는 1년 이내 세 번째 투자 유치였다고 보도했다.[1][2] 당시 Cursor는 2주 무료 체험 후 월 20달러 Pro 요금제와 월 40달러 비즈니스 구독을 제공했고 새로 엔터프라이즈 라이선스를 도입하고 있었다.[2] Anysphere는 2025년 말 23억 달러를 추가로 유치했고, TechCrunch는 SpaceX 거래 발표 전 기업가치를 약 290억 달러로 전했다.[1]
 
 2026년 초 xAI는 Cursor의 시니어 엔지니어링 리더 두 명을 영입했고, 2026년 4월 Business Insider는 xAI가 Cursor에 데이터 센터 용량을 임대하기로 했다고 보도했다.[1] SpaceX가 인수를 제안하기 전 Cursor는 Andreessen Horowitz, Thrive Capital, Nvidia 등이 참여하는 기업가치 500억 달러, 20억 달러 규모 투자 라운드 마무리를 앞두고 있었다.[1] 2026년 4월 SpaceX는 기업공개(IPO)를 앞두고 Cursor와 합의를 발표했는데, SpaceX가 주식 600억 달러로 Cursor를 인수하거나 거래가 무산될 경우 위약금 100억 달러를 지급하는 조건이었다.[1]
 
@@ -173,7 +173,7 @@ Hobby(무료), 인도 전용 Start(세금 포함 월 649루피), Pro(월 20달�
 
 ### Cursor의 Privacy Mode와 보안 인증은 어떻게 되어 있나요?
 
-2026-11-23 기준 Cursor는 AIUC-1, ISO/IEC 27001:2022, ISO/IEC 42001:2023 인증과 SOC 2 Type II 검증을 보유하고 있으며, 관련 증빙 자료는 trust.cursor.com에서 요청할 수 있습니다. Privacy Mode는 모든 요금제에서 사용할 수 있고 관리자가 팀 전체에 강제 적용할 수 있으며, 활성화 시 사용자 코드 데이터가 모델 학습에 쓰이지 않고 Voice Chat도 데이터 무보존(zero data retention)으로 동작합니다. [7][8][9]
+2026-11-23 기준 Cursor는 AIUC-1, ISO/IEC 27001:2022, ISO/IEC 42001:2023 인증과 SOC 2 Type II 검증을 보유하고 있으며, 관련 증빙 자료는 trust.cursor.com에서 요청할 수 있습니다. Privacy Mode는 무료 사용자를 포함해 누구나 사용할 수 있고 관리자가 팀 전체에 강제 적용할 수 있으며, 활성화 시 사용자 코드 데이터가 모델 학습에 쓰이지 않고 Voice Chat도 데이터 무보존(zero data retention)으로 동작합니다. [7][8][9]
 
 ### Cursor에는 어떤 사용자 지정 및 자동화 기능이 있나요?
 
@@ -200,7 +200,7 @@ Cursor는 2022년 설립된 Anysphere, Inc.가 개발했습니다. 2026년 6월 
 - 2024: Anysphere가 OpenAI 스타트업 액셀러레이터 과정을 거쳤고, 2024년 말 투자 전 기업가치 25억 달러로 1억 달러를 조달했다. [1][2]
 - 2025-04: TechCrunch가 Anysphere의 연간 반복 매출이 3억 달러에 도달했다고 보도했다. [2]
 - 2025-06-05: TechCrunch가 Anysphere가 Thrive Capital 주도로 기업가치 99억 달러에 9억 달러 규모 시리즈 C 투자를 유치하고 연간 반복 매출 5억 달러를 넘었다고 보도했다. [1][2]
-- 2026-04: xAI가 Cursor에 데이터 센터 용량을 임대한다는 보도와 함께, SpaceX와 Cursor가 주식 600억 달러 인수 또는 위약금 100억 달러 조건의 합의를 발표했다. [1]
+- 2026-04: xAI가 Cursor에 데이터 센터 용량을 임대한다는 보도와 함께, SpaceX가 Cursor를 주식 600억 달러에 인수하거나 위약금 100억 달러를 지급하는 조건의 합의를 발표했다. [1]
 - 2026-06-16: TechCrunch가 SpaceX가 2026년 3분기 마무리를 예상하며 주식 600억 달러 규모로 Cursor를 인수하기로 합의했다고 보도했다. [1]
 - 2026-08-25: Cursor가 AIUC-1, ISO/IEC 27001:2022, ISO/IEC 42001:2023 인증과 SOC 2 Type II 검증을 기재한 보안 문서를 갱신했다. [8]
 - 2026-10-13: Cursor가 20개 이상의 파트너 연동 앱과 함께 Origin App Marketplace를 출시하고 공개 제출을 열었다. [7]
@@ -223,4 +223,4 @@ Cursor는 2022년 설립된 Anysphere, Inc.가 개발했습니다. 2026년 6월 
 
 ## 이 문서 인용하기
 
-Mimirwiki. "Cursor." 버전 35e1ceeb, 2026-11-23. https://mimirwiki.com/ko/wiki/cursor
+Mimirwiki. "Cursor." 버전 bfcedd36, 2026-11-25. https://mimirwiki.com/ko/wiki/cursor

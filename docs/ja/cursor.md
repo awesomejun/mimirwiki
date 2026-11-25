@@ -4,8 +4,8 @@ subtitle: "Anysphere, Inc.が開発しThe X Subscriptionに統合されたAIコ�
 canonical_url: https://mimirwiki.com/ja/wiki/cursor
 language: ja
 page_class: entity
-revision_sha256: 6f45f8a81d7c17f18b24016575a4821093f1474cb174fed4f08726cd1af1536d
-date_modified: 2026-11-23
+revision_sha256: 15fbd5a46bb988ed6dc6ea809ad889f586e30282269e7010f1da27d8756bef03
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 9
 alternates:
@@ -52,19 +52,19 @@ Cursorは、コードベースの理解、機能の設計と実装、デバッ�
 
 ## Cursorの製品機能、カスタマイズ、インターフェース
 
-Cursorは、Anysphere, Inc.の公式ドキュメントにおいて、リポジトリの追跡と理解、Plan Modeを用いた機能のスコープ定義と実装、バグの再現と修正、マージ前の差分検証とチェック実行、および外部開発ツールとの連携という5つの主要ワークフローにわたってソフトウェアを構築するためのコーディングエージェントとして位置づけられている。[3] Freeプランから、Cursor独自モデルを用いたAgent、Chat、およびTab補完への限定的なアクセスが提供される。[6]
+Cursorは、Anysphere, Inc.の公式ドキュメントにおいて、リポジトリの追跡と理解、Plan Modeを用いた機能のスコープ定義と実装、バグの再現と修正、マージ前の差分検証とチェック実行、および外部開発ツールとの連携などに使う、ソフトウェア構築のためのコーディングエージェントとして説明されている。[3] Freeプランから、Cursor独自モデルを用いたAgent、Chat、およびTab補完への限定的なアクセスが提供される。[6]
 
 CursorのAgentインターフェースは、デスクトップIDE、専用のAgents Window、ウェブクライアント、Cursor for iOS、およびコマンドラインインターフェース（CLI）を横断して動作する。[3][6][7] 2026-11-23時点で、AgentドキュメントはProjects、Agent Review、Planning、Prompting、Voice Chat、Debugging、Design Mode、Tools、およびSecurityを網羅しており、CLIドキュメントはShell Mode、ACP、およびHeadlessまたはCI実行を扱っている。[3] また、CursorはTypeScript、Python、およびBridge連携向けのCursor SDKも公開している。[3]
 
 Cursorはワークフローのカスタマイズ機構を、Plugins、Rules、Skills、Subagents、Hooks、および[モデルコンテキストプロトコル](https://mimirwiki.com/ja/wiki/model-context-protocol)（MCP）サーバーの6つに整理して文書化している。[3] TeamsおよびEnterpriseプランでは、社内向けのルール、スキル、プラグインを配布するためのチームマーケットプレイスも提供される。[4][5]
 
-Cursorは、ソースコード管理、IDE、コミュニケーション、および課題管理プラットフォームとのネイティブ連携として、GitHub、GitLab、Azure DevOps、Bitbucket、JetBrains、Xcode、Slack、Microsoft Teams、Jira、Linear、Notion、Tailscale、およびDeeplinksを挙げている。[3]
+Cursorのドキュメントの連携（Integrations）の項目には、GitHub、GitLab、Azure DevOps、Bitbucket、JetBrains、Xcode、Slack、Microsoft Teams、Jira、Linear、Notion、Tailscale、およびDeeplinksが挙げられている。[3]
 
 ## Cursor Cloud Agents、Origin、Agent SDK、Voice Chat
 
 Cursorは、Premium以上のサブスクリプションプランでCloud Agents、Automations、Originコードホスティング、およびBugbot AIコードレビューを提供している。[4][5] 2026-11-23時点で、Cloud Agentsのドキュメントは環境セットアップ、ビルド、アプリ、自動化、Bugbot、セキュリティレビュー、脆弱性修正、プルリクエストのルーティングと承認、ロールアウト、モバイルアクセス、セルフホストマシン、およびAPIを網羅している。[3] Originは、CLI、GitHubミラーリング、CI向けCloneKit、プルリクエスト、Code Tours、リポジトリの閲覧・検索、およびアクセスポリシーを備えたリポジトリホスティング機能を提供する。[3]
 
-2026年10月から11月にかけて、Cursorは変更履歴（Changelog）で4つの主要なプラットフォーム機能追加を発表した。[7]
+2026年10月から11月にかけて、Cursorは変更履歴（Changelog）で次のプラットフォーム機能追加を発表した。[7]
 
 - **Origin App Marketplace（2026年10月13日）**: 20以上の連携アプリとともに開設され、公開アプリの提出受付を開始した。デプロイ（[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)、Netlify、Render、Spacelift、Vercel）、CI（Buildkite、CircleCI、CloudBees、Depot、EngFlow、Namespace、RWX）、コードレビュー（CodeRabbit、Greptile、Tenki）、セキュリティ（Artemis Security、Semgrep、Socket Security、Upwind）、モニタリング（Sentry）、プロジェクト管理（Linear）の各分野をカバーする。OriginアプリはアプリJWTとインストールアクセストークンで認証し、Webhookイベントを受信してチェック実行、プルリクエストコメント、およびレビューを書き戻す。[7]
 - **Cloud Agent CanvasesおよびEnvironments API（2026年10月16日）**: クラウドエージェントが構築する共有可能なインタラクティブCanvasesを追加し、エージェントのクラウド環境をプログラムで管理するEnvironments APIベータ版を公開した。また、環境あたりの収容能力を最大300リポジトリへ拡張し、大規模環境の読み込み速度を5倍に高速化した。[7]
@@ -75,7 +75,7 @@ Cursorは、Premium以上のサブスクリプションプランでCloud Agents�
 
 ## Cursorの対応モデルとCursor Router
 
-CursorはSpaceXSI、[OpenAI](https://mimirwiki.com/ja/wiki/openai)、[Anthropic](https://mimirwiki.com/ja/wiki/anthropic)、Google、およびMuseのモデルに対応しており、2026-11-23時点でサブスクリプションの週間使用量プールでカバーされる自社Cursorモデルと、プリペイドクレジットからAPI定価で課金されるサードパーティモデルに分類している。[3][5] 対象モデルでリージョナルデータレジデンシーをオプトインすると、モデル料金に10%が上乗せされる。[5]
+Cursorは[OpenAI](https://mimirwiki.com/ja/wiki/openai)、[Anthropic](https://mimirwiki.com/ja/wiki/anthropic)、Google、SpaceXSIなどのモデルに対応しており、2026-11-23時点でサブスクリプションの週間使用量プールでカバーされる自社Cursorモデルと、プリペイドクレジットからAPI定価で課金されるサードパーティモデルに分類している。[3][5] 対象モデルでリージョナルデータレジデンシーをオプトインすると、モデル料金に10%が上乗せされる。[5]
 
 Cursorの自社モデルプールには、[Grok](https://mimirwiki.com/ja/wiki/grok) 4.7、Grok 4.6、Grok 4.5、およびComposer 2.5が含まれる。[5] 週間プールを超過した利用に対しては、2026-11-23時点で以下の100万トークンあたりの単価が適用される。[3][5]
 
@@ -105,7 +105,7 @@ Cursorの自社モデルプールには、[Grok](https://mimirwiki.com/ja/wiki/g
 | Gemini 3.8 Flash | 200k / 1M | $0.75 | - | $0.075 | $3.75 | 対応 |
 | Muse Wonder | 300k / 1M | $4 | - | $0.2 | $20 | 非対応 |
 
-CursorのAuto機能は、Cursor Routerを通じてCost、Balance、Intelligenceの3モードに分かれている。[5][6] 個人向けプランは従来のAutoモードの後継であるCostモードに対応しており、実際にどのモデルがリクエストを処理してもCursorモデルのリクエストとして週間プールから消費される。[5][6] BalanceおよびIntelligenceモードはTeamsとEnterpriseプラン向けにAgents Window、エディタ、CLI、Cursor SDK、およびiOSアプリ全体で提供され、Enterpriseチームは管理者がオプトインするまでデフォルトで無効となっている。Cursorモデルへルーティングされたリクエストは週間プールから消費され、サードパーティモデルへルーティングされたリクエストはプリペイドクレジットからAPI定価に加えて対象時はCursor Token Rateが課金される。[5][6]
+CursorのAuto機能は、Cursor Routerを通じてCost、Balance、Intelligenceの3モードに分かれている。[5][6] 個人向けプランは従来のAutoモードの後継であるCostモードに対応しており、実際にどのモデルがリクエストを処理してもCursorモデルのリクエストとして週間プールから消費される。[5][6] Cursorは、BalanceおよびIntelligenceモードを提供するCursor RouterをTeamsとEnterpriseプラン向けに提供開始する予定であり、Agents Window、エディタ、CLI、Cursor SDK、およびiOSアプリで利用でき、Enterpriseチームは管理者がオプトインするまで無効の状態で始まると説明している。Cursorモデルへルーティングされたリクエストは週間プールから消費され、サードパーティモデルへルーティングされたリクエストはプリペイドクレジットからAPI定価に加えて対象時はCursor Token Rateが課金される。[5][6]
 
 ## Cursorの料金プラン、The X Subscription、レガシー料金体系
 
@@ -139,11 +139,11 @@ Cursorはまた、The X Subscription以前に販売されていたレガシー�
 
 ## Cursorのセキュリティ、コンプライアンス、プライバシー管理
 
-Cursorは、セキュリティアーキテクチャを`cursor.com/security`（最終更新2026年8月25日）に、プライバシーポリシーを`cursor.com/privacy`（最終更新2026年11月6日）に公開している。[8][9] 2026-11-23時点で、CursorはAIUC-1、ISO/IEC 27001:2022、ISO/IEC 42001:2023の認証およびSOC 2 Type IIの保証報告書を取得しており、認証書、監査報告書、ペネトレーションテストのエグゼクティブサマリー、および復委託先（サブプロセッサー）一覧を`trust.cursor.com`で請求に応じて提供している。[4][8][9] Cursorは少なくとも年1回の第三者によるペネトレーションテスト実施を約束している。[8]
+Cursorは、セキュリティアーキテクチャを`cursor.com/security`（最終更新2026年8月25日）に、プライバシーポリシーを`cursor.com/privacy`（最終更新2026年11月6日）に公開している。[8][9] 2026-11-23時点で、CursorはAIUC-1、ISO/IEC 27001:2022、ISO/IEC 42001:2023の認証およびSOC 2 Type IIの保証報告書を取得しており、認証書、報告書、ペネトレーションテストのエグゼクティブサマリーを`trust.cursor.com`で請求に応じて提供し、復委託先（サブプロセッサー）一覧は同じトラストポータルで公開している。[4][8][9] Cursorは少なくとも年1回の第三者によるペネトレーションテスト実施を約束している。[8]
 
-Cursorは、すべてのサブプロセッサーに対してベンダーリスク評価と年次再審査を実施し、多要素認証（MFA）とログ監視を伴う最小権限の原則に基づいてインフラアクセスを管理し、ブロックリストに登録されたモデルへリクエストがルーティングされないよう強制していると説明している。[8] また、中国国内にインフラを使用または維持しておらず、中国に本社を置く企業をサブプロセッサーとして起用していないと明言している。[8] `security-reports@cursor.com`宛に報告されたセキュリティ脆弱性は5営業日以内に受領確認され、重大なセキュリティインシデントは影響を受けるユーザーへメールで通知される。[8] Cursorは自社コードベースの監視にもBugbotおよびCloud Agentの自動化を活用している。[8]
+Cursorは、すべてのサブプロセッサーに対してベンダーリスク評価と年次再審査を実施し、多要素認証（MFA）とログ監視を伴う最小権限の原則に基づいてインフラアクセスを管理し、ブロックリストに登録されたモデルへリクエストがルーティングされないよう強制していると説明している。[8] また、中国国内にインフラを使用または維持しておらず、中国に本社を置く企業をサブプロセッサーとして起用していないと明言している。[8] `security-reports@cursor.com`宛に報告されたセキュリティ脆弱性は5営業日以内に受領確認され、重大なセキュリティインシデントは影響を受けるユーザーへメールで通知される。[8] Cursorは自社コードベースの保護にもBugbotおよびCloud Agentの自動化を活用している。[8]
 
-Privacy ModeはFree、個人、Teams、Enterpriseのすべてのプランで利用可能であり、ユーザーが設定から有効化できるほか、管理者が組織全体へ強制適用でき、新規チームメンバーにはチーム設定が引き継がれる。[4][8] Privacy Modeが有効な場合、Cursorは技術的制御とプロバイダーとの契約条件に基づき、ユーザーのコードデータがCursorまたはモデルプロバイダーの学習に使用されないとし、Voice Chatもデータ無保持で動作すると述べている。[4][7][8] プライバシーポリシーでは、個人アカウントをAnysphere, Inc.が管轄する一方、Anysphereがデータ処理者として機能する雇用主提供の商用アカウントは顧客契約の適用対象となる。[9] Anysphereは、セキュリティレビュー対象としてフラグが立てられた場合、ユーザーから明示的にフィードバック報告された場合、またはユーザーから明示的な承認を得た場合を除き、入力（Inputs）および提案（Suggestions）をモデル学習に使用しないと明記しており、遺伝情報、生体情報、健康情報、宗教情報を意図的に収集せず、18歳未満のユーザー向けにサービスを提供しないと述べている。[9] ユーザーは設定ダッシュボードから直接アカウントを削除できる。[8]
+CursorはPrivacy Modeを無料ユーザーを含め誰でも利用できると説明しており、ユーザーが設定から有効化できるほか、チームまたはエンタープライズの管理者も有効化でき、新規チームメンバーにはチーム設定が引き継がれる。[4][8] Privacy Modeが有効な場合、Cursorは技術的制御とプロバイダーとの契約条件に基づき、ユーザーのコードデータがCursorまたはモデルプロバイダーの学習に使用されないとし、Voice Chatもデータ無保持で動作すると述べている。[4][7][8] プライバシーポリシーでは、個人アカウントをAnysphere, Inc.が管轄する一方、Anysphereがデータ処理者として機能する雇用主提供の商用アカウントは顧客契約の適用対象となる。[9] Anysphereは、セキュリティレビュー対象としてフラグが立てられた場合、ユーザーから明示的にフィードバック報告された場合、またはユーザーから明示的な承認を得た場合を除き、入力（Inputs）および提案（Suggestions）をモデル学習に使用しないと明記しており、遺伝情報、生体情報、健康情報、宗教情報を意図的に収集せず、18歳未満のユーザー向けにサービスを提供しないと述べている。[9] ユーザーは設定ダッシュボードから直接アカウントを削除できる。[8]
 
 組織向け導入に関して、CursorはSAML/OIDC SSO、SCIMプロビジョニング、コンプライアンスおよび監査ログ、サービスアカウント、モバイルデバイス管理（MDM）による展開、データ暗号化および顧客管理暗号鍵（CMEK）、自動実行・ブラウザ・ネットワーク制御、ならびにリポジトリ、モデル、MCPサーバー、Grok Botに対するアクセス制御を文書化している。[4][8]
 
@@ -151,9 +151,9 @@ Privacy ModeはFree、個人、Teams、Enterpriseのすべてのプランで利�
 
 Cursorは、2022年に設立され2024年に[OpenAI](https://mimirwiki.com/ja/wiki/openai)のスタートアップアクセラレーターに参加したAnysphere, Inc.によって開発された。[1][9] 2024年後半、Anysphereはプレマネー企業価値25億ドルで1億ドルを調達した。[2] 2025年初頭にはOpenAIやその他の買収候補から買収打診を受けたが、Anysphereはこれらの提案を辞退した。[2]
 
-TechCrunchの報道によると、Anysphereの年間経常収益（ARR）は2025年4月中旬に3億ドルに達し、BloombergおよびTechCrunchが引用した関係者によれば、2025年6月5日までに5億ドルを超えた。[2] 2025年6月5日、TechCrunchはAnysphereが既存投資家のThrive Capital主導のもと、Andreessen Horowitz、Accel、DST Globalの参加を得て、企業価値99億ドルで9億ドルのシリーズCラウンド（1年以内で3度目の資金調達）を完了したと報じた。[1][2] 当時、Cursorは2週間の無料トライアル後に月額20ドルのProまたは月額40ドルのビジネスサブスクリプションへ移行するプランに加え、新設のエンタープライズライセンスを提供していた。[2] 2025年後半、Anysphereはさらに23億ドルを調達し、企業価値は約290億ドルに達した。[1]
+TechCrunchの報道によると、Anysphereの年間経常収益（ARR）は2025年4月中旬に3億ドルに達し、BloombergおよびTechCrunchが引用した関係者によれば、2025年6月5日までに5億ドルを超えた。[2] 2025年6月5日、TechCrunchはAnysphereが既存投資家のThrive Capital主導のもと、Andreessen Horowitz、Accel、DST Globalの参加を得て、企業価値99億ドルで9億ドルのシリーズCラウンド（1年以内で3度目の資金調達）を完了したと報じた。[1][2] 当時、Cursorは2週間の無料トライアル後に月額20ドルのProまたは月額40ドルのビジネスサブスクリプションへ移行するプランに加え、新設のエンタープライズライセンスを提供していた。[2] 2025年後半、Anysphereはさらに23億ドルを調達し、TechCrunchはSpaceXとの取引発表前の企業価値を約290億ドルと伝えた。[1]
 
-2026年初頭、xAIはCursorの上級エンジニアリングリーダー2名を採用し、2026年4月にはBusiness InsiderがxAIによるCursor向けデータセンター容量の賃貸契約を報じた。[1] SpaceXからの買収提案に先立ち、CursorはAndreessen Horowitz、Thrive Capital、Nvidiaなどの投資家から企業価値500億ドルで20億ドルを調達するラウンドの締結直前にあった。[1] 2026年4月、SpaceXの新規株式公開（IPO）を前に、SpaceXとCursorは、SpaceXが600億ドル相当の株式でCursorを買収するか、取引が成立しなかった場合に100億ドルの違約金を支払う合意を発表した。[1]
+2026年初頭、xAIはCursorの上級エンジニアリングリーダー2名を採用し、2026年4月にはBusiness InsiderがxAIによるCursor向けデータセンター容量の賃貸契約を報じた。[1] SpaceXからの買収提案に先立ち、CursorはAndreessen Horowitz、Thrive Capital、Nvidiaなどの投資家から企業価値500億ドルで20億ドルを調達するラウンドの締結直前にあった。[1] 2026年4月、SpaceXの新規株式公開（IPO）を前に、SpaceXは、600億ドル相当の株式でCursorを買収するか、取引が成立しなかった場合に100億ドルの違約金を支払うという合意を発表した。[1]
 
 2026年6月16日、1株135ドルでのSpaceXのIPOから数日後、かつ2026年初頭のSpaceXとxAIの合併に続き、TechCrunchはSpaceXが600億ドルの株式交換取引でCursorを買収することに合意し、SpaceXが2026年第3四半期の完了を見込んでいると報じた。[1] 2026-11-23時点で、Cursorの公式ウェブサイトおよびドキュメントは、X Subscription Corp.が[Grok](https://mimirwiki.com/ja/wiki/grok)およびXとともに販売するThe X SubscriptionにCursorが統合されていることを示し、SpaceXSI Subscription Termsへのリンクと対応モデルプロバイダーとしてのSpaceXSIの記載を行う一方、ウェブサイトの著作権表示およびプライバシーポリシーには引き続き`Anysphere, Inc.`を記載している。[4][5][8][9]
 
@@ -173,7 +173,7 @@ Hobby（無料）、インド限定のStart（税込月額649ルピー）、Pro�
 
 ### CursorのPrivacy Modeとセキュリティ認証はどのように機能しますか？
 
-2026-11-23時点で、CursorはAIUC-1、ISO/IEC 27001:2022、ISO/IEC 42001:2023の認証とSOC 2 Type IIの保証報告書を取得しており、関連文書はtrust.cursor.comから請求できます。Privacy Modeはすべてのプランで利用可能で、管理者がチーム全体に強制適用できます。有効にするとユーザーのコードデータがモデル学習に使用されなくなり、Voice Chatもデータ無保持（ゼロデータリテンション）で動作します。 [7][8][9]
+2026-11-23時点で、CursorはAIUC-1、ISO/IEC 27001:2022、ISO/IEC 42001:2023の認証とSOC 2 Type IIの保証報告書を取得しており、関連文書はtrust.cursor.comから請求できます。Privacy Modeは無料ユーザーを含め誰でも利用でき、管理者がチーム全体に強制適用できます。有効にするとユーザーのコードデータがモデル学習に使用されなくなり、Voice Chatもデータ無保持（ゼロデータリテンション）で動作します。 [7][8][9]
 
 ### Cursorにはどのようなカスタマイズ機能や自動化機能がありますか？
 
@@ -200,7 +200,7 @@ Cursorは2022年設立のAnysphere, Inc.によって開発されました。2026
 - 2024: AnysphereがOpenAIのスタートアップアクセラレーターに参加し、2024年後半にプレマネー企業価値25億ドルで1億ドルを調達した。 [1][2]
 - 2025-04: TechCrunchが、Anysphereの年間経常収益が3億ドルに達したと報じた。 [2]
 - 2025-06-05: TechCrunchが、AnysphereはThrive Capital主導のもと企業価値99億ドルで9億ドルのシリーズCラウンドを調達し、年間経常収益が5億ドルを超えたと報じた。 [1][2]
-- 2026-04: xAIによるCursor向けデータセンター容量の賃貸報道と並行して、SpaceXとCursorが600億ドルの株式買収または100億ドルの違約金に関する合意を発表した。 [1]
+- 2026-04: xAIによるCursor向けデータセンター容量の賃貸報道と並行して、SpaceXがCursorの600億ドルの株式買収または100億ドルの違約金に関する合意を発表した。 [1]
 - 2026-06-16: TechCrunchが、SpaceXは2026年第3四半期の完了を見込み、600億ドルの株式交換取引でCursorを買収することに合意したと報じた。 [1]
 - 2026-08-25: Cursorがセキュリティドキュメントを更新し、AIUC-1、ISO/IEC 27001:2022、ISO/IEC 42001:2023の認証およびSOC 2 Type IIの保証報告書を記載した。 [8]
 - 2026-10-13: Cursorが20以上のパートナー連携を備えたOrigin App Marketplaceを開設し、公開アプリの提出受付を開始した。 [7]
@@ -223,4 +223,4 @@ Cursorは2022年設立のAnysphere, Inc.によって開発されました。2026
 
 ## このページを引用する
 
-Mimirwiki. "Cursor." 版 6f45f8a8, 2026-11-23. https://mimirwiki.com/ja/wiki/cursor
+Mimirwiki. "Cursor." 版 15fbd5a4, 2026-11-25. https://mimirwiki.com/ja/wiki/cursor

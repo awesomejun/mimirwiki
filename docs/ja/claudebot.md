@@ -4,8 +4,8 @@ subtitle: "AIモデル学習用の公開ウェブコンテンツを収集する�
 canonical_url: https://mimirwiki.com/ja/wiki/claudebot
 language: ja
 page_class: entity
-revision_sha256: dcfb1ef9d4d740a50bb893c3fe8cdafe7ebdc3c4c2c4c828e2941f96b9d27389
-date_modified: 2026-11-23
+revision_sha256: 7e5ac18a7c99c46ea2226c96728b98194f7b71ae1362a939a4ed06bec4665655
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 10
 alternates:
@@ -82,7 +82,7 @@ ClaudeBotは、インターネット技術特別調査委員会（IETF）がRFC 
 
 ## Anthropicの学習データおよびプライバシーポリシーにおけるClaudeBot
 
-ClaudeBotが収集する公開ウェブコンテンツは、Anthropicのプライバシーポリシーおよび証券届出書に記載された学習データの1つのカテゴリーに該当する。[2][4][5] 2026年9月10日発効のAnthropic個人向けプライバシーポリシー（Individual Privacy Policy）は、Anthropicモデルの学習のために収集または受領する6つのデータソースを列挙している。[5]
+ClaudeBotが収集する公開ウェブコンテンツは、Anthropicのプライバシーポリシーおよび証券届出書に記載された学習データの1つのカテゴリーに該当する。[2][4][5] 2026年9月10日発効のAnthropicプライバシーポリシー（Privacy Policy）は、Anthropicモデルの学習のために収集または受領する6つのデータソースを列挙している。[5]
 
 - インターネットを通じて公開されている情報
 - 第三者企業との商業契約を通じて取得したデータセット
@@ -91,13 +91,13 @@ ClaudeBotが収集する公開ウェブコンテンツは、Anthropicのプラ�
 - 安全性、セキュリティ、またはポリシー審査のためにフラグが立てられた資料
 - Anthropicが社内で生成したデータ
 
-Anthropicの個人向けプライバシーポリシーは、Enterpriseアカウントなどの法人顧客に代わって処理されるコンテンツには適用されず顧客契約が適用される旨を明記しており、第三者の個人データを用いた大規模言語モデルの学習方法や非ユーザーに適用される選択肢については、別個の非ユーザープライバシーポリシー（Non-User Privacy Policy）を参照するよう案内している。[5] 一般消費者のユーザーがアカウント設定でモデル学習をオプトアウトした場合でも、会話が安全性審査のためにフラグ付けされた場合やフィードバック機能を通じて明示的に報告された場合には、入力および出力がモデル改善に使用される可能性があるとAnthropicは述べている。[5]
+Anthropicのプライバシーポリシーは、Enterpriseアカウントなどの法人顧客に代わって処理されるコンテンツには適用されず顧客契約が適用される旨を明記しており、第三者の個人データを用いた大規模言語モデルの学習方法や非ユーザーに適用される選択肢については、別個の非ユーザープライバシーポリシー（Non-User Privacy Policy）を参照するよう案内している。[5] 一般消費者のユーザーがアカウント設定でモデル学習をオプトアウトした場合でも、会話が安全性審査のためにフラグ付けされた場合やフィードバック機能を通じて明示的に報告された場合には、入力および出力がモデル改善に使用される可能性があるとAnthropicは述べている。[5]
 
 2026年11月17日に[SEC EDGAR](https://mimirwiki.com/ja/wiki/sec-edgar)へ提出されたForm S-1修正届出書第3号（登録番号333-299633）において、Anthropic, PBCは、モデル開発の事前学習（pre-training）および事後学習（post-training）の双方の段階で、公開インターネット情報、ライセンス供与または委託による第三者データセット、および自社モデルが生成した合成データを使用しているとしている。[2] 同届出書は、公開情報を収集する手段としてウェブスクレイピングまたはウェブクローリング技術、書籍スキャンなどの手法を挙げている。[2] Anthropicは同届出書の中で、適用法令、`robots.txt`の通知、ペイウォールやログインなどの技術的措置を遵守するための対策を講じているものの、それらの取り組みが常に成功するとは限らず、収集した資料がプライバシー法、著作権法、その他の知的財産法で保護されているか検証できない場合があるとしている。[2]
 
 ## ClaudeBotとCloudflareのAIクローラー制御
 
-ClaudeBotは、[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)などのネットワーク事業者が自動トラフィックを分類し、サイト所有者にAIクローラーに対するきめ細かな制御を提供する広範なウェブインフラ環境の中で動作している。[6][7] 2024年5月から2025年5月を対象とした2025年7月1日のトラフィック分析において、Cloudflareは全体のクローラートラフィックが18%増加し、[OpenAI](https://mimirwiki.com/ja/wiki/openai)の[GPTBot](https://mimirwiki.com/ja/wiki/gptbot)が305%、Googlebotが96%増加したと報告した。[9]
+ClaudeBotは、[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)などのネットワーク事業者が自動トラフィックを分類し、サイト所有者にAIクローラーに対するきめ細かな制御を提供する広範なウェブインフラ環境の中で動作している。[6][7] 2024年5月から2025年5月を対象とした2025年7月1日のトラフィック分析において、CloudflareはAIおよび検索クローラーのトラフィックが18%増加し、[OpenAI](https://mimirwiki.com/ja/wiki/openai)の[GPTBot](https://mimirwiki.com/ja/wiki/gptbot)が305%、Googlebotが96%増加したと報告した。[9]
 
 2026年7月1日、Cloudflareはすべての顧客プランにおいて、ウェブサイト所有者がSearch、Agent、Trainingの各トラフィックを区別して管理できるAIトラフィックオプションを導入した。[7] 同日、CloudflareはBotBase分類体系を更新し、追跡対象のすべてのボットを挙動と運営者アクセス種別によって分類するようにし、従来のVerified botsと署名済みエージェントの区分を`Direct`対`Intermediary`のアクセスフィールドへ置き換えた。[6]
 
@@ -111,7 +111,7 @@ ClaudeBotは、[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)などの�
 
 CloudflareのVerified botsドキュメント（最終更新2026年11月12日）によれば、Verifiedステータスを得るには、暗号学的な[Web Bot Auth](https://mimirwiki.com/ja/wiki/web-bot-auth)署名、安定したユーザーエージェントを伴う公開IPリスト、または逆引きDNSによる決定論的な自己識別に加え、`robots.txt`およびクロールディレクティブを合理的なリクエストレートで遵守する非濫用的な挙動が求められる。[6] `AI Crawler`、`AI Search`、`AI Assistant`といった従来のWAFカテゴリーも、後方互換性のために更新後の分類体系と並行して引き続き利用可能である。[6] Cloudflareは、`robots.txt`の`crawl-delay`ディレクティブを遵守しない行為を、AIクローラーをグローバル許可リストから除外し得るポリシー違反として挙げており、繰り返しの違反や組織内のボット間での不整合な遵守は、その組織が運用するすべてのボットのVerifiedステータス取り消しにつながる可能性があると述べている。[6]
 
-2026年9月15日、Cloudflareはさらに、Apple、Google、Microsoftとの共通モデルを確立し、ウェブサイト所有者がAI学習を不許可にしつつ検索での発見可能性を維持できる追加制御およびAccountable指定を発表した。[8]
+2026年9月15日、Cloudflareはさらに、ウェブサイト所有者がAI学習を不許可にしつつ検索インデックスへの登録を維持できるDisallow AI Training設定とAccountable指定を発表し、Apple、Google、Microsoftがこの設定に従っている、または従うことを約束していると述べた。[8]
 
 ## ClaudeBotに関するパブリッシャーの報告とスクレイピング訴訟
 
@@ -158,19 +158,19 @@ Anthropic, PBCは2026年11月17日にSECへ提出したForm S-1修正届出書�
 - 2024年7月、iFixitのCEOであるKyle Wiensは、ClaudeBotが24時間以内にiFixitのサーバーへ約100万件のリクエストを送信し、iFixitがrobots.txtにcrawl-delayディレクティブを追加した後に停止したと報告した。 [3]
 - 2026年9月10日発効のAnthropicのプライバシーポリシーは、Anthropicモデルの学習に使用する6つのデータソースの1つとして、インターネット上で公開されている情報を挙げている。 [5]
 - Anthropic, PBCが2026年11月17日にSECへ提出したForm S-1修正届出書第3号（S-1/A-3）において、Reddit, Inc. v. Anthropic PBC訴訟は2026年3月30日に州裁判所へ差し戻された後も係属中であることを開示した。 [2]
-- Cloudflareが2025年7月1日に公開したクローラー分析では、2024年5月から2025年5月の間に全体のクローラートラフィックが18%増加し、GPTBotのトラフィックは305%、Googlebotのトラフィックは96%増加したと報告されている。 [9]
+- Cloudflareが2025年7月1日に公開したクローラー分析では、2024年5月から2025年5月の間にAIおよび検索クローラーのトラフィックが18%増加し、GPTBotのトラフィックは305%、Googlebotのトラフィックは96%増加したと報告されている。 [9]
 
 ## 年表
 
 - 2022-09: IETFがロボット排除プロトコル（robots.txt）を標準化するRFC 9309を発行した。 [1]
 - 2024-04: Linux Mintのウェブフォーラムが、サイト障害の原因をClaudeBotのスクレイピング活動によるサーバー負荷に帰した。 [3]
 - 2024-07-25: The Vergeが、ClaudeBotが24時間以内にiFixitへ約100万件のリクエストを送信し、iFixitがrobots.txtにcrawl-delayディレクティブを追加した後に停止したと報じた。 [3]
-- 2025-07-01: Cloudflareがクローラートラフィック分析を公開し、2024年5月から2025年5月の間に全体のクローラートラフィックが18%増加し、GPTBotが305%、Googlebotが96%増加したと報告した。 [9]
+- 2025-07-01: Cloudflareがクローラートラフィック分析を公開し、2024年5月から2025年5月の間にAIおよび検索クローラーのトラフィックが18%増加し、GPTBotが305%、Googlebotが96%増加したと報告した。 [9]
 - 2025-07-03: Anthropicが、Reddit投稿への不正アクセスを主張するReddit, Inc. v. Anthropic PBC訴訟において、連邦裁判所への移送通知を提出した。 [2]
 - 2026-03-30: Reddit, Inc. v. Anthropic PBC訴訟が連邦裁判所から州裁判所へ差し戻された。 [2]
 - 2026-07-01: Cloudflareが全顧客向けにSearch、Agent、Trainingの個別トラフィックオプションを導入し、BotBaseにDirect対Intermediaryのアクセスラベルを追加した。 [6][7]
-- 2026-09-10: Anthropicの更新版個人向けプライバシーポリシーが発効し、モデル学習データの6つのソースの1つとして公開インターネット情報を記載した。 [5]
-- 2026-09-15: CloudflareがApple、Google、Microsoftとの共通モデルにおいて、AI学習を不許可にしつつ検索での発見可能性を維持するための制御機能とAccountable指定を発表した。 [8]
+- 2026-09-10: Anthropicの更新版プライバシーポリシーが発効し、モデル学習データの6つのソースの1つとして公開インターネット情報を記載した。 [5]
+- 2026-09-15: CloudflareがAI学習を不許可にしつつ検索インデックスへの登録を維持するためのDisallow AI Training設定とAccountable指定を発表し、Apple、Google、Microsoftがこの設定に従っている、または従うことを約束していると述べた。 [8]
 - 2026-10-30: AnthropicがIETF aiprefワーキンググループの草案作業に基づく機械可読なAI学習拒否プリファレンスシグナルの認識を開始した。 [4]
 - 2026-11-17: Anthropic, PBCがSECへForm S-1修正届出書第3号を提出し、ウェブクローリング手法、robots.txt遵守の限界、および係属中のクローリング訴訟を開示した。 [2]
 
@@ -189,4 +189,4 @@ Anthropic, PBCは2026年11月17日にSECへ提出したForm S-1修正届出書�
 
 ## このページを引用する
 
-Mimirwiki. "ClaudeBot." 版 dcfb1ef9, 2026-11-23. https://mimirwiki.com/ja/wiki/claudebot
+Mimirwiki. "ClaudeBot." 版 7e5ac18a, 2026-11-25. https://mimirwiki.com/ja/wiki/claudebot

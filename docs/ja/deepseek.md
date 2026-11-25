@@ -4,8 +4,8 @@ subtitle: "DeepSeek-V4、DeepSeek-R1、DeepSeek-V3基盤モデルを開発する
 canonical_url: https://mimirwiki.com/ja/wiki/deepseek
 language: ja
 page_class: entity
-revision_sha256: 5d9455f90a89599fd5b296df5c3bf403549afcc7538ce8d223f9d7b711c0084a
-date_modified: 2026-11-23
+revision_sha256: c3325d185e9c11979353948083f164afd5b4d0b62204e2ee37faa29a2f93cd46
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -21,76 +21,80 @@ translations:
 
 # DeepSeek
 
-> 2026年11月時点で、DeepSeekの開発者プラットフォームは100万トークンのコンテキストウィンドウを持つ2つの主要モデル、deepseek-flash（DeepSeek-V4.1-Flash-1017）とdeepseek-v4-pro（DeepSeek-V4-Pro-0813）を提供している。両モデルとも最大384K出力トークンに対応し、ピーク・オフピークの動的料金体系、ネイティブのSearch・Fetch・OCR・Speech API、および2026年11月18日に有効化された無料のサーバー側内蔵ウェブ検索機能を備えている。それ以前のオープンウェイトのマイルストーンには、DeepSeek-V3（総パラメータ数671B／活性パラメータ数37B）およびMITライセンスで公開されたDeepSeek-R1推論モデル群がある。
+> 2026年11月時点で、DeepSeekのAPIにはコンテキスト長1M、最大出力384Kの2つのモデル、deepseek-flash（DeepSeek-V4.1-Flash-1017）とdeepseek-v4-pro（DeepSeek-V4-Pro-0813）がある。オフピーク料金はピーク料金の半額で、Search、Fetch、OCR、音声のAPIを別途提供している。2026年11月18日12時（北京時間）以降、モデル呼び出し時に実行されるサーバー側の検索およびウェブ取得のツール呼び出しは課金されない。以前のモデルにはDeepSeek-V3（総パラメータ671B、アクティブ37B）と推論モデルDeepSeek-R1がある。
 
-DeepSeek（正式法人名：Hangzhou DeepSeek Artificial Intelligence Co., Ltd. および Beijing DeepSeek Artificial Intelligence Co., Ltd.）は、2023年に設立され、中国・浙江省杭州市に本社を置く人工知能（AI）研究企業である。マルチヘッド潜在アテンション（Multi-head Latent Attention、MLA）およびDeepSeekMoEアーキテクチャを採用したオープンウェイト（open-weight）およびAPIホスト型の大規模言語モデル（LLM）を開発しており、DeepSeek-V2、DeepSeek-V3、強化学習推論モデルのDeepSeek-R1、マルチモーダルモデルのDeepSeek-V4シリーズを手掛けている。
+DeepSeekは中国の人工知能（AI）企業であり、サービスは中国に登録住所を置くHangzhou DeepSeek Artificial Intelligence Co., Ltd.が提供している。マルチヘッド潜在アテンション（Multi-head Latent Attention、MLA）およびDeepSeekMoEアーキテクチャに基づく大規模言語モデルを開発しており、DeepSeek-V2、DeepSeek-V3、強化学習による推論モデルDeepSeek-R1、APIで提供するDeepSeek-V4シリーズがある。
 
-**別名:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd., Beijing DeepSeek Artificial Intelligence Co., Ltd., 深度求索
+**別名:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd., 深度求索
 
 ## 主要な事実
 
-- **運営法人:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd. / Beijing DeepSeek Artificial Intelligence Co., Ltd. [7]
-- **現行本番モデル:** deepseek-flash（DeepSeek-V4.1-Flash-1017）および deepseek-v4-pro（DeepSeek-V4-Pro-0813） (時点 2026-11-23) [1]
-- **コンテキストおよび最大出力:** 1Mトークンのコンテキストウィンドウ、最大384K出力トークン (時点 2026-11-23) [1]
+- **運営法人:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd. [7]
+- **現行本番モデル:** deepseek-flash（DeepSeek-V4.1-Flash-1017）および deepseek-v4-pro（DeepSeek-V4-Pro-0813） (時点 2026-11-25) [1]
+- **コンテキストおよび最大出力:** 1Mトークンのコンテキストウィンドウ、最大384K出力トークン (時点 2026-11-25) [1]
 - **オープンウェイト推論のマイルストーン:** DeepSeek-R1（MITライセンス、2025年1月）および DeepSeek-V3（671B/37B MoE、2024年12月） [4]
 
 ## ファクトシート
 
 - **正式名称:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd. [7]
-- **本社所在地:** 中国 浙江省 杭州市 [7]
+- **登録住所:** 中国 [7]
 - **中核アーキテクチャ:** マルチヘッド潜在アテンション（MLA）、DeepSeekMoE、マルチトークン予測（MTP） [5]
 - **主力APIモデル（2026年11月）:** DeepSeek-V4.1-Flash-1017（deepseek-flash）、DeepSeek-V4-Pro-0813（deepseek-v4-pro） [1]
-- **APIコンテキストおよび出力上限:** コンテキスト1,000,000トークン／最大出力384,000トークン（デフォルト64K） [1]
+- **APIコンテキストおよび出力上限:** コンテキスト長1M／最大出力384K [1]
 - **API同時実行数制限:** 2,500同時リクエスト（deepseek-flash）、500同時リクエスト（deepseek-v4-pro） [2]
-- **マルチモーダル・ツールAPI:** Search API、Fetch API、OCR API、Speech-to-Text API、サーバー側 search_Option [1]
+- **マルチモーダル・ツールAPI:** Search API、Fetch API、ファイル解析・OCR API、音声認識（ASR）、音声合成（TTS） [1]
 - **オープンソースライセンス（R1）:** MITライセンス（DeepSeek-R1および蒸留モデルの重みとコード） [4]
 
 ## DeepSeekの企業概要とアーキテクチャ基盤
 
-DeepSeekは、Hangzhou DeepSeek Artificial Intelligence Co., Ltd. および Beijing DeepSeek Artificial Intelligence Co., Ltd. を通じて事業を展開し、フロンティア基盤モデルおよび開発者向けAPIを構築している。[1][7] 同研究所は2024年から2025年にかけて、詳細なアーキテクチャ技術報告書を公開するとともに、従来のフロンティアモデルに要する計算予算のごく一部で学習されたオープンウェイトの混合エキスパート（Mixture-of-Experts、MoE）モデルおよび推論モデルをリリースしたことで、国際的な注目を集めた。[4][5][6]
+DeepSeekのサービスはHangzhou DeepSeek Artificial Intelligence Co., Ltd.が提供している。[7] 同社はモデルアーキテクチャに関する技術報告書を公開し、Mixture-of-Experts（MoE）モデルと推論モデルを発表してきた。[4][5][6]
 
-DeepSeekの基盤モデルは、**DeepSeek-V2**（2024年5月、総パラメータ数236B、トークンあたりの活性パラメータ数21B）で導入され、**DeepSeek-V3**（2024年12月、総パラメータ数671B、トークンあたりの活性パラメータ数37B）で拡張された2つの構造的革新を土台としている。[5][6] - **マルチヘッド潜在アテンション（Multi-head Latent Attention、MLA）**: 推論時にキー・バリュー（KV）キャッシュ表現を低ランクの潜在ベクトル（low-rank latent vector）へ圧縮することで、長文コンテキスト処理におけるメモリ帯域幅のオーバーヘッドを大幅に削減する。[5][6] - **補助損失を用いない負荷分散を備えたDeepSeekMoE（Auxiliary-Loss-Free Load Balancing）**: 細粒度のルーティングエキスパート（routed experts）と共有エキスパート（shared experts）を組み合わせ、性能低下を招く従来の補助的な負荷分散損失の代わりに動的バイアス調整ルーティング戦略を採用し、マルチトークン予測（Multi-Token Prediction、MTP）の学習目的を導入している。[5] DeepSeek-V3はFP8混合精度学習を用い、わずか278万8,000 H800 GPU時間で14.8兆トークンの事前学習を完了した。[5]
+DeepSeekのモデルは、**DeepSeek-V2**（2024年5月、総パラメータ236B、トークンあたり21Bがアクティブ）で導入され、**DeepSeek-V3**（2024年12月、総パラメータ671B、トークンあたり37Bがアクティブ）でも採用された2つのアーキテクチャを用いている。[5][6] - **マルチヘッド潜在アテンション（MLA）**: キー・バリュー（KV）キャッシュを潜在ベクトルに圧縮し、推論を効率化する。[5][6] - **DeepSeekMoE**: ルーティングされるエキスパートと共有エキスパートを用いる疎な計算構造である。DeepSeek-V3では、補助損失を使わない負荷分散の手法とマルチトークン予測（MTP）の学習目標が加わった。[5][6] DeepSeek-V3はFP8混合精度学習により14.8兆トークンで事前学習され、技術報告書は学習全体に要したのはH800 GPUで278.8万時間だったと述べている。[5]
 
 ## DeepSeek-R1と推論のための強化学習
 
-2025年1月、DeepSeekは寛容なMITライセンスのもとで**DeepSeek-R1**および**DeepSeek-R1-Zero**を公開し、事前の教師ありファインチューニング（SFT）を行わない大規模な純粋強化学習（RL）のみによって、言語モデルに自己検証（self-verification）、省察（reflection）、および長期的な思考の連鎖（Chain-of-Thought、CoT）推論を創発させられることを実証した。[4]
+2025年1月22日にarXivへ投稿されたDeepSeek-R1の論文は、**DeepSeek-R1**と**DeepSeek-R1-Zero**を紹介している。論文は、人手でラベル付けした推論過程を使わず、純粋な強化学習（RL）によって大規模言語モデルの推論能力を引き出せること、学習中に自己省察や検証といった振る舞いが現れたことを報告した。[4]
 
-`DeepSeek-R1-Zero`がベースモデルに直接グループ相対方策最適化（Group Relative Policy Optimization、GRPO）を適用したのに対し、`DeepSeek-R1`はコールドスタートCoTデータと棄却サンプリング（rejection sampling）を用いた多段階学習を取り入れることで言語混在を解消し可読性を高め、数学、競技プログラミング、STEM推論ベンチマークにおいてOpenAI-o1-1217に匹敵する性能を達成した。[4] さらにDeepSeekは、DeepSeek-R1の出力から蒸留した、1.5Bから70Bパラメータ規模の密モデル（dense distilled models、QwenおよびLlamaアーキテクチャベース）6種も併せて公開した。[4]
+`DeepSeek-R1-Zero`は、RLの前に教師ありファインチューニングを行わず、Group Relative Policy Optimization（GRPO）で学習された。このモデルには可読性の低さと言語の混在という課題があったため、`DeepSeek-R1`ではコールドスタートの思考連鎖データ、棄却サンプリング、RL、教師ありファインチューニングを組み合わせた多段階の学習を行った。[4] 論文は、数学のタスクでOpenAI-o1-1217と同等の性能を示し、エンジニアリング寄りのコーディングタスクではOpenAI-o1-1217がDeepSeek-R1を上回ったと報告している。[4] DeepSeekは、QwenおよびLlamaのモデルを基にした1.5Bから70Bパラメータの蒸留モデル6種も公開した。[4]
 
 ## DeepSeek-V4シリーズ、料金体系、開発者プラットフォーム（2026年）
 
-2026年後半までに、DeepSeekは本番APIプラットフォーム（`api.deepseek.com`）をマルチモーダルな**DeepSeek-V4**アーキテクチャへ移行し、チャット、推論（`thinking`）、視覚、音声入力を、**1,000,000トークンのコンテキストウィンドウ**および最大**384,000出力トークン**（デフォルト64K）を備えた2つの主要モデルエンドポイントに統合した。[1]
+DeepSeekのAPI（`api.deepseek.com`）は、2026年4月24日にDeepSeek-V4-ProとDeepSeek-V4-Flashを追加した。[3] 2026年11月時点の料金ページには2つのモデルがあり、いずれも**コンテキスト長1M**、**最大出力384K**である。[1]
 
-| APIモデルエイリアス | 基盤モデルバージョン | ピーク料金（08:00-24:00 UTC+8） | オフピーク料金（00:00-08:00 UTC+8） | 同時実行数制限 |
-| --- | --- | --- | --- | --- |
-| `deepseek-flash` | `DeepSeek-V4.1-Flash-1017`（2026年10月20日リリース） | 入力：$0.03/M（キャッシュヒット）、$0.30/M（ミス、<=256K）、$0.50/M（>256K）、出力：$1.50-$2.50/M | 入力：$0.03/M（キャッシュヒット）、$0.15/M（<=256K）、$0.25/M（>256K）、出力：$0.75-$1.25/M | 2,500同時リクエスト [1][2] |
-| `deepseek-v4-pro` | `DeepSeek-V4-Pro-0813`（2026年8月19日リリース） | 入力：$0.20/M（キャッシュヒット）、$2.00/M（ミス、<=256K）、$4.00/M（>256K）、出力：$12.00-$18.00/M | 入力：$0.20/M（キャッシュヒット）、$1.00/M（<=256K）、$2.00/M（>256K）、出力：$6.00-$9.00/M | 500同時リクエスト [1][2] |
+| モデル名 | モデルバージョン | 入力・キャッシュヒット（ピーク／オフピーク） | 入力・キャッシュミス（ピーク／オフピーク） | 出力（ピーク／オフピーク） | 同時実行数上限 |
+| --- | --- | --- | --- | --- | --- |
+| `deepseek-flash` | `DeepSeek-V4.1-Flash-1017` | $0.006 / $0.003 | $0.30 / $0.15 | $1.20 / $0.60 | 2,500 |
+| `deepseek-v4-pro` | `DeepSeek-V4-Pro-0813` | $0.044 / $0.022 | $1.32 / $0.66 | $3.96 / $1.98 | 500 |
 
-両モデルともテキスト、画像、音声の入力を受け付け、テキスト、JSONモード、関数ツール呼び出し、および推論コンテンツ（Reasoning Content）を出力する。[1] 音声トークンを送信する場合、音声入力にはコンテキスト区分およびキャッシュ状態に応じてより高い100万トークンあたりの単価が課金される（`deepseek-flash`は$1.00-$4.00/M、`deepseek-v4-pro`は$7.00-$28.00/M）。[1] `deepseek-chat`や`deepseek-reasoner`といった従来のエイリアスは、自動的にV4シリーズのエンドポイントへマッピングされる。[1]
+料金は100万トークンあたりの価格である。[1][2] オフピーク料金はピーク料金の半額である。ピーク時間は、中国の祝日を除く月曜から金曜の01:00～04:00および06:00～10:00（UTC）である。[1] 両モデルとも思考モードと非思考モード、JSON出力、ツール呼び出し、Responses API、Anthropic形式のAPIに対応する。ビジョンは`deepseek-flash`が対応し、`deepseek-v4-pro`は対応していない。[1] 旧モデル名の`deepseek-v4-flash`と`deepseek-v4-flash-vision-exp`へのリクエストはDeepSeek-V4.1-Flash-1017が処理する。[1]
+
+変更履歴によると、DeepSeek-V4-ProのGA版は2026年8月13日に展開され、DeepSeek-V4.1-Flashは2026年9月10日にリリースされ、2026年10月17日にDeepSeek-V4.1-Flash-1017へアップグレードされた。[3]
 
 ## DeepSeekの内蔵ウェブ検索、ユーティリティAPI、レート制御
 
-2026年11月18日、DeepSeekはチャット補完（chat completions）エンドポイントをアップグレードし、`search_Option`パラメータを介したネイティブのサーバー側ウェブ検索およびページ取得に対応した。プロモーション展開期間中は、クエリごとの追加検索料金なしで内蔵検索を利用できる。[1][3] 独立したプログラマティックパイプライン向けには、専用のユーティリティエンドポイントも提供している。[1] - **Search API**: 1,000クエリあたり$5.00。[1] - **Fetch API**: 1,000 URL取得あたり$1.00。[1] - **OCR API**: ドキュメント1,000ページあたり$1.00。[1] - **Speech-to-Text API**: 音声文字起こし1時間あたり$0.10。[1]
+2026年11月13日、DeepSeekは`deepseek-flash`モデルのMessages、Responses、Chat Completions APIで、ウェブ検索、ファイル入力、URL読み取り、モデル安全の機能を開発者に開放し、SearchとFetch、OCR、ASR、TTSを単体のAPIとしても提供した。[3] 料金ページの価格は次のとおりである。[1] - **Search API（テキスト）**: 成功したリクエスト1,000件あたり$0.75。[1] - **Fetch API**: 成功したリクエスト1,000件あたり$0.75。[1] - **ファイル解析・OCR API**: 1,000ページあたり$0.225。[1] - **音声認識（ASR）**: 音声1時間あたり定価$0.116、期間限定価格$0.058。[1] - **音声合成（TTS）**: 1万文字あたり定価$0.45、期間限定価格$0.225。[1]
 
-利用金額ティアごとに厳格な1分あたりのトークン数（TPM）や1分あたりのリクエスト数（RPM）の上限を課す他社プロバイダーとは異なり、DeepSeekは主に処理中の同時実行数（`deepseek-flash`は2,500同時リクエスト、`deepseek-v4-pro`は500同時リクエスト）によってスループットを制御している。[2] マルチテナントアプリケーションを単一ユーザーによる過剰利用から保護するため、開発者はAPIペイロードに`user_id`パラメータを渡すことができ、これにより個別のエンドユーザーIDは**10同時リクエスト**に制限される（上限超過時はその`user_id`に対してのみHTTP `429 Too Many Requests`が返され、親組織のグローバルプールには影響しない）。[2]
+2026年11月18日12時（北京時間、UTC+8）以降、モデル呼び出し時に実行されるサーバー側の検索およびウェブ取得のツール呼び出しは課金されない。返された結果はモデルのコンテキストに追加され、モデルのトークン使用量として課金される。[1]
+
+同時実行数の上限はアカウント単位で計算され、`deepseek-flash`は2,500、`deepseek-v4-pro`は500である。上限を超えたリクエストにはHTTP 429エラーが返る。[2] 開発者は`user_id`パラメータを渡すことができ、DeepSeekはこれをコンテンツ安全の分離、KVCacheの分離、スケジューリングの分離に用いる。通常のAPIユーザーでは、すべての`user_id`を合算して上限を計算する。同時実行数の枠を引き上げたアカウントでは、`user_id`ごとにも`deepseek-flash`で2,500、`deepseek-v4-pro`で500の上限が適用される。[2]
 
 ## DeepSeekのデータガバナンスとプライバシーポリシー
 
-DeepSeekのプライバシーポリシーによれば、消費者向けウェブ、モバイルアプリ、およびプラットフォームサービスは、Hangzhou DeepSeek Artificial Intelligence Co., Ltd. および Beijing DeepSeek Artificial Intelligence Co., Ltd. によって運営されている。[7] DeepSeekのサービスを通じて収集されたユーザープロンプト、アップロードファイル、会話履歴、およびインタラクションログは、**中華人民共和国**国内に設置されたサーバーに保存され、中華人民共和国のデータ保護法およびサイバーセキュリティ法の適用を受ける。[7] 消費者向けインタラクションデータは、該当するオプトアウトを行わない限り安全性コンプライアンスおよびサービス改善のために確認される場合がある一方、DeepSeek-V2、DeepSeek-V3、DeepSeek-R1のオープンウェイト配布版を利用すれば、企業は外部テレメトリを一切発生させずにプライベートインフラ上でモデルの重みをセルフホストできる。[4][5][7]
+DeepSeekのプライバシーポリシー（最終更新2026年2月10日）によると、サービスは中国に登録住所を置くHangzhou DeepSeek Artificial Intelligence Co., Ltd.が提供し管理している。[7] ポリシーは、DeepSeekが個人データを**中華人民共和国**で収集、処理、保存すると述べている。[7] モデルの学習や技術の最適化に個人データを使うことを拒否する権利も記載されている。[7] 開発者がDeepSeekのオープンプラットフォームで構築したアプリケーションのエンドユーザーの個人データはこのポリシーの対象外であり、その場合はアプリケーションを運営する開発者が個人データ処理の管理者であるとポリシーは説明している。[7] DeepSeekはDeepSeek-R1の蒸留モデルも公開している。[4]
 
 ## よくある質問
 
 ### 2026年11月時点で、DeepSeekの主なAPIモデルは何ですか？
 
-DeepSeekは2つの主要な本番APIモデルを提供しています。高スループットなマルチモーダル推論およびコーディング向けのdeepseek-flash（DeepSeek-V4.1-Flash-1017搭載）と、フロンティア級の深い推論向けのdeepseek-v4-pro（DeepSeek-V4-Pro-0813搭載）です。両モデルとも100万トークンのコンテキストウィンドウと最大384,000出力トークンを備えています。 [1][3]
+DeepSeekのAPIには、deepseek-flash（モデルバージョンDeepSeek-V4.1-Flash-1017）とdeepseek-v4-pro（モデルバージョンDeepSeek-V4-Pro-0813）の2つのモデルがあります。どちらもコンテキスト長は1M、最大出力は384Kです。 [1][3]
 
 ### DeepSeekのピーク料金とオフピーク料金はどのように機能しますか？
 
-DeepSeekはオフピーク時間帯（北京時間／UTC+8の00:00〜08:00、UTCの16:00〜00:00に相当）において、キャッシュミスの入力トークンおよび出力トークンのAPI料金を50%割引しています。たとえば、deepseek-flashの入力（<=256Kコンテキスト、キャッシュミス）はピーク時の$0.30/Mトークンからオフピーク時は$0.15/Mトークンに下がり、出力は$1.50/Mから$0.75/Mに下がります。 [1]
+オフピーク料金はピーク料金の半額です。ピーク時間は、中国の祝日を除く月曜から金曜の01:00～04:00および06:00～10:00（UTC）で、それ以外の時間はすべてオフピークです。たとえばdeepseek-flashのキャッシュミス入力は100万トークンあたりピーク$0.30、オフピーク$0.15、出力はピーク$1.20、オフピーク$0.60です。 [1]
 
 ### DeepSeekのAPIレート制限とuser_idによる同時実行制御はどのように機能しますか？
 
-DeepSeekは処理中の同時実行数上限として、deepseek-flashで2,500同時リクエスト、deepseek-v4-proで500同時リクエストを適用しています。開発者がuser_idフィールドにエンドユーザー識別子を渡すと、DeepSeekはその特定のuser_idを10同時リクエストに制限するため、1人のエンドユーザーが開発者のアカウント全体のクォータを使い切ることを防げます。 [2]
+同時実行数の上限はアカウント単位で計算され、deepseek-flashは2,500、deepseek-v4-proは500です。上限を超えたリクエストにはHTTP 429エラーが返ります。通常のAPIユーザーでは、すべてのuser_idを合算して上限を計算します。同時実行数の枠を引き上げたアカウントでは、user_idごとにもdeepseek-flashで2,500、deepseek-v4-proで500の上限が適用されます。 [2]
 
 ### DeepSeek-V3とDeepSeek-R1が注目されたアーキテクチャ上の革新は何ですか？
 
@@ -98,14 +102,14 @@ DeepSeek-V3（総パラメータ数671B、トークンあたりの活性パラ�
 
 ### DeepSeekのホスト型ウェブアプリやAPIに送信されたデータはどこに保存されますか？
 
-DeepSeekのプライバシーポリシーに基づき、DeepSeekのホスト型消費者向けサービスおよびプラットフォームサービスに送信されたデータは、中華人民共和国国内のサーバーに保存され、Hangzhou DeepSeek Artificial Intelligence Co., Ltd. によって管理されます。ローカルでのデータレジデンシーを必要とする組織は、DeepSeekのオープンウェイトモデルをセルフホストすることができます。 [4][7]
+DeepSeekのプライバシーポリシーは、個人データを中華人民共和国で収集、処理、保存すること、サービスはHangzhou DeepSeek Artificial Intelligence Co., Ltd.が提供し管理していることを述べています。開発者がDeepSeekのオープンプラットフォームで構築したアプリケーションのエンドユーザーは、このポリシーの対象外です。 [4][7]
 
 ## 引用できる文
 
 - DeepSeekの本番APIエンドポイントであるdeepseek-flash（DeepSeek-V4.1-Flash-1017）およびdeepseek-v4-pro（DeepSeek-V4-Pro-0813）は、いずれも1Mトークンのコンテキストウィンドウと最大384K出力トークンに対応している。 [1][3]
-- DeepSeekは、00:00〜08:00 UTC+8（16:00〜00:00 UTC）のオフピーク時間帯において、deepseek-flashとdeepseek-v4-proの双方でキャッシュミス入力および出力に対して50%の割引料金を提供している。 [1]
-- DeepSeekはAPIの同時実行数をdeepseek-flashで2,500同時リクエスト、deepseek-v4-proで500同時リクエストに制限しており、user_idパラメータによりエンドユーザーごとに10同時リクエストの任意上限を設定できる。 [2]
-- 2026年11月18日、DeepSeekはチャット補完APIにおいて追加の検索クエリ料金なしで利用できる内蔵のサーバー側ウェブ検索およびページ取得機能を有効化した。 [1][3]
+- DeepSeekのAPIのオフピーク料金はピーク料金の半額であり、ピーク時間は中国の祝日を除く月曜から金曜の01:00～04:00および06:00～10:00（UTC）である。 [1]
+- DeepSeekのAPIのアカウント単位の同時実行数上限はdeepseek-flashが2,500、deepseek-v4-proが500であり、枠を引き上げたアカウントではuser_idごとにも同じ上限が適用される。 [2]
+- 2026年11月18日12時（北京時間）以降、DeepSeekのモデル呼び出し時に実行されるサーバー側の検索およびウェブ取得のツール呼び出しは課金されず、返された結果はモデルのトークン使用量として課金される。 [1]
 - DeepSeek-V3は14.8Tトークンで学習された総パラメータ数671B（トークンあたりの活性パラメータ数37B）の混合エキスパートモデルであり、DeepSeek-R1は2025年1月にMITライセンスで公開された。 [4][5]
 
 ## 年表
@@ -113,20 +117,20 @@ DeepSeekのプライバシーポリシーに基づき、DeepSeekのホスト型�
 - 2024-05: DeepSeekは、マルチヘッド潜在アテンション（MLA）と236B/21BのMoEアーキテクチャを導入したDeepSeek-V2技術報告書を公開した。 [6]
 - 2024-12: DeepSeekは、FP8精度で14.8兆トークンを事前学習した671Bパラメータ（活性37B）の混合エキスパートモデルであるDeepSeek-V3を公開した。 [5]
 - 2025-01: DeepSeekは、オープンソースのMITライセンスのもとでDeepSeek-R1、DeepSeek-R1-Zero、および6種の蒸留推論モデルを公開した。 [4]
-- 2026-08-19: DeepSeekは、1Mコンテキストおよびテキスト・画像・音声のマルチモーダル入力を備えたDeepSeek-V4-Pro-0813（deepseek-v4-pro）をAPIプラットフォーム上で提供開始した。 [1][3]
-- 2026-10-20: DeepSeekは、高スループットのdeepseek-flashエンドポイントの基盤モデルとしてDeepSeek-V4.1-Flash-1017を展開した。 [1][3]
-- 2026-11-18: DeepSeekは、追加の検索料金なしでチャット補完API内にサーバー側ウェブ検索およびページ取得機能の内蔵サポートを有効化した。 [1][3]
+- 2026-08-13: DeepSeek-V4-ProのGA版がアプリ、ウェブ、APIに展開された（モデル名deepseek-v4-pro）。 [1][3]
+- 2026-10-17: DeepSeek V4.1 FlashがDeepSeek-V4.1-Flash-1017にアップグレードされた（モデル名deepseek-flash）。 [1][3]
+- 2026-11-18: 北京時間12時以降、モデル呼び出し時に実行されるサーバー側の検索およびウェブ取得のツール呼び出しが課金されなくなった。 [1]
 
 ## 出典
 
-1. DeepSeek API Models & Pricing (deepseek-flash, deepseek-v4-pro, Search, Fetch, OCR, Speech). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/pricing (閲覧 2026-11-23; tier 3: official site)
-2. DeepSeek API Rate Limits and Concurrency Controls (user_id Isolation). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/rate_limit (閲覧 2026-11-23; tier 3: official site)
-3. DeepSeek API Change Log and Release Notes (2025-2026). DeepSeek Platform Documentation. 公開 2026-11-18. https://api-docs.deepseek.com/updates (閲覧 2026-11-23; tier 3: official site)
+1. DeepSeek API Models & Pricing (deepseek-flash, deepseek-v4-pro, Search, Fetch, OCR, Speech). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/pricing (閲覧 2026-11-25; tier 3: official site)
+2. DeepSeek API Rate Limits and Concurrency Controls (user_id Isolation). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/rate_limit (閲覧 2026-11-25; tier 3: official site)
+3. DeepSeek API Change Log and Release Notes (2025-2026). DeepSeek Platform Documentation. 公開 2026-11-13. https://api-docs.deepseek.com/updates (閲覧 2026-11-25; tier 3: official site)
 4. DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning (arXiv:2501.12948). DeepSeek-AI / arXiv. 公開 2025-01-22. https://arxiv.org/abs/2501.12948 (閲覧 2026-11-23; tier 2: academic or news)
 5. DeepSeek-V3 Technical Report (arXiv:2412.19437). DeepSeek-AI / arXiv. 公開 2024-12-27. https://arxiv.org/abs/2412.19437 (閲覧 2026-11-23; tier 2: academic or news)
 6. DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model (arXiv:2405.04434). DeepSeek-AI / arXiv. 公開 2024-05-07. https://arxiv.org/abs/2405.04434 (閲覧 2026-11-23; tier 2: academic or news)
-7. DeepSeek Privacy Policy. Hangzhou DeepSeek Artificial Intelligence Co., Ltd.. https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html (閲覧 2026-11-23; tier 3: official site)
+7. DeepSeek Privacy Policy. Hangzhou DeepSeek Artificial Intelligence Co., Ltd.. https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html (閲覧 2026-11-25; tier 3: official site)
 
 ## このページを引用する
 
-Mimirwiki. "DeepSeek." 版 5d9455f9, 2026-11-23. https://mimirwiki.com/ja/wiki/deepseek
+Mimirwiki. "DeepSeek." 版 c3325d18, 2026-11-25. https://mimirwiki.com/ja/wiki/deepseek

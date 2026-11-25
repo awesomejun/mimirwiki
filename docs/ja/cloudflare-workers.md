@@ -4,8 +4,8 @@ subtitle: "V8アイソレートとworkerdランタイム上でJavaScript、TypeS
 canonical_url: https://mimirwiki.com/ja/wiki/cloudflare-workers
 language: ja
 page_class: entity
-revision_sha256: ca611722886bbf1022dd67a0d58081fbe2e0a124d0226e06dec4ef9af8a98b8c
-date_modified: 2026-11-23
+revision_sha256: 2db4e821dba4aa07d81062be49d650bdd92e0e2830357ab141151a681bd5abd4
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 12
 alternates:
@@ -54,7 +54,7 @@ Cloudflare Workersは、Cloudflare, Inc.が運営するサーバーレスコン�
 
 Cloudflare Workersは、[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)のグローバル分散サーバーネットワーク全体で、V8 JavaScriptエンジンを用いてユーザーアプリケーションを実行する。[6] 各サーバーはWorkersランタイムのインスタンスを稼働させており、各ランタイムインスタンスは独立したメモリサンドボックスを持つ軽量な実行コンテキストであるV8アイソレートを数百から数千個ホストしている。[6] コンテナベースのサーバーレスアーキテクチャが関数ごとに個別の言語ランタイムプロセスや仮想マシンを起動するのに対し、Workersランタイムはコンテナごとに単一のV8ホストプロセスを初期化し、そのプロセス内のアイソレート上でユーザースクリプトを実行する。[6] Cloudflareのドキュメントによれば、V8アイソレートはコンテナや仮想マシン上のNode.jsプロセスと比べて約100倍高速に起動し、起動時のメモリ消費量も1桁以上少ない。[6]
 
-`*.workers.dev` サブドメインまたはCloudflare管理ドメインへルーティングされたリクエストは、ESモジュール構文でエクスポートされたWorkerの `fetch(request, env, ctx)` ハンドラを呼び出し、`Response` オブジェクトを受け取る。[6] 各Workerインスタンスは、非同期I/Oの完了を待機する同時リクエストを含め、単一スレッドのイベントループ上でリクエストを処理する。[6] ホストのリソースが逼迫した場合、Workerがリソース制限に達した場合、またはコードがサンドボックス脱出を試みるような不審な挙動を示した場合には、アイソレートが破棄（evict）されることがある。[6] 同一クライアントからの連続したリクエストが同じアイソレートに到達する保証はないため、Cloudflareはグローバルスコープに変更可能な状態（mutable state）を保存しないよう推奨している。[6]
+`*.workers.dev` サブドメインまたはCloudflare管理ドメインへルーティングされたリクエストは、ESモジュール構文でエクスポートされたWorkerの `fetch(request, env, ctx)` ハンドラを呼び出し、`Response` オブジェクトを受け取る。[6] 各Workerインスタンスは、非同期I/Oの完了を待機する同時リクエストを含め、単一スレッドのイベントループ上でリクエストを処理する。[6] ホストのリソースが逼迫した場合、Workerがリソース制限に達した場合、またはコードがサンドボックス脱出を試みるような不審な挙動を示した場合には、アイソレートが破棄（evict）されることがある。[6] 2つのリクエストがWorkerの同じインスタンスに届く保証はないため、Cloudflareはグローバルスコープに変更可能な状態（mutable state）を保存しないよう推奨している。[6]
 
 Cloudflare Workersを支えるオープンソースのサーバーランタイムは `workerd`（発音は「ワーカーディー」）であり、Apache-2.0ライセンスのもとでGitHubに公開されている。[10][11] 開発者は `workerd` を利用して、Workers互換アプリケーションのセルフホスティング、ローカル開発・テスト環境の構築、あるいはプログラマブルなフォワード・リバースHTTPプロキシの運用を行うことができる。[10] Cloudflareは `workerd` について次の6つの設計原則を示している。[10]
 
@@ -65,7 +65,7 @@ Cloudflare Workersを支えるオープンソースのサーバーランタイ�
 - ケーパビリティバインディング（Capability bindings）：明示的な参照を通じてサービスや外部リソースを接続し、サーバーサイドリクエストフォージェリ（SSRF）のリスクを低減する。[10]
 - 日付ベースの後方互換性：各 `workerd` のバージョン識別子が対応する最大の互換性日付を表し、古い互換性日付に対して過去のAPI挙動を維持する。[10]
 
-`workerd` はBazelでビルドされ、LinuxおよびmacOS（`x86-64` および `arm64`）、ならびにWindows（`x86-64`）上でテストされている。[10] ネイティブ設定にはCap'n Protoテキスト形式を使用し、`workerd serve wrangler.jsonc` を用いることで `esbuild` でバンドルされたWrangler設定も読み込める。[10] 2026-11-23時点で、`cloudflare/workerd` GitHubリポジトリはスター数9.2k、フォーク数843、コミット数13,908を記録している。[10] Cloudflareは、単体の `workerd` は実装バグに対する堅牢なサンドボックスとして単独利用するには適さず、信頼できないコードには外側の仮想マシンやサンドボックスが必要であると警告する一方、ホスト型のCloudflare Workersサービスでは追加の多層防御（defense-in-depth）レイヤーが適用されていると説明している。[10]
+`workerd` はBazelでビルドされ、LinuxおよびmacOS（`x86-64` および `arm64`）、ならびにWindows（`x86-64`）上でテストされている。[10] ネイティブ設定にはCap'n Protoテキスト形式を使用し、`workerd serve wrangler.jsonc` を用いることで `esbuild` でバンドルされたWrangler設定も読み込める。[10] 2026-11-25時点で、`cloudflare/workerd` GitHubリポジトリはスター数9.3k、フォーク数846、コミット数14,147を記録している。[10] Cloudflareは、単体の `workerd` は実装バグに対する堅牢なサンドボックスとして単独利用するには適さず、信頼できないコードには外側の仮想マシンやサンドボックスが必要であると警告する一方、ホスト型のCloudflare Workersサービスでは追加の多層防御（defense-in-depth）レイヤーが適用されていると説明している。[10]
 
 ## Cloudflare WorkersのランタイムAPI、Web標準、Node.js互換性
 
@@ -158,9 +158,9 @@ CPU時間はアクティブなスクリプト実行時間のみを計測し、`f
 
 Cloudflare Workersは2017年9月29日、Birthday Weekの期間中にCloudflare Blogにて、CloudflareのネットワークエッジでJavaScript Service Workersを実行する仕組みとして発表された。[12] その後、プラットフォームの提供開始を記録した2018年3月13日付の更新がその発表記事に追記された。[12] 初回発表から5年後の2022年9月27日、Cloudflareは `workerd` の最初のベータ版を発表し、Cloudflare Workersの基盤となるJavaScriptおよびWebAssemblyランタイムコードをApache-2.0ライセンスのオープンソースソフトウェアとして公開した。[11]
 
-その後のプラットフォームのマイルストーンでは、課金の柔軟性とNode.jsエコシステムへの対応が拡充された。2024年3月1日、CloudflareはレガシーのBundled料金体系を利用していたアカウントをStandard使用量モデルへ移行した。[4] 互換性日付2024-09-23以降は、`nodejs_compat` を有効にするとWranglerが `unenv` ポリフィルを自動的に注入する仕様となった。[9] 2025年9月から2026年3月にかけて、Cloudflareは `node:http2`、`node:vm`、`node:sqlite`、`node:child_process`、`node:worker_threads` などの非サーバーレス向けNode.jsモジュールに対する互換性日付連動のインポートスタブを順次展開し、続いて2026年8月4日には同日以降の互換性日付を持つWorkerで `nodejs_compat` および `nodejs_compat_v2` をデフォルトで有効化した。[9] またCloudflareは、2026年12月1日にWorkers LogsへCloudflare Observabilityの料金体系を適用する予定である。[4]
+2024年3月1日、CloudflareはレガシーのBundled料金体系を利用していたアカウントをStandard使用量モデルへ移行した。[4] 互換性日付2024-09-23以降は、`nodejs_compat` を有効にするとWranglerが `unenv` ポリフィルを自動的に注入する仕様となった。[9] `node:http2`、`node:vm`、`node:sqlite`、`node:child_process`、`node:worker_threads` などのNode.jsモジュールのインポート専用スタブは、互換性日付2025-09-01から2026-03-17までの各日付以降に `nodejs_compat` とともに有効になり、互換性日付が2026-08-04以降の場合は `nodejs_compat` と `nodejs_compat_v2` がデフォルトで有効になる。[9] またCloudflareは、2026年12月1日にWorkers LogsへCloudflare Observabilityの料金体系を適用する予定である。[4]
 
-[SEC EDGAR](https://mimirwiki.com/ja/wiki/sec-edgar)に提出された[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)の2025会計年度提出書類において、同社はCloudflare Workersを含む開発者ソリューションの顧客導入によりストレージおよびコンピュート市場が開拓され、パブリッククラウドベンダーとの競争が拡大していると報告している。[2] 同提出書類のリスク開示では、2025年6月にWorkers KVサービスが使用するサードパーティ製ストレージインフラの基盤障害により数時間にわたるサービス停止が発生し、Cloudflareのサービスおよび顧客の一部に影響が及んだ運用インシデントが報告された。[2] Cloudflareは、この2025年6月の障害が事業、経営成績、または財務状況に重大な影響を与えなかったと述べている。[2]
+[SEC EDGAR](https://mimirwiki.com/ja/wiki/sec-edgar)に提出された[Cloudflare](https://mimirwiki.com/ja/wiki/cloudflare)の2025会計年度提出書類において、同社は、Cloudflare Workersを含む開発者ソリューションを顧客が利用することでストレージとコンピュートという新しい市場が同社に開かれ、ストレージとコンピュートのワークロードをめぐるパブリッククラウドベンダーとの競争が増えていると考えていると述べている。[2] 同提出書類のリスク開示では、2025年6月にWorkers KVサービスが使用するサードパーティ製ストレージインフラの基盤障害により数時間にわたるサービス停止が発生し、Cloudflareのサービスおよび顧客の一部に影響が及んだ運用インシデントが報告された。[2] Cloudflareは、この2025年6月の障害が事業、経営成績、または財務状況に重大な影響を与えなかったと述べている。[2]
 
 ## よくある質問
 
@@ -226,4 +226,4 @@ workerd（発音は「ワーカーディー」）は、Cloudflare Workersを支�
 
 ## このページを引用する
 
-Mimirwiki. "Cloudflare Workers." 版 ca611722, 2026-11-23. https://mimirwiki.com/ja/wiki/cloudflare-workers
+Mimirwiki. "Cloudflare Workers." 版 2db4e821, 2026-11-25. https://mimirwiki.com/ja/wiki/cloudflare-workers

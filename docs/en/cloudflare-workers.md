@@ -4,8 +4,8 @@ subtitle: "Serverless execution platform by Cloudflare running JavaScript, TypeS
 canonical_url: https://mimirwiki.com/wiki/cloudflare-workers
 language: en
 page_class: entity
-revision_sha256: 4bca11211e53e61e8f53941048057823058f6087ac648566a3636ac48547a1e0
-date_modified: 2026-11-23
+revision_sha256: dd2857af9d2a20ab92975f08382047ab34d13f8fd285aaaea1e17fdb2cf03539
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 12
 alternates:
@@ -54,7 +54,7 @@ Cloudflare Workers is a serverless compute platform operated by Cloudflare, Inc.
 
 Cloudflare Workers executes user applications on the V8 JavaScript engine across [Cloudflare](https://mimirwiki.com/wiki/cloudflare)'s global network of distributed servers.[6] Each server runs instances of the Workers runtime, and each runtime instance hosts hundreds or thousands of V8 isolates, which are lightweight execution contexts with separate memory sandboxes.[6] The runtime initializes a single V8 host process per container and runs user scripts inside isolates within that process, whereas container-based serverless architectures start a separate language runtime process or virtual machine per function.[6] Cloudflare's documentation states that a V8 isolate starts roughly one hundred times faster and consumes an order of magnitude less memory on startup than a Node.js process in a container or virtual machine.[6]
 
-Requests routed to a `*.workers.dev` subdomain or a Cloudflare-managed domain invoke a Worker's exported `fetch(request, env, ctx)` handler in ES modules syntax and receive a `Response` object.[6] Each Worker instance processes requests, including concurrent requests awaiting asynchronous I/O, on a single-threaded event loop.[6] Isolates can be evicted when host resources become constrained, when a Worker hits resource limits, or when code exhibits suspicious sandbox-escape behavior.[6] Because consecutive requests from the same client have no guarantee of reaching the same isolate, Cloudflare advises against storing mutable state in global scope.[6]
+Requests routed to a `*.workers.dev` subdomain or a Cloudflare-managed domain invoke a Worker's exported `fetch(request, env, ctx)` handler in ES modules syntax and receive a `Response` object.[6] Each Worker instance processes requests, including concurrent requests awaiting asynchronous I/O, on a single-threaded event loop.[6] Isolates can be evicted when host resources become constrained, when a Worker hits resource limits, or when code exhibits suspicious sandbox-escape behavior.[6] Because there is no guarantee that any two requests reach the same instance of a Worker, Cloudflare advises against storing mutable state in global scope.[6]
 
 The open-source server runtime powering Cloudflare Workers is `workerd` (pronounced "worker-dee"), published on GitHub under the Apache-2.0 license.[10][11] Developers use `workerd` to self-host Workers-compatible applications, run local development and test environments, or operate a programmable forward or reverse HTTP proxy.[10] Cloudflare documents six design principles for `workerd`:[10]
 
@@ -65,7 +65,7 @@ The open-source server runtime powering Cloudflare Workers is `workerd` (pronoun
 - Capability bindings linking services and external resources through explicit references to reduce server-side request forgery (SSRF) exposure.[10]
 - Date-based backwards compatibility in which each `workerd` version identifier corresponds to the maximum compatibility date it supports, preserving historical API behavior for older compatibility dates.[10]
 
-`workerd` builds with Bazel and is tested on Linux and macOS (`x86-64` and `arm64`) as well as Windows (`x86-64`).[10] Its native configuration uses Cap'n Proto text format, and `workerd serve wrangler.jsonc` also loads Wrangler configurations bundled via `esbuild`.[10] As of 2026-11-23, the `cloudflare/workerd` GitHub repository recorded 9.2k stars, 843 forks, and 13,908 commits.[10] Cloudflare warns that standalone `workerd` is unsuitable as a sole hardened sandbox against implementation bugs and requires an outer virtual machine or sandbox for untrusted code, while the hosted Cloudflare Workers service applies additional defense-in-depth layers.[10]
+`workerd` builds with Bazel and is tested on Linux and macOS (`x86-64` and `arm64`) as well as Windows (`x86-64`).[10] Its native configuration uses Cap'n Proto text format, and `workerd serve wrangler.jsonc` also loads Wrangler configurations bundled via `esbuild`.[10] As of 2026-11-25, the `cloudflare/workerd` GitHub repository recorded 9.3k stars, 846 forks, and 14,147 commits.[10] Cloudflare warns that standalone `workerd` is unsuitable as a sole hardened sandbox against implementation bugs and requires an outer virtual machine or sandbox for untrusted code, while the hosted Cloudflare Workers service applies additional defense-in-depth layers.[10]
 
 ## Cloudflare Workers runtime APIs, web standards, and Node.js compatibility
 
@@ -158,9 +158,9 @@ Each top-level request (including Workers invoked via Service bindings) permits 
 
 Cloudflare Workers was introduced on September 29, 2017 on the Cloudflare Blog during Birthday Week as a way to run JavaScript Service Workers at Cloudflare's network edge.[12] An update dated March 13, 2018 was later appended to that launch announcement recording availability of the platform.[12] Five years after the initial launch, on September 27, 2022, Cloudflare announced the first beta release of `workerd`, releasing the JavaScript and WebAssembly runtime code behind Cloudflare Workers as open-source software under the Apache-2.0 license.[11]
 
-Subsequent platform milestones expanded billing flexibility and Node.js ecosystem support. On March 1, 2024, Cloudflare migrated accounts from legacy Bundled pricing to the Standard usage model.[4] Beginning with compatibility date 2024-09-23, enabling `nodejs_compat` instructed Wrangler to inject `unenv` polyfills automatically.[9] Between September 2025 and March 2026, Cloudflare rolled out compatibility-date-gated import stubs for non-serverless Node.js modules such as `node:http2`, `node:vm`, `node:sqlite`, `node:child_process`, and `node:worker_threads`, followed on August 4, 2026 by enabling `nodejs_compat` and `nodejs_compat_v2` by default for Workers on that compatibility date or newer.[9] Cloudflare has also scheduled Workers Logs to adopt Cloudflare Observability pricing on December 1, 2026.[4]
+On March 1, 2024, Cloudflare migrated accounts from legacy Bundled pricing to the Standard usage model.[4] Beginning with compatibility date 2024-09-23, enabling `nodejs_compat` instructed Wrangler to inject `unenv` polyfills automatically.[9] Import-only stubs for Node.js modules such as `node:http2`, `node:vm`, `node:sqlite`, `node:child_process`, and `node:worker_threads` are enabled with `nodejs_compat` on compatibility dates from 2025-09-01 through 2026-03-17, and for compatibility dates of 2026-08-04 or later Workers enables `nodejs_compat` and `nodejs_compat_v2` by default.[9] Cloudflare has also scheduled Workers Logs to adopt Cloudflare Observability pricing on December 1, 2026.[4]
 
-In [Cloudflare](https://mimirwiki.com/wiki/cloudflare)'s fiscal year 2025 filing on [SEC EDGAR](https://mimirwiki.com/wiki/sec-edgar), the company reports that customer adoption of developer solutions including Cloudflare Workers opened a storage and compute market in which Cloudflare increasingly competes with public cloud vendors.[2] In the same filing's risk disclosures, Cloudflare reported an operational incident in June 2025 in which underlying third-party storage infrastructure used by the Workers KV service failed, causing a service outage lasting several hours that affected a portion of Cloudflare's services and customers.[2] Cloudflare stated that the June 2025 outage had no material impact on its business, results of operations, or financial condition.[2]
+In [Cloudflare](https://mimirwiki.com/wiki/cloudflare)'s fiscal year 2025 filing on [SEC EDGAR](https://mimirwiki.com/wiki/sec-edgar), the company states that customers' use of its developer solutions, including Cloudflare Workers, opened a new market for it in storage and compute, and that it believes it is increasingly competing with public cloud vendors for storage and compute workloads.[2] In the same filing's risk disclosures, Cloudflare reported an operational incident in June 2025 in which underlying third-party storage infrastructure used by the Workers KV service failed, causing a service outage lasting several hours that affected a portion of Cloudflare's services and customers.[2] Cloudflare stated that the June 2025 outage had no material impact on its business, results of operations, or financial condition.[2]
 
 ## Frequently asked questions
 
@@ -226,4 +226,4 @@ Yes. As of 2026-11-23, Cloudflare Workers implements a subset of Node.js APIs na
 
 ## Cite this page
 
-Mimirwiki. "Cloudflare Workers." Version 4bca1121, 2026-11-23. https://mimirwiki.com/wiki/cloudflare-workers
+Mimirwiki. "Cloudflare Workers." Version dd2857af, 2026-11-25. https://mimirwiki.com/wiki/cloudflare-workers

@@ -4,8 +4,8 @@ subtitle: "由 Cloudflare 推出的无服务器执行平台，通过 V8 隔离�
 canonical_url: https://mimirwiki.com/zh/wiki/cloudflare-workers
 language: zh
 page_class: entity
-revision_sha256: 539be92b96d3c11c3d486cc09d8201515286b46c9c159eba51c570019aa26a6d
-date_modified: 2026-11-23
+revision_sha256: 4332636d1fb2f82d523849181e5cade056bd516f0a2403a949f6b1a5be5766d0
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 12
 alternates:
@@ -54,7 +54,7 @@ Cloudflare Workers 是由 Cloudflare, Inc. 运营的无服务器计算平台，�
 
 Cloudflare Workers 在 [Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare) 遍布全球的分布式服务器网络上通过 V8 JavaScript 引擎执行用户应用程序。[6] 每台服务器运行多个 Workers 运行时实例，每个运行时实例托管数百至数千个 V8 隔离实例（isolate），即具有独立内存沙箱的轻量级执行上下文。[6] 与基于容器的无服务器架构为每个函数启动独立的语言运行时进程或虚拟机不同，Workers 运行时在每个容器中仅初始化单个 V8 宿主进程，并在该进程内的隔离实例中运行用户脚本。[6] Cloudflare 文档指出，与容器或虚拟机中的 Node.js 进程相比，V8 隔离实例的启动速度快约一百倍，启动时的内存消耗低一个数量级。[6]
 
-路由至 `*.workers.dev` 子域名或 Cloudflare 托管域名的请求，会调用 Worker 以 ES 模块语法导出的 `fetch(request, env, ctx)` 处理函数并接收 `Response` 对象。[6] 每个 Worker 实例在单线程事件循环上处理请求，包括等待异步 I/O 的并发请求。[6] 当宿主机资源紧张、Worker 触及资源限制或代码表现出可疑的沙箱逃逸行为时，隔离实例可能会被驱逐（evict）。[6] 由于来自同一客户端的连续请求无法保证命中同一个隔离实例，Cloudflare 建议不要在全局作用域中存储可变状态。[6]
+路由至 `*.workers.dev` 子域名或 Cloudflare 托管域名的请求，会调用 Worker 以 ES 模块语法导出的 `fetch(request, env, ctx)` 处理函数并接收 `Response` 对象。[6] 每个 Worker 实例在单线程事件循环上处理请求，包括等待异步 I/O 的并发请求。[6] 当宿主机资源紧张、Worker 触及资源限制或代码表现出可疑的沙箱逃逸行为时，隔离实例可能会被驱逐（evict）。[6] 由于无法保证任意两个请求会到达 Worker 的同一个实例，Cloudflare 建议不要在全局作用域中存储可变状态。[6]
 
 驱动 Cloudflare Workers 的开源服务器运行时为 `workerd`（发音为“worker-dee”），以 Apache-2.0 许可证发布于 GitHub。[10][11] 开发者可使用 `workerd` 自托管兼容 Workers 的应用程序、运行本地开发与测试环境，或部署可编程的正向或反向 HTTP 代理。[10] Cloudflare 为 `workerd` 制定了六项设计原则。[10]
 
@@ -65,7 +65,7 @@ Cloudflare Workers 在 [Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare) �
 - 能力绑定（Capability bindings）：通过显式引用连接服务与外部资源，降低服务器端请求伪造（SSRF）风险。[10]
 - 基于日期的向后兼容性：每个 `workerd` 版本标识对应其支持的最大兼容性日期，从而为较早的兼容性日期保留历史 API 行为。[10]
 
-`workerd` 使用 Bazel 构建，并在 Linux 和 macOS（`x86-64` 与 `arm64`）以及 Windows（`x86-64`）上进行测试。[10] 其原生配置采用 Cap'n Proto 文本格式，同时 `workerd serve wrangler.jsonc` 也可加载经 `esbuild` 打包的 Wrangler 配置。[10] 截至 2026-11-23，`cloudflare/workerd` GitHub 仓库记录了 9.2k 个 star、843 个 fork 和 13,908 次提交。[10] Cloudflare 提醒，独立运行的 `workerd` 不适合作为抵御实现缺陷的唯一加固沙箱，运行不受信任的代码时需要外层虚拟机或沙箱，而托管型 Cloudflare Workers 服务则应用了额外的纵深防御层。[10]
+`workerd` 使用 Bazel 构建，并在 Linux 和 macOS（`x86-64` 与 `arm64`）以及 Windows（`x86-64`）上进行测试。[10] 其原生配置采用 Cap'n Proto 文本格式，同时 `workerd serve wrangler.jsonc` 也可加载经 `esbuild` 打包的 Wrangler 配置。[10] 截至 2026-11-25，`cloudflare/workerd` GitHub 仓库记录了 9.3k 个 star、846 个 fork 和 14,147 次提交。[10] Cloudflare 提醒，独立运行的 `workerd` 不适合作为抵御实现缺陷的唯一加固沙箱，运行不受信任的代码时需要外层虚拟机或沙箱，而托管型 Cloudflare Workers 服务则应用了额外的纵深防御层。[10]
 
 ## Cloudflare Workers 运行时 API、Web 标准与 Node.js 兼容性
 
@@ -158,9 +158,9 @@ CPU 时间仅计算脚本主动执行时间，不包括等待 `fetch()`、KV 读
 
 Cloudflare Workers 于 2017 年 9 月 29 日 Birthday Week 期间在 Cloudflare Blog 上发布，作为在 Cloudflare 网络边缘运行 JavaScript Service Workers 的方式推出。[12] 随后，该发布文章追加了一条日期为 2018 年 3 月 13 日的更新，记录了该平台的可用性。[12] 在首次发布五年后的 2022 年 9 月 27 日，Cloudflare 宣布推出 `workerd` 的首个测试版，以 Apache-2.0 开源许可证公开了驱动 Cloudflare Workers 的 JavaScript 与 WebAssembly 运行时代码。[11]
 
-随后的平台里程碑拓展了计费灵活性与 Node.js 生态支持。2024 年 3 月 1 日，Cloudflare 将采用旧版 Bundled 定价的账户迁移至 Standard 用量模式。[4] 自兼容性日期 2024-09-23 起，启用 `nodejs_compat` 会指示 Wrangler 自动注入 `unenv` polyfill。[9] 2025 年 9 月至 2026 年 3 月期间，Cloudflare 按兼容性日期陆续推出了面向非无服务器 Node.js 模块（如 `node:http2`、`node:vm`、`node:sqlite`、`node:child_process` 和 `node:worker_threads`）的导入存根，随后于 2026 年 8 月 4 日为该兼容性日期及更新版本的 Worker 默认启用了 `nodejs_compat` 和 `nodejs_compat_v2`。[9] 此外，Cloudflare 还计划于 2026 年 12 月 1 日起使 Workers Logs 采用 Cloudflare Observability 定价体系。[4]
+2024 年 3 月 1 日，Cloudflare 将采用旧版 Bundled 定价的账户迁移至 Standard 用量模式。[4] 自兼容性日期 2024-09-23 起，启用 `nodejs_compat` 会指示 Wrangler 自动注入 `unenv` polyfill。[9] `node:http2`、`node:vm`、`node:sqlite`、`node:child_process` 和 `node:worker_threads` 等 Node.js 模块的仅导入存根，在兼容性日期 2025-09-01 至 2026-03-17 之间的各个日期起随 `nodejs_compat` 启用；兼容性日期为 2026-08-04 或之后时，`nodejs_compat` 和 `nodejs_compat_v2` 默认启用。[9] 此外，Cloudflare 还计划于 2026 年 12 月 1 日起使 Workers Logs 采用 Cloudflare Observability 定价体系。[4]
 
-在 [Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare) 提交至 [SEC EDGAR](https://mimirwiki.com/zh/wiki/sec-edgar) 的 2025 财年申报文件中，该公司报告称，客户对包括 Cloudflare Workers 在内的开发者解决方案的采用开辟了一个存储与计算市场，使 Cloudflare 日益与公有云厂商展开竞争。[2] 在同一份申报文件的风险披露部分，Cloudflare 报告了一起发生于 2025 年 6 月的运维事件：Workers KV 服务所使用的底层第三方存储基础设施发生故障，导致持续数小时的服务中断，影响了 Cloudflare 的部分服务与客户。[2] Cloudflare 表示，2025 年 6 月的此次中断未对其业务、经营业绩或财务状况产生重大影响。[2]
+在 [Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare) 提交至 [SEC EDGAR](https://mimirwiki.com/zh/wiki/sec-edgar) 的 2025 财年申报文件中，该公司表示，客户使用包括 Cloudflare Workers 在内的开发者解决方案，为其打开了存储与计算这一新市场，并表示认为自己在存储与计算工作负载上与公有云厂商的竞争日益增多。[2] 在同一份申报文件的风险披露部分，Cloudflare 报告了一起发生于 2025 年 6 月的运维事件：Workers KV 服务所使用的底层第三方存储基础设施发生故障，导致持续数小时的服务中断，影响了 Cloudflare 的部分服务与客户。[2] Cloudflare 表示，2025 年 6 月的此次中断未对其业务、经营业绩或财务状况产生重大影响。[2]
 
 ## 常见问题
 
@@ -226,4 +226,4 @@ workerd（发音为“worker-dee”）是基于驱动 Cloudflare Workers 的同�
 
 ## 引用本页
 
-Mimirwiki. "Cloudflare Workers." 版本 539be92b, 2026-11-23. https://mimirwiki.com/zh/wiki/cloudflare-workers
+Mimirwiki. "Cloudflare Workers." 版本 4332636d, 2026-11-25. https://mimirwiki.com/zh/wiki/cloudflare-workers

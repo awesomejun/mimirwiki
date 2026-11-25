@@ -4,8 +4,8 @@ subtitle: "Methods and metrics for improving web content visibility and citation
 canonical_url: https://mimirwiki.com/wiki/generative-engine-optimization
 language: en
 page_class: concept
-revision_sha256: cfa727c9806db6ccbaffbe0ef02e92b4d3884a89d2b57050955acc398d1ab0ca
-date_modified: 2026-11-23
+revision_sha256: eb2c50d03a2947df566831195ba71258dbc5d5a7c3a585b2a2a412f1b39551dd
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 11
 alternates:
@@ -23,7 +23,7 @@ translations:
 
 > Generative Engine Optimization (GEO) is a set of content and structural methods aimed at increasing the visibility and citation of web sources in answers produced by AI search systems. Coined in November 2023 by Aggarwal et al. with the GEO-bench benchmark, GEO addresses multistage retrieval and generation pipelines, where measured effects depend on retrieval status and domain.
 
-Generative Engine Optimization (GEO) is a web content optimization paradigm designed to increase the presence, citation likelihood, and prominence of source documents in answers synthesized by generative search engines. Pranjal Aggarwal, Vishvak Murahari, Tanmay Rajpurohit, Ashwin Kalyan, Karthik Narasimhan, and Ameet Deshpande formally introduced the term on November 16, 2023 in arXiv:2311.09735, which was accepted to the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2024). Conventional search engines return ranked lists of links, whereas generative engines retrieve web documents through search backends and use large language models to produce grounded natural language responses with embedded inline citations. Subsequent academic studies in 2025 and 2026 model GEO as a stochastic, partially observable multistage pipeline spanning crawling, indexing, retrieval, reranking, citation, and attribution fidelity, while Google Search Central documentation states as of 2026-11-23 that existing Search technical requirements and SEO fundamentals apply to its AI features without separate optimizations.
+Generative Engine Optimization (GEO) is a web content optimization paradigm designed to increase the presence, citation likelihood, and prominence of source documents in answers synthesized by generative search engines. Pranjal Aggarwal, Vishvak Murahari, Tanmay Rajpurohit, Ashwin Kalyan, Karthik Narasimhan, and Ameet Deshpande formally introduced the term on November 16, 2023 in arXiv:2311.09735, which was accepted to the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2024). Conventional search engines return ranked lists of links, whereas generative engines retrieve web documents through search backends and use large language models to produce grounded natural language responses with embedded inline citations. A July 2026 critical survey describes GEO as a stochastic, partially observable pipeline spanning crawling and indexing, retrieval, reranking, citation, and fidelity, while Google Search Central documentation states as of 2026-11-23 that existing Search technical requirements and SEO fundamentals apply to its AI features without separate optimizations.
 
 **Also known as:** GEO, Answer Engine Optimization, Conversational SEO
 
@@ -33,7 +33,7 @@ Generative Engine Optimization (GEO) is a web content optimization paradigm desi
 - **Originating authors:** Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, and Deshpande [1]
 - **Initial benchmark:** GEO-bench (10,000 queries across diverse domains) [2]
 - **Foundational benchmark gains:** Up to 40% visibility increase in benchmark tests; up to 37% on Perplexity.ai (as of 2024-06-28) [2]
-- **Google Search requirements:** No additional technical requirements or special optimizations beyond Search Essentials (as of 2026-11-23) [7]
+- **Google Search requirements:** No additional technical requirements or special optimizations beyond the Search technical requirements (as of 2026-11-23) [7]
 
 ## Basic facts
 
@@ -54,7 +54,7 @@ Generative Engine Optimization (GEO) is a framework for improving how web conten
 
 The paper formalizes generative engines (GEs) as search systems that combine a search engine backend with multiple large language models (LLMs), citing BingChat, Google's SGE, and [Perplexity](https://mimirwiki.com/wiki/perplexity) (Perplexity.ai) as deployed examples.[2] Formally, a generative engine maps a user query and optional user personalization context to a natural language response through modular steps: a query-reformulation model expands the input query into sub-queries, a search engine retrieves ranked web sources, a summarization model condenses each source, and a response-generation model writes a structured answer with embedded inline citations.[2] Inline attribution gives users a mechanism to verify claims and counteracts LLM hallucination, evaluated in terms of citation recall (whether statements are supported by relevant citations) and citation precision (whether attached citations actually support the statements).[2]
 
-Generative Engine Optimization addresses a structural concern for website owners and content publishers.[1][2] Direct synthesized answers reduce the need for users to click through to source websites, which can lower organic referral traffic, while proprietary generation pipelines limit creator visibility into how pages are ingested and cited.[2] In academic and industry search literature published between 2023 and 2026, closely related work also appears under terms such as answer engine optimization, conversational SEO, AI search visibility, and citation absorption.[6]
+Generative Engine Optimization addresses a structural concern for website owners and content publishers.[1][2] Direct synthesized answers reduce the need for users to click through to source websites, which can lower organic referral traffic, while proprietary generation pipelines limit creator visibility into how pages are ingested and cited.[2] Martinez's 2026 survey searched the literature under term families that included answer engine optimization, conversational SEO, AI search visibility, and citation absorption.[6]
 
 ## Generative Engine Optimization framework, metrics, and GEO-bench
 
@@ -93,13 +93,13 @@ Publishers have also discussed [llms.txt](https://mimirwiki.com/wiki/llms-txt), 
 
 Generative Engine Optimization has drawn explicit platform guidance from Google Search Central regarding AI Overviews and AI Mode in Google Search.[7][8] As of 2026-11-23, Google's official documentation states that foundational SEO practices remain relevant for AI features in Google Search and that site owners face no additional technical requirements or special optimizations to appear in AI Overviews or AI Mode.[7] To be eligible as a supporting link in either feature, a page must be indexed and eligible to appear in Google Search with a snippet under standard Search technical requirements, though compliance does not guarantee crawling, indexing, or serving.[7]
 
-Google describes AI Overviews as summaries intended for queries where an overview adds value beyond classic Search, noting that they often do not trigger, while AI Mode targets complex reasoning, comparisons, and multi-step exploration.[7] Both features may apply a "query fan-out" technique that issues multiple related searches across subtopics and data sources during response generation to identify a wider set of supporting web pages.[7] Because AI Overviews and AI Mode may rely on different models and techniques, the answers and supporting links they display can vary.[7]
+Google describes AI Overviews as summaries intended for queries where an overview adds value beyond classic Search, noting that they often do not trigger, while AI Mode is described as particularly helpful for queries that need further exploration, reasoning, or complex comparisons.[7] Both features may apply a "query fan-out" technique that issues multiple related searches across subtopics and data sources during response generation to identify a wider set of supporting web pages.[7] Because AI Overviews and AI Mode may rely on different models and techniques, the answers and supporting links they display can vary.[7]
 
 Google lists continuing SEO fundamentals applicable to AI search features:[7]
 
 - Allowing crawling in `robots.txt` and in CDN or hosting infrastructure
 - Making pages discoverable through internal website links
-- Providing a clear page experience and keeping important content available in textual form
+- Providing a great page experience and keeping important content available in textual form
 - Supporting text with high-quality images and videos where applicable
 - Ensuring structured data matches the visible text on the page
 - Keeping Merchant Center and Business Profile information current
@@ -108,7 +108,7 @@ On the Google Search Central Blog, Google published guidance on content performa
 
 ## Methodological limits and evidence boundaries of Generative Engine Optimization
 
-Generative Engine Optimization faces substantial methodological and empirical boundaries documented across 2025 and 2026 audits.[3][5][6] In his July 2026 critical review of 45 studies, Olivier Martinez points out that commercial claims often extrapolate Aggarwal et al.'s up to 40% visibility figure into a general guarantee of prominence on live AI platforms, even though that result measured relative visibility in a simulator where five candidate documents had already been placed inside the model context.[5][6] Across the reviewed literature, evidence shows that modifying an already-retrieved document can causally alter its citation or use inside an answer, whereas no reviewed technique demonstrates a stable, longitudinal, cross-platform causal effect on organic discoverability or downstream user behavior such as traffic and conversions.[5][6]
+Generative Engine Optimization faces substantial methodological and empirical boundaries documented across 2025 and 2026 audits.[3][5][6] In his July 2026 critical review of 45 studies, Olivier Martinez points out that commercial claims often extrapolate Aggarwal et al.'s up to 40% visibility figure into a general promise of ranking highly in ChatGPT, even though that result measured relative visibility in a simulator where five candidate documents had already been placed inside the model context.[5][6] Across the reviewed literature, evidence shows that modifying an already-retrieved document can causally alter its citation or use inside an answer, whereas no reviewed technique demonstrates a stable, longitudinal, cross-platform causal effect on organic discoverability or downstream user behavior such as traffic and conversions.[5][6]
 
 Empirical findings also show sensitivity to experimental settings and competitive dynamics.[5][6] Across reviewed studies, topical relevance and context position emerge as the most reproducible factors affecting citation, while generic heuristics transfer poorly across domains and models.[5] Multi-actor competition can erode individual optimization gains when multiple publishers apply similar edits, which helps reconcile seemingly conflicting outcomes across single-actor and multi-actor studies such as Puerto et al. (2025).[5][6] Audits of commercial generative engines further report low source overlap across platforms, substantial run-to-run variability, sensitivity to query paraphrases, and persistent fidelity gaps in which a source may be cited without supporting a claim or paraphrased without a link.[3][5][6]
 
@@ -162,7 +162,7 @@ robots.txt sets automated crawler access rules, and Google requires allowing cra
 - 2026-06: Google Search Central Blog announces Search Generative AI performance reports in Search Console, following a May 2026 resource on optimizing for generative AI in Google Search. [8]
 - 2026-07-01: Cloudflare introduces AI traffic controls allowing website owners to distinguish and manage search, agent, and training traffic separately. [11]
 - 2026-07-15: Olivier Martinez publishes a critical survey of 45 GEO studies from November 2023 through July 2026 (arXiv:2607.14035), formalizing a multistage pipeline model and reproducible evaluation protocol. [5][6]
-- 2026-08-10: Jeremy Howard updates the /llms.txt proposal to v2, adding subpath scoping and alternate and describedby link-relation discovery. [9]
+- 2026-08-10: Jeremy Howard updates the /llms.txt proposal to v2, which describes placing the file at a subpath and discovery through the alternate and describedby link relations. [9]
 
 ## Sources
 
@@ -180,4 +180,4 @@ robots.txt sets automated crawler access rules, and Google requires allowing cra
 
 ## Cite this page
 
-Mimirwiki. "Generative Engine Optimization." Version cfa727c9, 2026-11-23. https://mimirwiki.com/wiki/generative-engine-optimization
+Mimirwiki. "Generative Engine Optimization." Version eb2c50d0, 2026-11-25. https://mimirwiki.com/wiki/generative-engine-optimization

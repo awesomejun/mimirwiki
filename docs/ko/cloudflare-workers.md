@@ -4,8 +4,8 @@ subtitle: "V8 아이솔레이트와 오픈소스 workerd 런타임으로 JavaScr
 canonical_url: https://mimirwiki.com/ko/wiki/cloudflare-workers
 language: ko
 page_class: entity
-revision_sha256: 22d620d888fbe34a2abf686717e4eba49c4392c177141e19bbf6bf547027d312
-date_modified: 2026-11-23
+revision_sha256: 993b8c81de18826bde5d80b9ced10479f1aab7365c5e2c758cb2d1569e3ca397
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 12
 alternates:
@@ -54,7 +54,7 @@ Cloudflare Workers는 Cloudflare, Inc.가 운영하는 서버리스(serverless) 
 
 Cloudflare Workers는 전 세계에 분산된 [Cloudflare](https://mimirwiki.com/ko/wiki/cloudflare) 네트워크 서버에서 V8 자바스크립트 엔진으로 사용자 애플리케이션을 실행한다.[6] 각 서버는 Workers 런타임 인스턴스를 구동하며, 하나의 런타임 인스턴스가 메모리가 독립적으로 격리된 경량 실행 컨텍스트인 V8 아이솔레이트(isolate) 수백에서 수천 개를 실행하고 전환한다.[6] Workers 런타임은 컨테이너 시작 시 단일 V8 호스트 프로세스를 한 번 초기화한 뒤 그 안에서 여러 사용자 스크립트를 아이솔레이트로 실행하며, 컨테이너 기반 서버리스 아키텍처는 함수마다 별도의 언어 런타임 프로세스나 가상 머신을 실행한다.[6] Cloudflare 문서는 아이솔레이트가 컨테이너나 가상 머신의 Node.js 프로세스보다 시작 속도가 약 100배 빠르고 시작 시 메모리 사용량이 한 자릿수 이상 적다고 밝힌다.[6]
 
-`*.workers.dev` 하위 도메인이나 Cloudflare 관리 도메인으로 들어온 요청은 ES 모듈 문법으로 작성된 Worker의 `fetch(request, env, ctx)` 핸들러를 호출하고 `Response` 객체를 반환받는다.[6] 단일 Worker 인스턴스는 비동기 I/O를 대기하는 동안 들어오는 동시 요청을 포함해 여러 요청을 단일 스레드 이벤트 루프에서 처리한다.[6] 아이솔레이트는 서버 리소스 제약, 개별 리소스 한도 초과, 또는 샌드박스 탈출 시도처럼 보이는 의심스러운 스크립트 감지 시 종료되어 제거될 수 있다.[6] 같은 사용자의 연속 요청이 동일한 아이솔레이트로 전달된다는 보장이 없으므로 Cloudflare는 전역 스코프에 변경 가능한 상태를 저장하지 않도록 안내한다.[6]
+`*.workers.dev` 하위 도메인이나 Cloudflare 관리 도메인으로 들어온 요청은 ES 모듈 문법으로 작성된 Worker의 `fetch(request, env, ctx)` 핸들러를 호출하고 `Response` 객체를 반환받는다.[6] 단일 Worker 인스턴스는 비동기 I/O를 대기하는 동안 들어오는 동시 요청을 포함해 여러 요청을 단일 스레드 이벤트 루프에서 처리한다.[6] 아이솔레이트는 서버 리소스 제약, 개별 리소스 한도 초과, 또는 샌드박스 탈출 시도처럼 보이는 의심스러운 스크립트 감지 시 종료되어 제거될 수 있다.[6] 두 요청이 Worker의 같은 인스턴스로 전달된다는 보장이 없으므로 Cloudflare는 전역 스코프에 변경 가능한 상태를 저장하지 않도록 안내한다.[6]
 
 Cloudflare Workers를 구동하는 오픈소스 서버 런타임은 `workerd`(발음: 워커디)이며, GitHub에 Apache-2.0 라이선스로 공개되어 있다.[10][11] 개발자는 `workerd`를 Workers용 애플리케이션 자체 호스팅 서버, 로컬 개발 및 테스트 도구, 또는 네트워크 요청을 가로채고 수정해 라우팅하는 프로그래머블 HTTP 포워드·리버스 프록시로 사용할 수 있다.[10] Cloudflare는 `workerd`의 여섯 가지 설계 원칙을 제시한다.[10]
 
@@ -65,7 +65,7 @@ Cloudflare Workers를 구동하는 오픈소스 서버 런타임은 `workerd`(�
 - 전역 네임스페이스 대신 명시적 권한 참조인 기능 바인딩(capability bindings)으로 서비스와 외부 리소스를 연결해 서버 측 요청 위조(SSRF) 노출을 줄인다.[10]
 - 날짜 기반 하위 호환성을 유지해 `workerd` 버전 번호가 지원하는 최대 호환성 날짜(compatibility date)를 나타내며, 과거 날짜로 설정된 Worker에 해당 시점의 API 동작을 그대로 에뮬레이션한다.[10]
 
-`workerd`는 Bazel로 빌드되며 Linux와 macOS(`x86-64`, `arm64`) 및 Windows(`x86-64`) 환경에서 테스트된다.[10] 기본 설정은 Cap'n Proto 텍스트 형식을 사용하고, `workerd serve wrangler.jsonc` 명령으로 `esbuild` 번들링이 포함된 Wrangler 설정 파일도 읽을 수 있다.[10] 2026-11-23 기준 `cloudflare/workerd` GitHub 저장소는 스타 9.2k개, 포크 843개, 커밋 13,908건을 기록했다.[10] Cloudflare는 단독 `workerd`가 구현 결함에 대비한 강화 샌드박스는 아니므로 악성 가능성이 있는 코드를 실행할 때는 가상 머신 같은 별도 보안 샌드박스 내부에서 구동해야 하며, 호스팅형 Cloudflare Workers 서비스에는 추가 심층 방어 계층이 적용된다고 경고한다.[10]
+`workerd`는 Bazel로 빌드되며 Linux와 macOS(`x86-64`, `arm64`) 및 Windows(`x86-64`) 환경에서 테스트된다.[10] 기본 설정은 Cap'n Proto 텍스트 형식을 사용하고, `workerd serve wrangler.jsonc` 명령으로 `esbuild` 번들링이 포함된 Wrangler 설정 파일도 읽을 수 있다.[10] 2026-11-25 기준 `cloudflare/workerd` GitHub 저장소는 스타 9.3k개, 포크 846개, 커밋 14,147건을 기록했다.[10] Cloudflare는 단독 `workerd`가 구현 결함에 대비한 강화 샌드박스는 아니므로 악성 가능성이 있는 코드를 실행할 때는 가상 머신 같은 별도 보안 샌드박스 내부에서 구동해야 하며, 호스팅형 Cloudflare Workers 서비스에는 추가 심층 방어 계층이 적용된다고 경고한다.[10]
 
 ## Cloudflare Workers의 런타임 API, 웹 표준, Node.js 호환성
 
@@ -158,9 +158,9 @@ CPU 시간은 실제 스크립트 연산 시간만 측정하며 `fetch()` 호출
 
 Cloudflare Workers는 2017년 9월 29일 Cloudflare 블로그의 Birthday Week 발표로 처음 공개되었으며, Cloudflare 네트워크 엣지에서 JavaScript Service Workers를 실행하는 방식으로 소개되었다.[12] 이후 해당 발표 게시물에는 2018년 3월 13일 자로 서비스 가용성을 기록한 업데이트가 추가되었다.[12] 최초 공개로부터 5년 뒤인 2022년 9월 27일 Cloudflare는 `workerd`의 첫 베타 버전을 발표하며 Cloudflare Workers를 구동하는 JavaScript 및 WebAssembly 런타임 코드를 Apache-2.0 라이선스의 오픈소스 소프트웨어로 공개했다.[11]
 
-이후 과금 체계와 Node.js 호환성 확장이 이어졌다. 2024년 3월 1일 Cloudflare는 기존 Bundled 과금 계정을 Standard 사용량 모델로 전환했다.[4] 호환성 날짜 2024-09-23부터는 `nodejs_compat` 플래그 활성화 시 Wrangler가 `unenv` 폴리필을 자동 주입하기 시작했다.[9] 2025년 9월부터 2026년 3월 사이에는 `node:http2`, `node:vm`, `node:sqlite`, `node:child_process`, `node:worker_threads` 같은 비서버리스 Node.js 모듈용 가져오기 스텁이 호환성 날짜 기준으로 순차 추가되었고, 2026년 8월 4일 호환성 날짜부터는 `nodejs_compat`과 `nodejs_compat_v2`가 기본으로 활성화되었다.[9] 또한 Cloudflare는 2026년 12월 1일부터 Workers Logs를 Cloudflare Observability 요금 체계로 전환할 예정이다.[4]
+2024년 3월 1일 Cloudflare는 기존 Bundled 과금 계정을 Standard 사용량 모델로 전환했다.[4] 호환성 날짜 2024-09-23부터는 `nodejs_compat` 플래그 활성화 시 Wrangler가 `unenv` 폴리필을 자동 주입하기 시작했다.[9] `node:http2`, `node:vm`, `node:sqlite`, `node:child_process`, `node:worker_threads` 같은 Node.js 모듈의 가져오기 전용 스텁은 호환성 날짜 2025-09-01부터 2026-03-17 사이의 날짜별로 `nodejs_compat`과 함께 활성화되며, 호환성 날짜가 2026-08-04 이후이면 `nodejs_compat`과 `nodejs_compat_v2`가 기본으로 활성화된다.[9] 또한 Cloudflare는 2026년 12월 1일부터 Workers Logs를 Cloudflare Observability 요금 체계로 전환할 예정이다.[4]
 
-[SEC EDGAR](https://mimirwiki.com/ko/wiki/sec-edgar)에 제출된 [Cloudflare](https://mimirwiki.com/ko/wiki/cloudflare)의 2025 회계연도 공시는 Cloudflare Workers를 포함한 개발자 솔루션 채택이 회사를 스토리지 및 컴퓨팅 시장으로 확장시켰으며, 이 영역에서 퍼블릭 클라우드 사업자들과 경쟁하고 있다고 서술한다.[2] 같은 공시의 위험 요인 항목에서 Cloudflare는 2025년 6월 Workers KV 서비스가 사용하는 기반 제3자 스토리지 인프라에 장애가 발생해 수 시간 동안 일부 서비스와 고객에게 영향을 미친 중단 사고가 있었다고 공시했다.[2] Cloudflare는 해당 2025년 6월 사고가 사업, 영업 실적, 재무 상태에 중대한 영향을 미치지 않았다고 밝혔다.[2]
+[SEC EDGAR](https://mimirwiki.com/ko/wiki/sec-edgar)에 제출된 [Cloudflare](https://mimirwiki.com/ko/wiki/cloudflare)의 2025 회계연도 공시는 고객이 Cloudflare Workers를 포함한 개발자 솔루션을 사용하면서 회사에 스토리지와 컴퓨팅이라는 새 시장이 열렸으며, 스토리지와 컴퓨팅 워크로드에서 퍼블릭 클라우드 사업자들과의 경쟁이 늘고 있다고 본다고 서술한다.[2] 같은 공시의 위험 요인 항목에서 Cloudflare는 2025년 6월 Workers KV 서비스가 사용하는 기반 제3자 스토리지 인프라에 장애가 발생해 수 시간 동안 일부 서비스와 고객에게 영향을 미친 중단 사고가 있었다고 공시했다.[2] Cloudflare는 해당 2025년 6월 사고가 사업, 영업 실적, 재무 상태에 중대한 영향을 미치지 않았다고 밝혔다.[2]
 
 ## 자주 묻는 질문
 
@@ -226,4 +226,4 @@ workerd(발음: 워커디)는 Cloudflare Workers를 구동하는 코드에 기�
 
 ## 이 문서 인용하기
 
-Mimirwiki. "Cloudflare Workers." 버전 22d620d8, 2026-11-23. https://mimirwiki.com/ko/wiki/cloudflare-workers
+Mimirwiki. "Cloudflare Workers." 버전 993b8c81, 2026-11-25. https://mimirwiki.com/ko/wiki/cloudflare-workers

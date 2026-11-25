@@ -4,8 +4,8 @@ subtitle: "AI coding agent and software development environment created by Anysp
 canonical_url: https://mimirwiki.com/wiki/cursor
 language: en
 page_class: entity
-revision_sha256: bfb78c2666051b80291f9e127c31cd4c33433295345b2142ffb6d23c1e1949af
-date_modified: 2026-11-23
+revision_sha256: 7b5d0f36e151e975bcf5d305c29bfe427cbdcc15d9881e530b844dbe6f7b1679
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 9
 alternates:
@@ -52,19 +52,19 @@ Cursor is an AI coding agent and software development environment developed by A
 
 ## Cursor product features, customization, and interfaces
 
-Cursor is documented by Anysphere, Inc. as a coding agent for building software across five core workflows: tracing and understanding repositories, scoping and implementing features with Plan Mode, reproducing and fixing bugs, inspecting diffs and running checks before merging, and connecting with external development tools.[3] Starting on the Free tier, Cursor provides limited access to Agent, Chat, and Tab completions using Cursor's own models.[6]
+Cursor is documented by Anysphere, Inc. as a coding agent for building software, with uses that include tracing and understanding repositories, scoping and implementing features with Plan Mode, reproducing and fixing bugs, inspecting diffs and running checks before merging, and connecting with external development tools.[3] Starting on the Free tier, Cursor provides limited access to Agent, Chat, and Tab completions using Cursor's own models.[6]
 
 Cursor's Agent interface spans a desktop IDE, a dedicated Agents Window, a web client, Cursor for iOS, and a command-line interface (CLI).[3][6][7] As of 2026-11-23, the Agent documentation covers Projects, Agent Review, Planning, Prompting, Voice Chat, Debugging, Design Mode, Tools, and Security, while the CLI documentation covers Shell Mode, ACP, and Headless or CI execution.[3] Cursor also publishes a Cursor SDK for TypeScript, Python, and Bridge integrations.[3]
 
 Cursor organizes workflow customization under six documented mechanisms: Plugins, Rules, Skills, Subagents, Hooks, and [Model Context Protocol](https://mimirwiki.com/wiki/model-context-protocol) (MCP) servers.[3] On Teams and Enterprise plans, organizations also receive a team marketplace for distributing internal rules, skills, and plugins.[4][5]
 
-Cursor lists native integrations with source-control, IDE, communication, and issue-tracking platforms: GitHub, GitLab, Azure DevOps, Bitbucket, JetBrains, Xcode, Slack, Microsoft Teams, Jira, Linear, Notion, Tailscale, and Deeplinks.[3]
+The Integrations section of Cursor's documentation lists GitHub, GitLab, Azure DevOps, Bitbucket, JetBrains, Xcode, Slack, Microsoft Teams, Jira, Linear, Notion, Tailscale, and Deeplinks.[3]
 
 ## Cursor Cloud Agents, Origin, Agent SDK, and Voice Chat
 
 Cursor includes Cloud Agents, Automations, Origin code hosting, and Bugbot AI code reviews starting on the Premium subscription tier.[4][5] As of 2026-11-23, Cloud Agents documentation covers environment setup, builds, apps, automations, Bugbot, security review, vulnerability remediation, pull request routing and approval, rollouts, mobile access, self-hosted machines, and an API.[3] Origin provides repository hosting with a CLI, GitHub mirroring, CloneKit in CI, pull requests, Code Tours, repository browse and search, and access policies.[3]
 
-Between October and November 2026, Cursor published four major platform additions in its changelog.[7]
+Between October and November 2026, Cursor published the following platform additions in its changelog.[7]
 
 - **Origin App Marketplace (October 13, 2026)**: Opened with more than 20 integrations and public app submissions across deployments ([Cloudflare](https://mimirwiki.com/wiki/cloudflare), Netlify, Render, Spacelift, Vercel), CI (Buildkite, CircleCI, CloudBees, Depot, EngFlow, Namespace, RWX), code review (CodeRabbit, Greptile, Tenki), security (Artemis Security, Semgrep, Socket Security, Upwind), monitoring (Sentry), and project management (Linear). Origin apps authenticate with an app JWT and installation access tokens, receive webhook events, and write back check runs, pull request comments, and reviews.[7]
 - **Cloud Agent Canvases and Environments API (October 16, 2026)**: Added shareable interactive Canvases built by cloud agents, launched the beta Environments API for programmatic management of agent cloud environments, expanded environment capacity to up to 300 repositories, and increased load speed for large environments by 5x.[7]
@@ -75,7 +75,7 @@ On November 6, 2026, Cursor added Voice Chat with coding agents across the Agent
 
 ## Cursor supported models and Cursor Router
 
-Cursor supports models from SpaceXSI, [OpenAI](https://mimirwiki.com/wiki/openai), [Anthropic](https://mimirwiki.com/wiki/anthropic), Google, and Muse, divided as of 2026-11-23 into first-party Cursor models covered by a subscription's weekly usage pool and third-party models billed at API list price from prepaid credit.[3][5] Opting in to regional data residency adds a 10% uplift to model pricing for eligible models.[5]
+Cursor supports models from [OpenAI](https://mimirwiki.com/wiki/openai), [Anthropic](https://mimirwiki.com/wiki/anthropic), Google, SpaceXSI, and other providers, divided as of 2026-11-23 into first-party Cursor models covered by a subscription's weekly usage pool and third-party models billed at API list price from prepaid credit.[3][5] Opting in to regional data residency adds a 10% uplift to model pricing for eligible models.[5]
 
 Cursor's first-party pool covers [Grok](https://mimirwiki.com/wiki/grok) 4.7, Grok 4.6, Grok 4.5, and Composer 2.5.[5] When usage exceeds the weekly pool, the following per-million-token rates apply as of 2026-11-23.[3][5]
 
@@ -105,7 +105,7 @@ Third-party models are unavailable on Free and Plus plans and are available star
 | Gemini 3.8 Flash | 200k / 1M | $0.75 | - | $0.075 | $3.75 | Yes |
 | Muse Wonder | 300k / 1M | $4 | - | $0.2 | $20 | No |
 
-Cursor's Auto feature splits model selection into three modes through Cursor Router: Cost, Balance, and Intelligence.[5][6] Individual plans support Cost mode (the successor to earlier Auto mode), which bills as a Cursor-model request against the weekly pool regardless of which model serves the request.[5][6] Balance and Intelligence modes launch for Teams and Enterprise plans across the Agents Window, editor, CLI, Cursor SDK, and iOS app, with Enterprise teams opted out by default until an administrator opts in; routes to Cursor models draw from the weekly pool, while routes to third-party models bill at API list price from prepaid credit plus the Cursor Token Rate when applicable.[5][6]
+Cursor's Auto feature splits model selection into three modes through Cursor Router: Cost, Balance, and Intelligence.[5][6] Individual plans support Cost mode (the successor to earlier Auto mode), which bills as a Cursor-model request against the weekly pool regardless of which model serves the request.[5][6] Cursor states that Cursor Router, which provides the Balance and Intelligence modes, will launch for Teams and Enterprise plans across the Agents Window, editor, CLI, Cursor SDK, and iOS app, with Enterprise teams starting with it off until an administrator opts in; routes to Cursor models draw from the weekly pool, while routes to third-party models bill at API list price from prepaid credit plus the Cursor Token Rate when applicable.[5][6]
 
 ## Cursor plans, The X Subscription, and legacy pricing
 
@@ -139,11 +139,11 @@ Cursor also maintains legacy plans sold prior to The X Subscription for existing
 
 ## Cursor security, compliance, and privacy controls
 
-Cursor publishes its security architecture on `cursor.com/security` (last updated August 25, 2026) and its Privacy Policy on `cursor.com/privacy` (last updated November 6, 2026).[8][9] As of 2026-11-23, Cursor holds AIUC-1, ISO/IEC 27001:2022, and ISO/IEC 42001:2023 certifications along with a SOC 2 Type II attestation, and makes certificates, audit reports, penetration test executive summaries, and its subprocessor list available on request through `trust.cursor.com`.[4][8][9] Cursor commits to at least annual third-party penetration testing.[8]
+Cursor publishes its security architecture on `cursor.com/security` (last updated August 25, 2026) and its Privacy Policy on `cursor.com/privacy` (last updated November 6, 2026).[8][9] As of 2026-11-23, Cursor holds AIUC-1, ISO/IEC 27001:2022, and ISO/IEC 42001:2023 certifications along with a SOC 2 Type II attestation, makes certificates, reports, and a penetration test executive summary available on request through `trust.cursor.com`, and publishes its subprocessor list on the same trust portal.[4][8][9] Cursor commits to at least annual third-party penetration testing.[8]
 
-Cursor states that each subprocessor undergoes vendor risk evaluation and annual re-review, that infrastructure access follows the principle of least privilege with multi-factor authentication (MFA) and log monitoring, and that model blocklists are enforced so requests are never routed to blocked models.[8] Cursor states that it does not use or maintain infrastructure in China and does not engage China-headquartered companies as subprocessors.[8] Security vulnerabilities reported to `security-reports@cursor.com` are acknowledged within five business days, and critical security incidents are communicated to affected users by email.[8] Cursor also uses Bugbot and Cloud Agent automations to monitor its own codebase.[8]
+Cursor states that each subprocessor undergoes vendor risk evaluation and annual re-review, that infrastructure access follows the principle of least privilege with multi-factor authentication (MFA) and log monitoring, and that model blocklists are enforced so requests are never routed to blocked models.[8] Cursor states that it does not use or maintain infrastructure in China and does not engage China-headquartered companies as subprocessors.[8] Security vulnerabilities reported to `security-reports@cursor.com` are acknowledged within five business days, and critical security incidents are communicated to affected users by email.[8] Cursor also uses Bugbot and Cloud Agent automations to help secure its own codebase.[8]
 
-Privacy Mode is available across Free, individual, Teams, and Enterprise plans and can be enabled by users in settings or enforced across an organization by administrators, with new team members inheriting the team setting.[4][8] When Privacy Mode is active, Cursor states that user code data is not used for training by Cursor or its model providers, supported by technical controls and contractual provider terms, and Voice Chat runs with zero data retention.[4][7][8] Under the Privacy Policy, Anysphere, Inc. covers individual accounts while employer-provisioned commercial accounts where Anysphere acts as a data processor are governed by customer agreements.[9] Anysphere states that Inputs and Suggestions are not used to train models unless flagged for security review, explicitly reported as feedback, or explicitly approved by the user, and states that it does not knowingly collect genetic, biometric, health, or religious data or direct services to users under age 18.[9] Users can delete their accounts directly from the Settings dashboard.[8]
+Cursor states that Privacy Mode is available to anyone, including free users, and can be enabled by users in settings or by a team or enterprise administrator, with new team members inheriting the team setting.[4][8] When Privacy Mode is active, Cursor states that user code data is not used for training by Cursor or its model providers, supported by technical controls and contractual provider terms, and Voice Chat runs with zero data retention.[4][7][8] Under the Privacy Policy, Anysphere, Inc. covers individual accounts while employer-provisioned commercial accounts where Anysphere acts as a data processor are governed by customer agreements.[9] Anysphere states that Inputs and Suggestions are not used to train models unless flagged for security review, explicitly reported as feedback, or explicitly approved by the user, and states that it does not knowingly collect genetic, biometric, health, or religious data or direct services to users under age 18.[9] Users can delete their accounts directly from the Settings dashboard.[8]
 
 For organizational deployments, Cursor documents SAML/OIDC SSO, SCIM provisioning, compliance and audit logging, service accounts, mobile device management (MDM) deployment, data encryption and customer-managed encryption keys (CMEK), auto-run, browser, and network controls, and access controls for repositories, models, MCP servers, and Grok Bot.[4][8]
 
@@ -151,9 +151,9 @@ For organizational deployments, Cursor documents SAML/OIDC SSO, SCIM provisionin
 
 Cursor was created by Anysphere, Inc., which was founded in 2022 and went through [OpenAI](https://mimirwiki.com/wiki/openai)'s startup accelerator in 2024.[1][9] In late 2024, Anysphere raised $100 million at a pre-money valuation of $2.5 billion.[2] Earlier in 2025, OpenAI and other prospective buyers approached Anysphere regarding an acquisition, and Anysphere declined those offers.[2]
 
-Anysphere's annualized recurring revenue (ARR) was reported by TechCrunch at $300 million in mid-April 2025 and surpassed $500 million by June 5, 2025, according to sources cited by Bloomberg and TechCrunch.[2] On June 5, 2025, TechCrunch reported that Anysphere closed a $900 million Series C round (its third funding round within a year) at a $9.9 billion valuation, led by returning investor Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.[1][2] At that time, Cursor offered a two-week free trial converting into $20 monthly Pro or $40 monthly business subscriptions, alongside newly introduced enterprise licenses.[2] In late 2025, Anysphere raised an additional $2.3 billion, reaching a valuation of approximately $29 billion.[1]
+Anysphere's annualized recurring revenue (ARR) was reported by TechCrunch at $300 million in mid-April 2025 and surpassed $500 million by June 5, 2025, according to sources cited by Bloomberg and TechCrunch.[2] On June 5, 2025, TechCrunch reported that Anysphere closed a $900 million Series C round (its third funding round within a year) at a $9.9 billion valuation, led by returning investor Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.[1][2] At that time, Cursor offered a two-week free trial converting into $20 monthly Pro or $40 monthly business subscriptions, alongside newly introduced enterprise licenses.[2] In late 2025, Anysphere raised an additional $2.3 billion, and TechCrunch put its valuation at around $29 billion before the SpaceX deal was announced.[1]
 
-In early 2026, xAI hired two senior Cursor engineering leaders, and in April 2026 Business Insider reported that xAI had agreed to rent data center capacity to Cursor.[1] Prior to SpaceX's acquisition offer, Cursor had been nearing a $2 billion funding round at a $50 billion valuation from investors including Andreessen Horowitz, Thrive Capital, and Nvidia.[1] In April 2026, ahead of SpaceX's initial public offering, SpaceX and Cursor announced an agreement under which SpaceX would either acquire Cursor for $60 billion in stock or pay a $10 billion break-up fee if the transaction did not proceed.[1]
+In early 2026, xAI hired two senior Cursor engineering leaders, and in April 2026 Business Insider reported that xAI had agreed to rent data center capacity to Cursor.[1] Prior to SpaceX's acquisition offer, Cursor had been nearing a $2 billion funding round at a $50 billion valuation from investors including Andreessen Horowitz, Thrive Capital, and Nvidia.[1] In April 2026, ahead of SpaceX's initial public offering, SpaceX announced an agreement under which it would either acquire Cursor for $60 billion in stock or pay a $10 billion break-up fee if the transaction did not proceed.[1]
 
 On June 16, 2026, days after SpaceX's IPO at $135 per share and following SpaceX's earlier 2026 merger with xAI, TechCrunch reported that SpaceX had agreed to acquire Cursor for $60 billion in stock, with SpaceX stating the transaction was expected to close in the third quarter of 2026.[1] As of 2026-11-23, Cursor's public website and documentation present Cursor as integrated into The X Subscription sold by X Subscription Corp. alongside [Grok](https://mimirwiki.com/wiki/grok) and X, linking to SpaceXSI Subscription Terms and listing SpaceXSI among supported model providers, while retaining `Anysphere, Inc.` on its website copyright notice and Privacy Policy.[4][5][8][9]
 
@@ -173,7 +173,7 @@ As of 2026-11-23, paid plans include a shared weekly pool for Cursor's own model
 
 ### How do Cursor's Privacy Mode and security certifications work?
 
-As of 2026-11-23, Cursor holds AIUC-1, ISO/IEC 27001:2022, and ISO/IEC 42001:2023 certifications and a SOC 2 Type II attestation, with supporting documents available on request at trust.cursor.com. Privacy Mode is available on all plans, can be enforced team-wide by administrators, prevents model training on user code data, and runs Voice Chat with zero data retention. [7][8][9]
+As of 2026-11-23, Cursor holds AIUC-1, ISO/IEC 27001:2022, and ISO/IEC 42001:2023 certifications and a SOC 2 Type II attestation, with supporting documents available on request at trust.cursor.com. Privacy Mode is available to anyone, including free users, can be enforced team-wide by administrators, prevents model training on user code data, and runs Voice Chat with zero data retention. [7][8][9]
 
 ### What customization and automation features does Cursor include?
 
@@ -200,7 +200,7 @@ Cursor was developed by Anysphere, Inc., which was founded in 2022. On June 16, 
 - 2024: Anysphere participates in OpenAI's startup accelerator and raises $100 million at a $2.5 billion pre-money valuation in late 2024. [1][2]
 - 2025-04: TechCrunch reports that Anysphere reaches $300 million in annualized recurring revenue. [2]
 - 2025-06-05: TechCrunch reports that Anysphere raises a $900 million Series C round at a $9.9 billion valuation led by Thrive Capital, with annualized recurring revenue exceeding $500 million. [1][2]
-- 2026-04: SpaceX and Cursor announce an agreement for either a $60 billion stock acquisition or a $10 billion break-up fee, alongside reports that xAI rented data center capacity to Cursor. [1]
+- 2026-04: SpaceX announces an agreement with Cursor for either a $60 billion stock acquisition or a $10 billion break-up fee, alongside reports that xAI rented data center capacity to Cursor. [1]
 - 2026-06-16: TechCrunch reports that SpaceX agrees to acquire Cursor for $60 billion in stock, with closing expected in the third quarter of 2026. [1]
 - 2026-08-25: Cursor updates its security documentation listing AIUC-1, ISO/IEC 27001:2022, ISO/IEC 42001:2023 certifications, and SOC 2 Type II attestation. [8]
 - 2026-10-13: Cursor launches the Origin App Marketplace with more than 20 partner integrations and opens it to public submissions. [7]
@@ -223,4 +223,4 @@ Cursor was developed by Anysphere, Inc., which was founded in 2022. On June 16, 
 
 ## Cite this page
 
-Mimirwiki. "Cursor." Version bfb78c26, 2026-11-23. https://mimirwiki.com/wiki/cursor
+Mimirwiki. "Cursor." Version 7b5d0f36, 2026-11-25. https://mimirwiki.com/wiki/cursor

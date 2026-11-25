@@ -4,8 +4,8 @@ subtitle: "최종 사용자와 가까운 위치의 캐시 서버에서 웹 콘�
 canonical_url: https://mimirwiki.com/ko/wiki/content-delivery-network
 language: ko
 page_class: concept
-revision_sha256: 598079c47395f99ceed8e3a9b53b76ad16c4a48697f890b33d3d5b6a07a5f38e
-date_modified: 2026-11-23
+revision_sha256: ed5662f19dd07c8df1e7b7979e22f980b10f1cda842dd537c7532383d0b003b0
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert"
 source_count: 8
 alternates:
@@ -21,9 +21,9 @@ translations:
 
 # 콘텐츠 전송 네트워크
 
-> 콘텐츠 전송 네트워크(CDN)는 웹 콘텐츠의 사본을 최종 사용자와 가까운 여러 위치에 분산 저장해 전달하는 서버 네트워크이다. 클라이언트와 원본 서버 사이에서 관리형 공유 HTTP 캐시로 동작하며, 응답 지연을 낮추고 원본 서버 부하를 줄이며 가용성을 높인다. 핵심 동작에는 HTTP 캐싱, 대상 지정 캐시 헤더, 애니캐스트 라우팅, CDN 상호 연결 프로토콜이 쓰인다.
+> 콘텐츠 전송 네트워크(CDN)는 웹 콘텐츠의 사본을 최종 사용자와 가까운 여러 위치에 분산 저장해 전달하는 서버 네트워크이다. 클라이언트와 원본 서버 사이에서 관리형 공유 HTTP 캐시로 동작하며, 응답 지연을 낮추고 원본 서버 부하를 줄이며 가용성을 높인다. 관련된 IETF 문서는 HTTP 캐싱, 대상 지정 캐시 헤더, 애니캐스트 서비스 분산, CDN 상호 연결을 다룬다.
 
-콘텐츠 전송 네트워크(Content Delivery Network, CDN)는 웹 객체의 사본을 여러 지역의 서버에 분산 저장하고 최종 사용자와 가까운 위치에서 요청을 처리하는 시스템이다. 클라이언트와 원본 서버(origin server) 사이에서 관리형 공유 HTTP 캐시(managed shared cache)로 동작하며, 응답 지연을 줄이고 원본 서버의 부하를 낮추며 높은 트래픽 상황에서도 전송 안정성을 높인다. 핵심 동작은 HTTP 캐싱(RFC 9111), 대상 지정 캐시 제어(RFC 9213), 애니캐스트 서비스 분산(RFC 4786), CDN 상호 연결(RFC 6707, RFC 7336)을 다루는 국제인터넷표준화기구(IETF) 사양에 기반한다. 상용 CDN은 전 세계의 거점(Point of Presence, PoP)을 통해 정적 자산과 동적 웹 콘텐츠를 모두 전달하는 한편, 캐시 최신성 유지, 보안 노출, 외부 사업자 가용성 의존성 같은 운영상 한계도 수반한다.
+콘텐츠 전송 네트워크(Content Delivery Network, CDN)는 웹 객체의 사본을 여러 지역의 서버에 분산 저장하고 최종 사용자와 가까운 위치에서 요청을 처리하는 시스템이다. 클라이언트와 원본 서버(origin server) 사이에서 관리형 공유 HTTP 캐시(managed shared cache)로 동작하며, 응답 지연을 줄이고 원본 서버의 부하를 낮추며 높은 트래픽 상황에서도 전송 안정성을 높인다. 관련된 국제인터넷표준화기구(IETF) 문서는 HTTP 캐싱(RFC 9111), 대상 지정 캐시 제어(RFC 9213), 애니캐스트 서비스 분산(RFC 4786), CDN 상호 연결(RFC 6707, RFC 7336)을 다룬다. 상용 CDN은 전 세계의 거점(Point of Presence, PoP)을 통해 정적 자산과 동적 웹 콘텐츠를 모두 전달하는 한편, 캐시 최신성 유지, 보안 노출, 외부 사업자 가용성 의존성 같은 운영상 한계도 수반한다.
 
 **다른 이름:** CDN, Content Delivery Network, Content Distribution Network, 콘텐츠 배포 네트워크, 콘텐츠 전송망
 
@@ -45,7 +45,7 @@ translations:
 - **대상 지정 필수 지시어:** max-age, must-revalidate, no-store, no-cache, private [2]
 - **애니캐스트 기준 문서:** IETF RFC 4786(BCP 126, 2006년 12월), IPv4 및 IPv6 지원 [5]
 - **CDNI 문제 정의:** IETF RFC 6707(Informational, 2012년 9월) [3]
-- **CDNI 프레임워크:** IETF RFC 7336(Informational, 2014년 8월), RFC 6707과 함께 RFC 3466 대체 [4]
+- **CDNI 프레임워크:** IETF RFC 7336(Informational, 2014년 8월), RFC 3466 대체 [4]
 - **주요 전송 대상:** 정적 자산(HTML, CSS, JavaScript, 이미지, 미디어) 및 동적 웹 콘텐츠 [8]
 - **CloudFront 기본 캐시 만료 시간:** 24시간(최소 0초, 고정 상한 없음) (기준 2026-11-23) [8]
 - **클라이언트 무결성 보호:** 외부 정적 자산 CDN용 하위 리소스 무결성(SRI) [6]
@@ -89,9 +89,9 @@ HTTP 캐싱 사양은 캐시를 단일 사용자 전용인 비공개 캐시(priv
 
 RFC 9213을 구현하는 캐시는 우선순위가 높은 순서대로 필드 이름을 나열한 대상 목록(target list, 예: `[ExampleCDN-Cache-Control, CDN-Cache-Control]`)을 유지한다.[2] 캐시는 응답을 받을 때마다 대상 목록에서 처음으로 유효하고 비어 있지 않은 필드를 선택해 캐싱 정책으로 삼고, 그 응답의 `Cache-Control`과 `Expires` 헤더는 무시한다.[2] 대상 목록에 없는 대상 지정 헤더는 해당 캐시의 동작을 바꾸지 않고 그대로 통과시켜야 한다.[2] 대상 지정 필드를 처리하는 캐시는 `max-age`, `must-revalidate`, `no-store`, `no-cache`, `private` 다섯 가지 지시어의 의미를 반드시 구현해야 하며, `no-store`와 `no-cache`가 `max-age`를 무효화하고 알 수 없는 확장 지시어를 무시하는 우선순위 규칙은 `Cache-Control`과 같다.[2]
 
-## 콘텐츠 전송 네트워크의 BGP 애니캐스트 라우팅(RFC 4786)
+## 애니캐스트 서비스 분산(RFC 4786)
 
-콘텐츠 전송 네트워크 운영자와 분산 인터넷 서비스는 하나의 IP 주소를 여러 독립 위치의 서버에 공유해 클라이언트 트래픽을 가까운 노드로 전달하는 애니캐스트(anycast) 라우팅을 활용하며, 그 운영 모범 사례는 2006년 12월 IETF의 J. Abley(Afilias Canada)와 K. Lindqvist(Netnod Internet Exchange)가 발행한 RFC 4786(BCP 126)에 정리되어 있다.[5] 애니캐스트는 고정된 서비스 주소(Service Address, IPv4 또는 IPv6)를 둘 이상의 독립된 애니캐스트 노드(Anycast Node)에 할당하고 라우팅 시스템에 해당 주소의 도달 가능성을 광고하는 방식으로 동작한다.[5]
+애니캐스트(anycast) 라우팅은 하나의 서비스 주소를 둘 이상의 독립된 노드에서 도달할 수 있게 하고, 라우팅 시스템이 클라이언트 요청을 그중 한 노드로 전달하는 방식이다. 운영 모범 사례는 J. Abley(Afilias Canada)와 K. Lindqvist(Netnod Internet Exchange)가 작성한 IETF RFC 4786(BCP 126, 2006년 12월)에 정리되어 있다.[5] RFC 4786은 인터넷 서비스 전반을 대상으로 하며 DNS 서버를 주된 예로 든다.[5] 애니캐스트는 고정된 서비스 주소(Service Address, IPv4 또는 IPv6)를 둘 이상의 독립된 애니캐스트 노드(Anycast Node)에 할당하고 라우팅 시스템에 해당 주소의 도달 가능성을 광고하는 방식으로 동작한다.[5]
 
 클라이언트가 애니캐스트 서비스 주소로 패킷을 보내면 라우팅 시스템은 네트워크 위상과 요청 출발 지점에 따라 가용 노드 가운데 하나로 데이터그램을 전달한다.[5] 특정 애니캐스트 노드로 패킷이 도달하는 네트워크의 위상적 영역을 집수 영역(catchment)이라고 부른다.[5] RFC 4786은 애니캐스트를 내부 게이트웨이 프로토콜(Interior Gateway Protocol, IGP) 안에서 일부 구간에만 노드를 노출하는 지역 범위 애니캐스트(local-scope anycast)와 경계 경로 프로토콜(Border Gateway Protocol, BGP, RFC 4271)을 통해 전 세계 인터넷에 도달 가능성을 광고하는 전역 범위 애니캐스트(global-scope anycast)로 구분한다.[5] 애니캐스트는 별도의 서버 리디렉션이나 라운드 로빈 DNS 없이도 트래픽을 분산할 수 있으며, 애플리케이션 요구에 따라 이름 기반 분산 방식과 결합해 쓸 수도 있다.[5]
 
@@ -105,16 +105,16 @@ RFC 4786은 애니캐스트 기반 서비스 분산이 수반하는 운영상 �
 
 콘텐츠 전송 네트워크 상호 연결(Content Distribution Network Interconnection, CDNI)은 서로 독립된 CDN들이 연동해 한 CDN이 다른 CDN을 대신해 최종 사용자에게 콘텐츠를 전달할 수 있도록 하는 구조이다.[3] 동영상과 멀티미디어 트래픽이 증가하면서 기존 CDN 사업자들이 인프라를 확장했고 다수의 네트워크 서비스 사업자(Network Service Provider, NSP)도 자체 CDN을 구축했다.[3] 단일 CDN만으로는 모든 최종 사용자의 접속 네트워크 가까이에 충분한 거점과 자원을 갖추기 어려워, 여러 CDN을 상호 연결해 콘텐츠 서비스 제공자(Content Service Provider, CSP)에서 최종 사용자까지의 종단 간 전송 범위를 넓히려는 요구가 생겼다.[3]
 
-IETF는 2012년 9월 B. Niven-Jenkins, F. Le Faucheur, N. Bitar가 작성한 RFC 6707(Informational)로 CDNI 문제 영역을 정의했고, 2014년 8월 L. Peterson, B. Davie, R. van Brandenburg가 작성한 RFC 7336(Informational)으로 전체 프레임워크를 제시했으며, 두 문서는 기존 RFC 3466을 대체한다.[3][4] CDNI 모델에서는 CSP와 직접 계약을 맺은 권한 있는 상위 CDN(`uCDN`)이 요청을 직접 처리하거나 NSP가 운영하는 CDN 같은 하나 이상의 하위 CDN(`dCDN`)에 전송을 위임하며, 연쇄적인 하위 CDN 가운데 최종 사용자에게 콘텐츠를 실제로 전달하는 마지막 CDN을 전달 CDN(Delivering CDN)이라 부른다.[3][4]
+IETF는 2012년 9월 B. Niven-Jenkins, F. Le Faucheur, N. Bitar가 작성한 RFC 6707(Informational)로 CDNI 문제 영역을 정의했고, 2014년 8월 L. Peterson, B. Davie, R. van Brandenburg가 작성한 RFC 7336(Informational)으로 전체 프레임워크를 제시했다. RFC 7336은 기존 RFC 3466을 대체한다.[3][4] CDNI 모델에서는 CSP와 직접 계약을 맺은 권한 있는 상위 CDN(`uCDN`)이 요청을 직접 처리하거나 NSP가 운영하는 CDN 같은 하나 이상의 하위 CDN(`dCDN`)에 전송을 위임하며, 연쇄적인 하위 CDN 가운데 최종 사용자에게 콘텐츠를 실제로 전달하는 마지막 CDN을 전달 CDN(Delivering CDN)이라 부른다.[3][4]
 
 상호 연결된 전송 흐름에서 사용자 에이전트의 초기 요청은 먼저 상위 CDN에 도착하며, 상위 CDN은 DNS 리디렉션이나 HTTP 리디렉션을 통해 사용자와 더 가까운 하위 CDN으로 요청을 넘길 수 있다.[3][4] RFC 7336은 상위 CDN이 자체 판단만으로 하위 CDN의 요청 라우팅 시스템에 요청을 넘기는 반복적 요청 리디렉션(Iterative CDNI Request Redirection)과, 상위 CDN이 먼저 하위 CDN의 리디렉션 인터페이스에 질의해 응답을 반영함으로써 사용자 에이전트를 하위 CDN 내부 서버로 직접 안내할 수 있는 재귀적 요청 리디렉션(Recursive CDNI Request Redirection)을 구분한다.[4] 하위 CDN에 해당 콘텐츠가 없으면 상위 CDN에서 객체를 가져오고, 필요한 경우 상위 CDN이 CSP에서 원본을 확보한다.[3] CDNI 메타데이터와 정책은 특정 콘텐츠 집합을 식별하는 `CDN-Domain`(FQDN) 단위로 적용되며, 클라이언트 요청에 노출되지 않는 `Distinguished CDN-Domain`은 CDN 간 콘텐츠 수집이나 리디렉션 대상 식별에 쓰인다.[4]
 
 | CDNI 인터페이스 | 동작 시점 | RFC 6707 및 RFC 7336에 정의된 역할 |
 | --- | --- | --- |
-| CDNI 제어 인터페이스(Control Interface) | 비동기 | 관리 작업을 조율하며, CSP 요청에 따라 메타데이터와 콘텐츠를 사전 배치·재검증·삭제하는 트리거 인터페이스(Trigger Interface)를 포함한다.[3][4] |
+| CDNI 제어 인터페이스(Control Interface) | 초기 설정 및 트리거 동작 | 관리 작업을 조율하며, CSP 요청에 따라 메타데이터와 콘텐츠를 사전 배치·재검증·삭제하는 트리거 인터페이스(Trigger Interface)를 포함한다.[3][4] |
 | CDNI 요청 라우팅 인터페이스(Request Routing Interface) | 동기 및 비동기 | 상위·하위 CDN 간 DNS 및 HTTP 요청 리디렉션과 동적 거점(footprint) 정보 광고를 처리한다.[3][4] |
 | CDNI 메타데이터 인터페이스(Metadata Interface) | 동기 또는 비동기 | CDN-Domain 단위의 배포 메타데이터와 전송 정책을 상호 연결된 CDN 간에 교환한다.[3][4] |
-| CDNI 로깅 인터페이스(Logging Interface) | 비동기 | 상호 연결된 CDN 간에 콘텐츠 전송 로그 정보를 교환한다.[3][4] |
+| CDNI 로깅 인터페이스(Logging Interface) | 실시간 및 오프라인 | 상호 연결된 CDN 간에 콘텐츠 전송 로그 정보를 교환한다.[3][4] |
 
 ## 콘텐츠 전송 네트워크의 한계, 캐시 만료 문제, 보안 위험
 
@@ -136,9 +136,9 @@ HTTP 캐싱은 단일한 종단 간 최신성 모델을 따르기 때문에 CDN 
 
 RFC 9111에 정의된 일반 Cache-Control 지시어는 브라우저와 공유 캐시 전반에 폭넓게 적용되어 계층별 세밀한 대상 지정이 제한됩니다. 2022년 6월 RFC 9213으로 표준화된 CDN-Cache-Control은 CDN 캐시만을 대상으로 하는 딕셔너리 구조화 필드이며, 이를 지원하는 CDN은 해당 응답에서 Cache-Control과 Expires를 무시하고 별도의 캐싱 정책을 적용합니다. [2][7]
 
-### CDN에서 BGP 애니캐스트 라우팅을 사용하는 이유는 무엇인가요?
+### RFC 4786의 BGP 애니캐스트 라우팅은 무엇인가요?
 
-RFC 4786(BCP 126)에 정리된 전역 범위 BGP 애니캐스트는 동일한 IP 서비스 주소를 여러 독립 위치에서 광고하여 인터넷 라우팅이 클라이언트 패킷을 위상적으로 가까운 노드로 전달하게 합니다. 라운드 로빈 DNS 없이도 서비스 안정성과 거친 단위의 확장을 지원하지만, 노드 간 트래픽 부하가 고르게 분산되기는 어렵습니다. [5]
+RFC 4786(BCP 126)에 정리된 전역 범위 BGP 애니캐스트는 동일한 IP 서비스 주소를 여러 독립 위치에서 광고하며, 라우팅 시스템이 자체 토폴로지와 요청이 시작된 지점에 따라 요청을 처리할 노드를 정합니다. 라운드 로빈 DNS 없이도 서비스 안정성과 거친 단위의 확장을 지원하지만, 노드 간 트래픽 부하가 고르게 분산되기는 어렵습니다. [5]
 
 ### CDN 상호 연결(CDNI)이란 무엇인가요?
 
@@ -158,7 +158,7 @@ MDN Web Docs는 자체 호스팅과 비교해 세 가지 단점을 지적합니�
 - 2022년 6월 Akamai, Fastly, Cloudflare 소속 저자들이 발행한 RFC 9213은 CDN 캐시 전용 HTTP 응답 헤더인 CDN-Cache-Control을 정의한다. [2]
 - RFC 9213에 따라 대상 지정 캐시 제어 필드를 구현하는 캐시는 max-age, must-revalidate, no-store, no-cache, private 지시어를 반드시 지원해야 한다. [2]
 - 2006년 12월 발행된 RFC 4786(BCP 126)은 IGP 또는 BGP 기반의 IPv4 및 IPv6 애니캐스트로 여러 위치에 서비스를 분산 운영하는 모범 사례를 기술한다. [5]
-- RFC 6707(2012년 9월)과 RFC 7336(2014년 8월)은 콘텐츠 전송 네트워크 상호 연결(CDNI)의 문제 정의와 프레임워크를 규정하며 RFC 3466을 대체한다. [3][4]
+- RFC 6707(2012년 9월)과 RFC 7336(2014년 8월)은 콘텐츠 전송 네트워크 상호 연결(CDNI)의 문제 정의와 프레임워크를 규정한다. RFC 3466을 대체하는 문서는 RFC 7336이다. [3][4]
 - 최신 브라우저는 개인정보 보호를 위해 오리진별로 HTTP 캐시를 격리하므로 외부 CDN의 동일 라이브러리도 웹사이트마다 별도로 내려받아야 한다. [6]
 - CDN 같은 관리형 캐시는 기본 HTTP 캐싱 사양에 정의되지 않은 명시적 삭제 기능을 대시보드, API 호출, 재시작을 통해 제공한다. [7]
 - 2026-11-23 기준 Amazon CloudFront는 기본적으로 객체를 에지 로케이션에 24시간 동안 캐시하며, 최소 만료 시간은 0초이고 고정된 최대 만료 시간은 없다. [8]
@@ -167,7 +167,7 @@ MDN Web Docs는 자체 호스팅과 비교해 세 가지 단점을 지적합니�
 
 - 2006-12: IETF가 지역 범위 IGP와 전역 범위 BGP 애니캐스트 운영 사례를 정리한 RFC 4786(BCP 126) 'Operation of Anycast Services'를 발행한다. [5]
 - 2012-09: IETF가 네 가지 CDNI 인터페이스의 범위를 정의한 RFC 6707 'Content Distribution Network Interconnection (CDNI) Problem Statement'를 발행한다. [3]
-- 2014-08: IETF가 RFC 6707과 함께 RFC 3466을 대체하는 RFC 7336 'Framework for Content Distribution Network Interconnection (CDNI)'를 발행한다. [4]
+- 2014-08: IETF가 RFC 3466을 대체하는 RFC 7336 'Framework for Content Distribution Network Interconnection (CDNI)'를 발행한다. [4]
 - 2022-06: IETF가 RFC 7234를 대체하는 RFC 9111(STD 98) 'HTTP Caching'과 CDN-Cache-Control 응답 헤더를 표준화한 RFC 9213 'Targeted HTTP Cache Control'을 함께 발행한다. [1][2]
 
 ## 출처
@@ -183,4 +183,4 @@ MDN Web Docs는 자체 호스팅과 비교해 세 가지 단점을 지적합니�
 
 ## 이 문서 인용하기
 
-Mimirwiki. "콘텐츠 전송 네트워크." 버전 598079c4, 2026-11-23. https://mimirwiki.com/ko/wiki/content-delivery-network
+Mimirwiki. "콘텐츠 전송 네트워크." 버전 ed5662f1, 2026-11-25. https://mimirwiki.com/ko/wiki/content-delivery-network

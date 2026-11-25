@@ -4,8 +4,8 @@ subtitle: "由 Anysphere, Inc. 创建并整合于 The X Subscription 中的 AI �
 canonical_url: https://mimirwiki.com/zh/wiki/cursor
 language: zh
 page_class: entity
-revision_sha256: 4fb2d1dfb753d2312a9b21be55de565d1bebd492712d22a1dd8feda11e09b109
-date_modified: 2026-11-23
+revision_sha256: d713a2ad4d851b553ea66c787acfad11f27980eead0733dec80cdf36531ea828
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 9
 alternates:
@@ -52,19 +52,19 @@ Cursor 是由 Anysphere, Inc. 开发的 AI 编程代理与软件开发环境，�
 
 ## Cursor 产品功能、自定义机制与界面
 
-在 Anysphere, Inc. 的官方文档中，Cursor 被定位为面向软件开发的编程代理，覆盖五项核心工作流：追踪与理解代码仓库、使用 Plan Mode 界定范围并实现功能、复现与修复缺陷、在合并前检查差异并运行检测，以及与外部开发工具集成。[3] 从 Free 档位起，Cursor 即提供基于自有模型的 Agent、Chat 和 Tab 补全的有限访问权限。[6]
+在 Anysphere, Inc. 的官方文档中，Cursor 被描述为面向软件开发的编程代理，用途包括追踪与理解代码仓库、使用 Plan Mode 界定范围并实现功能、复现与修复缺陷、在合并前检查差异并运行检测，以及与外部开发工具集成。[3] 从 Free 档位起，Cursor 即提供基于自有模型的 Agent、Chat 和 Tab 补全的有限访问权限。[6]
 
 Cursor 的 Agent 界面横跨桌面 IDE、专用 Agents Window、网页客户端、Cursor for iOS 以及命令行界面（CLI）。[3][6][7] 截至 2026-11-23，Agent 文档涵盖 Projects、Agent Review、Planning、Prompting、Voice Chat、Debugging、Design Mode、Tools 和 Security，而 CLI 文档涵盖 Shell Mode、ACP 以及无头（Headless）或 CI 执行。[3] Cursor 还发布了面向 TypeScript、Python 和 Bridge 集成的 Cursor SDK。[3]
 
 Cursor 将工作流自定义归纳为六种文档化机制：Plugins、Rules、Skills、Subagents、Hooks 和[模型上下文协议](https://mimirwiki.com/zh/wiki/model-context-protocol)（MCP）服务器。[3] 在 Teams 和 Enterprise 方案中，组织还会获得用于分发内部规则、技能和插件的团队市场（team marketplace）。[4][5]
 
-Cursor 列出的原生集成涵盖源代码管理、IDE、通信和问题跟踪平台，包括 GitHub、GitLab、Azure DevOps、Bitbucket、JetBrains、Xcode、Slack、Microsoft Teams、Jira、Linear、Notion、Tailscale 和 Deeplinks。[3]
+Cursor 文档的集成（Integrations）栏目列出了 GitHub、GitLab、Azure DevOps、Bitbucket、JetBrains、Xcode、Slack、Microsoft Teams、Jira、Linear、Notion、Tailscale 和 Deeplinks。[3]
 
 ## Cursor Cloud Agents、Origin、Agent SDK 与 Voice Chat
 
 Cursor 从 Premium 订阅档位起提供 Cloud Agents、Automations、Origin 代码托管和 Bugbot AI 代码审查。[4][5] 截至 2026-11-23，Cloud Agents 文档涵盖环境配置、构建、应用、自动化、Bugbot、安全审查、漏洞修复、拉取请求路由与审批、灰度发布、移动端访问、自托管机器以及 API。[3] Origin 提供代码仓库托管服务，支持 CLI、GitHub 镜像、CI 中的 CloneKit、拉取请求、Code Tours、仓库浏览与搜索以及访问策略。[3]
 
-2026 年 10 月至 11 月期间，Cursor 在更新日志中发布了四项重要平台新增功能。[7]
+2026 年 10 月至 11 月期间，Cursor 在更新日志中发布了以下平台新增功能。[7]
 
 - **Origin App Marketplace（2026 年 10 月 13 日）**：上线时即包含 20 多项集成并开放公开应用提交，涵盖部署（[Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare)、Netlify、Render、Spacelift、Vercel）、CI（Buildkite、CircleCI、CloudBees、Depot、EngFlow、Namespace、RWX）、代码审查（CodeRabbit、Greptile、Tenki）、安全（Artemis Security、Semgrep、Socket Security、Upwind）、监控（Sentry）以及项目管理（Linear）。Origin 应用通过应用 JWT 和安装访问令牌进行身份验证，接收 Webhook 事件，并回写检查运行、拉取请求评论和审查结果。[7]
 - **Cloud Agent Canvases 与 Environments API（2026 年 10 月 16 日）**：新增由云端代理构建的可共享交互式 Canvases，推出用于以编程方式管理代理云端环境的测试版 Environments API，将单个环境的容量扩展至最多 300 个代码仓库，并将大型环境的加载速度提升至原来的 5 倍。[7]
@@ -75,7 +75,7 @@ Cursor 从 Premium 订阅档位起提供 Cloud Agents、Automations、Origin 代
 
 ## Cursor 支持的模型与 Cursor Router
 
-Cursor 支持来自 SpaceXSI、[OpenAI](https://mimirwiki.com/zh/wiki/openai)、[Anthropic](https://mimirwiki.com/zh/wiki/anthropic)、Google 和 Muse 的模型；截至 2026-11-23，这些模型被划分为纳入订阅每周用量池的自有 Cursor 模型，以及按 API 标价从预付额度中计费的第三方模型。[3][5] 对符合条件的模型启用区域数据驻留（regional data residency）会在模型价格基础上加收 10%。[5]
+Cursor 支持来自 [OpenAI](https://mimirwiki.com/zh/wiki/openai)、[Anthropic](https://mimirwiki.com/zh/wiki/anthropic)、Google、SpaceXSI 等提供商的模型；截至 2026-11-23，这些模型被划分为纳入订阅每周用量池的自有 Cursor 模型，以及按 API 标价从预付额度中计费的第三方模型。[3][5] 对符合条件的模型启用区域数据驻留（regional data residency）会在模型价格基础上加收 10%。[5]
 
 Cursor 自有模型池涵盖 [Grok](https://mimirwiki.com/zh/wiki/grok) 4.7、Grok 4.6、Grok 4.5 和 Composer 2.5。[5] 当用量超出每周用量池时，截至 2026-11-23 适用以下每百万 token 费率。[3][5]
 
@@ -105,7 +105,7 @@ Cursor 自有模型池涵盖 [Grok](https://mimirwiki.com/zh/wiki/grok) 4.7、Gr
 | Gemini 3.8 Flash | 200k / 1M | $0.75 | - | $0.075 | $3.75 | 支持 |
 | Muse Wonder | 300k / 1M | $4 | - | $0.2 | $20 | 不支持 |
 
-Cursor 的 Auto 功能通过 Cursor Router 将模型选择划分为三种模式：Cost、Balance 和 Intelligence。[5][6] 个人方案支持 Cost 模式（原 Auto 模式的继任者），无论实际由哪个模型响应，均作为 Cursor 模型请求从每周用量池中扣减。[5][6] Balance 和 Intelligence 模式面向 Teams 和 Enterprise 方案在 Agents Window、编辑器、CLI、Cursor SDK 和 iOS 应用中推出，Enterprise 团队默认未启用，需由管理员主动开启；路由至 Cursor 模型的请求从每周用量池扣减，而路由至第三方模型的请求则从预付额度按 API 标价计费，并在适用时加收 Cursor Token Rate。[5][6]
+Cursor 的 Auto 功能通过 Cursor Router 将模型选择划分为三种模式：Cost、Balance 和 Intelligence。[5][6] 个人方案支持 Cost 模式（原 Auto 模式的继任者），无论实际由哪个模型响应，均作为 Cursor 模型请求从每周用量池中扣减。[5][6] Cursor 表示，提供 Balance 和 Intelligence 模式的 Cursor Router 将面向 Teams 和 Enterprise 方案推出，可在 Agents Window、编辑器、CLI、Cursor SDK 和 iOS 应用中使用，Enterprise 团队起始为关闭状态，需由管理员主动开启；路由至 Cursor 模型的请求从每周用量池扣减，而路由至第三方模型的请求则从预付额度按 API 标价计费，并在适用时加收 Cursor Token Rate。[5][6]
 
 ## Cursor 订阅方案、The X Subscription 与旧版定价
 
@@ -139,11 +139,11 @@ Cursor 同时面向现有订阅用户保留在 The X Subscription 之前销售�
 
 ## Cursor 安全、合规与隐私控制
 
-Cursor 在 `cursor.com/security`（最后更新于 2026 年 8 月 25 日）公布其安全架构，在 `cursor.com/privacy`（最后更新于 2026 年 11 月 6 日）公布其隐私政策。[8][9] 截至 2026-11-23，Cursor 持有 AIUC-1、ISO/IEC 27001:2022 和 ISO/IEC 42001:2023 认证以及 SOC 2 Type II 鉴证报告，并可通过 `trust.cursor.com` 按需提供证书、审计报告、渗透测试执行摘要及次级处理方（subprocessor）列表。[4][8][9] Cursor 承诺至少每年进行一次第三方渗透测试。[8]
+Cursor 在 `cursor.com/security`（最后更新于 2026 年 8 月 25 日）公布其安全架构，在 `cursor.com/privacy`（最后更新于 2026 年 11 月 6 日）公布其隐私政策。[8][9] 截至 2026-11-23，Cursor 持有 AIUC-1、ISO/IEC 27001:2022 和 ISO/IEC 42001:2023 认证以及 SOC 2 Type II 鉴证报告，可通过 `trust.cursor.com` 按需提供证书、报告和渗透测试执行摘要，并在同一信任门户公布次级处理方（subprocessor）列表。[4][8][9] Cursor 承诺至少每年进行一次第三方渗透测试。[8]
 
-Cursor 声明每位次级处理方均接受供应商风险评估与年度复审，基础设施访问遵循最小权限原则并配合多因素认证（MFA）与日志监控，同时严格执行模型黑名单以确保请求绝不会路由至被禁用的模型。[8] Cursor 声明不在中国使用或维护基础设施，也不聘用总部位于中国的公司担任次级处理方。[8] 向 `security-reports@cursor.com` 报告的安全漏洞会在五个工作日内予以确认回复，重大安全事件将通过电子邮件通知受影响用户。[8] Cursor 亦使用 Bugbot 和 Cloud Agent 自动化来监控自身代码库。[8]
+Cursor 声明每位次级处理方均接受供应商风险评估与年度复审，基础设施访问遵循最小权限原则并配合多因素认证（MFA）与日志监控，同时严格执行模型黑名单以确保请求绝不会路由至被禁用的模型。[8] Cursor 声明不在中国使用或维护基础设施，也不聘用总部位于中国的公司担任次级处理方。[8] 向 `security-reports@cursor.com` 报告的安全漏洞会在五个工作日内予以确认回复，重大安全事件将通过电子邮件通知受影响用户。[8] Cursor 亦使用 Bugbot 和 Cloud Agent 自动化来帮助保护自身代码库。[8]
 
-Privacy Mode 适用于 Free、个人、Teams 和 Enterprise 全部方案，用户可在设置中自行开启，管理员也可在组织范围内强制实施，新加入的团队成员会自动继承团队设置。[4][8] Cursor 声明在开启 Privacy Mode 后，依托技术控制和提供商合同条款，用户代码数据不会被 Cursor 或其模型提供商用于训练，且 Voice Chat 以零数据留存方式运行。[4][7][8] 根据隐私政策，Anysphere, Inc. 负责个人账户，而由雇主配发、Anysphere 担任数据处理方的商业账户则受客户协议约束。[9] Anysphere 声明除非被标记用于安全审查、由用户明确作为反馈报告或经用户明确批准，否则输入（Inputs）和建议（Suggestions）不会用于训练模型；同时声明不会故意收集基因、生物特征、健康或宗教数据，也不向 18 岁以下用户提供服务。[9] 用户可直接从设置仪表板删除账户。[8]
+Cursor 表示任何人（包括免费用户）都可使用 Privacy Mode，用户可在设置中自行开启，团队或企业管理员也可开启，新加入的团队成员会自动继承团队设置。[4][8] Cursor 声明在开启 Privacy Mode 后，依托技术控制和提供商合同条款，用户代码数据不会被 Cursor 或其模型提供商用于训练，且 Voice Chat 以零数据留存方式运行。[4][7][8] 根据隐私政策，Anysphere, Inc. 负责个人账户，而由雇主配发、Anysphere 担任数据处理方的商业账户则受客户协议约束。[9] Anysphere 声明除非被标记用于安全审查、由用户明确作为反馈报告或经用户明确批准，否则输入（Inputs）和建议（Suggestions）不会用于训练模型；同时声明不会故意收集基因、生物特征、健康或宗教数据，也不向 18 岁以下用户提供服务。[9] 用户可直接从设置仪表板删除账户。[8]
 
 面向组织级部署，Cursor 在文档中列出了 SAML/OIDC SSO、SCIM 置备、合规与审计日志、服务账号、移动设备管理（MDM）部署、数据加密与客户托管加密密钥（CMEK）、自动运行与浏览器及网络控制，以及针对代码仓库、模型、MCP 服务器和 Grok Bot 的访问控制。[4][8]
 
@@ -151,9 +151,9 @@ Privacy Mode 适用于 Free、个人、Teams 和 Enterprise 全部方案，用�
 
 Cursor 由 Anysphere, Inc. 创建，该公司成立于 2022 年，并于 2024 年参加了 [OpenAI](https://mimirwiki.com/zh/wiki/openai) 的创业加速器项目。[1][9] 2024 年底，Anysphere 以 25 亿美元投前估值融资 1 亿美元。[2] 2025 年初，OpenAI 及其他潜在买家曾就收购事宜接洽 Anysphere，Anysphere 拒绝了这些要约。[2]
 
-据 TechCrunch 报道，Anysphere 的年化经常性收入（ARR）于 2025 年 4 月中旬达到 3 亿美元，据 Bloomberg 和 TechCrunch 引述的消息人士称，到 2025 年 6 月 5 日已突破 5 亿美元。[2] 2025 年 6 月 5 日，TechCrunch 报道称 Anysphere 以 99 亿美元估值完成了 9 亿美元 C 轮融资（一年内的第三次融资），由老股东 Thrive Capital 领投，Andreessen Horowitz、Accel 和 DST Global 参投。[1][2] 当时，Cursor 提供两周免费试用，试用后可转为每月 20 美元的 Pro 或每月 40 美元的商业订阅，并同步推出了企业版许可。[2] 2025 年底，Anysphere 又追加融资 23 亿美元，估值达到约 290 亿美元。[1]
+据 TechCrunch 报道，Anysphere 的年化经常性收入（ARR）于 2025 年 4 月中旬达到 3 亿美元，据 Bloomberg 和 TechCrunch 引述的消息人士称，到 2025 年 6 月 5 日已突破 5 亿美元。[2] 2025 年 6 月 5 日，TechCrunch 报道称 Anysphere 以 99 亿美元估值完成了 9 亿美元 C 轮融资（一年内的第三次融资），由老股东 Thrive Capital 领投，Andreessen Horowitz、Accel 和 DST Global 参投。[1][2] 当时，Cursor 提供两周免费试用，试用后可转为每月 20 美元的 Pro 或每月 40 美元的商业订阅，并同步推出了企业版许可。[2] 2025 年底，Anysphere 又追加融资 23 亿美元；TechCrunch 称其在 SpaceX 交易公布前的估值约为 290 亿美元。[1]
 
-2026 年初，xAI 聘用了 Cursor 的两名资深工程负责人，2026 年 4 月 Business Insider 报道称 xAI 同意向 Cursor 出租数据中心算力容量。[1] 在 SpaceX 提出收购要约之前，Cursor 原本接近完成一轮由 Andreessen Horowitz、Thrive Capital 和 Nvidia 等投资者参与、估值 500 亿美元的 20 亿美元融资。[1] 2026 年 4 月，在 SpaceX 首次公开募股（IPO）前夕，SpaceX 与 Cursor 宣布达成协议：SpaceX 要么以 600 亿美元股票收购 Cursor，要么在交易未能推进时支付 100 亿美元分手费。[1]
+2026 年初，xAI 聘用了 Cursor 的两名资深工程负责人，2026 年 4 月 Business Insider 报道称 xAI 同意向 Cursor 出租数据中心算力容量。[1] 在 SpaceX 提出收购要约之前，Cursor 原本接近完成一轮由 Andreessen Horowitz、Thrive Capital 和 Nvidia 等投资者参与、估值 500 亿美元的 20 亿美元融资。[1] 2026 年 4 月，在 SpaceX 首次公开募股（IPO）前夕，SpaceX 宣布了一项协议：SpaceX 要么以 600 亿美元股票收购 Cursor，要么在交易未能推进时支付 100 亿美元分手费。[1]
 
 2026 年 6 月 16 日，在 SpaceX 以每股 135 美元完成 IPO 数日后，且继 SpaceX 此前于 2026 年与 xAI 合并之后，TechCrunch 报道称 SpaceX 已同意以 600 亿美元股票收购 Cursor，SpaceX 表示交易预计于 2026 年第三季度完成。[1] 截至 2026-11-23，Cursor 的公开网站和文档显示其已与 [Grok](https://mimirwiki.com/zh/wiki/grok) 和 X 一同整合至由 X Subscription Corp. 销售的 The X Subscription 中，链接至 SpaceXSI Subscription Terms 并将 SpaceXSI 列为受支持的模型提供商，同时在网站版权声明和隐私政策中仍保留 `Anysphere, Inc.`。[4][5][8][9]
 
@@ -173,7 +173,7 @@ Cursor 由 Anysphere, Inc. 创建，该公司成立于 2022 年，并于 2024 �
 
 ### Cursor 的 Privacy Mode 和安全认证如何运作？
 
-截至 2026-11-23，Cursor 持有 AIUC-1、ISO/IEC 27001:2022 和 ISO/IEC 42001:2023 认证以及 SOC 2 Type II 鉴证报告，相关证明文件可在 trust.cursor.com 申请获取。所有方案均提供 Privacy Mode，管理员可在团队范围内强制启用；开启后不会将用户代码数据用于模型训练，且 Voice Chat 以零数据留存方式运行。 [7][8][9]
+截至 2026-11-23，Cursor 持有 AIUC-1、ISO/IEC 27001:2022 和 ISO/IEC 42001:2023 认证以及 SOC 2 Type II 鉴证报告，相关证明文件可在 trust.cursor.com 申请获取。任何人（包括免费用户）都可使用 Privacy Mode，管理员可在团队范围内强制启用；开启后不会将用户代码数据用于模型训练，且 Voice Chat 以零数据留存方式运行。 [7][8][9]
 
 ### Cursor 包含哪些自定义与自动化功能？
 
@@ -200,7 +200,7 @@ Cursor 由成立于 2022 年的 Anysphere, Inc. 开发。2026 年 6 月 16 日�
 - 2024: Anysphere 参加 OpenAI 创业加速器项目，并于 2024 年底以 25 亿美元投前估值融资 1 亿美元。 [1][2]
 - 2025-04: TechCrunch 报道称 Anysphere 年化经常性收入达到 3 亿美元。 [2]
 - 2025-06-05: TechCrunch 报道称 Anysphere 完成由 Thrive Capital 领投、估值 99 亿美元的 9 亿美元 C 轮融资，年化经常性收入突破 5 亿美元。 [1][2]
-- 2026-04: SpaceX 与 Cursor 宣布达成 600 亿美元股票收购或 100 亿美元分手费协议，同期有报道称 xAI 向 Cursor 出租数据中心容量。 [1]
+- 2026-04: SpaceX 宣布了以 600 亿美元股票收购 Cursor 或支付 100 亿美元分手费的协议，同期有报道称 xAI 向 Cursor 出租数据中心容量。 [1]
 - 2026-06-16: TechCrunch 报道称 SpaceX 同意以 600 亿美元股票收购 Cursor，预计于 2026 年第三季度完成交割。 [1]
 - 2026-08-25: Cursor 更新安全文档，列明 AIUC-1、ISO/IEC 27001:2022、ISO/IEC 42001:2023 认证以及 SOC 2 Type II 鉴证报告。 [8]
 - 2026-10-13: Cursor 上线包含 20 多项合作伙伴集成的 Origin App Marketplace，并开放公开提交。 [7]
@@ -223,4 +223,4 @@ Cursor 由成立于 2022 年的 Anysphere, Inc. 开发。2026 年 6 月 16 日�
 
 ## 引用本页
 
-Mimirwiki. "Cursor." 版本 4fb2d1df, 2026-11-23. https://mimirwiki.com/zh/wiki/cursor
+Mimirwiki. "Cursor." 版本 d713a2ad, 2026-11-25. https://mimirwiki.com/zh/wiki/cursor

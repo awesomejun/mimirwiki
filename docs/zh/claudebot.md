@@ -4,8 +4,8 @@ subtitle: "Anthropic 运营的用于为 AI 模型训练采集公开网络内容�
 canonical_url: https://mimirwiki.com/zh/wiki/claudebot
 language: zh
 page_class: entity
-revision_sha256: 2882e9a102b86995dbeb94459ce450aede45192ed18b6db5f96b46bc477705c3
-date_modified: 2026-11-23
+revision_sha256: 147eeb853adbfa19734dddacc684f99f0bd4551a9d61ac5d48931902cb6a24b5
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 10
 alternates:
@@ -82,7 +82,7 @@ ClaudeBot 遵循发布在 [robots.txt](https://mimirwiki.com/zh/wiki/robots-txt)
 
 ## Anthropic 训练数据与隐私政策中的 ClaudeBot
 
-ClaudeBot 采集的公开网络内容属于 Anthropic 隐私政策及证券申报文件中所述训练数据的一个类别。[2][4][5] 于 2026 年 9 月 10 日生效的 Anthropic 个人隐私政策（Individual Privacy Policy）列举了为训练 Anthropic 模型而收集或接收的六类数据来源。[5]
+ClaudeBot 采集的公开网络内容属于 Anthropic 隐私政策及证券申报文件中所述训练数据的一个类别。[2][4][5] 于 2026 年 9 月 10 日生效的 Anthropic 隐私政策（Privacy Policy）列举了为训练 Anthropic 模型而收集或接收的六类数据来源。[5]
 
 - 通过互联网公开获取的信息
 - 通过与第三方企业签订商业协议获得的数据集
@@ -91,13 +91,13 @@ ClaudeBot 采集的公开网络内容属于 Anthropic 隐私政策及证券申�
 - 被标记用于安全性、安保或政策审查的材料
 - Anthropic 内部生成的数据
 
-Anthropic 个人隐私政策声明其不适用于代表企业客户（如 Enterprise 账户）处理的内容，此类内容受客户协议管辖，并指引读者查阅单独的非用户隐私政策（Non-User Privacy Policy），以了解大语言模型如何使用第三方个人数据进行训练以及适用于非用户的选择。[5] 即使个人消费者用户通过账户设置选择退出模型训练，Anthropic 也表示，如果对话被标记用于安全审查或通过反馈机制明确举报，其输入和输出仍可能被用于模型改进。[5]
+Anthropic 隐私政策声明其不适用于代表企业客户（如 Enterprise 账户）处理的内容，此类内容受客户协议管辖，并指引读者查阅单独的非用户隐私政策（Non-User Privacy Policy），以了解大语言模型如何使用第三方个人数据进行训练以及适用于非用户的选择。[5] 即使个人消费者用户通过账户设置选择退出模型训练，Anthropic 也表示，如果对话被标记用于安全审查或通过反馈机制明确举报，其输入和输出仍可能被用于模型改进。[5]
 
 在 2026 年 11 月 17 日向 [SEC EDGAR](https://mimirwiki.com/zh/wiki/sec-edgar) 提交的 Form S-1 第 3 号修订文件（注册号 333-299633）中，Anthropic, PBC 表示其在模型开发的预训练（pre-training）和后训练（post-training）阶段均使用公开可用的互联网信息、获许可或委托制作的第三方数据集以及由其自身模型生成的合成数据。[2] 该申报文件指出，网络抓取或网络爬虫技术、图书扫描及其他方法是 Anthropic 采集公开信息的途径。[2] Anthropic 在同一份文件中表示，尽管其采取了旨在遵守适用法律、`robots.txt` 声明以及付费墙或登录等技术措施的步骤，但这些努力未必总能成功，且 Anthropic 可能无法核实所采集的材料是否受隐私、版权或其他知识产权法律保护。[2]
 
 ## ClaudeBot 与 Cloudflare 的 AI 爬虫控制机制
 
-ClaudeBot 运行在更广泛的网络基础设施环境中，[Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare) 等网络服务商在该环境中对自动化流量进行分类，并为网站所有者提供针对 AI 爬虫的精细化控制。[6][7] 在 2025 年 7 月 1 日发布的一份涵盖 2024 年 5 月至 2025 年 5 月的流量分析中，Cloudflare 报告称总体爬虫流量增长了 18%，其中 [OpenAI](https://mimirwiki.com/zh/wiki/openai) 的 [GPTBot](https://mimirwiki.com/zh/wiki/gptbot) 增长 305%，Googlebot 增长 96%。[9]
+ClaudeBot 运行在更广泛的网络基础设施环境中，[Cloudflare](https://mimirwiki.com/zh/wiki/cloudflare) 等网络服务商在该环境中对自动化流量进行分类，并为网站所有者提供针对 AI 爬虫的精细化控制。[6][7] 在 2025 年 7 月 1 日发布的一份涵盖 2024 年 5 月至 2025 年 5 月的流量分析中，Cloudflare 报告称AI 与搜索爬虫流量增长了 18%，其中 [OpenAI](https://mimirwiki.com/zh/wiki/openai) 的 [GPTBot](https://mimirwiki.com/zh/wiki/gptbot) 增长 305%，Googlebot 增长 96%。[9]
 
 2026 年 7 月 1 日，Cloudflare 面向所有客户套餐推出 AI 流量选项，使网站所有者能够分别区分和管理 Search、Agent 和 Training 流量。[7] 同日，Cloudflare 更新了其 BotBase 分类体系，使每个被追踪的机器人都按行为和运营方访问类型进行分类，以 `Direct` 与 `Intermediary` 访问字段取代此前 Verified bots 与签名代理之间的划分。[6]
 
@@ -111,7 +111,7 @@ ClaudeBot 运行在更广泛的网络基础设施环境中，[Cloudflare](https:
 
 根据 Cloudflare 的 Verified bots 文档（最后更新于 2026 年 11 月 12 日），获得 Verified 状态需要通过加密的 [Web Bot Auth](https://mimirwiki.com/zh/wiki/web-bot-auth) 签名、带有稳定用户代理的公开 IP 列表或反向 DNS 实现确定性自我识别，并配合非滥用行为，以合理请求速率遵循 `robots.txt` 及抓取指令。[6] `AI Crawler`、`AI Search` 和 `AI Assistant` 等旧版 WAF 类别仍与更新后的分类体系并行保留，以维持向后兼容性。[6] Cloudflare 将不遵守 `robots.txt` 中 `crawl-delay` 指令列为可能导致 AI 爬虫被移出其全局允许列表的政策违规行为，并指出某组织反复违规或其旗下不同机器人合规不一致，可能导致该组织运营的所有机器人的 Verified 状态被撤销。[6]
 
-2026 年 9 月 15 日，Cloudflare 还宣布了额外控制措施及 Accountable 认定，允许网站所有者在禁止 AI 训练的同时保持搜索可发现性，并与 Apple、Google 和 Microsoft 建立了共享模型。[8]
+2026 年 9 月 15 日，Cloudflare 还宣布了 Disallow AI Training 设置及 Accountable 认定，允许网站所有者在禁止 AI 训练的同时保持搜索索引，并表示 Apple、Google 和 Microsoft 已遵守或承诺遵守该设置。[8]
 
 ## ClaudeBot 相关发布者报告与抓取诉讼
 
@@ -158,19 +158,19 @@ Anthropic, PBC 在 2026 年 11 月 17 日向 SEC 提交的 Form S-1 第 3 号修
 - 2024 年 7 月，iFixit 首席执行官 Kyle Wiens 报告称，ClaudeBot 在 24 小时内向 iFixit 服务器发送了近 100 万次请求，在 iFixit 向 robots.txt 添加 crawl-delay 指令后停止。 [3]
 - Anthropic 于 2026 年 9 月 10 日生效的隐私政策将公开可用的互联网信息列为用于训练 Anthropic 模型的六个数据来源之一。 [5]
 - Anthropic, PBC 在 2026 年 11 月 17 日向 SEC 提交的 Form S-1 第 3 号修订文件（S-1/A-3）中披露，Reddit, Inc. v. Anthropic PBC 诉讼在 2026 年 3 月 30 日被发回州法院后仍处于未决状态。 [2]
-- Cloudflare 于 2025 年 7 月 1 日发布的爬虫分析报告称，2024 年 5 月至 2025 年 5 月期间总体爬虫流量增长了 18%，其中 GPTBot 流量增长 305%，Googlebot 流量增长 96%。 [9]
+- Cloudflare 于 2025 年 7 月 1 日发布的爬虫分析报告称，2024 年 5 月至 2025 年 5 月期间AI 与搜索爬虫流量增长了 18%，其中 GPTBot 流量增长 305%，Googlebot 流量增长 96%。 [9]
 
 ## 时间线
 
 - 2022-09: IETF 发布 RFC 9309，将机器人排除协议（robots.txt）标准化。 [1]
 - 2024-04: Linux Mint 网络论坛将一次网站宕机归因于 ClaudeBot 抓取活动造成的服务器负载压力。 [3]
 - 2024-07-25: The Verge 报道称，ClaudeBot 在 24 小时内向 iFixit 发送了近 100 万次请求，在 iFixit 向 robots.txt 添加 crawl-delay 指令后停止。 [3]
-- 2025-07-01: Cloudflare 发布爬虫流量分析报告，指出 2024 年 5 月至 2025 年 5 月总体爬虫流量增长 18%，其中 GPTBot 增长 305%，Googlebot 增长 96%。 [9]
+- 2025-07-01: Cloudflare 发布爬虫流量分析报告，指出 2024 年 5 月至 2025 年 5 月AI 与搜索爬虫流量增长 18%，其中 GPTBot 增长 305%，Googlebot 增长 96%。 [9]
 - 2025-07-03: Anthropic 在指控其不当访问 Reddit 帖子的 Reddit, Inc. v. Anthropic PBC 诉讼中提交了移送联邦法院的通知。 [2]
 - 2026-03-30: Reddit, Inc. v. Anthropic PBC 一案由联邦法院发回州法院。 [2]
 - 2026-07-01: Cloudflare 面向所有客户推出独立的 Search、Agent 和 Training 流量选项，并在 BotBase 中新增 Direct 与 Intermediary 访问标签。 [6][7]
-- 2026-09-10: Anthropic 更新后的个人隐私政策生效，将公开可用的互联网信息列为六个模型训练数据来源之一。 [5]
-- 2026-09-15: Cloudflare 宣布与 Apple、Google 和 Microsoft 建立共享模型，推出允许在禁止 AI 训练的同时保持搜索可发现性的控制措施及 Accountable 认定。 [8]
+- 2026-09-10: Anthropic 更新后的隐私政策生效，将公开可用的互联网信息列为六个模型训练数据来源之一。 [5]
+- 2026-09-15: Cloudflare 宣布推出允许在禁止 AI 训练的同时保持搜索索引的 Disallow AI Training 设置及 Accountable 认定，并表示 Apple、Google 和 Microsoft 已遵守或承诺遵守该设置。 [8]
 - 2026-10-30: Anthropic 开始识别基于 IETF aipref 工作组草案的机器可读禁止 AI 训练偏好信号。 [4]
 - 2026-11-17: Anthropic, PBC 向 SEC 提交 Form S-1 第 3 号修订文件，披露网络抓取方法、robots.txt 合规局限性以及未决抓取诉讼。 [2]
 
@@ -189,4 +189,4 @@ Anthropic, PBC 在 2026 年 11 月 17 日向 SEC 提交的 Form S-1 第 3 号修
 
 ## 引用本页
 
-Mimirwiki. "ClaudeBot." 版本 2882e9a1, 2026-11-23. https://mimirwiki.com/zh/wiki/claudebot
+Mimirwiki. "ClaudeBot." 版本 147eeb85, 2026-11-25. https://mimirwiki.com/zh/wiki/claudebot

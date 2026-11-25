@@ -4,8 +4,8 @@ subtitle: "开发 DeepSeek-V4、DeepSeek-R1 与 DeepSeek-V3 基础模型的中�
 canonical_url: https://mimirwiki.com/zh/wiki/deepseek
 language: zh
 page_class: entity
-revision_sha256: 9ee56a50558eb2469325a0c10058548df05567a3da22ff46bd1993669cabb370
-date_modified: 2026-11-23
+revision_sha256: 8decd9b114b2d2a573529edac49bd0ea0b67180fe1d29e4f41f278287ff9651f
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -21,76 +21,80 @@ translations:
 
 # DeepSeek
 
-> 截至 2026 年 11 月，DeepSeek 开发者平台提供两款主力 100 万 Token 上下文模型：deepseek-flash（DeepSeek-V4.1-Flash-1017）与 deepseek-v4-pro（DeepSeek-V4-Pro-0813），两者均支持最高 384K 输出 Token，并配套高峰与低谷动态定价、原生 Search/Fetch/OCR/Speech API 以及免费内置服务器端联网搜索功能（于 2026 年 11 月 18 日启用）。此前的开放权重里程碑包括 DeepSeek-V3（总参数 671B / 激活参数 37B）以及采用 MIT 许可证的 DeepSeek-R1 推理模型系列。
+> 截至 2026 年 11 月，DeepSeek 的 API 列出两个模型，上下文长度均为 1M，最大输出均为 384K：deepseek-flash（DeepSeek-V4.1-Flash-1017）与 deepseek-v4-pro（DeepSeek-V4-Pro-0813）。低谷时段价格为高峰时段的一半，另单独提供 Search、Fetch、OCR 与语音 API。自 2026 年 11 月 18 日 12:00（北京时间）起，调用模型时触发的服务器端搜索与网页抓取工具调用不再计费。此前的模型包括 DeepSeek-V3（总参数 671B，激活参数 37B）与推理模型 DeepSeek-R1。
 
-DeepSeek（官方运营实体为杭州深度求索人工智能有限公司与北京深度求索人工智能有限公司，英文名为 Hangzhou DeepSeek Artificial Intelligence Co., Ltd. 与 Beijing DeepSeek Artificial Intelligence Co., Ltd.）是一家成立于 2023 年、总部位于中国浙江省杭州市的人工智能研究公司。该公司研发基于多头潜在注意力（Multi-head Latent Attention，MLA）与 DeepSeekMoE 架构的开放权重及 API 托管大语言模型，涵盖 DeepSeek-V2、DeepSeek-V3、强化学习推理模型 DeepSeek-R1 以及多模态 DeepSeek-V4 系列。
+DeepSeek 是一家中国人工智能公司，其服务由注册地址位于中国的 Hangzhou DeepSeek Artificial Intelligence Co., Ltd. 提供。该公司研发基于多头潜在注意力（Multi-head Latent Attention，MLA）与 DeepSeekMoE 架构的大语言模型，包括 DeepSeek-V2、DeepSeek-V3、强化学习推理模型 DeepSeek-R1，以及通过 API 提供的 DeepSeek-V4 系列。
 
-**别名:** 杭州深度求索人工智能有限公司, 北京深度求索人工智能有限公司, 深度求索, Hangzhou DeepSeek Artificial Intelligence Co., Ltd., Beijing DeepSeek Artificial Intelligence Co., Ltd.
+**别名:** 杭州深度求索人工智能有限公司, 深度求索, Hangzhou DeepSeek Artificial Intelligence Co., Ltd.
 
 ## 关键事实
 
-- **运营实体:** 杭州深度求索人工智能有限公司 / 北京深度求索人工智能有限公司 [7]
-- **当前生产模型:** deepseek-flash（DeepSeek-V4.1-Flash-1017）与 deepseek-v4-pro（DeepSeek-V4-Pro-0813） (截至 2026-11-23) [1]
-- **上下文与最大输出:** 1M Token 上下文窗口；最高 384K 最大输出 Token (截至 2026-11-23) [1]
+- **运营实体:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd. [7]
+- **当前生产模型:** deepseek-flash（DeepSeek-V4.1-Flash-1017）与 deepseek-v4-pro（DeepSeek-V4-Pro-0813） (截至 2026-11-25) [1]
+- **上下文与最大输出:** 1M Token 上下文窗口；最高 384K 最大输出 Token (截至 2026-11-25) [1]
 - **开放权重推理里程碑:** DeepSeek-R1（MIT 许可证，2025 年 1 月）与 DeepSeek-V3（671B/37B MoE，2024 年 12 月） [4]
 
 ## 事实摘要
 
-- **官方名称:** 杭州深度求索人工智能有限公司（Hangzhou DeepSeek Artificial Intelligence Co., Ltd.） [7]
-- **总部地点:** 中国浙江省杭州市 [7]
+- **官方名称:** Hangzhou DeepSeek Artificial Intelligence Co., Ltd. [7]
+- **注册地址:** 中国 [7]
 - **核心架构:** 多头潜在注意力（MLA）、DeepSeekMoE、多 Token 预测（MTP） [5]
 - **旗舰 API 模型（2026 年 11 月）:** DeepSeek-V4.1-Flash-1017（deepseek-flash）、DeepSeek-V4-Pro-0813（deepseek-v4-pro） [1]
-- **API 上下文与输出:** 1,000,000 上下文 Token / 384,000 最大输出 Token（默认 64K） [1]
+- **API 上下文与输出:** 上下文长度 1M / 最大输出 384K [1]
 - **API 并发限制:** 2,500 并发请求（deepseek-flash）；500 并发请求（deepseek-v4-pro） [2]
-- **多模态与工具 API:** Search API、Fetch API、OCR API、Speech-to-Text API、服务器端 search_Option [1]
+- **多模态与工具 API:** Search API、Fetch API、文件解析与 OCR API、语音识别（ASR）、语音合成（TTS） [1]
 - **开源许可证（R1）:** MIT 许可证（DeepSeek-R1 及蒸馏模型的权重与代码） [4]
 
 ## DeepSeek 公司概况与架构基础
 
-DeepSeek 通过杭州深度求索人工智能有限公司（Hangzhou DeepSeek Artificial Intelligence Co., Ltd.）与北京深度求索人工智能有限公司（Beijing DeepSeek Artificial Intelligence Co., Ltd.）开展运营，构建前沿基础模型与开发者 API。[1][7] 该实验室在 2024 年至 2025 年间发布了详尽的架构技术报告，并以远低于常规前沿模型算力预算的训练成本推出了开放权重混合专家（Mixture-of-Experts，MoE）模型与推理模型，从而获得全球关注。[4][5][6]
+DeepSeek 的服务由 Hangzhou DeepSeek Artificial Intelligence Co., Ltd. 提供。[7] 该公司发布了关于模型架构的技术报告，并推出了混合专家（Mixture-of-Experts，MoE）模型与推理模型。[4][5][6]
 
-DeepSeek 的基础模型建立在 **DeepSeek-V2**（2024 年 5 月，总参数量 236B，每 Token 激活 21B 参数）所引入、并在 **DeepSeek-V3**（2024 年 12 月，总参数量 671B，每 Token 激活 37B 参数）中进一步扩展的两项核心结构创新之上。[5][6] - **多头潜在注意力（Multi-head Latent Attention，MLA）**：在推理阶段将键值（KV）缓存表征压缩为低秩潜在向量，大幅降低长上下文序列的内存带宽开销。[5][6] - **无辅助损失负载均衡的 DeepSeekMoE（Auxiliary-Loss-Free Load Balancing）**：将细粒度路由专家与共享专家相结合，以动态偏置调整路由策略取代会损害模型性能的辅助负载均衡损失，并引入多 Token 预测（Multi-Token Prediction，MTP）训练目标。[5] DeepSeek-V3 采用 FP8 混合精度训练，仅消耗 278.8 万 H800 GPU 小时即完成了 14.8 万亿 Token 的预训练。[5]
+DeepSeek 的模型采用两种架构，它们在 **DeepSeek-V2**（2024 年 5 月，总参数 236B，每个 Token 激活 21B）中提出，并在 **DeepSeek-V3**（2024 年 12 月，总参数 671B，每个 Token 激活 37B）中沿用。[5][6] - **多头潜在注意力（MLA）**：将键值（KV）缓存压缩为潜在向量，使推理更高效。[5][6] - **DeepSeekMoE**：采用路由专家与共享专家的稀疏计算结构。DeepSeek-V3 在此基础上加入了无辅助损失的负载均衡策略和多 Token 预测（MTP）训练目标。[5][6] DeepSeek-V3 采用 FP8 混合精度训练，在 14.8 万亿 Token 上完成预训练；技术报告称完整训练需要 278.8 万 H800 GPU 小时。[5]
 
 ## DeepSeek-R1 与面向推理的强化学习
 
-2025 年 1 月，DeepSeek 在宽松的 MIT 许可证下发布了 **DeepSeek-R1** 与 **DeepSeek-R1-Zero**，证明无需预先进行监督微调（SFT），仅依靠大规模纯强化学习（RL）即可在语言模型中诱发自我验证、反思以及长思维链（Chain-of-Thought，CoT）推理能力。[4]
+2025 年 1 月 22 日提交至 arXiv 的 DeepSeek-R1 论文介绍了 **DeepSeek-R1** 与 **DeepSeek-R1-Zero**。论文报告称，不依赖人工标注的推理轨迹，仅通过纯强化学习（RL）即可激发大语言模型的推理能力，训练过程中出现了自我反思与验证等行为。[4]
 
-`DeepSeek-R1-Zero` 直接在基座模型上应用组相对策略优化（Group Relative Policy Optimization，GRPO），而 `DeepSeek-R1` 则结合冷启动 CoT 数据与拒绝采样开展了多阶段训练，以消除语言混杂现象并提升可读性，在数学、编程竞赛及 STEM 推理基准测试中达到了与 OpenAI-o1-1217 相当的表现。[4] DeepSeek 还同步发布了 6 款基于 DeepSeek-R1 输出蒸馏而成的稠密模型（参数规模覆盖 1.5B 至 70B，基于 Qwen 与 Llama 架构）。[4]
+`DeepSeek-R1-Zero` 在强化学习之前不经过监督微调阶段，使用组相对策略优化（GRPO）训练。由于该模型存在可读性差和语言混杂的问题，`DeepSeek-R1` 采用了结合冷启动思维链数据、拒绝采样、强化学习与监督微调的多阶段训练。[4] 论文报告称，其在数学任务上与 OpenAI-o1-1217 表现相当，而在偏工程的编码任务上 OpenAI-o1-1217 优于 DeepSeek-R1。[4] DeepSeek 还公开了 6 个基于 Qwen 与 Llama 模型的蒸馏模型，参数规模从 1.5B 到 70B。[4]
 
 ## DeepSeek-V4 系列、定价与开发者平台（2026 年）
 
-至 2026 年底，DeepSeek 已将其生产 API 平台（`api.deepseek.com`）全面迁移至多模态 **DeepSeek-V4** 架构，将对话、推理（`thinking`）、视觉与音频输入整合进两款主力模型端点，均提供 **1,000,000 Token 上下文窗口**与最高 **384,000 最大输出 Token**（默认 64K）。[1]
+DeepSeek 的 API（`api.deepseek.com`）于 2026 年 4 月 24 日加入 DeepSeek-V4-Pro 与 DeepSeek-V4-Flash。[3] 截至 2026 年 11 月，定价页面列出两个模型，**上下文长度均为 1M**，**最大输出均为 384K**。[1]
 
-| API 模型别名 | 底层模型版本 | 高峰时段定价（08:00-24:00 UTC+8） | 低谷时段定价（00:00-08:00 UTC+8） | 并发限制 |
-| --- | --- | --- | --- | --- |
-| `deepseek-flash` | `DeepSeek-V4.1-Flash-1017`（2026 年 10 月 20 日发布） | 输入：$0.03/M（缓存命中），$0.30/M（未命中，<=256K），$0.50/M（>256K）；输出：$1.50-$2.50/M | 输入：$0.03/M（缓存命中），$0.15/M（<=256K），$0.25/M（>256K）；输出：$0.75-$1.25/M | 2,500 并发请求 [1][2] |
-| `deepseek-v4-pro` | `DeepSeek-V4-Pro-0813`（2026 年 8 月 19 日发布） | 输入：$0.20/M（缓存命中），$2.00/M（未命中，<=256K），$4.00/M（>256K）；输出：$12.00-$18.00/M | 输入：$0.20/M（缓存命中），$1.00/M（<=256K），$2.00/M（>256K）；输出：$6.00-$9.00/M | 500 并发请求 [1][2] |
+| 模型名称 | 模型版本 | 输入，缓存命中（高峰 / 低谷） | 输入，缓存未命中（高峰 / 低谷） | 输出（高峰 / 低谷） | 并发限制 |
+| --- | --- | --- | --- | --- | --- |
+| `deepseek-flash` | `DeepSeek-V4.1-Flash-1017` | $0.006 / $0.003 | $0.30 / $0.15 | $1.20 / $0.60 | 2,500 |
+| `deepseek-v4-pro` | `DeepSeek-V4-Pro-0813` | $0.044 / $0.022 | $1.32 / $0.66 | $3.96 / $1.98 | 500 |
 
-两款模型均支持文本、图像与音频输入，并输出文本、JSON 模式、函数工具调用以及推理内容（Reasoning Content）。[1] 当提交音频 Token 时，音频输入按更高的每百万 Token 费率计费（依据上下文区间与缓存状态，`deepseek-flash` 为 $1.00-$4.00/M，`deepseek-v4-pro` 为 $7.00-$28.00/M）。[1] 旧版别名如 `deepseek-chat` 与 `deepseek-reasoner` 会自动映射至 V4 系列端点。[1]
+价格按每 100 万 Token 计。[1][2] 低谷时段价格为高峰时段的一半。高峰时段为周一至周五的 01:00-04:00 与 06:00-10:00（UTC），中国法定节假日除外。[1] 两个模型均支持思考模式与非思考模式、JSON 输出、工具调用、Responses API 和 Anthropic 格式的 API。视觉能力由 `deepseek-flash` 支持，`deepseek-v4-pro` 不支持。[1] 旧模型名称 `deepseek-v4-flash` 与 `deepseek-v4-flash-vision-exp` 的请求由 DeepSeek-V4.1-Flash-1017 处理。[1]
+
+更新日志显示，DeepSeek-V4-Pro 正式版（GA）于 2026 年 8 月 13 日上线，DeepSeek-V4.1-Flash 于 2026 年 9 月 10 日发布，并于 2026 年 10 月 17 日升级为 DeepSeek-V4.1-Flash-1017。[3]
 
 ## DeepSeek 内置联网搜索、实用工具 API 与速率治理
 
-2026 年 11 月 18 日，DeepSeek 升级了其对话补全（chat completions）端点，通过 `search_Option` 参数支持原生服务器端联网搜索与网页抓取，并在推广阶段免除按次计费的额外搜索费用。[1][3] 面向独立的程序化流水线，DeepSeek 还开放了专用实用工具端点。[1] - **Search API**：每 1,000 次查询 $5.00。[1] - **Fetch API**：每 1,000 次 URL 抓取 $1.00。[1] - **OCR API**：每 1,000 页文档 $1.00。[1] - **Speech-to-Text API**：每小时音频转录 $0.10。[1]
+2026 年 11 月 13 日，DeepSeek 在 `deepseek-flash` 模型的 Messages、Responses 与 Chat Completions API 中向开发者开放了联网搜索、文件输入、URL 读取与模型安全功能，并将 Search 与 Fetch、OCR、ASR、TTS 作为独立 API 提供。[3] 定价页面列出的价格如下。[1] - **Search API（文本）**：每 1,000 次成功请求 $0.75。[1] - **Fetch API**：每 1,000 次成功请求 $0.75。[1] - **文件解析与 OCR API**：每 1,000 页 $0.225。[1] - **语音识别（ASR）**：每小时音频标价 $0.116，限时价格 $0.058。[1] - **语音合成（TTS）**：每 1 万字符标价 $0.45，限时价格 $0.225。[1]
 
-与按消费等级实施严格每分钟 Token 数（TPM）或每分钟请求数（RPM）上限的服务商不同，DeepSeek 主要通过活跃在途并发数进行吞吐量治理（`deepseek-flash` 为 2,500 并发请求，`deepseek-v4-pro` 为 500 并发请求）。[2] 为防止多租户应用遭到单一用户滥用，开发者可在 API 请求载荷中传入 `user_id` 参数，将单个终端用户 ID 限制在 **10 个并发请求**以内（超限时仅对该 `user_id` 返回 HTTP `429 Too Many Requests`，而不影响所属组织的全局并发池）。[2]
+自 2026 年 11 月 18 日 12:00（北京时间，UTC+8）起，调用模型时触发的服务器端搜索与网页抓取工具调用不再计费。返回的结果会加入模型上下文，并按模型 Token 用量计费。[1]
+
+并发限制按账户计算：`deepseek-flash` 为 2,500，`deepseek-v4-pro` 为 500。超出限制的请求会收到 HTTP 429 错误码。[2] 开发者可以传入 `user_id` 参数，DeepSeek 将其用于内容安全隔离、KVCache 隔离与调度隔离。对普通 API 用户，所有 `user_id` 合并计算并发限制。对已提高并发额度的账户，每个 `user_id` 也分别适用 `deepseek-flash` 2,500、`deepseek-v4-pro` 500 的限制。[2]
 
 ## DeepSeek 数据治理与隐私政策
 
-根据 DeepSeek 的《隐私政策》，其面向消费者的网页端、移动应用及平台服务由杭州深度求索人工智能有限公司与北京深度求索人工智能有限公司运营。[7] 通过 DeepSeek 服务收集的用户提示词、上传文件、对话历史及交互日志均存储于位于**中华人民共和国**境内的服务器，并受中国数据保护与网络安全法律法规管辖。[7] 除在适用情况下选择退出外，消费者交互数据可能会被用于安全合规审查及服务改进；而 DeepSeek-V2、DeepSeek-V3 与 DeepSeek-R1 的开放权重发行版则允许企业在私有基础设施上自托管模型权重，实现零外部遥测。[4][5][7]
+根据 DeepSeek 隐私政策（最近更新于 2026 年 2 月 10 日），服务由注册地址位于中国的 Hangzhou DeepSeek Artificial Intelligence Co., Ltd. 提供并控制。[7] 政策称，DeepSeek 在**中华人民共和国**收集、处理和存储个人数据。[7] 政策还列出了拒绝将个人数据用于训练模型或优化技术的权利。[7] 开发者使用 DeepSeek 开放平台开发的应用，其终端用户的个人数据不适用该政策；政策说明，此时运营应用的开发者是个人数据处理的控制者。[7] DeepSeek 还公开了 DeepSeek-R1 的蒸馏模型。[4]
 
 ## 常见问题
 
 ### 截至 2026 年 11 月，DeepSeek 的主要 API 模型有哪些？
 
-DeepSeek 提供两款主力生产级 API 模型：面向高吞吐多模态推理与编程的 deepseek-flash（底层为 DeepSeek-V4.1-Flash-1017），以及面向前沿深度推理的 deepseek-v4-pro（底层为 DeepSeek-V4-Pro-0813）。两款模型均具备 100 万 Token 上下文窗口，并支持最高 384,000 最大输出 Token。 [1][3]
+DeepSeek 的 API 列出两个模型：deepseek-flash（模型版本 DeepSeek-V4.1-Flash-1017）与 deepseek-v4-pro（模型版本 DeepSeek-V4-Pro-0813）。两者的上下文长度均为 1M，最大输出均为 384K。 [1][3]
 
 ### DeepSeek 的高峰与低谷时段 API 定价是如何运作的？
 
-DeepSeek 在低谷时段（北京时间 / UTC+8 的 00:00 至 08:00，对应 UTC 16:00 至 00:00）对缓存未命中的输入 Token 与输出 Token 提供 50% 的价格折扣。例如，deepseek-flash 的输入（<=256K 上下文，缓存未命中）从高峰时段的 $0.30/M Token 降至低谷时段的 $0.15/M Token，输出则从 $1.50/M 降至 $0.75/M。 [1]
+低谷时段价格为高峰时段的一半。高峰时段为周一至周五的 01:00-04:00 与 06:00-10:00（UTC），中国法定节假日除外，其余时间均为低谷时段。例如，deepseek-flash 的缓存未命中输入在高峰时段为每 100 万 Token $0.30，低谷时段为 $0.15；输出在高峰时段为 $1.20，低谷时段为 $0.60。 [1]
 
 ### DeepSeek 的 API 速率限制与 user_id 并发控制是如何运作的？
 
-DeepSeek 对在途并发请求设置了上限：deepseek-flash 为 2,500 个并发请求，deepseek-v4-pro 为 500 个并发请求。如果开发者在 user_id 字段中传入终端用户标识符，DeepSeek 会将该特定 user_id 限制为 10 个并发请求，从而避免单个终端用户耗尽开发者的全账户配额。 [2]
+并发限制按账户计算：deepseek-flash 为 2,500，deepseek-v4-pro 为 500。超出限制的请求会收到 HTTP 429 错误码。对普通 API 用户，所有 user_id 合并计算并发限制。对已提高并发额度的账户，每个 user_id 也分别适用 deepseek-flash 2,500、deepseek-v4-pro 500 的限制。 [2]
 
 ### DeepSeek-V3 与 DeepSeek-R1 凭借哪些架构创新受到关注？
 
@@ -98,14 +102,14 @@ DeepSeek-V3（总参数量 671B，每 Token 激活 37B）结合了用于低内�
 
 ### 发送至 DeepSeek 托管网页应用与 API 的数据存储在哪里？
 
-根据 DeepSeek 的《隐私政策》，传输至 DeepSeek 托管消费者服务与平台服务的数据存储于中华人民共和国境内的服务器，并由杭州深度求索人工智能有限公司管理。需要本地数据驻留的机构可以自托管 DeepSeek 的开放权重模型。 [4][7]
+DeepSeek 隐私政策称，其在中华人民共和国收集、处理和存储个人数据，服务由 Hangzhou DeepSeek Artificial Intelligence Co., Ltd. 提供并控制。开发者使用 DeepSeek 开放平台开发的应用，其终端用户不适用该政策。 [4][7]
 
 ## 可引用的句子
 
 - DeepSeek 的生产 API 端点 deepseek-flash（DeepSeek-V4.1-Flash-1017）与 deepseek-v4-pro（DeepSeek-V4-Pro-0813）均支持 1M Token 上下文窗口及最高 384K 输出 Token。 [1][3]
-- DeepSeek 在 00:00 至 08:00 UTC+8（16:00-00:00 UTC）期间，为 deepseek-flash 与 deepseek-v4-pro 的缓存未命中输入及输出提供 50% 的低谷定价折扣。 [1]
-- DeepSeek 将 API 并发上限设定为 deepseek-flash 2,500 个在途请求、deepseek-v4-pro 500 个在途请求，并支持通过 user_id 参数为单个终端用户设置 10 个并发请求的可选上限。 [2]
-- 2026 年 11 月 18 日，DeepSeek 在其对话补全 API 中启用了内置服务器端联网搜索与网页抓取功能，免收额外搜索查询费用。 [1][3]
+- DeepSeek API 的低谷时段价格为高峰时段的一半；高峰时段为周一至周五的 01:00-04:00 与 06:00-10:00（UTC），中国法定节假日除外。 [1]
+- DeepSeek API 的账户级并发限制为 deepseek-flash 2,500、deepseek-v4-pro 500；对已提高额度的账户，每个 user_id 也适用相同的限制。 [2]
+- 自 2026 年 11 月 18 日 12:00（北京时间）起，调用 DeepSeek 模型时触发的服务器端搜索与网页抓取工具调用不再计费，返回的结果按模型 Token 用量计费。 [1]
 - DeepSeek-V3 是一款总参数量 671B、每 Token 激活 37B 参数、基于 14.8T Token 训练的混合专家模型；DeepSeek-R1 则于 2025 年 1 月在 MIT 许可证下发布。 [4][5]
 
 ## 时间线
@@ -113,20 +117,20 @@ DeepSeek-V3（总参数量 671B，每 Token 激活 37B）结合了用于低内�
 - 2024-05: DeepSeek 发布 DeepSeek-V2 技术报告，引入多头潜在注意力（MLA）及 236B/21B MoE 架构。 [6]
 - 2024-12: DeepSeek 发布 DeepSeek-V3，该模型为 671B 参数（激活 37B）的混合专家模型，采用 FP8 精度在 14.8 万亿 Token 上完成预训练。 [5]
 - 2025-01: DeepSeek 在开源 MIT 许可证下发布 DeepSeek-R1、DeepSeek-R1-Zero 及 6 款蒸馏推理模型。 [4]
-- 2026-08-19: DeepSeek 在其 API 平台上线 DeepSeek-V4-Pro-0813（deepseek-v4-pro），支持 1M 上下文以及文本、图像与音频多模态输入。 [1][3]
-- 2026-10-20: DeepSeek 部署 DeepSeek-V4.1-Flash-1017，作为高吞吐 deepseek-flash 端点的底层模型。 [1][3]
-- 2026-11-18: DeepSeek 在其对话补全 API 中启用内置服务器端联网搜索与网页抓取功能，且不收取额外搜索费用。 [1][3]
+- 2026-08-13: DeepSeek-V4-Pro 正式版（GA）在 App、网页端与 API 上线（模型名称 deepseek-v4-pro）。 [1][3]
+- 2026-10-17: DeepSeek V4.1 Flash 升级为 DeepSeek-V4.1-Flash-1017（模型名称 deepseek-flash）。 [1][3]
+- 2026-11-18: 自北京时间 12:00 起，调用模型时触发的服务器端搜索与网页抓取工具调用不再计费。 [1]
 
 ## 来源
 
-1. DeepSeek API Models & Pricing (deepseek-flash, deepseek-v4-pro, Search, Fetch, OCR, Speech). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/pricing (访问于 2026-11-23; tier 3: official site)
-2. DeepSeek API Rate Limits and Concurrency Controls (user_id Isolation). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/rate_limit (访问于 2026-11-23; tier 3: official site)
-3. DeepSeek API Change Log and Release Notes (2025-2026). DeepSeek Platform Documentation. 发布于 2026-11-18. https://api-docs.deepseek.com/updates (访问于 2026-11-23; tier 3: official site)
+1. DeepSeek API Models & Pricing (deepseek-flash, deepseek-v4-pro, Search, Fetch, OCR, Speech). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/pricing (访问于 2026-11-25; tier 3: official site)
+2. DeepSeek API Rate Limits and Concurrency Controls (user_id Isolation). DeepSeek Platform Documentation. https://api-docs.deepseek.com/quick_start/rate_limit (访问于 2026-11-25; tier 3: official site)
+3. DeepSeek API Change Log and Release Notes (2025-2026). DeepSeek Platform Documentation. 发布于 2026-11-13. https://api-docs.deepseek.com/updates (访问于 2026-11-25; tier 3: official site)
 4. DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning (arXiv:2501.12948). DeepSeek-AI / arXiv. 发布于 2025-01-22. https://arxiv.org/abs/2501.12948 (访问于 2026-11-23; tier 2: academic or news)
 5. DeepSeek-V3 Technical Report (arXiv:2412.19437). DeepSeek-AI / arXiv. 发布于 2024-12-27. https://arxiv.org/abs/2412.19437 (访问于 2026-11-23; tier 2: academic or news)
 6. DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model (arXiv:2405.04434). DeepSeek-AI / arXiv. 发布于 2024-05-07. https://arxiv.org/abs/2405.04434 (访问于 2026-11-23; tier 2: academic or news)
-7. DeepSeek Privacy Policy. Hangzhou DeepSeek Artificial Intelligence Co., Ltd.. https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html (访问于 2026-11-23; tier 3: official site)
+7. DeepSeek Privacy Policy. Hangzhou DeepSeek Artificial Intelligence Co., Ltd.. https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html (访问于 2026-11-25; tier 3: official site)
 
 ## 引用本页
 
-Mimirwiki. "DeepSeek." 版本 9ee56a50, 2026-11-23. https://mimirwiki.com/zh/wiki/deepseek
+Mimirwiki. "DeepSeek." 版本 8decd9b1, 2026-11-25. https://mimirwiki.com/zh/wiki/deepseek

@@ -4,8 +4,8 @@ subtitle: "全身型重症筋無力症に対する補体C5標的低分子干渉R
 canonical_url: https://mimirwiki.com/ja/wiki/cemdisiran
 language: ja
 page_class: entity
-revision_sha256: dcc69c4bb28e28f28dd70b21b7a02b6af34e7b23c7848f593c1e44e84a35040f
-date_modified: 2026-11-23
+revision_sha256: c2d1da19a740c4e65da0b0d6b367e59b95204507feb96944e1cd05273c0be251
+date_modified: 2026-11-25
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
 source_count: 7
 alternates:
@@ -32,16 +32,16 @@ Cemdisiran（販売名：Livsayis）は、アルナイラム・ファーマシ�
 - **販売名・開発元:** Livsayis（Regeneron Pharmaceuticals, Inc.；Alnylam Pharmaceuticals創製） [1]
 - **FDA承認・申請情報:** 2026年11月18日承認（NDA 221251、Type 1新規分子化合物、優先審査） (時点 2026-11-18) [1]
 - **承認適応症:** 抗AChR抗体陽性の成人における全身型重症筋無力症（gMG） [2]
-- **用法・用量および安全管理プログラム:** 12週間ごとに600 mgを皮下投与（189 mg/mLバイアル）；枠組み警告およびLivsayis REMS適用 [3]
+- **用法・用量および安全管理プログラム:** 3か月ごとに合計567 mgを皮下投与（189 mg/mLバイアル）；枠組み警告およびLivsayis REMS適用 [3]
 
 ## ファクトシート
 
 - **一般名:** cemdisiran [1]
 - **販売名:** Livsayis [1]
 - **薬理学的分類:** 補体第5成分（C5）標的低分子干渉RNA（siRNA） [5]
-- **創製元・製造販売承認取得者:** Alnylam Pharmaceuticals創製；NDA取得者はRegeneron Pharmaceuticals（CIK 0000872589） [5]
+- **創製元・製造販売承認取得者:** Alnylam Pharmaceuticals創製；NDA取得者はRegeneron Pharmaceuticals [5]
 - **FDA申請番号:** NDA 221251（2026年11月18日承認；2026年新薬承認第55号） [2]
-- **剤形・含量:** 皮下投与用単回投与バイアル注射液 189 mg/mL（600 mgを12週間ごとに投与） [1]
+- **剤形・含量:** 皮下投与用単回投与バイアル注射液 189 mg/mL [1]
 - **主要な臨床試験:** 第3相NIMBLE試験（NCT05070858） [4]
 - **枠組み警告・REMS:** 重篤な髄膜炎菌感染症（Neisseria meningitidis）；Livsayis REMS必須 [3]
 
@@ -49,15 +49,15 @@ Cemdisiran（販売名：Livsayis）は、アルナイラム・ファーマシ�
 
 **Cemdisiran**（販売名：**Livsayis**、英語発音：*liv-SAY-iss*）は、**抗アセチルコリン受容体（AChR）抗体陽性**の成人患者における**全身型重症筋無力症（gMG）**の治療を適応とする処方用RNA干渉（RNAi）治療薬である。[1][2][3]
 
-**2026年11月18日**、米国食品医薬品局（FDA）は新薬承認申請**NDA 221251**を優先審査の下で承認した（FDA医薬品評価研究センターによる2026年の新薬承認第55号として記載されている）。[1][2] Cemdisiranはもともと**Alnylam Pharmaceuticals, Inc.**（NASDAQ: `ALNY`）によって創製され、第2相臨床試験まで進められた後、**Regeneron Pharmaceuticals, Inc.**（NASDAQ: `REGN`、SEC CIK `0000872589`）との戦略的提携にライセンス供与された。[5] 2024年に、リジェネロンが後期臨床開発、製造、およびグローバル商業化の単独責任を引き継いだ。[5] 2026年11月18日のFDA承認により、Livsayisは重症筋無力症に対する初のFDA承認siRNA治療薬、リジェネロンにとって初の承認siRNAおよび神経疾患治療薬、そしてアルナイラムのRNAiプラットフォームに由来する7番目のFDA承認治療薬となった（これによりリジェネロンからアルナイラムへの2,500万ドルのマイルストン支払いが発生し、さらに世界の純売上高に対する最大15%の段階的2桁ロイヤリティの対象となる）。[5][7]
+**2026年11月18日**、米国食品医薬品局（FDA）は新薬承認申請**NDA 221251**を優先審査の下で承認した（FDA医薬品評価研究センターによる2026年の新薬承認第55号として記載されている）。[1][2] Cemdisiranは**Alnylam Pharmaceuticals, Inc.**（Nasdaq: `ALNY`）によって創製され、同社が第2相開発段階まで進めた後、**Regeneron Pharmaceuticals, Inc.**とのRNAi提携の対象となった。[5] 2024年に、リジェネロンが開発、製造、および商業化の単独責任を引き継いだ。[5] 2026年11月18日のFDA承認により、Livsayisは重症筋無力症に対する初のFDA承認siRNA治療薬、リジェネロンにとって初の承認siRNAおよび神経疾患治療薬、そしてアルナイラムのRNAiプラットフォームに由来する7番目のFDA承認治療薬となった（リジェネロンとの契約に基づき、アルナイラムは承認に対して2,500万ドルの支払いを受け取る予定であり、世界の純売上高に対する最大15%の段階的2桁ロイヤリティを受け取る資格がある）。[5][7]
 
 ## Cemdisiranの作用機序と四半期ごとの皮下投与
 
-全身型重症筋無力症（gMG）は慢性自己免疫性神経筋疾患であり、病原性自己抗体（最も一般的にはシナプス後アセチルコリン受容体［AChR］に対する抗体）が神経筋接合部で古典的補体カスケードを活性化することで、膜侵襲複合体（MAC）の形成、シナプス後膜ひだの破壊、および衰弱性の骨格筋・球筋の筋力低下を引き起こす。[5][6]
+全身型重症筋無力症（gMG）は慢性自己免疫性神経筋疾患であり、免疫系が作る抗体が神経筋接合部で神経と筋肉の間の伝達を妨げ、筋力低下を引き起こす。[6] 抗アセチルコリン受容体（AChR）抗体陽性のgMGでは、補体系の活性化が神経筋接合部の損傷の一因となる。[5]
 
-血中を循環する補体第5成分（C5）タンパク質に結合するモノクローナル抗体やペプチド阻害薬とは異なり、cemdisiranは肝細胞内の上流で作用する*N*-アセチルガラクトサミン（GalNAc）結合型**低分子干渉RNA（siRNA）**である。[5][7] 皮下投与後、cemdisiranは**補体第5成分（C5）**をコードするメッセンジャーRNA（mRNA）に特異的に結合し、RNA誘導サイレンシング複合体（RISC）を介して触媒的切断を誘導することで、肝臓におけるC5タンパク質の合成を阻害する。[5][7]
+CemdisiranはC5タンパク質そのものを阻害するのではなく、肝臓でのC5合成を阻害する**低分子干渉RNA（siRNA）**である。[7] **補体第5成分（C5）**をコードするメッセンジャーRNA（mRNA）を分解し、血中のC5を低下させて終末補体の活性化を阻害する。[5][7]
 
-Livsayisは皮下注射用の単回投与バイアルに入った**189 mg/mL**の溶液として供給される。[1][3] RNAiによるmRNAサイレンシング効果は数か月間持続するため、cemdisiranの維持用法・用量は**12週間ごとに600 mgを皮下投与**（年4回）となっており、四半期ごとの投与スケジュールで承認された唯一のFDA承認gMG治療薬である。[5][6][7]
+Livsayisは皮下注射用の単回投与バイアルに入った**189 mg/mL**の溶液として供給される。[1][3] 患者向け医薬品ガイド（Medication Guide）には、医療従事者が**3か月ごとに合計567 mg**を2回の注射に分けて皮下投与すると記載されている。[3] 第3相試験ではcemdisiran 600 mgを12週間ごとに投与した。[7] Livsayisは、年4回の皮下投与で用いるFDA承認gMG治療薬として唯一のものである。[6][7]
 
 ## 第3相NIMBLE臨床試験（NCT05070858）におけるCemdisiranの有効性
 
@@ -67,15 +67,15 @@ NIMBLE試験の全体プロトコルでは、症候性gMGの成人患者288例�
 
 | NIMBLE有効性評価項目（24週時点） | Cemdisiran 600 mg 12週間ごと | プラセボ | プラセボ補正差・統計的有意性 |
 | --- | --- | --- | --- |
-| **主要評価項目：MG-ADL総スコアの変化量**（0-24点尺度） | **-4.5点**（最小二乗平均） | **-2.2点**（最小二乗平均） | **-2.3点**（95% CI：-3.6〜-1.0；$p = 0.0005$） [4][7] |
+| **主要評価項目：MG-ADL総スコアの変化量**（0-24点尺度） | **-4.5点**（最小二乗平均） | **-2.2点**（最小二乗平均） | **-2.3点**（95% CI：-3.6〜-1.0；$p = 0.0005$） [7] |
 | **MG-ADLレスポンダー率**（$\ge 3$点の改善） | **76.6%** | **44.1%** | 統計的に有意（$p < 0.001$） [7] |
 | **主要な副次評価項目：QMG総スコアの変化量** | **-4.2点** | **-1.5点** | **-2.8点**の差（$p = 0.0015$） [7] |
 
-重症筋無力症日常生活動作尺度（**MG-ADL**）における臨床的改善は、初回皮下投与後の**2週時点**という早期から認められ、12週間の投与間隔全体を通じて24週時点まで持続した。[7] NIMBLE試験には抗LRP4抗体陽性患者の一部も組み入れられていたが、FDAが承認した適応症は**抗AChR抗体陽性**の成人患者に限定されている。[2][7]
+リジェネロンによると、改善は早ければ**2週時点**で認められ、24週時点まで持続した。[7] NIMBLE試験には抗LRP4抗体陽性患者も組み入れられていたが、FDAが承認した適応症は**抗AChR抗体陽性**の成人患者に限定されている。[2][7]
 
 ## Livsayisの枠組み警告、髄膜炎菌感染リスクおよびLivsayis REMS
 
-終末補体阻害は莢膜を有する細菌に対する宿主防御能を低下させるため、LivsayisのFDA処方情報には、髄膜炎菌（*Neisseria meningitidis*）による**重篤かつ生命を脅かす髄膜炎菌感染症**に関する**枠組み警告（Boxed Warning）**が記載されている。[3][7] 髄膜炎菌性敗血症や髄膜炎は早期に認識・治療されなければ急速に致死的となり得るため、治療開始時に未解決の重篤な*Neisseria meningitidis*感染症を有する患者へのLivsayisの投与は禁忌である。[3][7]
+Livsayisには、髄膜炎菌（*Neisseria meningitidis*）による**重篤な髄膜炎菌感染症**に関する**枠組み警告（Boxed Warning）**が付されている。[3][7] 患者向け医薬品ガイドによると、髄膜炎菌感染症は早期に認識・治療されなければ急速に生命を脅かし、死に至ることがある。治療開始時に重篤な髄膜炎菌感染症を有する患者へのLivsayisの投与は禁忌である。[3][7]
 
 添付文書に定められた主な必須安全対策は以下の通りである。[3][7] - **ワクチン接種と予防投与**：患者はLivsayisの初回投与の**少なくとも2週間前**までに、髄膜炎菌ワクチン接種（血清群A、C、W、YおよびBを対象）を完了または更新しなければならない。未接種患者に対して緊急に治療を開始する必要がある場合は、**予防的抗菌薬投与**を併用しつつ、可能な限り速やかに必要なワクチンを接種する必要がある。[3][7] - **その他の莢膜細菌に関する注意事項**：添付文書では、肺炎球菌（*Streptococcus pneumoniae*）、インフルエンザ菌（*Haemophilus influenzae*）、および淋菌（*Neisseria gonorrhoeae*）を含むその他の莢膜病原体による感染症への易感染性上昇についても警告している。[7] - **Livsayis REMSプログラム**：Livsayisは、リスク評価・軽減戦略（**LIVSAYIS REMS**、`www.LIVSAYISREMS.com`）に基づく制限付き流通プログラムを通じてのみ入手可能である。[3] 処方医はプログラムに登録し、患者ガイド（Patient Guide）を用いて患者に説明を行う必要があり、患者は常に**患者安全カード（Patient Safety Card）**を携帯し、調剤薬局は調剤前にワクチン接種および予防投与の遵守状況を確認するための認証を受けなければならない。[3][7]
 
@@ -87,7 +87,7 @@ Livsayis（cemdisiran）は、抗アセチルコリン受容体（AChR）抗体�
 
 ### Cemdisiranは、重症筋無力症に用いられる他の補体阻害薬とどのように異なりますか？
 
-従来のgMG用補体阻害薬は血中のC5タンパク質に結合するモノクローナル抗体やペプチドであり、頻繁な点滴静注や注射が必要でした。これに対し、cemdisiranは肝臓でC5 mRNAをサイレンシングしてC5タンパク質の合成を阻害する低分子干渉RNA（siRNA）治療薬であり、年4回（12週間ごと）の皮下投与を可能にしています。 [5][6][7]
+CemdisiranはC5タンパク質そのものを阻害するのではなく、肝臓でC5 mRNAを分解してC5の合成を阻害する低分子干渉RNA（siRNA）治療薬です。年4回皮下投与し、この投与スケジュールのFDA承認gMG治療薬は本剤のみです。 [5][6][7]
 
 ### Cemdisiranの第3相NIMBLE試験の結果はどのようなものでしたか？
 
@@ -95,32 +95,32 @@ Livsayis（cemdisiran）は、抗アセチルコリン受容体（AChR）抗体�
 
 ### Livsayisの枠組み警告とREMS要件とは何ですか？
 
-Livsayisには、髄膜炎菌（Neisseria meningitidis）による重篤かつ生命を脅かす髄膜炎菌感染症に関する枠組み警告が付されています。患者はLivsayisの投与開始の少なくとも2週間前までに髄膜炎菌ワクチン接種を完了する（緊急開始の場合は予防的抗菌薬を投与する）必要があり、患者安全カードを携帯し、Livsayis REMSプログラムの認証を受けた処方医および薬局を通じてのみ薬剤を受け取ることができます。 [3][7]
+Livsayisには、髄膜炎菌（Neisseria meningitidis）による重篤な髄膜炎菌感染症に関する枠組み警告が付されています。患者はLivsayisの投与開始の少なくとも2週間前までに髄膜炎菌ワクチン接種を完了する（緊急開始の場合は予防的抗菌薬を投与する）必要があり、患者安全カードを携帯し、Livsayis REMSプログラムの認証を受けた処方医および薬局を通じてのみ薬剤を受け取ることができます。 [3][7]
 
 ### Cemdisiran（Livsayis）はどの企業が開発しましたか？
 
-Cemdisiranはアルナイラム・ファーマシューティカルズが自社のRNAiプラットフォームを用いて創製し、リジェネロン・ファーマシューティカルズにライセンス供与されました。リジェネロンが第3相開発を主導し、FDAの製造販売承認（NDA 221251）を保有しています。アルナイラムは2,500万ドルの承認マイルストンを受け取り、世界の純売上高に対して最大15%のロイヤリティを受け取る権利を有しています。 [1][5]
+Cemdisiranはアルナイラム・ファーマシューティカルズが創製して第2相開発段階まで進めた後、リジェネロン・ファーマシューティカルズとのRNAi提携の対象となりました。リジェネロンは2024年に開発、製造、商業化の単独責任を引き継ぎ、FDAの承認（NDA 221251）を保有しています。アルナイラムは承認に対して2,500万ドルの支払いを受け取る予定で、世界の純売上高に対して最大15%のロイヤリティを受け取る資格があります。 [1][5]
 
 ## 引用できる文
 
 - 米国FDAは2026年11月18日、抗AChR抗体陽性の成人全身型重症筋無力症の治療薬として、Livsayis（cemdisiran、NDA 221251）を優先審査の下で承認した。 [1][2][3]
-- Cemdisiranはアルナイラム・ファーマシューティカルズが創製し、リジェネロン・ファーマシューティカルズが商業化する補体第5成分（C5）標的siRNA治療薬であり、12週間ごと（年4回）に600 mgを皮下投与する。 [5][6][7]
+- Cemdisiranはアルナイラム・ファーマシューティカルズが創製し、リジェネロン・ファーマシューティカルズが商業化する補体第5成分（C5）標的siRNA治療薬であり、年4回皮下投与する。 [5][6][7]
 - 第3相NIMBLE試験（NCT05070858）において、cemdisiran単剤療法は24週時点のMG-ADL総スコアを-4.5点改善し（プラセボは-2.2点、プラセボ補正差-2.3点、p = 0.0005）、QMG総スコアもプラセボ補正で2.8点改善した（p = 0.0015）。 [4][7]
 - Livsayisには髄膜炎菌（Neisseria meningitidis）による重篤な髄膜炎菌感染症に関する枠組み警告が付されており、Livsayis REMSプログラムを通じた制限付き流通の対象となっている。 [3][7]
 
 ## 年表
 
 - 2021-12-14: リジェネロンが全身型重症筋無力症を対象にcemdisiranを評価する第3相NIMBLE試験（NCT05070858）を開始した。 [4]
-- 2024: リジェネロンがアルナイラムからcemdisiranの後期開発、製造、および商業化の単独責任を引き継いだ。 [5]
-- 2025-07-08: 第3相NIMBLE試験が24週時点の主要評価項目（MG-ADL）完了日に到達した。 [4]
+- 2024: リジェネロンがcemdisiranの開発、製造、および商業化の単独責任を引き継いだ。 [5]
+- 2025-07-08: 第3相NIMBLE試験が主要完了日（primary completion date）に到達した。 [4]
 - 2026-11-18: 米国FDAが抗AChR抗体陽性全身型重症筋無力症に対する初のsiRNA治療薬としてLivsayis（cemdisiran、NDA 221251）を承認した。 [1][2][3]
-- 2026-11-19: Livsayisがアルナイラム創製の7番目のFDA承認RNAi医薬品となったことを受け、アルナイラムがリジェネロンから2,500万ドルのFDA承認マイルストン支払いを受領すると発表した。 [5]
+- 2026-11-19: Livsayisがアルナイラム創製の7番目のFDA承認RNAi治療薬となったことを受け、アルナイラムが承認に対してリジェネロンから2,500万ドルの支払いを受け取る予定であると発表した。 [5]
 
 ## 出典
 
 1. openFDA Drugs@FDA Record for NDA 221251: LIVSAYIS (cemdisiran) 189 mg/mL Subcutaneous Vial. U.S. Food and Drug Administration (FDA). 公開 2026-11-18. https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA221251 (閲覧 2026-11-23; tier 1: government or public registry)
 2. Novel Drug Approvals for 2026 (No. 55: Livsayis / cemdisiran, Approved 11/18/2026). U.S. Food and Drug Administration (FDA). 公開 2026-11-18. https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026 (閲覧 2026-11-23; tier 1: government or public registry)
-3. LIVSAYIS (cemdisiran) Prescribing Information, Medication Guide, and REMS Safety Materials (NDA 221251). U.S. Food and Drug Administration (FDA) / Regeneron Pharmaceuticals, Inc.. 公開 2026-11-19. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221251s000lbl.pdf (閲覧 2026-11-23; tier 1: government or public registry)
+3. LIVSAYIS (cemdisiran) Medication Guide and REMS Document (NDA 221251). U.S. Food and Drug Administration (FDA) / Regeneron Pharmaceuticals, Inc.. 公開 2026-11-19. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221251s000lbl.pdf (閲覧 2026-11-23; tier 1: government or public registry)
 4. Efficacy and Safety of Pozelimab and Cemdisiran Combination Therapy and Cemdisiran Monotherapy in Patients With Symptomatic Generalized Myasthenia Gravis (NIMBLE, NCT05070858). ClinicalTrials.gov / U.S. National Library of Medicine. https://clinicaltrials.gov/study/NCT05070858 (閲覧 2026-11-23; tier 1: government or public registry)
 5. Alnylam Collaborator Regeneron Secures FDA Approval of Livsayis (cemdisiran), the Seventh FDA-Approved Therapeutic from Alnylam's RNAi Platform in Less Than Nine Years. Alnylam Pharmaceuticals, Inc.. 公開 2026-11-19. https://investors.alnylam.com/press-release?id=10d98b15-1f66-4478-a56b-acc5dfc93feb (閲覧 2026-11-23; tier 3: official site)
 6. FDA Approves Livsayis (cemdisiran) for Adults Living with Generalized Myasthenia Gravis. Muscular Dystrophy Association (MDA). 公開 2026-11-18. https://www.mda.org/press-releases/fda-approves-livsayis-cemdisiran-for-adults-living-with-generalized-myasthenia-gravis (閲覧 2026-11-23; tier 2: academic or news)
@@ -130,4 +130,4 @@ Cemdisiranはアルナイラム・ファーマシューティカルズが自社�
 
 ## このページを引用する
 
-Mimirwiki. "Cemdisiran（Livsayis）." 版 dcc69c4b, 2026-11-23. https://mimirwiki.com/ja/wiki/cemdisiran
+Mimirwiki. "Cemdisiran（Livsayis）." 版 c2d1da19, 2026-11-25. https://mimirwiki.com/ja/wiki/cemdisiran
