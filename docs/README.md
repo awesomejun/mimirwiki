@@ -1,11 +1,15 @@
 # Mimirwiki pages
 
-57 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
+62 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
 
 | Subject | English | 한국어 | 日本語 | 中文 | Español | Website |
 |---|---|---|---|---|---|---|
+| Aaron Rodgers<br><sub>American football quarterback for the Pittsburgh Steelers and four-time NFL MVP</sub> | [en](en/aaron-rodgers.md) | [ko](ko/aaron-rodgers.md) |  |  |  | [Open](https://mimirwiki.com/wiki/aaron-rodgers) |
 | Anthropic<br><sub>US artificial intelligence safety and research public benefit corporation (Nasdaq: ANT) developing Claude</sub> | [en](en/anthropic.md) | [ko](ko/anthropic.md) | [ja](ja/anthropic.md) | [zh](zh/anthropic.md) | [es](es/anthropic.md) | [Open](https://mimirwiki.com/wiki/anthropic) |
+| Arsenal FC<br><sub>English professional football club in north London competing in the Premier League and UEFA Champions League</sub> | [en](en/arsenal-fc.md) | [ko](ko/arsenal-fc.md) |  |  |  | [Open](https://mimirwiki.com/wiki/arsenal-fc) |
 | Asundexian<br><sub>Oral factor XIa inhibitor (Sunharbo) developed by Bayer for secondary ischemic stroke prevention</sub> | [en](en/asundexian.md) | [ko](ko/asundexian.md) | [ja](ja/asundexian.md) | [zh](zh/asundexian.md) | [es](es/asundexian.md) | [Open](https://mimirwiki.com/wiki/asundexian) |
+| Black Friday<br><sub>Annual U.S. retail shopping event centered on the Friday after Thanksgiving Day</sub> | [en](en/black-friday.md) | [ko](ko/black-friday.md) |  |  |  | [Open](https://mimirwiki.com/wiki/black-friday) |
+| Boston Celtics<br><sub>National Basketball Association franchise based in Boston, Massachusetts</sub> | [en](en/boston-celtics.md) | [ko](ko/boston-celtics.md) |  |  |  | [Open](https://mimirwiki.com/wiki/boston-celtics) |
 | Cemdisiran (Livsayis)<br><sub>Complement component 5 (C5)-directed small interfering RNA (siRNA) therapy for generalized myasthenia gravis</sub> | [en](en/cemdisiran.md) | [ko](ko/cemdisiran.md) | [ja](ja/cemdisiran.md) | [zh](zh/cemdisiran.md) | [es](es/cemdisiran.md) | [Open](https://mimirwiki.com/wiki/cemdisiran) |
 | ChatGPT<br><sub>Conversational AI application developed by OpenAI for chat, work tasks, web search, and software development</sub> | [en](en/chatgpt.md) | [ko](ko/chatgpt.md) | [ja](ja/chatgpt.md) | [zh](zh/chatgpt.md) | [es](es/chatgpt.md) | [Open](https://mimirwiki.com/wiki/chatgpt) |
 | Claude<br><sub>AI assistant and family of large language models developed by Anthropic, PBC</sub> | [en](en/claude.md) | [ko](ko/claude.md) | [ja](ja/claude.md) | [zh](zh/claude.md) | [es](es/claude.md) | [Open](https://mimirwiki.com/wiki/claude) |
@@ -16,6 +20,7 @@
 | Cloudflare Workers<br><sub>Serverless execution platform by Cloudflare running JavaScript, TypeScript, Python, Rust, and WebAssembly across V8 isolates and the workerd runtime</sub> | [en](en/cloudflare-workers.md) | [ko](ko/cloudflare-workers.md) | [ja](ja/cloudflare-workers.md) | [zh](zh/cloudflare-workers.md) | [es](es/cloudflare-workers.md) | [Open](https://mimirwiki.com/wiki/cloudflare-workers) |
 | Content Delivery Network<br><sub>Geographically distributed network of caching servers that delivers web content from locations close to end users</sub> | [en](en/content-delivery-network.md) | [ko](ko/content-delivery-network.md) | [ja](ja/content-delivery-network.md) | [zh](zh/content-delivery-network.md) | [es](es/content-delivery-network.md) | [Open](https://mimirwiki.com/wiki/content-delivery-network) |
 | Cursor<br><sub>AI coding agent and software development environment created by Anysphere, Inc. and bundled in The X Subscription</sub> | [en](en/cursor.md) | [ko](ko/cursor.md) | [ja](ja/cursor.md) | [zh](zh/cursor.md) | [es](es/cursor.md) | [Open](https://mimirwiki.com/wiki/cursor) |
+| Dallas Mavericks<br><sub>National Basketball Association franchise based in Dallas, Texas</sub> | [en](en/dallas-mavericks.md) | [ko](ko/dallas-mavericks.md) |  |  |  | [Open](https://mimirwiki.com/wiki/dallas-mavericks) |
 | Dancing with the Stars<br><sub>American dance competition television series on ABC and Disney+ produced by BBC Studios</sub> | [en](en/dancing-with-the-stars.md) | [ko](ko/dancing-with-the-stars.md) |  |  |  | [Open](https://mimirwiki.com/wiki/dancing-with-the-stars) |
 | DeepSeek<br><sub>Chinese artificial intelligence research laboratory developing the DeepSeek-V4, DeepSeek-R1, and DeepSeek-V3 foundation models</sub> | [en](en/deepseek.md) | [ko](ko/deepseek.md) | [ja](ja/deepseek.md) | [zh](zh/deepseek.md) | [es](es/deepseek.md) | [Open](https://mimirwiki.com/wiki/deepseek) |
 | ESCAPADE<br><sub>NASA and UC Berkeley twin-orbiter heliophysics mission studying Mars's magnetosphere and atmospheric loss</sub> | [en](en/escapade.md) | [ko](ko/escapade.md) | [ja](ja/escapade.md) | [zh](zh/escapade.md) | [es](es/escapade.md) | [Open](https://mimirwiki.com/wiki/escapade) |
