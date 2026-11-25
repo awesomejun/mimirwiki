@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/chatgpt
   ko: https://mimirwiki.com/ko/wiki/chatgpt
   ja: https://mimirwiki.com/ja/wiki/chatgpt
+  es: https://mimirwiki.com/es/wiki/chatgpt
 ---
 
 # ChatGPT

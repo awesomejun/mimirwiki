@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/gemini-4-neon
   ko: https://mimirwiki.com/ko/wiki/gemini-4-neon
   zh: https://mimirwiki.com/zh/wiki/gemini-4-neon
+  es: https://mimirwiki.com/es/wiki/gemini-4-neon
 ---
 
 # Gemini 4 Neon

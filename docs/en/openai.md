@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/openai
   ja: https://mimirwiki.com/ja/wiki/openai
   zh: https://mimirwiki.com/zh/wiki/openai
+  es: https://mimirwiki.com/es/wiki/openai
 ---
 
 # OpenAI

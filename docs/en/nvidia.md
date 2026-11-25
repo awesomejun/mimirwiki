@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/nvidia
   ja: https://mimirwiki.com/ja/wiki/nvidia
   zh: https://mimirwiki.com/zh/wiki/nvidia
+  es: https://mimirwiki.com/es/wiki/nvidia
 ---
 
 # NVIDIA

@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/anthropic
   ko: https://mimirwiki.com/ko/wiki/anthropic
   ja: https://mimirwiki.com/ja/wiki/anthropic
+  es: https://mimirwiki.com/es/wiki/anthropic
 ---
 
 # Anthropic

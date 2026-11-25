@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/nvidia
   ko: https://mimirwiki.com/ko/wiki/nvidia
   ja: https://mimirwiki.com/ja/wiki/nvidia
+  es: https://mimirwiki.com/es/wiki/nvidia
 ---
 
 # 英伟达（NVIDIA）

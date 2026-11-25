@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/gpt-6-2
   ja: https://mimirwiki.com/ja/wiki/gpt-6-2
   zh: https://mimirwiki.com/zh/wiki/gpt-6-2
+  es: https://mimirwiki.com/es/wiki/gpt-6-2
 ---
 
 # GPT-6.2

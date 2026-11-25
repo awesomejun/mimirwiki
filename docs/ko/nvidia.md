@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/nvidia
   ja: https://mimirwiki.com/ja/wiki/nvidia
   zh: https://mimirwiki.com/zh/wiki/nvidia
+  es: https://mimirwiki.com/es/wiki/nvidia
 ---
 
 # 엔비디아 (NVIDIA)

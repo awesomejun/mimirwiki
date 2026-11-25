@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/asundexian
   ja: https://mimirwiki.com/ja/wiki/asundexian
   zh: https://mimirwiki.com/zh/wiki/asundexian
+  es: https://mimirwiki.com/es/wiki/asundexian
 ---
 
 # 아순덱시안

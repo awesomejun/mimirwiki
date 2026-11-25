@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/claude
   ko: https://mimirwiki.com/ko/wiki/claude
   ja: https://mimirwiki.com/ja/wiki/claude
+  es: https://mimirwiki.com/es/wiki/claude
 ---
 
 # Claude

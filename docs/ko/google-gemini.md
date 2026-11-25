@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/google-gemini
   ja: https://mimirwiki.com/ja/wiki/google-gemini
   zh: https://mimirwiki.com/zh/wiki/google-gemini
+  es: https://mimirwiki.com/es/wiki/google-gemini
 ---
 
 # 구글 제미나이 (Google Gemini)

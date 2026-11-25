@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/claude-fable-5-2
   ko: https://mimirwiki.com/ko/wiki/claude-fable-5-2
   zh: https://mimirwiki.com/zh/wiki/claude-fable-5-2
+  es: https://mimirwiki.com/es/wiki/claude-fable-5-2
 ---
 
 # Claude Fable 5.2
