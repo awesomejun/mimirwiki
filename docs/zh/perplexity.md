@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/perplexity
   ko: https://mimirwiki.com/ko/wiki/perplexity
   ja: https://mimirwiki.com/ja/wiki/perplexity
+  es: https://mimirwiki.com/es/wiki/perplexity
 ---
 
 # Perplexity

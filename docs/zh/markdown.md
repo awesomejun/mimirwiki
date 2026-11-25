@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/markdown
   ko: https://mimirwiki.com/ko/wiki/markdown
   ja: https://mimirwiki.com/ja/wiki/markdown
+  es: https://mimirwiki.com/es/wiki/markdown
 ---
 
 # Markdown

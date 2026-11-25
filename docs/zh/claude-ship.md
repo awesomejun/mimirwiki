@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/claude-ship
   ko: https://mimirwiki.com/ko/wiki/claude-ship
   ja: https://mimirwiki.com/ja/wiki/claude-ship
+  es: https://mimirwiki.com/es/wiki/claude-ship
 ---
 
 # Claude Ship

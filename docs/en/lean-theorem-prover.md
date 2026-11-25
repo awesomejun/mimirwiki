@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/lean-theorem-prover
   ja: https://mimirwiki.com/ja/wiki/lean-theorem-prover
   zh: https://mimirwiki.com/zh/wiki/lean-theorem-prover
+  es: https://mimirwiki.com/es/wiki/lean-theorem-prover
 ---
 
 # Lean (Theorem Prover)

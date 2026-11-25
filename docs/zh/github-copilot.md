@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/github-copilot
   ko: https://mimirwiki.com/ko/wiki/github-copilot
   ja: https://mimirwiki.com/ja/wiki/github-copilot
+  es: https://mimirwiki.com/es/wiki/github-copilot
 ---
 
 # GitHub Copilot

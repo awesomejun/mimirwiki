@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/claudebot
   ja: https://mimirwiki.com/ja/wiki/claudebot
   zh: https://mimirwiki.com/zh/wiki/claudebot
+  es: https://mimirwiki.com/es/wiki/claudebot
 ---
 
 # ClaudeBot

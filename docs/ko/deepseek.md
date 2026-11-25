@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/deepseek
   ja: https://mimirwiki.com/ja/wiki/deepseek
   zh: https://mimirwiki.com/zh/wiki/deepseek
+  es: https://mimirwiki.com/es/wiki/deepseek
 ---
 
 # 딥시크 (DeepSeek)

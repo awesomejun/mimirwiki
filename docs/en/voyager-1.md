@@ -15,6 +15,7 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/voyager-1.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/voyager-1
+  es: https://mimirwiki.com/es/wiki/voyager-1
 ---
 
 # Voyager 1

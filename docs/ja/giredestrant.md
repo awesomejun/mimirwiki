@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/giredestrant
   ko: https://mimirwiki.com/ko/wiki/giredestrant
   zh: https://mimirwiki.com/zh/wiki/giredestrant
+  es: https://mimirwiki.com/es/wiki/giredestrant
 ---
 
 # ギレデストラント（Wilserdly）

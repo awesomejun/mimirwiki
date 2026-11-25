@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/json-rpc
   ja: https://mimirwiki.com/ja/wiki/json-rpc
   zh: https://mimirwiki.com/zh/wiki/json-rpc
+  es: https://mimirwiki.com/es/wiki/json-rpc
 ---
 
 # JSON-RPC

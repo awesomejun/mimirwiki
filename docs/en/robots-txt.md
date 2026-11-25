@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/robots-txt
   ja: https://mimirwiki.com/ja/wiki/robots-txt
   zh: https://mimirwiki.com/zh/wiki/robots-txt
+  es: https://mimirwiki.com/es/wiki/robots-txt
 ---
 
 # robots.txt

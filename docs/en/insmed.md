@@ -15,6 +15,7 @@ alternates:
   jsonld: https://mimirwiki.com/wiki/insmed.jsonld
 translations:
   ko: https://mimirwiki.com/ko/wiki/insmed
+  es: https://mimirwiki.com/es/wiki/insmed
 ---
 
 # Insmed Incorporated

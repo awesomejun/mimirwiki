@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/cemdisiran
   ko: https://mimirwiki.com/ko/wiki/cemdisiran
   ja: https://mimirwiki.com/ja/wiki/cemdisiran
+  es: https://mimirwiki.com/es/wiki/cemdisiran
 ---
 
 # Cemdisiran（Livsayis）

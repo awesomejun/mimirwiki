@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/microsoft-copilot
   ko: https://mimirwiki.com/ko/wiki/microsoft-copilot
   ja: https://mimirwiki.com/ja/wiki/microsoft-copilot
+  es: https://mimirwiki.com/es/wiki/microsoft-copilot
 ---
 
 # Microsoft Copilot

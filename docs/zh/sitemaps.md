@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/sitemaps
   ko: https://mimirwiki.com/ko/wiki/sitemaps
   ja: https://mimirwiki.com/ja/wiki/sitemaps
+  es: https://mimirwiki.com/es/wiki/sitemaps
 ---
 
 # 站点地图

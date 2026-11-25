@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/json-ld
   ko: https://mimirwiki.com/ko/wiki/json-ld
   ja: https://mimirwiki.com/ja/wiki/json-ld
+  es: https://mimirwiki.com/es/wiki/json-ld
 ---
 
 # JSON-LD

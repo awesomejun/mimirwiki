@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/spacex-starship
   ko: https://mimirwiki.com/ko/wiki/spacex-starship
   ja: https://mimirwiki.com/ja/wiki/spacex-starship
+  es: https://mimirwiki.com/es/wiki/spacex-starship
 ---
 
 # SpaceX 星舰（SpaceX Starship）

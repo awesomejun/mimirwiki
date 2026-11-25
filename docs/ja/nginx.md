@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/nginx
   ko: https://mimirwiki.com/ko/wiki/nginx
   zh: https://mimirwiki.com/zh/wiki/nginx
+  es: https://mimirwiki.com/es/wiki/nginx
 ---
 
 # nginx

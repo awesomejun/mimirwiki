@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/nginx
   ja: https://mimirwiki.com/ja/wiki/nginx
   zh: https://mimirwiki.com/zh/wiki/nginx
+  es: https://mimirwiki.com/es/wiki/nginx
 ---
 
 # 엔진엑스 (nginx)

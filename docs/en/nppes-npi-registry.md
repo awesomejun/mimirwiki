@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/nppes-npi-registry
   ja: https://mimirwiki.com/ja/wiki/nppes-npi-registry
   zh: https://mimirwiki.com/zh/wiki/nppes-npi-registry
+  es: https://mimirwiki.com/es/wiki/nppes-npi-registry
 ---
 
 # NPPES and the National Provider Identifier (NPI)

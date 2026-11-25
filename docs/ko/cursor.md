@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/cursor
   ja: https://mimirwiki.com/ja/wiki/cursor
   zh: https://mimirwiki.com/zh/wiki/cursor
+  es: https://mimirwiki.com/es/wiki/cursor
 ---
 
 # Cursor

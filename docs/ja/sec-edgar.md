@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/sec-edgar
   ko: https://mimirwiki.com/ko/wiki/sec-edgar
   zh: https://mimirwiki.com/zh/wiki/sec-edgar
+  es: https://mimirwiki.com/es/wiki/sec-edgar
 ---
 
 # SEC EDGAR

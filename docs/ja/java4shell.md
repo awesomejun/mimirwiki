@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/java4shell
   ko: https://mimirwiki.com/ko/wiki/java4shell
   zh: https://mimirwiki.com/zh/wiki/java4shell
+  es: https://mimirwiki.com/es/wiki/java4shell
 ---
 
 # Java4Shell (CVE-2026-114938)

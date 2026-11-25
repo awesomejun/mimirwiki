@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/gptbot
   ja: https://mimirwiki.com/ja/wiki/gptbot
   zh: https://mimirwiki.com/zh/wiki/gptbot
+  es: https://mimirwiki.com/es/wiki/gptbot
 ---
 
 # GPTBot

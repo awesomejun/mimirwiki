@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/web-bot-auth
   ja: https://mimirwiki.com/ja/wiki/web-bot-auth
   zh: https://mimirwiki.com/zh/wiki/web-bot-auth
+  es: https://mimirwiki.com/es/wiki/web-bot-auth
 ---
 
 # Web Bot Auth

@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/hreflang
   ja: https://mimirwiki.com/ja/wiki/hreflang
   zh: https://mimirwiki.com/zh/wiki/hreflang
+  es: https://mimirwiki.com/es/wiki/hreflang
 ---
 
 # hreflang

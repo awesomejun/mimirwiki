@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/model-context-protocol
   ko: https://mimirwiki.com/ko/wiki/model-context-protocol
   zh: https://mimirwiki.com/zh/wiki/model-context-protocol
+  es: https://mimirwiki.com/es/wiki/model-context-protocol
 ---
 
 # Model Context Protocol

@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/riemann-hypothesis
   ko: https://mimirwiki.com/ko/wiki/riemann-hypothesis
   ja: https://mimirwiki.com/ja/wiki/riemann-hypothesis
+  es: https://mimirwiki.com/es/wiki/riemann-hypothesis
 ---
 
 # 黎曼猜想

@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/sitemaps
   ja: https://mimirwiki.com/ja/wiki/sitemaps
   zh: https://mimirwiki.com/zh/wiki/sitemaps
+  es: https://mimirwiki.com/es/wiki/sitemaps
 ---
 
 # Sitemaps

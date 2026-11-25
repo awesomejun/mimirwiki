@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/rust-programming-language
   ko: https://mimirwiki.com/ko/wiki/rust-programming-language
   zh: https://mimirwiki.com/zh/wiki/rust-programming-language
+  es: https://mimirwiki.com/es/wiki/rust-programming-language
 ---
 
 # Rust（プログラミング言語）

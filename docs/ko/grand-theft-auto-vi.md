@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/grand-theft-auto-vi
   ja: https://mimirwiki.com/ja/wiki/grand-theft-auto-vi
   zh: https://mimirwiki.com/zh/wiki/grand-theft-auto-vi
+  es: https://mimirwiki.com/es/wiki/grand-theft-auto-vi
 ---
 
 # 그랜드 테프트 오토 VI (Grand Theft Auto VI)

@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/content-delivery-network
   ko: https://mimirwiki.com/ko/wiki/content-delivery-network
   ja: https://mimirwiki.com/ja/wiki/content-delivery-network
+  es: https://mimirwiki.com/es/wiki/content-delivery-network
 ---
 
 # 内容分发网络

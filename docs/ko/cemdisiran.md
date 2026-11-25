@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/cemdisiran
   ja: https://mimirwiki.com/ja/wiki/cemdisiran
   zh: https://mimirwiki.com/zh/wiki/cemdisiran
+  es: https://mimirwiki.com/es/wiki/cemdisiran
 ---
 
 # 셈디시란 (Cemdisiran, 상품명 리브세이스/Livsayis)

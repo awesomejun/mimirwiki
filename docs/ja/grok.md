@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/grok
   ko: https://mimirwiki.com/ko/wiki/grok
   zh: https://mimirwiki.com/zh/wiki/grok
+  es: https://mimirwiki.com/es/wiki/grok
 ---
 
 # Grok

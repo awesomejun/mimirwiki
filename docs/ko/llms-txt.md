@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/llms-txt
   ja: https://mimirwiki.com/ja/wiki/llms-txt
   zh: https://mimirwiki.com/zh/wiki/llms-txt
+  es: https://mimirwiki.com/es/wiki/llms-txt
 ---
 
 # llms.txt

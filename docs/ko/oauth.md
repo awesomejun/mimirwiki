@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/oauth
   ja: https://mimirwiki.com/ja/wiki/oauth
   zh: https://mimirwiki.com/zh/wiki/oauth
+  es: https://mimirwiki.com/es/wiki/oauth
 ---
 
 # OAuth

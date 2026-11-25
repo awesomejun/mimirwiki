@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/cloudflare-workers
   ko: https://mimirwiki.com/ko/wiki/cloudflare-workers
   ja: https://mimirwiki.com/ja/wiki/cloudflare-workers
+  es: https://mimirwiki.com/es/wiki/cloudflare-workers
 ---
 
 # Cloudflare Workers

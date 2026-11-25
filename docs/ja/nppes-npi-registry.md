@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/nppes-npi-registry
   ko: https://mimirwiki.com/ko/wiki/nppes-npi-registry
   zh: https://mimirwiki.com/zh/wiki/nppes-npi-registry
+  es: https://mimirwiki.com/es/wiki/nppes-npi-registry
 ---
 
 # NPPESと全米医療提供者識別子（NPI）

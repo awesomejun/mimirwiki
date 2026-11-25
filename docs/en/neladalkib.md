@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/neladalkib
   ja: https://mimirwiki.com/ja/wiki/neladalkib
   zh: https://mimirwiki.com/zh/wiki/neladalkib
+  es: https://mimirwiki.com/es/wiki/neladalkib
 ---
 
 # Neladalkib (Nelkarmi)

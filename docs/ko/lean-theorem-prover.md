@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/lean-theorem-prover
   ja: https://mimirwiki.com/ja/wiki/lean-theorem-prover
   zh: https://mimirwiki.com/zh/wiki/lean-theorem-prover
+  es: https://mimirwiki.com/es/wiki/lean-theorem-prover
 ---
 
 # Lean 정리 증명기 (Lean 4)

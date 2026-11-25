@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/cloudflare
   ja: https://mimirwiki.com/ja/wiki/cloudflare
   zh: https://mimirwiki.com/zh/wiki/cloudflare
+  es: https://mimirwiki.com/es/wiki/cloudflare
 ---
 
 # Cloudflare

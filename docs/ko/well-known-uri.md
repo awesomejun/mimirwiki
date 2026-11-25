@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/well-known-uri
   ja: https://mimirwiki.com/ja/wiki/well-known-uri
   zh: https://mimirwiki.com/zh/wiki/well-known-uri
+  es: https://mimirwiki.com/es/wiki/well-known-uri
 ---
 
 # 웰노운 URI

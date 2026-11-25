@@ -17,6 +17,7 @@ translations:
   ko: https://mimirwiki.com/ko/wiki/lux-supercomputer
   ja: https://mimirwiki.com/ja/wiki/lux-supercomputer
   zh: https://mimirwiki.com/zh/wiki/lux-supercomputer
+  es: https://mimirwiki.com/es/wiki/lux-supercomputer
 ---
 
 # Lux Supercomputer

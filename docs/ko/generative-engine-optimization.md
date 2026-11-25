@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/generative-engine-optimization
   ja: https://mimirwiki.com/ja/wiki/generative-engine-optimization
   zh: https://mimirwiki.com/zh/wiki/generative-engine-optimization
+  es: https://mimirwiki.com/es/wiki/generative-engine-optimization
 ---
 
 # 생성형 엔진 최적화

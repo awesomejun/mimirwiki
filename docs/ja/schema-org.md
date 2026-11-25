@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/schema-org
   ko: https://mimirwiki.com/ko/wiki/schema-org
   zh: https://mimirwiki.com/zh/wiki/schema-org
+  es: https://mimirwiki.com/es/wiki/schema-org
 ---
 
 # Schema.org

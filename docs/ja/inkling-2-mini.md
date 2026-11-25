@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/inkling-2-mini
   ko: https://mimirwiki.com/ko/wiki/inkling-2-mini
   zh: https://mimirwiki.com/zh/wiki/inkling-2-mini
+  es: https://mimirwiki.com/es/wiki/inkling-2-mini
 ---
 
 # Inkling 2 Mini

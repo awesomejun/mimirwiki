@@ -15,6 +15,7 @@ alternates:
   jsonld: https://mimirwiki.com/ko/wiki/voyager-1.jsonld
 translations:
   en: https://mimirwiki.com/wiki/voyager-1
+  es: https://mimirwiki.com/es/wiki/voyager-1
 ---
 
 # 보이저 1호 (Voyager 1)

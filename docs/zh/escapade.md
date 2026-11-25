@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/escapade
   ko: https://mimirwiki.com/ko/wiki/escapade
   ja: https://mimirwiki.com/ja/wiki/escapade
+  es: https://mimirwiki.com/es/wiki/escapade
 ---
 
 # ESCAPADE

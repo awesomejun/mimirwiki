@@ -17,6 +17,7 @@ translations:
   en: https://mimirwiki.com/wiki/indexnow
   ko: https://mimirwiki.com/ko/wiki/indexnow
   ja: https://mimirwiki.com/ja/wiki/indexnow
+  es: https://mimirwiki.com/es/wiki/indexnow
 ---
 
 # IndexNow
