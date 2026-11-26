@@ -1,15 +1,18 @@
 # Mimirwiki pages
 
-76 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
+81 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
 
 | Subject | English | 한국어 | 日本語 | 中文 | Español | Website |
 |---|---|---|---|---|---|---|
 | 1Password<br><sub>Toronto-based encrypted password manager and dual-key vault service</sub> | [en](en/1password.md) | [ko](ko/1password.md) |  |  |  | [Open](https://mimirwiki.com/wiki/1password) |
+| 5G Standalone (SA)<br><sub>5G mobile network architecture using 5G technology for both radio access and core network</sub> | [en](en/5g-standalone.md) | [ko](ko/5g-standalone.md) |  |  |  | [Open](https://mimirwiki.com/wiki/5g-standalone) |
 | Aaron Rodgers<br><sub>American football quarterback for the Pittsburgh Steelers and four-time NFL MVP</sub> | [en](en/aaron-rodgers.md) | [ko](ko/aaron-rodgers.md) |  |  |  | [Open](https://mimirwiki.com/wiki/aaron-rodgers) |
+| Analog Devices<br><sub>U.S. analog and mixed-signal semiconductor manufacturer headquartered in Wilmington, Massachusetts</sub> | [en](en/analog-devices.md) | [ko](ko/analog-devices.md) |  |  |  | [Open](https://mimirwiki.com/wiki/analog-devices) |
 | Anthropic<br><sub>US artificial intelligence safety and research public benefit corporation (Nasdaq: ANT) developing Claude</sub> | [en](en/anthropic.md) | [ko](ko/anthropic.md) | [ja](ja/anthropic.md) | [zh](zh/anthropic.md) | [es](es/anthropic.md) | [Open](https://mimirwiki.com/wiki/anthropic) |
 | Arsenal FC<br><sub>English professional football club in north London competing in the Premier League and UEFA Champions League</sub> | [en](en/arsenal-fc.md) | [ko](ko/arsenal-fc.md) |  |  |  | [Open](https://mimirwiki.com/wiki/arsenal-fc) |
 | Asundexian<br><sub>Oral factor XIa inhibitor (Sunharbo) developed by Bayer for secondary ischemic stroke prevention</sub> | [en](en/asundexian.md) | [ko](ko/asundexian.md) | [ja](ja/asundexian.md) | [zh](zh/asundexian.md) | [es](es/asundexian.md) | [Open](https://mimirwiki.com/wiki/asundexian) |
 | Bank of Korea Base Rate<br><sub>Benchmark monetary policy interest rate set by the Bank of Korea Monetary Policy Board</sub> | [en](en/bank-of-korea-base-rate.md) | [ko](ko/bank-of-korea-base-rate.md) |  |  |  | [Open](https://mimirwiki.com/wiki/bank-of-korea-base-rate) |
+| BepiColombo<br><sub>Joint ESA and JAXA dual-orbiter space mission exploring Mercury</sub> | [en](en/bepicolombo.md) | [ko](ko/bepicolombo.md) |  |  |  | [Open](https://mimirwiki.com/wiki/bepicolombo) |
 | Black Friday<br><sub>Annual U.S. retail shopping event centered on the Friday after Thanksgiving Day</sub> | [en](en/black-friday.md) | [ko](ko/black-friday.md) |  |  |  | [Open](https://mimirwiki.com/wiki/black-friday) |
 | Boston Celtics<br><sub>National Basketball Association franchise based in Boston, Massachusetts</sub> | [en](en/boston-celtics.md) | [ko](ko/boston-celtics.md) |  |  |  | [Open](https://mimirwiki.com/wiki/boston-celtics) |
 | Cemdisiran (Livsayis)<br><sub>Complement component 5 (C5)-directed small interfering RNA (siRNA) therapy for generalized myasthenia gravis</sub> | [en](en/cemdisiran.md) | [ko](ko/cemdisiran.md) | [ja](ja/cemdisiran.md) | [zh](zh/cemdisiran.md) | [es](es/cemdisiran.md) | [Open](https://mimirwiki.com/wiki/cemdisiran) |
@@ -26,7 +29,9 @@
 | Dallas Mavericks<br><sub>National Basketball Association franchise based in Dallas, Texas</sub> | [en](en/dallas-mavericks.md) | [ko](ko/dallas-mavericks.md) |  |  |  | [Open](https://mimirwiki.com/wiki/dallas-mavericks) |
 | Dancing with the Stars<br><sub>American dance competition television series on ABC and Disney+ produced by BBC Studios</sub> | [en](en/dancing-with-the-stars.md) | [ko](ko/dancing-with-the-stars.md) |  |  |  | [Open](https://mimirwiki.com/wiki/dancing-with-the-stars) |
 | DeepSeek<br><sub>Chinese artificial intelligence research laboratory developing the DeepSeek-V4, DeepSeek-R1, and DeepSeek-V3 foundation models</sub> | [en](en/deepseek.md) | [ko](ko/deepseek.md) | [ja](ja/deepseek.md) | [zh](zh/deepseek.md) | [es](es/deepseek.md) | [Open](https://mimirwiki.com/wiki/deepseek) |
+| Dell Technologies<br><sub>U.S. enterprise infrastructure, AI server, and PC technology company headquartered in Round Rock, Texas</sub> | [en](en/dell-technologies.md) | [ko](ko/dell-technologies.md) |  |  |  | [Open](https://mimirwiki.com/wiki/dell-technologies) |
 | Detroit Pistons<br><sub>NBA franchise based in Detroit, Michigan</sub> | [en](en/detroit-pistons.md) | [ko](ko/detroit-pistons.md) |  |  |  | [Open](https://mimirwiki.com/wiki/detroit-pistons) |
+| Ebola disease<br><sub>Severe, often fatal viral illness caused by orthoebolaviruses, including the 2026 multi-country Bundibugyo virus outbreak</sub> | [en](en/ebola-disease.md) | [ko](ko/ebola-disease.md) |  |  |  | [Open](https://mimirwiki.com/wiki/ebola-disease) |
 | ESCAPADE<br><sub>NASA and UC Berkeley twin-orbiter heliophysics mission studying Mars's magnetosphere and atmospheric loss</sub> | [en](en/escapade.md) | [ko](ko/escapade.md) | [ja](ja/escapade.md) | [zh](zh/escapade.md) | [es](es/escapade.md) | [Open](https://mimirwiki.com/wiki/escapade) |
 | FC Barcelona<br><sub>Spanish professional football club based in Barcelona</sub> | [en](en/fc-barcelona.md) | [ko](ko/fc-barcelona.md) |  |  |  | [Open](https://mimirwiki.com/wiki/fc-barcelona) |
 | Flood Watch<br><sub>U.S. National Weather Service alert indicating conditions favorable for flooding</sub> | [en](en/flood-watch.md) | [ko](ko/flood-watch.md) |  |  |  | [Open](https://mimirwiki.com/wiki/flood-watch) |
