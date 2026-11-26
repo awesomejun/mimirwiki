@@ -1,6 +1,6 @@
 # Mimirwiki pages
 
-67 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
+71 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
 
 | Subject | English | 한국어 | 日本語 | 中文 | Español | Website |
 |---|---|---|---|---|---|---|
@@ -60,6 +60,7 @@
 | OAuth<br><sub>Open authorization framework standardized by the IETF for delegated HTTP access using access tokens</sub> | [en](en/oauth.md) | [ko](ko/oauth.md) | [ja](ja/oauth.md) | [zh](zh/oauth.md) | [es](es/oauth.md) | [Open](https://mimirwiki.com/wiki/oauth) |
 | OpenAI<br><sub>Artificial intelligence research and deployment organization consisting of the nonprofit OpenAI Foundation and the controlled for-profit OpenAI Group PBC</sub> | [en](en/openai.md) | [ko](ko/openai.md) | [ja](ja/openai.md) | [zh](zh/openai.md) | [es](es/openai.md) | [Open](https://mimirwiki.com/wiki/openai) |
 | Perplexity<br><sub>AI-powered answer engine and multi-provider developer API platform offering the Agent, Orchestrator, Search, Context, Monitor, Embeddings, and Decisions APIs</sub> | [en](en/perplexity.md) | [ko](ko/perplexity.md) | [ja](ja/perplexity.md) | [zh](zh/perplexity.md) | [es](es/perplexity.md) | [Open](https://mimirwiki.com/wiki/perplexity) |
+| PlayStation Plus<br><sub>Sony Interactive Entertainment's paid subscription service for PlayStation consoles</sub> | [en](en/playstation-plus.md) | [ko](ko/playstation-plus.md) |  |  |  | [Open](https://mimirwiki.com/wiki/playstation-plus) |
 | Riemann Hypothesis<br><sub>1859 conjecture on the nontrivial zeros of the Riemann zeta function, formally proved and verified in Lean 4 in November 2026</sub> | [en](en/riemann-hypothesis.md) | [ko](ko/riemann-hypothesis.md) | [ja](ja/riemann-hypothesis.md) | [zh](zh/riemann-hypothesis.md) | [es](es/riemann-hypothesis.md) | [Open](https://mimirwiki.com/wiki/riemann-hypothesis) |
 | robots.txt<br><sub>Plain-text file under the Robots Exclusion Protocol (RFC 9309) that tells web crawlers which URIs they may access</sub> | [en](en/robots-txt.md) | [ko](ko/robots-txt.md) | [ja](ja/robots-txt.md) | [zh](zh/robots-txt.md) | [es](es/robots-txt.md) | [Open](https://mimirwiki.com/wiki/robots-txt) |
 | Rust (Programming Language)<br><sub>Multi-paradigm systems programming language enforcing compile-time memory safety and thread safety without a garbage collector</sub> | [en](en/rust-programming-language.md) | [ko](ko/rust-programming-language.md) | [ja](ja/rust-programming-language.md) | [zh](zh/rust-programming-language.md) | [es](es/rust-programming-language.md) | [Open](https://mimirwiki.com/wiki/rust-programming-language) |
@@ -67,9 +68,12 @@
 | SEC EDGAR<br><sub>Electronic filing and public disclosure system of the U.S. Securities and Exchange Commission</sub> | [en](en/sec-edgar.md) | [ko](ko/sec-edgar.md) | [ja](ja/sec-edgar.md) | [zh](zh/sec-edgar.md) | [es](es/sec-edgar.md) | [Open](https://mimirwiki.com/wiki/sec-edgar) |
 | Sitemaps<br><sub>XML-based protocol for listing website URLs and metadata for search engine crawlers</sub> | [en](en/sitemaps.md) | [ko](ko/sitemaps.md) | [ja](ja/sitemaps.md) | [zh](zh/sitemaps.md) | [es](es/sitemaps.md) | [Open](https://mimirwiki.com/wiki/sitemaps) |
 | SpaceX Starship<br><sub>Fully reusable two-stage super heavy-lift orbital launch vehicle and spacecraft developed by SpaceX</sub> | [en](en/spacex-starship.md) | [ko](ko/spacex-starship.md) | [ja](ja/spacex-starship.md) | [zh](zh/spacex-starship.md) | [es](es/spacex-starship.md) | [Open](https://mimirwiki.com/wiki/spacex-starship) |
+| Supermoon<br><sub>Full Moon coinciding with the Moon's closest orbital approach to Earth (perigee)</sub> | [en](en/supermoon.md) | [ko](ko/supermoon.md) |  |  |  | [Open](https://mimirwiki.com/wiki/supermoon) |
 | Thanksgiving Day (United States)<br><sub>United States federal holiday observed on the fourth Thursday of November</sub> | [en](en/thanksgiving-day-us.md) | [ko](ko/thanksgiving-day-us.md) |  |  |  | [Open](https://mimirwiki.com/wiki/thanksgiving-day-us) |
+| The Hunger Games: Sunrise on the Reaping<br><sub>2026 Lionsgate prequel film adapting Suzanne Collins' fifth Hunger Games novel</sub> | [en](en/the-hunger-games-sunrise-on-the-reaping.md) | [ko](ko/the-hunger-games-sunrise-on-the-reaping.md) |  |  |  | [Open](https://mimirwiki.com/wiki/the-hunger-games-sunrise-on-the-reaping) |
 | Voyager 1<br><sub>NASA interstellar space probe that reached one light-day from Earth in November 2026</sub> | [en](en/voyager-1.md) | [ko](ko/voyager-1.md) |  |  | [es](es/voyager-1.md) | [Open](https://mimirwiki.com/wiki/voyager-1) |
 | Web Bot Auth<br><sub>Cryptographic authentication protocol for automated HTTP clients and AI agents based on RFC 9421 HTTP Message Signatures</sub> | [en](en/web-bot-auth.md) | [ko](ko/web-bot-auth.md) | [ja](ja/web-bot-auth.md) | [zh](zh/web-bot-auth.md) | [es](es/web-bot-auth.md) | [Open](https://mimirwiki.com/wiki/web-bot-auth) |
 | Well-Known URIs<br><sub>IETF standard reserving the /.well-known/ path prefix for origin-wide metadata and service discovery</sub> | [en](en/well-known-uri.md) | [ko](ko/well-known-uri.md) | [ja](ja/well-known-uri.md) | [zh](zh/well-known-uri.md) | [es](es/well-known-uri.md) | [Open](https://mimirwiki.com/wiki/well-known-uri) |
+| Wind Advisory<br><sub>U.S. National Weather Service alert for strong winds below High Wind Warning criteria</sub> | [en](en/wind-advisory.md) | [ko](ko/wind-advisory.md) |  |  |  | [Open](https://mimirwiki.com/wiki/wind-advisory) |
 
 The pages are licensed under [CC BY 4.0](../LICENSE). The file format is described in [FORMAT.md](../FORMAT.md).
