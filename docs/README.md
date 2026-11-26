@@ -1,6 +1,6 @@
 # Mimirwiki pages
 
-81 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
+86 subjects. This folder is updated when pages are published on [mimirwiki.com](https://mimirwiki.com).
 
 | Subject | English | 한국어 | 日本語 | 中文 | Español | Website |
 |---|---|---|---|---|---|---|
@@ -32,7 +32,10 @@
 | Dell Technologies<br><sub>U.S. enterprise infrastructure, AI server, and PC technology company headquartered in Round Rock, Texas</sub> | [en](en/dell-technologies.md) | [ko](ko/dell-technologies.md) |  |  |  | [Open](https://mimirwiki.com/wiki/dell-technologies) |
 | Detroit Pistons<br><sub>NBA franchise based in Detroit, Michigan</sub> | [en](en/detroit-pistons.md) | [ko](ko/detroit-pistons.md) |  |  |  | [Open](https://mimirwiki.com/wiki/detroit-pistons) |
 | Ebola disease<br><sub>Severe, often fatal viral illness caused by orthoebolaviruses, including the 2026 multi-country Bundibugyo virus outbreak</sub> | [en](en/ebola-disease.md) | [ko](ko/ebola-disease.md) |  |  |  | [Open](https://mimirwiki.com/wiki/ebola-disease) |
+| Environmental lead monitoring<br><sub>Measurement of lead in ambient air, soil, surface dust, and water to assess exposure pathways</sub> | [en](en/environmental-lead-monitoring.md) | [ko](ko/environmental-lead-monitoring.md) |  |  |  | [Open](https://mimirwiki.com/wiki/environmental-lead-monitoring) |
+| ESA Hera<br><sub>European Space Agency planetary defence mission investigating the Didymos-Dimorphos binary asteroid system after NASA's DART impact</sub> | [en](en/esa-hera.md) | [ko](ko/esa-hera.md) |  |  |  | [Open](https://mimirwiki.com/wiki/esa-hera) |
 | ESCAPADE<br><sub>NASA and UC Berkeley twin-orbiter heliophysics mission studying Mars's magnetosphere and atmospheric loss</sub> | [en](en/escapade.md) | [ko](ko/escapade.md) | [ja](ja/escapade.md) | [zh](zh/escapade.md) | [es](es/escapade.md) | [Open](https://mimirwiki.com/wiki/escapade) |
+| EU Quantum Act<br><sub>European Commission legislative proposal to scale quantum research into industrial capacity and strengthen supply-chain and cryptographic security</sub> | [en](en/eu-quantum-act.md) | [ko](ko/eu-quantum-act.md) |  |  |  | [Open](https://mimirwiki.com/wiki/eu-quantum-act) |
 | FC Barcelona<br><sub>Spanish professional football club based in Barcelona</sub> | [en](en/fc-barcelona.md) | [ko](ko/fc-barcelona.md) |  |  |  | [Open](https://mimirwiki.com/wiki/fc-barcelona) |
 | Flood Watch<br><sub>U.S. National Weather Service alert indicating conditions favorable for flooding</sub> | [en](en/flood-watch.md) | [ko](ko/flood-watch.md) |  |  |  | [Open](https://mimirwiki.com/wiki/flood-watch) |
 | Gemini 4 Neon<br><sub>Google DeepMind multimodal reasoning model released in November 2026 for coding, science, and enterprise workflows</sub> | [en](en/gemini-4-neon.md) | [ko](ko/gemini-4-neon.md) | [ja](ja/gemini-4-neon.md) | [zh](zh/gemini-4-neon.md) | [es](es/gemini-4-neon.md) | [Open](https://mimirwiki.com/wiki/gemini-4-neon) |
@@ -46,6 +49,8 @@
 | Grand Theft Auto VI<br><sub>2026 open-world action-adventure video game developed and published by Rockstar Games</sub> | [en](en/grand-theft-auto-vi.md) | [ko](ko/grand-theft-auto-vi.md) | [ja](ja/grand-theft-auto-vi.md) | [zh](zh/grand-theft-auto-vi.md) | [es](es/grand-theft-auto-vi.md) | [Open](https://mimirwiki.com/wiki/grand-theft-auto-vi) |
 | Grok<br><sub>Generative artificial intelligence model family, developer API, and agentic application suite developed by xAI (SpaceX Super Intelligence LLC)</sub> | [en](en/grok.md) | [ko](ko/grok.md) | [ja](ja/grok.md) | [zh](zh/grok.md) | [es](es/grok.md) | [Open](https://mimirwiki.com/wiki/grok) |
 | hreflang<br><sub>HTML attribute and link parameter specifying the language and target region of linked web resources</sub> | [en](en/hreflang.md) | [ko](ko/hreflang.md) | [ja](ja/hreflang.md) | [zh](zh/hreflang.md) | [es](es/hreflang.md) | [Open](https://mimirwiki.com/wiki/hreflang) |
+| HUAWEI Mate X8<br><sub>Book-style inward-folding smartphone announced by Huawei in China in November 2026</sub> | [en](en/huawei-mate-x8.md) | [ko](ko/huawei-mate-x8.md) |  |  |  | [Open](https://mimirwiki.com/wiki/huawei-mate-x8) |
+| Ibuprofen<br><sub>Nonsteroidal anti-inflammatory drug used for pain, inflammation, and fever relief</sub> | [en](en/ibuprofen.md) | [ko](ko/ibuprofen.md) |  |  |  | [Open](https://mimirwiki.com/wiki/ibuprofen) |
 | IndexNow<br><sub>Open HTTP protocol for websites to notify search engines of URL additions, updates, and deletions</sub> | [en](en/indexnow.md) | [ko](ko/indexnow.md) | [ja](ja/indexnow.md) | [zh](zh/indexnow.md) | [es](es/indexnow.md) | [Open](https://mimirwiki.com/wiki/indexnow) |
 | Inkling 2 Mini<br><sub>Thinking Machines Lab open-weight looped Mixture-of-Experts vision-language model engineered for local laptop and workstation inference</sub> | [en](en/inkling-2-mini.md) | [ko](ko/inkling-2-mini.md) | [ja](ja/inkling-2-mini.md) | [zh](zh/inkling-2-mini.md) | [es](es/inkling-2-mini.md) | [Open](https://mimirwiki.com/wiki/inkling-2-mini) |
 | Insmed Incorporated<br><sub>U.S. biopharmaceutical company with two approved respiratory medicines, subject to a pending merger agreement with Sanofi</sub> | [en](en/insmed.md) | [ko](ko/insmed.md) |  |  | [es](es/insmed.md) | [Open](https://mimirwiki.com/wiki/insmed) |
