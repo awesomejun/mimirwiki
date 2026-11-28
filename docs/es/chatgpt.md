@@ -4,10 +4,10 @@ subtitle: "Aplicación de inteligencia artificial conversacional desarrollada po
 canonical_url: https://mimirwiki.com/es/wiki/chatgpt
 language: es
 page_class: entity
-revision_sha256: b52d4939a644b1a1f3b579091206232cbfe1448a6681323fa3cc972eafad3db0
-date_modified: 2026-11-23
+revision_sha256: a3d1539edf9610305879a1693805c12276e5281fa18c3911f0f220ad4acf04e6
+date_modified: 2026-11-28
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 13
+source_count: 15
 alternates:
   md: https://mimirwiki.com/es/wiki/chatgpt.md
   txt: https://mimirwiki.com/es/wiki/chatgpt.txt
@@ -116,6 +116,8 @@ Bajo la modalidad de precios flexibles basados en créditos para los espacios de
 
 ChatGPT y Codex también participan en estándares abiertos de agentes alojados por la Linux Foundation.[12] El 9 de diciembre de 2025, la Linux Foundation anunció la creación de la Agentic AI Foundation (AAIF) con OpenAI como miembro Platinum junto con Amazon Web Services, Anthropic, Block, Bloomberg, Cloudflare, Google y Microsoft.[12] El anuncio señala que ChatGPT adoptó el [Model Context Protocol](https://mimirwiki.com/es/wiki/model-context-protocol) (MCP) de Anthropic para conectar modelos con herramientas, datos y aplicaciones, y que OpenAI aportó su convención `AGENTS.md` basada en Markdown (publicada en agosto de 2025 y adoptada por más de 60 000 proyectos de código abierto y marcos de agentes, incluido Codex), junto con ACP, Codex CLI, el Agents SDK y el Apps SDK.[12]
 
+Segun la documentacion oficial de OpenAI, a partir de diciembre de 2026 los planes Plus, Pro y Business compartiran un unico limite de uso medido en tokens entre ChatGPT y Codex, separado de las tarifas de creditos empresariales, mientras que las conversaciones con el modelo Instant quedan excluidas del descuento compartido y siguen disponibles tras alcanzar el limite.[14][15] TechCrunch informo el 25 de noviembre de 2026 del despliegue anticipado a un grupo reducido de suscriptores Pro; las fechas exactas por cuenta y las cuotas fijas de tokens por plan siguen sin publicarse.[14][15]
+
 ## Política de entrenamiento de datos, controles de seguridad y documentación de plataforma de ChatGPT
 
 ChatGPT aplica condiciones de gobernanza de datos diferenciadas para los espacios de trabajo organizacionales y las cuentas individuales.[7][3] En la documentación general de ChatGPT Business, OpenAI declara que ChatGPT Business se ajusta a sus políticas Business Terms y Enterprise Privacy y que OpenAI no entrena modelos con los datos de los espacios de trabajo de los clientes.[7] Las organizaciones que requieren retención cero de datos (Zero Data Retention) o acuerdos de socio comercial (BAAs) utilizan ofertas contratadas como ChatGPT Enterprise.[7] Para ámbitos especializados, la tabla de tarifas de OpenAI también documenta programas de aprobación Trusted Access, entre ellos Astra for Law, GPT-6 Rosalind Research para ciencias de la vida y Daybreak (Trusted Access for Cyber) para modelos de ciberseguridad.[8]
@@ -175,6 +177,7 @@ A fecha de 23 de noviembre de 2026, OpenAI incluye ChatGPT Work y Codex en los p
 - 2025-12-09: La Linux Foundation anuncia la Agentic AI Foundation (AAIF) con OpenAI como miembro Platinum y destaca la adopción del Model Context Protocol (MCP) por parte de ChatGPT. [12]
 - 2026-01-16: OpenAI despliega ChatGPT Go a nivel mundial a 8 dólares al mes en Estados Unidos y anuncia planes para probar anuncios en los niveles Free y Go. [5]
 - 2026-06-24: OpenAI deja de ofrecer el tipo de licencia heredado de Codex a los espacios de trabajo de ChatGPT Business recién creados. [7]
+- 2026-11-25: OpenAI inicia un despliegue anticipado de los limites compartidos de ChatGPT y Codex (excluyendo chats Instant) antes de su aplicacion general en diciembre de 2026 para Plus, Pro y Business. [14][15]
 
 ## Fuentes
 
@@ -191,7 +194,9 @@ A fecha de 23 de noviembre de 2026, OpenAI incluye ChatGPT Work y Codex en los p
 11. Overview of OpenAI Crawlers. OpenAI. https://developers.openai.com/api/docs/bots (consultado 2026-11-23; tier 3: official site)
 12. Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md. The Linux Foundation. publicado 2025-12-09. https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation (consultado 2026-11-23; tier 3: official site)
 13. Supported countries and territories | OpenAI API Documentation. OpenAI. https://developers.openai.com/api/docs/supported-countries (consultado 2026-11-23; tier 3: official site)
+14. Understanding ChatGPT and Codex usage limits. OpenAI Help Center. https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits (consultado 2026-11-28; tier 3: official site)
+15. OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work. TechCrunch. publicado 2026-11-25. https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/ (consultado 2026-11-28; tier 2: academic or news)
 
 ## Citar esta página
 
-Mimirwiki. "ChatGPT." Versión b52d4939, 2026-11-23. https://mimirwiki.com/es/wiki/chatgpt
+Mimirwiki. "ChatGPT." Versión a3d1539e, 2026-11-28. https://mimirwiki.com/es/wiki/chatgpt

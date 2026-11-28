@@ -4,10 +4,10 @@ subtitle: "Claude AI 모델을 개발하는 미국 델라웨어주 공익법인(
 canonical_url: https://mimirwiki.com/ko/wiki/anthropic
 language: ko
 page_class: entity
-revision_sha256: 53c9765056b7105d547808d6a00eb7a109036942b5aa140cec64a51f5c52a064
-date_modified: 2026-11-23
+revision_sha256: b5d9aaf4ccfcfe9339e7880e3d8172f6e7c763dc5d0a1aba17487c7c51cf65dd
+date_modified: 2026-11-28
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 15
+source_count: 17
 alternates:
   md: https://mimirwiki.com/ko/wiki/anthropic.md
   txt: https://mimirwiki.com/ko/wiki/anthropic.txt
@@ -129,6 +129,8 @@ Anthropic은 연구 성과를 [Claude](https://mimirwiki.com/ko/wiki/claude) AI 
 
 2026-11-23 기준 `anthropic.com` 도메인 인증을 받은 Anthropic의 GitHub 조직(`anthropics`)에는 공개 저장소 118개와 팔로워 9만 9,900명이 등록되어 있으며, 주요 사용 언어는 Python, Rust, Go, TypeScript, C++이다.[9] 조직 페이지에 표시된 주요 공개 저장소로는 `skills`(Agent Skills, 스타 약 19만 9,000개), `claude-code`(터미널 기반 에이전트형 코딩 도구, 스타 156,772개), `claude-cookbooks`(스타 약 5만 5,100개), `claude-plugins-official`(스타 48,023개, Apache-2.0), `financial-services`(스타 약 4만 1,500개), `prompt-eng-interactive-tutorial`(스타 약 3만 9,700개), `knowledge-work-plugins`(Claude Cowork용 플러그인, 스타 36,731개, Apache-2.0), `claude-for-legal`(스타 10,075개, Apache-2.0), `claude-code-action`(스타 10,055개, MIT) 등이 있다.[9]
 
+2026년 11월 25일 앤트로픽은 2024년 초부터 2026년 가을 사이 API 트래픽이 약 1,800배 증가한 가운데 외부 고객과 Claude Code·Cowork의 핵심 경로인 Messages API를 Python에서 Rust로 전환한 기술 보고서를 공개했다.[16][17] 운영 요청을 기존 Python 구현과 새 Rust 구현에서 비교 검증한 결과, 회사 자체 측정 기준으로 요청당 CPU 사용량이 약 70% 감소하고 첫 토큰까지의 시간(time to first token) 중앙값이 약 20% 단축되었다고 보고했으며, 독립 재현이나 전체 응답 완료 시간 변화는 확인되지 않았다.[16]
+
 ## Anthropic 클라우드 인프라와 전략적 투자
 
 Anthropic은 Amazon과 전략적 협력 및 소수 지분 투자 계약을 체결했으며, Amazon은 2024년 3월 27일 총 40억 달러 규모의 Anthropic 투자를 마무리했다.[10] Amazon은 2023년 9월 12억 5,000만 달러를 초기 투자한 데 이어 2024년 3월 27일 27억 5,000만 달러를 추가로 집행하여 소수 지분을 확보했다.[10] 2026년 11월 17일 제출된 Anthropic의 Form S-1/A-3에서도 2026년 6월 30일 기준 완전희석주식 수를 산정하면서 Amazon Notes로 지칭되는 전환 증권을 명시하고 있다.[2]
@@ -188,6 +190,7 @@ Anthropic은 소속 엔지니어 David Soria Parra와 Justin Spahr-Summers가 �
 - 2026-11-18: Anthropic IPO 증권신고서의 효력이 발생하고 기본 공모 물량 Class A 보통주 9억 8,000만 주의 공모가가 주당 83.00달러(총 813억 4,000만 달러)로 확정되었다. [11][12][13]
 - 2026-11-19: Anthropic Class A 보통주가 Nasdaq Global Select Market에서 종목 기호 ANT로 거래를 시작해 첫날 97달러를 소폭 웃도는 가격에 마감했다. [11][15]
 - 2026-11-20: Anthropic이 인수단 초과배정옵션 1억 4,700만 주 전량 행사를 포함해 총 Class A 보통주 11억 2,700만 주 규모의 IPO와 260억 달러 동시 사모 발행을 마감했다. [14]
+- 2026-11-25: 앤트로픽이 Messages API를 Python에서 Rust로 전환해 회사 자체 측정 기준 요청당 CPU 약 70% 감소, 첫 토큰 중앙값 약 20% 단축을 보고한다. [16][17]
 
 ## 출처
 
@@ -206,7 +209,9 @@ Anthropic은 소속 엔지니어 David Soria Parra와 Justin Spahr-Summers가 �
 13. Anthropic prices initial public offering \ Anthropic. Anthropic. 게시일 2026-11-18. https://www.anthropic.com/news/anthropic-prices-initial-public-offering (확인일 2026-11-23; tier 3: official site)
 14. Announcements \ Anthropic. Anthropic. https://www.anthropic.com/news/announcements (확인일 2026-11-23; tier 3: official site)
 15. Anthropic closes first day of public trading at $1.3tn valuation after largest-ever IPO. The Guardian. 게시일 2026-11-19. https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo (확인일 2026-11-23; tier 2: academic or news)
+16. Migrating our Messages API to Rust. Anthropic. 게시일 2026-11-25. https://www.anthropic.com/research/migrating-api-to-rust (확인일 2026-11-28; tier 3: official site)
+17. Using the Messages API - Claude Platform Docs. Anthropic. https://platform.claude.com/docs/en/build-with-claude/working-with-messages (확인일 2026-11-28; tier 3: official site)
 
 ## 이 문서 인용하기
 
-Mimirwiki. "Anthropic." 버전 53c97650, 2026-11-23. https://mimirwiki.com/ko/wiki/anthropic
+Mimirwiki. "Anthropic." 버전 b5d9aaf4, 2026-11-28. https://mimirwiki.com/ko/wiki/anthropic

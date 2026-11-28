@@ -4,10 +4,10 @@ subtitle: "OpenAI가 개발한 대화, 업무 작업, 웹 검색, 소프트웨�
 canonical_url: https://mimirwiki.com/ko/wiki/chatgpt
 language: ko
 page_class: entity
-revision_sha256: 40c2a55c6eaa3aa970dd52d5756bbfb4a994fce66aad4aaa8621e056ef552aca
-date_modified: 2026-11-23
+revision_sha256: 165629b6b614f62560339aaeafef0743abe371895ebff580d493d01fe424629c
+date_modified: 2026-11-28
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 13
+source_count: 15
 alternates:
   md: https://mimirwiki.com/ko/wiki/chatgpt.md
   txt: https://mimirwiki.com/ko/wiki/chatgpt.txt
@@ -116,6 +116,8 @@ Business, Enterprise, Edu 워크스페이스의 크레딧 기반 유연 과금�
 
 ChatGPT와 Codex는 Linux Foundation 산하의 개방형 에이전트 표준화 활동에도 참여한다.[12] 2025년 12월 9일 Linux Foundation은 Amazon Web Services, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, OpenAI가 플래티넘 회원으로 참여하는 Agentic AI Foundation(AAIF) 출범을 발표했다.[12] 이 발표에 따르면 ChatGPT는 AI 모델을 도구, 데이터, 애플리케이션에 연결하는 Anthropic의 [Model Context Protocol](https://mimirwiki.com/ko/wiki/model-context-protocol)(MCP)을 채택했으며, OpenAI는 2025년 8월에 공개해 Codex를 비롯한 60,000개 이상의 오픈소스 프로젝트와 에이전트 프레임워크가 채택한 Markdown 기반 `AGENTS.md` 규약과 함께 ACP, Codex CLI, Agents SDK, Apps SDK를 생태계에 기여했다.[12]
 
+OpenAI 공식 도움말에 따르면 2026년 12월부터 Plus, Pro, Business 요금제는 조직용 크레딧 요금표와 별도로 ChatGPT와 Codex의 토큰 기반 사용량 한도를 합산해 공유하며, Instant 모델 대화는 공유 한도 차감에서 제외되어 한도 도달 이후에도 계속 이용할 수 있다.[14][15] 2026년 11월 25일 테크크런치 보도처럼 일부 Pro 구독자에게는 12월 이전 조기 적용이 시작되었으며, 계정별 전체 적용 시점과 플랜별 고정 토큰 할당량은 공개되지 않았다.[14][15]
+
 ## ChatGPT 데이터 학습 정책, 안전 제어 및 개발자 플랫폼 문서
 
 ChatGPT는 조직용 워크스페이스와 개인 계정에 서로 다른 데이터 거버넌스 약관을 적용한다.[7][3] ChatGPT Business 개요 문서에서 OpenAI는 ChatGPT Business가 비즈니스 약관과 엔터프라이즈 개인정보 처리 정책을 준수하며 고객 워크스페이스 데이터를 모델 학습에 사용하지 않는다고 밝힌다.[7] 무보관 데이터 정책(Zero Data Retention)이나 비즈니스 제휴 계약(BAA)이 필요한 조직은 ChatGPT Enterprise 같은 계약형 요금제를 사용한다.[7] 전문 영역의 경우 OpenAI 요율표는 법률용 Astra for Law, 생명과학용 GPT-6 Rosalind Research, 사이버보안 모델용 Daybreak(Trusted Access for Cyber) 등 Trusted Access 승인 프로그램을 명시한다.[8]
@@ -175,6 +177,7 @@ OpenAI는 2022년 11월 30일 Azure AI 슈퍼컴퓨팅 인프라에서 GPT-3.5 �
 - 2025-12-09: Linux Foundation이 OpenAI를 플래티넘 회원으로 하는 Agentic AI Foundation(AAIF) 출범을 발표하고 ChatGPT의 Model Context Protocol(MCP) 채택을 밝혔다. [12]
 - 2026-01-16: OpenAI가 ChatGPT Go를 전 세계에 미국 기준 월 8달러로 확대 출시하고 Free 및 Go 등급 광고 테스트 계획을 발표했다. [5]
 - 2026-06-24: OpenAI가 신규 생성되는 ChatGPT Business 워크스페이스에 대한 레거시 Codex 좌석 제공을 중단했다. [7]
+- 2026-11-25: OpenAI가 12월 Plus·Pro·Business 요금제의 ChatGPT·Codex 사용량 합산(Instant 채팅 제외) 확대에 앞서 일부 Pro 사용자 대상 조기 적용을 시작한다. [14][15]
 
 ## 출처
 
@@ -191,7 +194,9 @@ OpenAI는 2022년 11월 30일 Azure AI 슈퍼컴퓨팅 인프라에서 GPT-3.5 �
 11. Overview of OpenAI Crawlers. OpenAI. https://developers.openai.com/api/docs/bots (확인일 2026-11-23; tier 3: official site)
 12. Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md. The Linux Foundation. 게시일 2025-12-09. https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation (확인일 2026-11-23; tier 3: official site)
 13. Supported countries and territories | OpenAI API Documentation. OpenAI. https://developers.openai.com/api/docs/supported-countries (확인일 2026-11-23; tier 3: official site)
+14. Understanding ChatGPT and Codex usage limits. OpenAI Help Center. https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits (확인일 2026-11-28; tier 3: official site)
+15. OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work. TechCrunch. 게시일 2026-11-25. https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/ (확인일 2026-11-28; tier 2: academic or news)
 
 ## 이 문서 인용하기
 
-Mimirwiki. "ChatGPT." 버전 40c2a55c, 2026-11-23. https://mimirwiki.com/ko/wiki/chatgpt
+Mimirwiki. "ChatGPT." 버전 165629b6, 2026-11-28. https://mimirwiki.com/ko/wiki/chatgpt

@@ -4,10 +4,10 @@ subtitle: "OpenAI 开发的用于聊天、办公任务、网页搜索与软件�
 canonical_url: https://mimirwiki.com/zh/wiki/chatgpt
 language: zh
 page_class: entity
-revision_sha256: 4778c55d12356c8ac1c07b92ff77fa8d47f60a508084876d4d12998b846a0c70
-date_modified: 2026-11-23
+revision_sha256: 83c7452e448095574efe8c00a15010cf27fb45fb00f1adb0705b9f80be3431b6
+date_modified: 2026-11-28
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 13
+source_count: 15
 alternates:
   md: https://mimirwiki.com/zh/wiki/chatgpt.md
   txt: https://mimirwiki.com/zh/wiki/chatgpt.txt
@@ -116,6 +116,8 @@ ChatGPT 在 Free、Go、Plus、Pro、Business、Edu 和 Enterprise 方案中均�
 
 ChatGPT 和 Codex 也参与由 Linux Foundation 托管的开放代理标准体系。[12] 2025 年 12 月 9 日，Linux Foundation 宣布成立 Agentic AI Foundation（AAIF），OpenAI 与 Amazon Web Services、Anthropic、Block、Bloomberg、Cloudflare、Google 和 Microsoft 共同担任白金成员。[12] 公告指出，ChatGPT 采用了 Anthropic 推出的用于连接模型与工具、数据及应用的 [Model Context Protocol](https://mimirwiki.com/zh/wiki/model-context-protocol)（MCP），而 OpenAI 贡献了其基于 Markdown 的 `AGENTS.md` 规范（于 2025 年 8 月发布，已被包括 Codex 在内的逾 60,000 个开源项目和代理框架采用），以及 ACP、Codex CLI、Agents SDK 和 Apps SDK。[12]
 
+根据OpenAI官方帮助文档，自2026年12月起，Plus、Pro与Business订阅方案将在企业积分费率表之外合并共享ChatGPT与Codex的按令牌计量额度，但Instant模型对话不计入共享扣减且在达到上限后仍可继续使用。[14][15] 据TechCrunch于2026年11月25日报道，部分Pro订阅者已提前开始体验合并计量，但各账户全面生效时间及各方案固定令牌配额尚未公布。[14][15]
+
 ## ChatGPT 数据训练政策、安全控制与开发者平台文档
 
 ChatGPT 对组织工作区与个人账号适用不同的数据治理条款。[7][3] 在 ChatGPT Business 概览文档中，OpenAI 声明 ChatGPT Business 遵循其商业条款和企业隐私政策，且 OpenAI 不会使用客户工作区数据训练模型。[7] 需要零数据保留（Zero Data Retention）或商业伙伴协议（BAA）的组织使用 ChatGPT Enterprise 等合同制方案。[7] 针对专业领域，OpenAI 费率表还列出了 Trusted Access 审批项目，包括面向法律领域的 Astra for Law、面向生命科学领域的 GPT-6 Rosalind Research，以及面向网络安全模型的 Daybreak（Trusted Access for Cyber）。[8]
@@ -175,6 +177,7 @@ OpenAI 于 2022 年 11 月 30 日推出 ChatGPT，作为在 Azure AI 超级计�
 - 2025-12-09: Linux Foundation 宣布成立以 OpenAI 为白金成员的 Agentic AI Foundation（AAIF），并指出 ChatGPT 已采用模型上下文协议（MCP）。 [12]
 - 2026-01-16: OpenAI 以美国地区每月 8 美元的价格在全球推出 ChatGPT Go，并宣布计划在 Free 和 Go 档位中测试广告。 [5]
 - 2026-06-24: OpenAI 停止向新创建的 ChatGPT Business 工作区提供旧版 Codex 席位类型。 [7]
+- 2026-11-25: OpenAI在12月面向Plus、Pro与Business方案推行ChatGPT与Codex共享额度(不含Instant对话)前，面向部分Pro用户启动早期推出。 [14][15]
 
 ## 来源
 
@@ -191,7 +194,9 @@ OpenAI 于 2022 年 11 月 30 日推出 ChatGPT，作为在 Azure AI 超级计�
 11. Overview of OpenAI Crawlers. OpenAI. https://developers.openai.com/api/docs/bots (访问于 2026-11-23; tier 3: official site)
 12. Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md. The Linux Foundation. 发布于 2025-12-09. https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation (访问于 2026-11-23; tier 3: official site)
 13. Supported countries and territories | OpenAI API Documentation. OpenAI. https://developers.openai.com/api/docs/supported-countries (访问于 2026-11-23; tier 3: official site)
+14. Understanding ChatGPT and Codex usage limits. OpenAI Help Center. https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits (访问于 2026-11-28; tier 3: official site)
+15. OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work. TechCrunch. 发布于 2026-11-25. https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/ (访问于 2026-11-28; tier 2: academic or news)
 
 ## 引用本页
 
-Mimirwiki. "ChatGPT." 版本 4778c55d, 2026-11-23. https://mimirwiki.com/zh/wiki/chatgpt
+Mimirwiki. "ChatGPT." 版本 83c7452e, 2026-11-28. https://mimirwiki.com/zh/wiki/chatgpt

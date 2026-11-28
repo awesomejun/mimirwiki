@@ -4,10 +4,10 @@ subtitle: "开发 Claude 的美国人工智能安全与研究公益公司（Nasd
 canonical_url: https://mimirwiki.com/zh/wiki/anthropic
 language: zh
 page_class: entity
-revision_sha256: 07bf9e8a7a88f4fcf91ed3159f1da18712164d29079a9326300c48c49cfcb0b8
-date_modified: 2026-11-23
+revision_sha256: 10d59bdb62930faeaabdb01ae3ba42e31ac2b187bb2d080e0a3fc605d1ad9d99
+date_modified: 2026-11-28
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 15
+source_count: 17
 alternates:
   md: https://mimirwiki.com/zh/wiki/anthropic.md
   txt: https://mimirwiki.com/zh/wiki/anthropic.txt
@@ -129,6 +129,8 @@ Anthropic 通过 [Claude](https://mimirwiki.com/zh/wiki/claude) 系列 AI 模型
 
 截至 2026-11-23，Anthropic 经过 `anthropic.com` 域名验证的 GitHub 组织（`anthropics`）列有 118 个公开仓库和 99.9k 名关注者，主要编程语言包括 Python、Rust、Go、TypeScript 和 C++。[9] 该组织概览页列出的公开仓库包括 `skills`（Agent Skills，约 199,000 颗星标）、`claude-code`（终端智能体编程工具，156,772 颗星标）、`claude-cookbooks`（约 55,100 颗星标）、`claude-plugins-official`（48,023 颗星标，Apache-2.0）、`financial-services`（约 41,500 颗星标）、`prompt-eng-interactive-tutorial`（约 39,700 颗星标）、`knowledge-work-plugins`（面向 Claude Cowork 的开源插件，36,731 颗星标，Apache-2.0）、`claude-for-legal`（10,075 颗星标，Apache-2.0）以及 `claude-code-action`（10,055 颗星标，MIT）。[9]
 
+2026年11月25日，Anthropic发布工程报告称，在2024年初至2026年秋季API流量增长约1,800倍的背景下，已将服务外部客户及Claude Code、Cowork的Messages API从Python迁移至Rust。[16][17] 通过对比生产请求在旧Python实现与新Rust实现间的行为一致性，公司内部测得单请求CPU使用量下降约70%，首令牌时间中位数缩短约20%；独立复现及整体响应完成时间变化尚未公开。[16]
+
 ## Anthropic 云基础设施与战略投资
 
 Anthropic 与 Amazon 达成了战略合作及少数股权投资协议，Amazon 于 2024 年 3 月 27 日完成了对 Anthropic 总计 40 亿美元的投资。[10] Amazon 于 2023 年 9 月进行了 12.5 亿美元的初始投资，并于 2024 年 3 月 27 日追加投资 27.5 亿美元以获得少数股权。[10] Anthropic 于 2026 年 11 月 17 日提交的 Form S-1/A-3 在报告截至 2026 年 6 月 30 日的完全稀释股本时，也提及了名为 Amazon Notes 的可转换证券。[2]
@@ -188,6 +190,7 @@ Anthropic 工程师 David Soria Parra 和 Justin Spahr-Summers 创建了 Model C
 - 2026-11-18: Anthropic 的 IPO 注册声明生效，并以每股 83.00 美元为 980,000,000 股基础 Class A 股票定价（总额 813.4 亿美元）。 [11][12][13]
 - 2026-11-19: Anthropic Class A 股票在 Nasdaq Global Select Market 以代码 ANT 开始交易，首日收盘略高于 97 美元。 [11][15]
 - 2026-11-20: Anthropic 以 1,127,000,000 股 Class A 股票（含承销商全额行使的 147,000,000 股期权）完成 IPO，并同步完成 260 亿美元私募配售。 [14]
+- 2026-11-25: Anthropic报告将Messages API从Python迁移至Rust，内部测得单请求CPU下降约70%、首令牌时间中位数缩短约20%。 [16][17]
 
 ## 来源
 
@@ -206,7 +209,9 @@ Anthropic 工程师 David Soria Parra 和 Justin Spahr-Summers 创建了 Model C
 13. Anthropic prices initial public offering \ Anthropic. Anthropic. 发布于 2026-11-18. https://www.anthropic.com/news/anthropic-prices-initial-public-offering (访问于 2026-11-23; tier 3: official site)
 14. Announcements \ Anthropic. Anthropic. https://www.anthropic.com/news/announcements (访问于 2026-11-23; tier 3: official site)
 15. Anthropic closes first day of public trading at $1.3tn valuation after largest-ever IPO. The Guardian. 发布于 2026-11-19. https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo (访问于 2026-11-23; tier 2: academic or news)
+16. Migrating our Messages API to Rust. Anthropic. 发布于 2026-11-25. https://www.anthropic.com/research/migrating-api-to-rust (访问于 2026-11-28; tier 3: official site)
+17. Using the Messages API - Claude Platform Docs. Anthropic. https://platform.claude.com/docs/en/build-with-claude/working-with-messages (访问于 2026-11-28; tier 3: official site)
 
 ## 引用本页
 
-Mimirwiki. "Anthropic." 版本 07bf9e8a, 2026-11-23. https://mimirwiki.com/zh/wiki/anthropic
+Mimirwiki. "Anthropic." 版本 10d59bdb, 2026-11-28. https://mimirwiki.com/zh/wiki/anthropic

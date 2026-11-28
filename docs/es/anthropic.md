@@ -4,10 +4,10 @@ subtitle: "Corporación estadounidense de beneficio público de investigación y
 canonical_url: https://mimirwiki.com/es/wiki/anthropic
 language: es
 page_class: entity
-revision_sha256: 867c6fe0d5c46341f040276aaaee9cafe0aef3d27cf79c7c7cfe88b7b482e271
-date_modified: 2026-11-23
+revision_sha256: eea0cce762f1881cf4f3ae20f25767a1561de7fed73ad4c21bbb222522dded44
+date_modified: 2026-11-28
 provenance: "auto-written from public primary sources; not yet reviewed by a credentialed expert; not claimed by its subject"
-source_count: 15
+source_count: 17
 alternates:
   md: https://mimirwiki.com/es/wiki/anthropic.md
   txt: https://mimirwiki.com/es/wiki/anthropic.txt
@@ -129,6 +129,8 @@ El 9 de diciembre de 2025, Anthropic aportó MCP como proyecto fundador a la Age
 
 Al 23 de noviembre de 2026, la organización verificada de Anthropic en GitHub (`anthropics`, verificada para el dominio `anthropic.com`) registra 118 repositorios públicos y 99,9 mil seguidores, con Python, Rust, Go, TypeScript y C++ entre sus lenguajes principales.[9] Los repositorios públicos listados en la vista general de la organización incluyen `skills` (Agent Skills, aproximadamente 199 000 estrellas), `claude-code` (una herramienta de programación agéntica en terminal, 156 772 estrellas), `claude-cookbooks` (aproximadamente 55 100 estrellas), `claude-plugins-official` (48 023 estrellas, licencia Apache-2.0), `financial-services` (aproximadamente 41 500 estrellas), `prompt-eng-interactive-tutorial` (aproximadamente 39 700 estrellas), `knowledge-work-plugins` (complementos de código abierto para Claude Cowork, 36 731 estrellas, licencia Apache-2.0), `claude-for-legal` (10 075 estrellas, licencia Apache-2.0) y `claude-code-action` (10 055 estrellas, licencia MIT).[9]
 
+El 25 de noviembre de 2026, Anthropic publico un informe tecnico sobre la migracion de su Messages API (la interfaz principal para clientes externos, Claude Code y Cowork) de Python a Rust, tras un crecimiento del trafico de aproximadamente 1.800 veces entre principios de 2024 y otono de 2026.[16][17] Mediante la comparacion de solicitudes en produccion para verificar la paridad funcional, la empresa reporto mediciones internas de alrededor de un 70% menos de uso de CPU por solicitud y cerca de un 20% menos en la mediana del tiempo hasta el primer token; no se ha confirmado una replicacion independiente ni el impacto en el tiempo total de finalizacion.[16]
+
 ## Infraestructura en la nube e inversiones estratégicas de Anthropic
 
 Anthropic celebró un acuerdo de colaboración estratégica e inversión minoritaria con Amazon, que completó una inversión total de 4000 millones de dólares en Anthropic el 27 de marzo de 2024.[10] Amazon realizó una inversión inicial de 1250 millones de dólares en septiembre de 2023 y añadió 2750 millones de dólares el 27 de marzo de 2024 para adquirir una participación minoritaria.[10] El Form S-1/A-3 de Anthropic presentado el 17 de noviembre de 2026 también hace referencia a instrumentos convertibles denominados Amazon Notes al informar el recuento de acciones totalmente diluidas de Anthropic al 30 de junio de 2026.[2]
@@ -188,6 +190,7 @@ Anthropic creó el Model Context Protocol a través de los ingenieros David Sori
 - 2026-11-18: Entran en vigor las declaraciones de registro de la OPI de Anthropic y la empresa fija el precio de 980 000 000 de acciones base de clase A en 83,00 dólares por acción (81 340 millones de dólares brutos). [11][12][13]
 - 2026-11-19: Las acciones de clase A de Anthropic comienzan a cotizar en el Nasdaq Global Select Market bajo el símbolo ANT y cierran su primera jornada ligeramente por encima de los 97 dólares. [11][15]
 - 2026-11-20: Anthropic cierra su OPI con 1 127 000 000 de acciones de clase A (incluido el ejercicio completo de la opción de los suscriptores por 147 000 000 de acciones) y cierra su colocación privada simultánea de 26 000 millones de dólares. [14]
+- 2026-11-25: Anthropic informa la migracion de su Messages API de Python a Rust, con mediciones internas de alrededor de un 70% menos de CPU por solicitud y un 20% menos en la mediana del tiempo al primer token. [16][17]
 
 ## Fuentes
 
@@ -206,7 +209,9 @@ Anthropic creó el Model Context Protocol a través de los ingenieros David Sori
 13. Anthropic prices initial public offering \ Anthropic. Anthropic. publicado 2026-11-18. https://www.anthropic.com/news/anthropic-prices-initial-public-offering (consultado 2026-11-23; tier 3: official site)
 14. Announcements \ Anthropic. Anthropic. https://www.anthropic.com/news/announcements (consultado 2026-11-23; tier 3: official site)
 15. Anthropic closes first day of public trading at $1.3tn valuation after largest-ever IPO. The Guardian. publicado 2026-11-19. https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo (consultado 2026-11-23; tier 2: academic or news)
+16. Migrating our Messages API to Rust. Anthropic. publicado 2026-11-25. https://www.anthropic.com/research/migrating-api-to-rust (consultado 2026-11-28; tier 3: official site)
+17. Using the Messages API - Claude Platform Docs. Anthropic. https://platform.claude.com/docs/en/build-with-claude/working-with-messages (consultado 2026-11-28; tier 3: official site)
 
 ## Citar esta página
 
-Mimirwiki. "Anthropic." Versión 867c6fe0, 2026-11-23. https://mimirwiki.com/es/wiki/anthropic
+Mimirwiki. "Anthropic." Versión eea0cce7, 2026-11-28. https://mimirwiki.com/es/wiki/anthropic
